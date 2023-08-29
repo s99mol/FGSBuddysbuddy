@@ -10,6 +10,14 @@
 En grym liten FGS-paketerare för att skapa SIP-paket till e-arkiv.
 </div>
 
+## Ideas :star:
+* Bygga in möjlighet att ladda upp xslt som producerar metadataxml utifrån csv:
+  *   Välj csv-fil
+  *   Välj matchande xslt-fil
+  *   Transform!
+  *   Output hanteras som metadatafil.
+* Vallistor för Arkivbildare m m (välja lista el ny?9 
+
 ---
 
 
