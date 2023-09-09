@@ -6,7 +6,7 @@ import webbrowser
 from io import StringIO
 import lxml.etree as et
 from lxml import etree
-import xmlschema
+#import xmlschema
 import pandas as pd
 import shutil
 #import fnmatch
@@ -65,19 +65,14 @@ def buddywindow():
             webbrowser.open('https://github.com/Viktor-Lundberg/FGSBuddy')
 
 # Funktion för att validera med xsd-schema
-def validate(xml_path: str, xsd_path: str) -> bool:
-    xmlschema_doc = etree.parse(xsd_path)
-    xmlschema = etree.XMLSchema(xmlschema_doc)
+#def validate(xml_path: str, xsd_path: str) -> bool:
+    #xmlschema_doc = etree.parse(xsd_path)
+    #xmlschema = etree.XMLSchema(xmlschema_doc)
 
-    xml_doc = etree.parse(xml_path)
-    result = xmlschema.validate(xml_doc)
-    #xmlschema.assertValid(xml_doc)
-    #try:
-        #xmlschema.assertValid(xml_doc)
-    #except Exception as e:
-        #return False,str(e)
-    #return True,''
-    return result
+    #xml_doc = etree.parse(xml_path)
+    #result = xmlschema.validate(xml_doc)
+
+    #return result
 
 # Nuvarande version
 version = '0.0.1'
@@ -96,7 +91,7 @@ innehall = [
     [sg.Text('Mappningen från input till metadatafil sker i den xslt-fil som ingår och som du kan kopiera och modiera efter behov.')],
     [sg.Text('')],
     [sg.Text('Sökväg till inputfil:*')],
-    [sg.Input(tooltip="Välj inputfil", key='inputfile'), sg.FileBrowse('Välj fil', key="inputfileB", initial_folder=os.path.join(cwd) ), sg.Text ('Csv- eller xml-fil med metadatat du vill transformera.')],
+    [sg.Input(tooltip="Välj inputfil", key='inputfile'), sg.FileBrowse('Välj fil', key="inputfileB", initial_folder=os.path.join(cwd) ), sg.Combo([';', ',', ':', '.', '|', 'tab', 'space'], default_value=';', key='csvseparator'), sg.Text ('Csv- eller xml-fil med metadatat du vill transformera.\nVälj filens separator om annan än semikolon (;)')],
     [sg.Text('Sökväg till xsltfil:*')],
     [sg.Input(tooltip="Välj xslt", key='xsltfile'), sg.FileBrowse('Välj fil', key="xsltfileB", initial_folder=os.path.join(cwd) ), sg.Text ('För att transformera din input.')],
     [sg.Text('Sökväg till schemafil:')],
@@ -163,7 +158,7 @@ while True:
             elif values['xsltfile'] == '':
                 print(f'Du måste välja en xsltfil!')
              
-            # Hantering av xmlfil som input.
+            # Hantering av xmlfil som input, utan xmlschema
             elif values['inputfile'].endswith('.xml') and values['schemafile'] == '':
                 doc = et.parse(inputfile)
                 xsl = et.parse(xsltfile)
@@ -175,26 +170,30 @@ while True:
                     shutil.move(xmlfile, outputfolder)
                     print(f'Metadatafil skapad i outputkatalog. Bra jobbat!')
                 except: print(f'Men finns redan en fil i outputfolder med samma namn. Radera/flytta den innan du skapar en ny.')
-            
+
+            # Hantering av xmlfil som input, med xmlschema
             elif values['inputfile'].endswith('.xml') and values['schemafile'] != '':
                 doc = et.parse(inputfile)
                 xsl = et.parse(xsltfile)
                 transform = et.XSLT(xsl)
                 result = transform(doc)
                 result.write_output(xmlfile)
-                if validate(xmlfile, schemafile):
-                    print(f'Valid!')
-                    try:
-                        shutil.move(xmlfile, outputfolder)
-                        print(f'Metadatafil skapad i outputkatalog, och validerad mot {schemafile}. Bra jobbat!')
-                    except: print(f'Men finns redan en fil i outputfolder med samma namn. Radera/flytta den innan du skapar en ny.')
-                else:
-                    print(f'Not/ej valid!')
-                    try:
-                        shutil.move(xmlfile, outputfolder)
-                        print(f'Metadatafil skapad i outputkatalog men den validerar inte mot {schemafile}.')
-                    except: print(f'Men finns redan en fil i outputfolder med samma namn. Radera/flytta den innan du skapar en ny.')
-                    
+
+                #lösningen tillåter inte att man skriver över fil
+                try:
+                    xmlschemadoc=etree.parse(schemafile)
+                    xmlschema=etree.XMLSchema(xmlschemadoc)
+                    xmldoc=etree.parse(xmlfile)
+                    xmlschema.assertValid(xmldoc)
+                    print(f'Valid mot {schemafile}. Bra jobbat!')
+                except Exception as e: print(e)
+                
+                try:
+                    shutil.move(xmlfile, outputfolder)
+                    print(f'Metadatafil skapad i outputkatalog oavsett valid eller inte. Om filen inte är valid visas ett felmeddelande ovan.')
+                except: print(f'Det finns redan en fil i outputfolder med samma namn. Radera eller flytta den innan du skapar en ny.')
+
+            # Hantering av csv som input, utan xmlschema
             elif values['schemafile'] == '' and values['inputfile'] != '' and values['xsltfile'] != '':
                 print(f'Det går bra att inte välja en schemafil men då blir det ingen validering!')
                 print(f'Skapar metadatafil...')
@@ -203,7 +202,7 @@ while True:
                 window.find_element('output').update('')
                 window.refresh()
                 #print(fgsPackage.output)
-                df=pd.read_csv(inputfile, sep = ';')
+                df=pd.read_csv(inputfile, sep = values['csvseparator'])
                 df = df.convert_dtypes()
                 df.to_xml(xmlfile)
                 doc = et.parse(xmlfile)
@@ -218,7 +217,7 @@ while True:
                 try:
                     shutil.move(xmlfile, outputfolder)
                     print(f'Metadatafil skapad i outputkatalog. Bra jobbat!')
-                except: print(f'Men finns redan en fil i outputfolder med samma namn. Radera/flytta den innan du skapar en ny.')
+                except: print(f'Det finns redan en fil i outputfolder med samma namn. Radera eller flytta den innan du skapar en ny.')
 
             #if values['submissionagreement'] == '' or values['system'] == '' or values['arkivbildare'] == '' or values['IDkod'] == '' or values['levererandeorganisation'] == '':
                 # Lägger till värden i dicten för att kunna visa användaren vilka värden som saknas
@@ -233,7 +232,7 @@ while True:
                     #if v == '':
                         #print(f'Fältet "{k}" saknar värde.')
                 
-            # Om inputfil, xsltfil och schemafil är valda skapas och valideras metadatafil.
+            # Hantering av csv som input, med xmlschema
             else:
                 print(f'Skapar metadatafil...')
                 window.refresh()
@@ -257,7 +256,7 @@ while True:
                 time.sleep(0.3)
                 window.find_element('output').update('')
                 window.refresh()
-                df=pd.read_csv(inputfile, sep = ';')
+                df=pd.read_csv(inputfile, sep = values['csvseparator'])
                 df = df.convert_dtypes()
                 df.to_xml(xmlfile)
                 doc = et.parse(xmlfile)
@@ -266,19 +265,19 @@ while True:
                 result = transform(doc)
                 result.write_output(xmlfile)
                 #lösningen tillåter inte att man skriver över fil
-                if validate(xmlfile, schemafile):
-                    print(f'Valid!')
-                    try:
-                        shutil.move(xmlfile, outputfolder)
-                        print(f'Metadatafil skapad i outputkatalog, och validerad mot {schemafile}. Bra jobbat!')
-                    except: print(f'Men finns redan en fil i outputfolder med samma namn. Radera/flytta den innan du skapar en ny.')
-                else:
-                    print(f'Not/ej valid!')
-                    try:
-                        shutil.move(xmlfile, outputfolder)
-                        print(f'Metadatafil skapad i outputkatalog men den validerar inte mot {schemafile}.')
-                    except: print(f'Men finns redan en fil i outputfolder med samma namn. Radera/flytta den innan du skapar en ny.')
-                    
+                try:
+                    xmlschemadoc=etree.parse(schemafile)
+                    xmlschema=etree.XMLSchema(xmlschemadoc)
+                    xmldoc=etree.parse(xmlfile)
+                    xmlschema.assertValid(xmldoc)
+                    print(f'Valid mot {schemafile}. Bra jobbat!')
+                except Exception as e: print(e)
+                
+                try:
+                    shutil.move(xmlfile, outputfolder)
+                    print(f'Metadatafil skapad i outputkatalog oavsett valid eller inte. Om filen inte är valid visas ett felmeddelande ovan.')
+                except: print(f'Det finns redan en fil i outputfolder med samma namn. Radera eller flytta den innan du skapar en ny.')
+                
         
         case 'clear':
             clearinput()
