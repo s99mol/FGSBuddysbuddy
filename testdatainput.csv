@@ -1,0 +1,239 @@
+ArkivobjektID_Arende;KlassReferens_Arende;Forvaringsplats;Namn;Skapad_Arende;ArendeTyp;Arendemening;KlassReferens_Handling;ArkivobjektID_Handling;Handlingstyp;Beskrivning;Rubrik;Skapad_Handling;Lank
+dnr/1;;;Administrator;2016-05-10;0;Organ1;0;1;;;blalalal;2016-05-10;Meddelandetext.txt
+dnr/1;;;Administrator;2016-05-10;0;Organ1;0;1;;;blalalal;2016-05-10;ominstallation Linux 17.docx
+dnr/1;;;Administrator;2016-05-10;0;Organ1;0;2;Återkommande;;Återkommande.doc;2016-05-10;Återkommande.doc
+dnr/10;;;Tjänsteman af Fågelholk;2017-03-10;0;Tesutskottet 2018-12-24 XYZ;0;1;Återkommande;;Återkommande.doc;2017-03-10;Återkommande.doc
+dnr/10;;;Tjänsteman af Fågelholk;2017-03-10;0;Tesutskottet 2018-12-24 XYZ;0;2;Protokoll;;Antikvarisk.doc;2017-03-10;Antikvarisk.doc
+dnr/10;;;Tjänsteman af Fågelholk;2017-03-10;0;Tesutskottet 2018-12-24 XYZ;0;3;Protokoll;;Antikvarisk.doc;2017-03-16;
+dnr/10;;;Tjänsteman af Fågelholk;2017-03-10;0;Tesutskottet 2018-12-24 XYZ;0;4;Protokoll;;Antikvarisk.doc;2017-04-08;Antikvarisk.doc
+dnr/10;;;Tjänsteman af Fågelholk;2017-03-10;0;Tesutskottet 2018-12-24 XYZ;0;5;Protokoll;;Antikvarisk.doc;2017-06-19;Antikvarisk.doc
+dnr/10;;;Tjänsteman af Fågelholk;2017-03-10;0;Tesutskottet 2018-12-24 XYZ;0;6;Protokoll;;Antikvarisk.doc;2017-09-05;Antikvarisk.doc
+dnr/10;;;Tjänsteman af Fågelholk;2017-03-10;0;Tesutskottet 2018-12-24 XYZ;0;7;Återkommande;;Återkommande.doc;2017-09-05;Återkommande.doc
+dnr/10;;;Tjänsteman af Fågelholk;2017-03-10;0;Tesutskottet 2018-12-24 XYZ;0;8;Protokoll;;Antikvarisk.doc;2017-09-05;Antikvarisk.doc
+dnr/10;;;Tjänsteman af Fågelholk;2017-03-10;0;Tesutskottet 2018-12-24 XYZ;0;9;Återkommande;;Återkommande.doc;2018-01-30;Återkommande.doc
+dnr/10;;;Tjänsteman af Fågelholk;2017-03-10;0;Tesutskottet 2018-12-24 XYZ;0;10;Protokoll;;Antikvarisk.doc;2018-03-15;Antikvarisk.doc
+dnr/10;;;Tjänsteman af Fågelholk;2017-03-10;0;Tesutskottet 2018-12-24 XYZ;0;11;Återkommande;;Återkommande.doc;2018-03-15;Återkommande.doc
+dnr/10;;;Tjänsteman af Fågelholk;2017-03-10;0;Tesutskottet 2018-12-24 XYZ;0;12;Protokoll;;Antikvarisk.doc;2018-03-15;Antikvarisk.doc
+dnr/10;;;Tjänsteman af Fågelholk;2017-03-10;0;Tesutskottet 2018-12-24 XYZ;0;13;Återkommande;;Återkommande.doc;2018-03-20;Återkommande.doc
+dnr/10;;;Tjänsteman af Fågelholk;2017-03-10;0;Tesutskottet 2018-12-24 XYZ;0;14;Återkommande;;Återkommande.doc;2018-03-20;Återkommande.doc
+dnr/11;;;Tjänsteman af Fågelholk;2017-03-10;0;XYZ Testärende 1;0;1;Till möte;;Tesutskottet 2017-12-24 XYZ (2017-12-24);2017-03-10;
+dnr/11;;;Tjänsteman af Fågelholk;2017-03-10;0;XYZ Testärende 1;0;2;Beslut;;Tesutskottet 2017-12-24 c (2017-12-24  TN §1);2017-12-24;Tesutskottet 2017-12-24 XYZ (2017-12-24 TN §1).doc
+dnr/11;;;Tjänsteman af Fågelholk;2017-03-10;0;XYZ Testärende 1;0;3;;;Test av handling;2017-05-08;
+dnr/12;;;Pippi-Viktualia Tjänstemannason;2017-04-08;0;Tesutskottet;0;1;Återkommande;;Återkommande.doc;2017-04-08;Återkommande.doc
+dnr/12;;;Pippi-Viktualia Tjänstemannason;2017-04-08;0;Tesutskottet;0;2;Protokoll;;Antikvarisk.doc;2017-04-08;Antikvarisk.doc
+dnr/13;;;Pippi-Viktualia Tjänstemannason;2017-04-12;0;Test;0;1;Återkommande;;Återkommande.doc;2017-04-12;Återkommande.doc
+dnr/14;;;Tjänsteman af Fågelholk;2017-09-05;0;Test av nya björnar XYZ;0;1;;;Test;2017-09-05;
+dnr/15;2017-12-11;;Pippi-Viktualia Tjänstemannason;2017-12-11;1;testärende;0;1;;;handla handling;2017-12-11;Meddelandetext.txt
+dnr/16;;;Pippi-Viktualia Tjänstemannason;2018-01-12;0;Tesutskottet;0;1;Återkommande;;Återkommande.doc;2018-01-17;Återkommande.doc
+dnr/16;;;Pippi-Viktualia Tjänstemannason;2018-01-12;0;Tesutskottet;0;2;Återkommande;;Återkommande.doc;2018-01-17;Återkommande.doc
+dnr/16;;;Pippi-Viktualia Tjänstemannason;2018-01-12;0;Tesutskottet;0;3;Återkommande;;Återkommande.doc;2018-02-23;Återkommande.doc
+dnr/16;;;Pippi-Viktualia Tjänstemannason;2018-01-12;0;Tesutskottet;0;4;Återkommande;;Återkommande.doc;2018-03-16;Återkommande.doc
+dnr/16;;;Pippi-Viktualia Tjänstemannason;2018-01-12;0;Tesutskottet;0;5;Återkommande;;Återkommande.doc;2018-03-16;Återkommande.doc
+dnr/17;;;Pippi-Viktualia Tjänstemannason;2018-01-12;0;Testutskottet;0;1;;Handlingen <Återkommande.doc> makulerades av Pippi-Viktualia Tjänstemannason MED ORSAK test 2018-01-12 08:54;--- Makulerad ---;2018-01-12;
+dnr/17;;;Pippi-Viktualia Tjänstemannason;2018-01-12;0;Testutskottet;0;2;Återkommande;;Återkommande.doc;2018-01-12;Återkommande.doc
+dnr/18;;;Tjänsteman af Fågelholk;2018-03-15;0;XYZ Testärende omedelbart justerat;;;;;;;
+dnr/19;;;Pippi-Viktualia Tjänstemannason;2018-03-20;0;test av omedelbar justering;0;1;Återkommande;;Återkommande.doc;2018-03-20;Återkommande.doc
+dnr/2;;;Administrator;2016-05-18;0;Testärende för rosa knappen;;;;;;;
+dnr/20;;;Pippi-Viktualia Tjänstemannason;2018-07-10;0;Nytt ärende;;;;;;;
+dnr/21;;;Pippi-Viktualia Tjänstemannason;2018-07-10;0;Test av ärendetyp och diariebtkn;;;;;;;
+dnr/22;;;Pippi-Viktualia Tjänstemannason;2018-07-10;0;Nytt ärende;;;;;;;
+dnr/23;;;Annika Adminson;2018-07-11;0;Testar handlingsstatus för dalandebeslut;0;1;Dalandebeslut;;Dalandebeslut - Tillsättning av tillsättning;2018-07-11;
+dnr/23;;;Annika Adminson;2018-07-11;0;Testar handlingsstatus för dalandebeslut;0;2;;;Utbildingsmaterial_for_Slutgiltig.pptx;2018-07-13;Utbildingsmaterial_for_Slutgiltig.pptx
+dnr/23;;;Annika Adminson;2018-07-11;0;Testar handlingsstatus för dalandebeslut;0;3;;;Utbildingsmaterial_for_Slutgiltig.pptx;2018-07-13;Utbildingsmaterial_for_Slutgiltig.pptx
+dnr/24;2022-10-28;;Pippi-Viktualia Tjänstemannason;2018-08-28;1;test av..;0;1;Dalandebeslut;;Dalandebeslut;2018-09-18;Dalandebeslut.docx
+dnr/25;;;Pippi-Viktualia Tjänstemannason;2018-09-19;0;Testärende;;;;;;;
+dnr/26;;;Pippi-Viktualia Tjänstemannason;2018-10-09;0;Nytt ärende;;;;;;;
+dnr/27;;;Pippi-Viktualia Tjänstemannason;2018-10-09;0;Nytt ärende;;;;;;;
+dnr/28;;;Pippi-Viktualia Tjänstemannason;2018-10-09;0;Nytt ärende;;;;;;;
+dnr/29;;;Pippi-Viktualia Tjänstemannason;2018-10-09;0;Nytt ärende;;;;;;;
+dnr/3;;;Administrator;2016-05-18;0;Flytta paragrafer mellan beslutande organ i samma serie;;;;;;;
+dnr/30;;;Pippi-Viktualia Tjänstemannason;2018-10-09;0;Nytt ärende;;;;;;;
+dnr/31;;;Pippi-Viktualia Tjänstemannason;2018-10-09;0;Nytt ärende;;;;;;;
+dnr/32;;;Pippi-Viktualia Tjänstemannason;2018-10-09;0;Nytt ärende;;;;;;;
+dnr/33;;;Pippi-Viktualia Tjänstemannason;2018-10-09;0;Nytt ärende;;;;;;;
+dnr/34;;;Annika Adminson;2018-10-11;0;Nytt ärende;;;;;;;
+dnr/35;;;Annika Adminson;2018-10-16;0;Nytt ärende;;;;;;;
+dnr/36;;;Annika Adminson;2018-10-16;0;Nytt ärende;;;;;;;
+dnr/37;;;Annika Adminson;2018-10-16;0;testar dra och släpp fil;0;1;Dalandebeslut;;Lönedatum för Truman;2019-03-21;Lönedatum 2019 Truman.pdf
+dnr/38;;;Annika Adminson;2018-10-16;0;Nytt ärende;;;;;;;
+dnr/39;;;Annika Adminson;2018-10-16;0;Nytt ärende;0;1;Dalandebeslut;;Dalandebeslut;2018-10-18;Dalandebeslut.docx
+dnr/4;;;Pippi-Viktualia Tjänstemannason;2016-06-08;0;Organ1;;;;;;;
+dnr/40;;;Pippi-Viktualia Tjänstemannason;2019-02-21;0;Nytt ärende;;;;;;;
+dnr/41;;;Administrator;2019-11-05;0;Testar stämpling;0;1;Dalandebeslut;;Manual;2019-11-05;R2D2 Directorysync 1.1 Installation och konfiguration.pdf
+dnr/41;;;Administrator;2019-11-05;0;Testar stämpling;0;2;Remiss;;Rutin;2019-11-05;Rutin - komplettering till överklagande av planer.docx
+dnr/41;;;Administrator;2019-11-05;0;Testar stämpling;0;3;Remiss;;Testar stämpling;2019-11-08;Rutin - komplettering till överklagande av planer.docx
+dnr/41;;;Administrator;2019-11-05;0;Testar stämpling;0;3;Remiss;;Testar stämpling;2019-11-08;meddelande.txt
+dnr/41;;;Administrator;2019-11-05;0;Testar stämpling;0;4;Remiss;;Remiss Testar stämpling;2019-11-08;Remissvar från kommunstyrelsen.docx
+dnr/41;;;Administrator;2019-11-05;0;Testar stämpling;0;4;Remiss;;Remiss Testar stämpling;2019-11-08;meddelande.txt
+dnr/41;;;Administrator;2019-11-05;0;Testar stämpling;0;5;Remiss;;Remiss Testar stämpling;2019-11-08;meddelande.txt
+dnr/42;;;Administrator;2019-12-02;0;Testar handlingstyper kopplad till process;0;1;Verksamhetsberättelse;;Verksamhetsberättelse;2020-02-13;
+dnr/43;;Se nya riktlinjer KS 2019/123;Administrator;2019-12-02;0;Testar handlingstyper kopplade till ärendetyp - Styrande dokument;0;1;Instruktion;;Instruktion;2019-12-02;
+dnr/43;;Se nya riktlinjer KS 2019/123;Administrator;2019-12-02;0;Testar handlingstyper kopplade till ärendetyp - Styrande dokument;0;2;Riktlinjer;;Riktlinjer;2020-02-18;
+dnr/44;;;Administrator;2019-12-03;0;Testar handlingstyper kopplade till ärendetyp;0;1;Reglemente;;Reglemente;2019-12-03;
+dnr/45;;;Tjänsteman af Fågelholk;2019-12-16;0;XYZ Test av nytt tjänsteutlåtande;;;;;;;
+dnr/46;;;Paulina Handläggarson;2020-03-11;0;Testpaulina;0;1;Beslut;;Kamomillastads AB (2020-03-17 4);2020-03-17;
+dnr/46;;;Paulina Handläggarson;2020-03-11;0;Testpaulina;0;2;Beslut;;Kamomillastads AB (2020-03-17 4);2020-03-17;
+dnr/47;;;Administrator;2020-06-11;0;Utlämnande av allmän handling;;;;;;;
+dnr/48;;;Administrator;2020-06-11;0;remiss test;0;1;Remiss;;test;2020-06-11;meddelande.txt
+dnr/48;;;Administrator;2020-06-11;0;remiss test;0;2;Remissvar;;test;2020-06-11;meddelande.txt
+dnr/48;;;Administrator;2020-06-11;0;remiss test;0;2;Remissvar;;test;2020-06-11;meddelande.txt
+dnr/49;;;Piprökare Administrator;2020-08-17;0;Piprökare - Testärende efter uppgradering;0;1;Instruktion;test;Test;2020-08-17;R2D2 2020 X1 Användarmanual.pdf
+dnr/49;;;Piprökare Administrator;2020-08-17;0;Piprökare - Testärende efter uppgradering;0;1;Instruktion;test;Test;2020-08-17;R2D2 2020 X1 Användarmanual.pdf.pdf
+dnr/49;;;Piprökare Administrator;2020-08-17;0;Piprökare - Testärende efter uppgradering;0;2;Instruktion;;Test efter rättning av fritextsökningen;2020-08-24;R2D2 2020 X1 Snabbguide.pdf
+dnr/5;;;Administrator;2016-06-08;0;Organ1;;;;;;;
+dnr/50;;;Administrator;2020-08-18;0;Testar tjänsteutlåtande;;;;;;;
+dnr/51;;;Tjänsteman af Fågelholk;2020-12-08;0;Testärende 2020 XYZ;;;;;;;
+dnr/52;;;Administrator;2021-04-16;0;testar mall;;;;;;;
+dnr/53;;;Piprökare Administrator;2021-05-18;0;Ärendemening;;;;;;;
+dnr/54;;;Administrator;2021-07-07;0;Tesutskottet;;;;;;;
+dnr/55;;;Administrator;2021-08-16;0;Testar efter databasflytt;0;1;Bokslut;;Test;2021-08-16;
+dnr/56;;;Administrator;2021-08-16;0;Tesutskottet;0;1;Återkommande;;Återkommande;2021-12-08;Återkommande.docx
+dnr/56;;;Administrator;2021-08-16;0;Tesutskottet;0;2;Återkommande;;Återkommande;2021-12-09;Återkommande.docx
+dnr/57;;;Piprökare Administrator;2021-08-16;0;Test av piprökare efter databas flytt;;;;;;;
+dnr/58;;;Piprökare Administrator;2021-09-01;0;ZYtestar efter uppgradering till 2021 X1;0;1;Exploatering;;Test efter uppgradering till 2021 X1;2021-09-01;R2D2 2021 X1 Användarmanual.pdf
+dnr/58;;;Piprökare Administrator;2021-09-01;0;ZYtestar efter uppgradering till 2021 X1;0;1;Exploatering;;Test efter uppgradering till 2021 X1;2021-09-01;R2D2 2021 X1 Användarmanual.pdf.pdf
+dnr/59;;;Annika Adminson;2021-09-01;0;Testar efter uppgraderingen;;;;;;;
+dnr/6;;;Administrator;2016-06-08;0;Organ1;;;;;;;
+dnr/60;;;Fantomen Byråkrat;2021-09-01;0;Nalles ärende;0;1;Dalandebeslut;;En annan handling;2021-09-01;Protokoll KSAU 2021-07-02.docx
+dnr/61;;;Tjänsteman af Fågelholk;2021-09-10;0;XYZ Testärende R2D2 2021 X1;;;;;;;
+dnr/62;;;Tjänsteman af Fågelholk;2021-09-10;0;Tesutskottet 2021-12-24 XYZ;0;1;Återkommande;;Återkommande;2021-09-10;Återkommande.docx
+dnr/62;;;Tjänsteman af Fågelholk;2021-09-10;0;Tesutskottet 2021-12-24 XYZ;0;2;Protokoll;;Antikvarisk;2021-09-10;Antikvarisk.docx
+dnr/62;;;Tjänsteman af Fågelholk;2021-09-10;0;Tesutskottet 2021-12-24 XYZ;0;3;Protokoll;;Antikvarisk;2021-09-10;Antikvarisk.docx
+dnr/63;;;Administrator;2021-09-15;0;Remiss;0;1;Remiss;;Tjosanhejsan Remiss;2021-09-15;Tjosanhejsan Remiss.docx
+dnr/63;;;Administrator;2021-09-15;0;Remiss;0;2;Remiss;;Remiss;2021-09-15;Tjosanhejsan Remiss.docx
+dnr/63;;;Administrator;2021-09-15;0;Remiss;0;2;Remiss;;Remiss;2021-09-15;meddelande.txt
+dnr/63;;;Administrator;2021-09-15;0;Remiss;0;3;Remiss;;Remiss;2021-09-15;Tjosanhejsan Remiss.docx
+dnr/63;;;Administrator;2021-09-15;0;Remiss;0;3;Remiss;;Remiss;2021-09-15;meddelande.txt
+dnr/63;;;Administrator;2021-09-15;0;Remiss;0;4;Remissvar;;Remiss;2021-09-15;Remissvar.docx
+dnr/63;;;Administrator;2021-09-15;0;Remiss;0;4;Remissvar;;Remiss;2021-09-15;meddelande.txt
+dnr/64;;;Administrator;2021-12-02;0;Test;0;1;Styrdokument;;Styrdokument;2021-12-02;
+dnr/65;;;Piprökare Administrator;2021-12-10;0;Tesutskottet dwadwa;;;;;;;
+dnr/66;;;Piprökare Administrator;2021-12-13;0;Tesutskottet testar beev;;;;;;;
+dnr/67;;;Piprökare Administrator;2021-12-13;0;testärende;0;1;Till möte;;Testmöte Pippi (2022-02-18);2022-02-09;
+dnr/67;;;Piprökare Administrator;2021-12-13;0;testärende;0;2;Beslut;;Testmöte Pippi (2022-02-18 TN §1);2022-02-10;Testmöte Pippi (2022-02-18 TN §1).docx
+dnr/68;;;Administrator;2021-12-17;0;Test av grodor;;;;;;;
+dnr/69;;;Annika Adminson;2021-12-17;0;Testar lite grodor;;;;;;;
+dnr/7;;;Pippi-Viktualia Tjänstemannason;2016-06-08;0;Organ1;;;;;;;
+dnr/70;;;Fantomen Byråkrat;2021-12-17;0;Testa nya grodor;;;;;;;
+dnr/71;;;Administrator;2022-02-08;0;Testar grodor;0;1;Tjosanhejsan;;Tjansteutlatande test av grodor;2022-02-08;Tjansteutlatande test av grodor.docx
+dnr/71;;;Administrator;2022-02-08;0;Testar grodor;0;2;Till möte;;Tesutskottet (2022-02-14);2022-02-08;
+dnr/71;;;Administrator;2022-02-08;0;Testar grodor;0;3;;;Avsändare/mottagare;2022-02-08;
+dnr/71;;;Administrator;2022-02-08;0;Testar grodor;0;4;Beslut;;Tesutskottet Valentin (2022-02-15 TN §2);2022-02-14;Tesutskottet Valentin (2022-02-15 TN §2).docx
+dnr/72;;;Administrator;2022-02-08;0;Tesutskottet;0;1;Återkommande;;Återkommande;2022-02-15;Återkommande.docx
+dnr/73;;;Administrator;2022-02-08;0;Testmöte Pippi;0;1;Återkommande;;Återkommande;2022-02-09;Återkommande.docx
+dnr/73;;;Administrator;2022-02-08;0;Testmöte Pippi;0;2;Återkommande;;Återkommande;2022-02-09;Återkommande.docx
+dnr/73;;;Administrator;2022-02-08;0;Testmöte Pippi;0;3;Protokoll;;Antikvarisk;2022-02-09;Antikvarisk.docx
+dnr/73;;;Administrator;2022-02-08;0;Testmöte Pippi;0;4;Återkommande;;Återkommande;2022-02-09;Återkommande.docx
+dnr/73;;;Administrator;2022-02-08;0;Testmöte Pippi;0;5;Protokoll;;Antikvarisk;2022-02-09;Antikvarisk.docx
+dnr/73;;;Administrator;2022-02-08;0;Testmöte Pippi;0;6;Protokoll;;Antikvarisk;2022-02-09;Antikvarisk.docx
+dnr/73;;;Administrator;2022-02-08;0;Testmöte Pippi;0;7;Återkommande;;Återkommande;2022-02-10;Återkommande.docx
+dnr/73;;;Administrator;2022-02-08;0;Testmöte Pippi;0;8;Återkommande;;Återkommande;2022-02-15;Återkommande.docx
+dnr/73;;;Administrator;2022-02-08;0;Testmöte Pippi;0;9;Återkommande;;Återkommande;2022-02-22;Återkommande.docx
+dnr/73;;;Administrator;2022-02-08;0;Testmöte Pippi;0;10;Protokoll;;Antikvarisk;2022-02-22;Antikvarisk.docx
+dnr/74;;;Stålmannen Sekreterarsson;2022-02-08;0;Boklärd;0;1;;;Avsändare/mottagare;2022-02-08;
+dnr/75;;;Administrator;2022-02-08;0;Ansökan om parkeringstillstånd;;;;;;;
+dnr/76;;;Administrator;2022-02-10;0;Tesutskottet;;;;;;;
+dnr/77;;;Administrator;2022-02-10;0;Upphandling av punktlighet;0;1;Tjosanhejsan;;Tjansteutlatande upphandling av punktlighet;2022-02-10;Tjansteutlatande upphandling av punktlighet.docx
+dnr/77;;;Administrator;2022-02-10;0;Upphandling av punktlighet;0;2;Till möte;;Tesutskottet (2022-02-25);2022-02-10;paragraf.txt
+dnr/78;;;Stålmannen Sekreterarsson;2022-02-10;0;Tesutskottet;0;1;Återkommande;;Återkommande;2022-02-10;Återkommande.docx
+dnr/79;;;Stålmannen Sekreterarsson;2022-02-10;0;Boklärd testar grodor 1;0;1;Dalandebeslut;;Tjansteutlatande SL;2022-02-10;Tjansteutlatande SL.docx
+dnr/79;;;Stålmannen Sekreterarsson;2022-02-10;0;Boklärd testar grodor 1;0;2;Granskningsutlåtande;;Ordforandebeslut SL;2022-02-10;Ordforandebeslut SL.docx
+dnr/79;;;Stålmannen Sekreterarsson;2022-02-10;0;Boklärd testar grodor 1;0;3;Granskningsyttrande;;Namndens_yttrande SL;2022-02-10;Namndens_yttrande SL.docx
+dnr/79;;;Stålmannen Sekreterarsson;2022-02-10;0;Boklärd testar grodor 1;0;4;Dalandebeslut;;Forvaltningens_yttrande SL;2022-02-10;Forvaltningens_yttrande SL.docx
+dnr/79;;;Stålmannen Sekreterarsson;2022-02-10;0;Boklärd testar grodor 1;0;5;Budget;;Dalandebeslut SL;2022-02-10;Dalandebeslut SL.docx
+dnr/8;;;Administrator;2017-01-23;0;Bara för test av Sekretess;1;1;;;Test;2017-01-23;Meddelandetext.txt
+dnr/80;2022-02-14;;Fantomen Byråkrat;2022-02-14;1;Testutskottet;0;1;Återkommande;;Återkommande;2022-02-14;Återkommande.docx
+dnr/80;2022-02-14;;Fantomen Byråkrat;2022-02-14;1;Testutskottet;0;2;Protokoll;;Antikvarisk;2022-02-14;Antikvarisk.docx
+dnr/80;2022-02-14;;Fantomen Byråkrat;2022-02-14;1;Testutskottet;0;3;Protokoll, omedelbar justering;;Protokoll § 1;2022-02-14;Protokoll § 1.docx
+dnr/81;;;Fantomen Byråkrat;2022-02-14;0;Nalles nya testärende med expedieringar;0;1;Dalandebeslut;;Dalandebeslut;2022-02-14;Dalandebeslut.docx
+dnr/81;;;Fantomen Byråkrat;2022-02-14;0;Nalles nya testärende med expedieringar;0;2;Tjosanhejsan;;Tjosanhejsan;2022-02-14;Tjansteutlatande.docx
+dnr/82;2022-02-15;;Spindelmannen Sakkunnigson;2022-02-14;0;Tesutskottet Valentin;0;1;Återkommande;;Återkommande;2022-02-14;Återkommande.docx
+dnr/82;2022-02-15;;Spindelmannen Sakkunnigson;2022-02-14;0;Tesutskottet Valentin;0;2;Protokoll;;Antikvarisk;2022-02-14;Antikvarisk.docx
+dnr/83;;;Fantomen Byråkrat;2022-02-16;0;Testutskottet AI;;;;;;;
+dnr/84;;;Fantomen Byråkrat;2022-02-25;0;Testutskottet Brasagatan;0;1;Återkommande;;Återkommande;2022-02-25;Återkommande.docx
+dnr/84;;;Fantomen Byråkrat;2022-02-25;0;Testutskottet Brasagatan;0;2;Protokoll;;Antikvarisk;2022-02-25;Antikvarisk.docx
+dnr/85;;;Spindelmannen Sakkunnigson;2022-02-25;0;Testa grodor 2;0;1;Beslut;;Tesutskottet 2022-02-28 grodor 2 (2022-02-28 TN §2);2022-02-25;Tesutskottet 2022-02-28 grodor 2 (2022-02-28 TN §2).docx
+dnr/86;;;Fantomen Byråkrat;2022-02-25;0;Nalles Skåneärende;0;1;Tjosanhejsan;;Tjosanhejsan;2022-02-25;Tjosanhejsan.docx
+dnr/86;;;Fantomen Byråkrat;2022-02-25;0;Nalles Skåneärende;0;2;Till möte;;Testutskottet 2022-06-13 (2022-06-13);2022-06-13;
+dnr/87;;;Spindelmannen Sakkunnigson;2022-02-25;0;Tesutskottet 2022-02-28 grodor 2;0;1;Återkommande;;Återkommande;2022-02-25;Återkommande.docx
+dnr/87;;;Spindelmannen Sakkunnigson;2022-02-25;0;Tesutskottet 2022-02-28 grodor 2;0;2;Protokoll;;Antikvarisk;2022-02-25;Antikvarisk.docx
+dnr/88;;;Administrator;2022-02-28;0;Testar engelska;;;;;;;
+dnr/89;;;Stålmannen Sekreterarsson;2022-03-01;0;Tesutskottet (test av anslag SL);0;1;Återkommande;;Återkommande;2022-03-01;Återkommande.docx
+dnr/9;;;Administrator;2017-01-28;0;Piprökare Test efter uppgradering;0;1;;;Ladda upp fil;2017-01-28;Protokoll 2015-12-14.pdf
+dnr/90;;;Administrator;2022-03-01;0;Styrdokument;0;1;Strategi;;Testar numrering;2022-03-01;10. Meetings Plus 9.0 - MDM Administration Manual.pdf
+dnr/91;;;Administrator;2022-03-01;0;Strategi;0;1;Strategi;;Strategi;2022-03-01;
+dnr/91;;;Administrator;2022-03-01;0;Strategi;0;2;Föreskrifter;;Föreskrifter;2022-03-07;
+dnr/92;;;Administrator;2022-03-03;0;Riktlinje;0;1;Strategi;;Riktlinje;2022-03-03;
+dnr/93;;;Fantomen Byråkrat;2022-03-30;0;Tesutskottet 30/3;;;;;;;
+dnr/94;;;Fantomen Byråkrat;2022-04-11;0;Tesutskottet 11 april;;;;;;;
+dnr/95;;;Fantomen Byråkrat;2022-04-11;0;Påsklovsärende;0;1;Tjosanhejsan;;Tjosanhejsan påsklovet;2022-04-11;Tjosanhejsan påsklovet.docx
+dnr/95;;;Fantomen Byråkrat;2022-04-11;0;Påsklovsärende;0;2;Dalandebeslut;;Dalandebeslut Brasagatan 4;2022-04-11;Dalandebeslut.docx
+dnr/96;;;Administrator;2022-04-11;0;Testar grodor igen 2022-04-11;0;1;;;Avsändare/mottagare;2022-04-11;
+dnr/97;;;Piprökare Administrator;2022-04-14;0;Test ärende piprökare;0;1;Till möte;;Piprökare testar (2022-07-13);2022-04-14;
+dnr/98;;;Piprökare Administrator;2022-04-14;0;Piprökare testar;0;1;Återkommande;;Återkommande;2022-05-01;Återkommande.docx
+dnr/98;;;Piprökare Administrator;2022-04-14;0;Piprökare testar;0;2;Återkommande;;Återkommande;2022-05-01;Återkommande.docx
+dnr/99;;;Administrator;2022-04-28;0;Testar gallring;;;;;;;
+dnr 2022/1;;;Administrator;2022-04-28;0;Testar gallring;0;1;Instruktion;;Brev att gallra nr 1;2022-04-28;
+dnr 2022/1;;;Administrator;2022-04-28;0;Testar gallring;0;2;Instruktion;;Brev att gallra nr 2;2022-04-28;
+dnr 2022/1;;;Administrator;2022-04-28;0;Testar gallring;0;3;Instruktion;;Brev att gallra nr 3;2022-04-28;
+dnr 2022/10;;;Spindelmannen Sakkunnigson;2022-06-02;0;Testärende 2 juni 2022;0;1;Beslut;;Tesutskottet 2022-08-10 (2022-08-10 TN §2);2022-06-02;Tesutskottet 2022-08-10 (2022-08-10 TN §2).docx
+dnr 2022/11;;;Stålmannen Sekreterarsson;2022-06-07;0;Tesutskottet 2022-06-15 (SL);0;1;Återkommande;;Återkommande;2022-06-07;Återkommande.docx
+dnr 2022/12;;;Stålmannen Sekreterarsson;2022-06-07;0;Testärende juni 2022;0;1;Föreskrifter;;Testhandling 1;2022-06-07;Återkommande VN 2022-06-09.docx
+dnr 2022/12;;;Stålmannen Sekreterarsson;2022-06-07;0;Testärende juni 2022;0;1;Föreskrifter;;Testhandling 1;2022-06-07;Återkommande VN 2022-06-09.pdf
+dnr 2022/12;;;Stålmannen Sekreterarsson;2022-06-07;0;Testärende juni 2022;0;1;Föreskrifter;;Testhandling 1;2022-06-07;Bestämmelser om omställningsstöd och pensionsförmåner för förtroendevalda.pdf
+dnr 2022/13;;;Fantomen Byråkrat;2022-06-13;0;Testutskottet 2022-06-13;0;1;Återkommande;;Återkommande;2022-06-13;Återkommande.docx
+dnr 2022/13;;;Fantomen Byråkrat;2022-06-13;0;Testutskottet 2022-06-13;0;2;Protokoll, omedelbar justering;;Protokoll § 2;2022-06-13;Protokoll § 2.docx
+dnr 2022/14;;;Fantomen Byråkrat;2022-06-13;0;Badajoz!;0;1;Beslut;;Testutskottet 2022-06-13 (2022-06-13 TN §2);2022-06-13;Testutskottet 2022-06-13 (2022-06-13 TN §2).docx
+dnr 2022/14;;;Fantomen Byråkrat;2022-06-13;0;Badajoz!;0;2;Beslut;;Testutskottet 2022-07-08 (2022-07-08 TN §3);2022-07-07;Testutskottet 2022-07-08 (2022-07-08 TN §3).docx
+dnr 2022/14;;;Fantomen Byråkrat;2022-06-13;0;Badajoz!;0;3;Beslut;;Testutskottet 2022-09-21 (2022-09-21 TN §2);2022-09-21;Testutskottet 2022-09-21 (2022-09-21 TN §2).docx
+dnr 2022/15;;;Spindelmannen Sakkunnigson;2022-06-29;0;Tesutskottet 2022-06-30;0;1;Återkommande;;Återkommande;2022-06-29;Återkommande.docx
+dnr 2022/16;;;Spindelmannen Sakkunnigson;2022-06-29;0;Tesutskottet;0;1;Återkommande;;Återkommande;2022-06-29;Återkommande.docx
+dnr 2022/17;;;Fantomen Byråkrat;2022-06-29;0;Ärende Nollberga C;;;;;;;
+dnr 2022/18;;;Fantomen Byråkrat;2022-06-29;0;Testutskottet Nollbergamötet;;;;;;;
+dnr 2022/19;;;Fantomen Byråkrat;2022-07-07;0;Lovisa;0;1;Beslut;;Testutskottet 2022-07-08 (2022-07-08 TN §2);2022-07-07;Testutskottet 2022-07-08 (2022-07-08 TN §2).docx
+dnr 2022/19;;;Fantomen Byråkrat;2022-07-07;0;Lovisa;0;2;Tjosanhejsan;;Tjosanhejsan Lovisa;2022-10-11;Tjosanhejsan Lovisa.docx
+dnr 2022/2;;;Administrator;2022-05-03;0;Föreningsbidrag 2022;0;1;Ansökan;;Ansökan 1;2022-05-03;Brev.docx
+dnr 2022/2;;;Administrator;2022-05-03;0;Föreningsbidrag 2022;0;2;Ansökan;;Ansökan 2;2022-05-03;Brev.docx
+dnr 2022/2;;;Administrator;2022-05-03;0;Föreningsbidrag 2022;0;3;Ansökan;;Ansökan 3;2022-05-03;Brev.docx
+dnr 2022/20;;;Fantomen Byråkrat;2022-07-07;0;Testutskottet 2022-07-08;0;1;Återkommande;;Återkommande;2022-07-07;Återkommande.docx
+dnr 2022/20;;;Fantomen Byråkrat;2022-07-07;0;Testutskottet 2022-07-08;0;2;;Handlingen <Antikvarisk> makulerades av Anna Ingemarsdotter MED ORSAK  2022-07-07 12:20;--- Makulerad ---;2022-07-07;
+dnr 2022/20;;;Fantomen Byråkrat;2022-07-07;0;Testutskottet 2022-07-08;0;3;Protokoll, omedelbar justering;;Protokoll § 2;2022-07-07;Protokoll § 2.docx
+dnr 2022/20;;;Fantomen Byråkrat;2022-07-07;0;Testutskottet 2022-07-08;0;4;Protokoll;;Antikvarisk;2022-07-07;Antikvarisk.docx
+dnr 2022/21;;;Spindelmannen Sakkunnigson;2022-07-07;0;Testärende 2022-07-11;;;;;;;
+dnr 2022/22;;;Spindelmannen Sakkunnigson;2022-07-11;0;Tesutskottet 12 juli;0;1;Återkommande;;Återkommande;2022-07-11;Återkommande.docx
+dnr 2022/23;;;Stålmannen Sekreterarsson;2022-07-13;0;Tesutskottet 2022-07-20;0;1;Återkommande;;Återkommande;2022-07-13;Återkommande.docx
+dnr 2022/24;;;Nyxon Admin;2022-08-19;0;Nyxontest 2;0;1;Återkommande;;Återkommande;2022-08-19;Återkommande.docx
+dnr 2022/24;;;Nyxon Admin;2022-08-19;0;Nyxontest 2;0;2;Protokoll;;Antikvarisk;2022-10-25;Antikvarisk.docx
+dnr 2022/24;;;Nyxon Admin;2022-08-19;0;Nyxontest 2;0;3;Protokoll;;Antikvarisk;2022-10-25;Antikvarisk.docx
+dnr 2022/25;;;Fantomen Byråkrat;2022-09-21;0;Testutskottet 2022-09-21;0;1;Återkommande;;Återkommande;2022-09-21;Återkommande.docx
+dnr 2022/26;;;Spindelmannen Sakkunnigson;2022-09-21;0;Tesutskottet 18;;;;;;;
+dnr 2022/27;;;Fantomen Byråkrat;2022-10-11;0;Testutskottet 2022-10-11;0;1;Återkommande;;Återkommande;2022-10-11;Återkommande.docx
+dnr 2022/27;;;Fantomen Byråkrat;2022-10-11;0;Testutskottet 2022-10-11;0;2;Återkommande;;Återkommande;2022-10-25;Återkommande.docx
+dnr 2022/28;2022-10-28;Hänvisning;Hulken von Bosboren;2022-10-28;1;Testar flera handlingar med flera bilagor i varje handling;0;1;Verksamhetsberättelse;;Handl 1: Testar flera handlingar med flera bilagor i varje handling;2022-10-28;testfil1_handling1.txt
+dnr 2022/28;2022-10-28;Hänvisning;Hulken von Bosboren;2022-10-28;1;Testar flera handlingar med flera bilagor i varje handling;0;1;Verksamhetsberättelse;;Handl 1: Testar flera handlingar med flera bilagor i varje handling;2022-10-28;testfil2_handling1.txt
+dnr 2022/28;2022-10-28;Hänvisning;Hulken von Bosboren;2022-10-28;1;Testar flera handlingar med flera bilagor i varje handling;0;1;Verksamhetsberättelse;;Handl 1: Testar flera handlingar med flera bilagor i varje handling;2022-10-28;testfil3_handling1.txt
+dnr 2022/28;2022-10-28;Hänvisning;Hulken von Bosboren;2022-10-28;1;Testar flera handlingar med flera bilagor i varje handling;0;1;Verksamhetsberättelse;;Handl 1: Testar flera handlingar med flera bilagor i varje handling;2022-10-28;testfil4_handling1.txt
+dnr 2022/28;2022-10-28;Hänvisning;Hulken von Bosboren;2022-10-28;1;Testar flera handlingar med flera bilagor i varje handling;0;1;Verksamhetsberättelse;;Handl 1: Testar flera handlingar med flera bilagor i varje handling;2022-10-28;testfil5_handling1.txt
+dnr 2022/28;2022-10-28;Hänvisning;Hulken von Bosboren;2022-10-28;1;Testar flera handlingar med flera bilagor i varje handling;0;2;Samrådshandling;;Handling 2: Testar flera handlingar med flera bilagor i varje handling;2022-10-28;testfil1_handling2.txt
+dnr 2022/28;2022-10-28;Hänvisning;Hulken von Bosboren;2022-10-28;1;Testar flera handlingar med flera bilagor i varje handling;0;2;Samrådshandling;;Handling 2: Testar flera handlingar med flera bilagor i varje handling;2022-10-28;testfil2_handling2.txt
+dnr 2022/28;2022-10-28;Hänvisning;Hulken von Bosboren;2022-10-28;1;Testar flera handlingar med flera bilagor i varje handling;0;2;Samrådshandling;;Handling 2: Testar flera handlingar med flera bilagor i varje handling;2022-10-28;testfil3_handling2.txt
+dnr 2022/28;2022-10-28;Hänvisning;Hulken von Bosboren;2022-10-28;1;Testar flera handlingar med flera bilagor i varje handling;0;2;Samrådshandling;;Handling 2: Testar flera handlingar med flera bilagor i varje handling;2022-10-28;testfil4_handling2.txt
+dnr 2022/28;2022-10-28;Hänvisning;Hulken von Bosboren;2022-10-28;1;Testar flera handlingar med flera bilagor i varje handling;0;2;Samrådshandling;;Handling 2: Testar flera handlingar med flera bilagor i varje handling;2022-10-28;testfil5_handling2.txt
+dnr 2022/29;;;Administrator;2022-12-06;0;Nytt ärende för test av arbetsdokument;;;;;;;
+dnr 2022/3;2022-05-11;hänvisning;Hulken von Bosboren;2022-05-11;1;Arkiveringsärende ärendemening;0;1;Beslut;ännu mer info;arkiveringshandling åtgärd/handl;2022-05-11;Remissvar_Formel_XY_KS2021_18.pdf
+dnr 2022/30;;;Fantomen Byråkrat;2022-12-06;0;Testutskottet 2022-12-06;;;;;;;
+dnr 2022/31;;;Fantomen Byråkrat;2022-12-06;0;Nalles ärende 2022-12-06;;;;;;;
+dnr 2022/32;;;Spindelmannen Sakkunnigson;2022-12-06;0;Test 2022-12-06;;;;;;;
+dnr 2022/33;;;Stålmannen Sekreterarsson;2022-12-07;0;Boklärd testar 2022-12-07;;;;;;;
+dnr 2022/4;;;Nyxon Admin;2022-05-25;0;Nyxon Testar;0;1;Återkommande;;Återkommande;2022-05-25;Återkommande.docx
+dnr 2022/5;2022-05-31;Hänvisning;Hulken von Bosboren;2022-05-31;1;testar div attribut;1;1;Ansökan;information 1;åtgärd handling rubrik;2022-05-31;
+dnr 2022/6;;;Administrator;2022-06-02;0;testar grodor 2022-06-02;;;;;;;
+dnr 2022/7;;;Fantomen Byråkrat;2022-06-02;0;Testutskottet 2022-06-02;0;1;Återkommande;;Återkommande;2022-06-02;Återkommande.docx
+dnr 2022/7;;;Fantomen Byråkrat;2022-06-02;0;Testutskottet 2022-06-02;0;2;Protokoll;;Antikvarisk;2022-06-02;Antikvarisk.docx
+dnr 2022/8;;;Fantomen Byråkrat;2022-06-02;0;Grodanboll student;0;1;Tjosanhejsan;;Tjosanhejsan Grodanboll student;2022-06-02;Tjosanhejsan Grodanboll student.docx
+dnr 2022/8;;;Fantomen Byråkrat;2022-06-02;0;Grodanboll student;0;2;Beslut;;Testutskottet 2022-06-02 (2022-06-02 TN §2);2022-06-03;Testutskottet 2022-06-02 (2022-06-02 TN §2).docx
+dnr 2022/8;;;Fantomen Byråkrat;2022-06-02;0;Grodanboll student;0;3;Till möte;;Testutskottet 2022-06-13 (2022-06-13);2022-06-13;
+dnr 2022/8;;;Fantomen Byråkrat;2022-06-02;0;Grodanboll student;0;4;Beslut;;Testutskottet 2022-07-08 (2022-07-08 TN §4);2022-07-07;Testutskottet 2022-07-08 (2022-07-08 TN §4).docx
+dnr 2022/9;;;Spindelmannen Sakkunnigson;2022-06-02;0;Tesutskottet 2022-08-10;0;1;Återkommande;;Återkommande;2022-06-02;Återkommande.docx
+dnr 2022/9;;;Spindelmannen Sakkunnigson;2022-06-02;0;Tesutskottet 2022-08-10;0;2;;Handlingen <Antikvarisk> makulerades av Brandman Adminsson MED ORSAK  2022-06-02 14:52;--- Makulerad ---;2022-06-02;
+dnr 2022/9;;;Spindelmannen Sakkunnigson;2022-06-02;0;Tesutskottet 2022-08-10;0;3;Protokoll;;Antikvarisk;2022-06-02;Antikvarisk.docx

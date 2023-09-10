@@ -8,7 +8,7 @@ import lxml.etree as et
 from lxml import etree
 import pandas as pd
 import shutil
-
+#import os.path
 
 # Funktion för att rensa alla input-fält
 def clearinput():
@@ -57,7 +57,7 @@ def buddywindow():
             releasenotesdoc.close()
             break
         if event == 'githublink':
-            webbrowser.open('https://github.com/Viktor-Lundberg/FGSBuddy')
+            webbrowser.open('https://github.com/s99mol/FGSBuddysbuddy')
 
 # Nuvarande version
 version = '0.0.1'
@@ -149,20 +149,26 @@ while True:
                 xsl = et.parse(xsltfile)
                 transform = et.XSLT(xsl)
                 result = transform(doc)
-                
+                result.write_output(xmlfile)
                 
                 #misslyckat försök att hantera problemet att det blir except-meddelande när outputfolder = cwd
-                current_directory = os.getcwd()
-                final_directory = os.path.join(current_directory, r'new_folder')
-                if not os.path.exists(final_directory):
-                    os.makedirs(final_directory)
-                result.write_output(xmlfile)
-                shutil.move(xmlfile, final_directory)
+                #current_directory = os.getcwd()
+                #final_directory = os.path.join(current_directory, r'new_folder')
+                #if not os.path.exists(final_directory):
+                    #os.makedirs(final_directory)
+                
+                #shutil.move(xmlfile, final_directory)
+
+                #testet visar att det inte finns ngn fil där, fast shutil är ändå inte nöjd, ger exception
+                #path = r''
+                #check_file = os.path.isfile(path)
+                #print(check_file)
+                #print(cwd)
                 
                 try:
                     shutil.move(xmlfile, outputfolder)
                     print(f'Metadatafil skapad i outputkatalog. Bra jobbat!')
-                except: print(f'Men finns redan en fil i outputfolder med samma namn. Radera/flytta den innan du skapar en ny.')
+                except: print(f'Det finns redan en fil i outputfolder med samma namn. Radera/flytta den innan du skapar en ny. Om outputkatalog är samma som programmets katalog beror detta meddelande på att det inte går att flytta en fil till en plats den redan befinner sig på.')
 
             # Hantering av xmlfil som input, med xmlschema
             elif values['inputfile'].endswith('.xml') and values['schemafile'] != '':
@@ -184,7 +190,7 @@ while True:
                 try:
                     shutil.move(xmlfile, outputfolder)
                     print(f'Metadatafil skapad i outputkatalog oavsett valid eller inte. Om filen inte är valid visas ett felmeddelande ovan.')
-                except: print(f'Det finns redan en fil i outputfolder med samma namn. Radera eller flytta den innan du skapar en ny.')
+                except: print(f'Det finns redan en fil i outputfolder med samma namn. Radera/flytta den innan du skapar en ny. Om outputkatalog är samma som programmets katalog beror detta meddelande på att det inte går att flytta en fil till en plats den redan befinner sig på.')
 
             # Hantering av csv som input, utan xmlschema
             elif values['schemafile'] == '' and values['inputfile'] != '' and values['xsltfile'] != '':
@@ -265,7 +271,7 @@ while True:
                 try:
                     shutil.move(xmlfile, outputfolder)
                     print(f'Metadatafil skapad i outputkatalog oavsett valid eller inte. Om filen inte är valid visas ett felmeddelande ovan.')
-                except: print(f'Det finns redan en fil i outputfolder med samma namn. Radera eller flytta den innan du skapar en ny.')
+                except: print(f'Det finns redan en fil i outputfolder med samma namn. Radera/flytta den innan du skapar en ny. Om outputkatalog är samma som programmets katalog beror detta meddelande på att det inte går att flytta en fil till en plats den redan befinner sig på.')
                 
         
         case 'clear':
