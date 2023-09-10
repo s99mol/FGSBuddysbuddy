@@ -9,7 +9,6 @@ from lxml import etree
 import pandas as pd
 import shutil
 
-#cwd = os.getcwd()
 
 # Funktion för att rensa alla input-fält
 def clearinput():
@@ -60,24 +59,14 @@ def buddywindow():
         if event == 'githublink':
             webbrowser.open('https://github.com/Viktor-Lundberg/FGSBuddy')
 
-# Funktion för att validera med xsd-schema
-#def validate(xml_path: str, xsd_path: str) -> bool:
-    #xmlschema_doc = etree.parse(xsd_path)
-    #xmlschema = etree.XMLSchema(xmlschema_doc)
-
-    #xml_doc = etree.parse(xml_path)
-    #result = xmlschema.validate(xml_doc)
-
-    #return result
-
 # Nuvarande version
 version = '0.0.1'
+
 # Current working directory
 cwd = os.getcwd()
 
 # Sätter färgtema
 sg.theme('greenMono') #LightGreen2 DarkBlue3 #reddit greenMono
-
 
 
 innehall = [  
@@ -136,7 +125,7 @@ while True:
         case sg.WIN_CLOSED:
             break
 
-        # Startar processen för att skapa FGS-paket om användaren trycker på "skapa paket"-knappen
+        # Startar processen för att skapa metadatafil om användaren trycker på "Skapa fil"-knappen
         case 'create_metadatafile':
             window.find_element('output').Update('')
             window.refresh()
@@ -160,7 +149,15 @@ while True:
                 xsl = et.parse(xsltfile)
                 transform = et.XSLT(xsl)
                 result = transform(doc)
+                
+                
+                #misslyckat försök att hantera problemet att det blir except-meddelande när outputfolder = cwd
+                current_directory = os.getcwd()
+                final_directory = os.path.join(current_directory, r'new_folder')
+                if not os.path.exists(final_directory):
+                    os.makedirs(final_directory)
                 result.write_output(xmlfile)
+                shutil.move(xmlfile, final_directory)
                 
                 try:
                     shutil.move(xmlfile, outputfolder)
@@ -197,52 +194,35 @@ while True:
                 time.sleep(0.3)
                 window.find_element('output').update('')
                 window.refresh()
-                #print(fgsPackage.output)
-                df=pd.read_csv(inputfile, sep = values['csvseparator'])
+                try:
+                    df=pd.read_csv(inputfile, sep = values['csvseparator'])
+
+                except Exception as e:
+                    sg.popup_error_with_traceback(f'Error! Sannolikt har du valt fel csv-separator. Fil kan kanske ändå skapas, men rådet är att välja rätt separator. Info:', e)
+
                 df = df.convert_dtypes()
-                df.to_xml(xmlfile)
-                doc = et.parse(xmlfile)
+                try:
+                    df.to_xml(xmlfile)
+                except Exception as e:
+                    sg.popup_error_with_traceback(f'Error! Sannolikt har du valt fel csv-separator. Fil kan kanske ändå skapas, men rådet är att välja rätt separator. Info:', e)
+                try:
+                    doc = et.parse(xmlfile)
+                except Exception as e:
+                    sg.popup_error_with_traceback(f'Error! Sannolikt har du valt fel csv-separator. Fil kan kanske ändå skapas, men rådet är att välja rätt separator. Info:', e)
                 xsl = et.parse(xsltfile)
                 transform = et.XSLT(xsl)
                 result = transform(doc)
                 result.write_output(xmlfile)
-                #print("The Current working directory is :", cwd)
-                #print(event, values[xsltfile], values[xsltfileB], values[outputfolder]) 
-                #outputfolder = r'C:\Users\marols\pythonskript\FGSBuddysbuddy\out'
                 
                 try:
                     shutil.move(xmlfile, outputfolder)
                     print(f'Metadatafil skapad i outputkatalog. Bra jobbat!')
                 except: print(f'Det finns redan en fil i outputfolder med samma namn. Radera eller flytta den innan du skapar en ny.')
-
-            #if values['submissionagreement'] == '' or values['system'] == '' or values['arkivbildare'] == '' or values['IDkod'] == '' or values['levererandeorganisation'] == '':
-                # Lägger till värden i dicten för att kunna visa användaren vilka värden som saknas
-                #forcedvaluesdict['System'] = values['system']
-                #forcedvaluesdict['Leveransöverenskommelse'] = values['submissionagreement']
-                #forcedvaluesdict['Arkivbildare'] = values['arkivbildare']
-                #forcedvaluesdict['Identitetskod'] = values['IDkod']
-                #forcedvaluesdict['Levererande organisation'] = values['levererandeorganisation']
-                # Loopar igenom dicten
-                #for k, v in forcedvaluesdict.items():
-                    # Returnerar de värden som saknas till användaren.
-                    #if v == '':
-                        #print(f'Fältet "{k}" saknar värde.')
                 
             # Hantering av csv som input, med xmlschema
             else:
                 print(f'Skapar metadatafil...')
                 window.refresh()
-                #fgsPackage = FGSfunc.FgsMaker(values)
-                #if values['folder'] == '':
-                    #folder = os.path.join(cwd)
-                #else:
-                    #folder = os.path.join(values['folder'])
-                #if values['outputfolder'] == '':
-                    #outputfolder = os.path.join(cwd)
-                #else:
-                    #outputfolder = os.path.join(values['outputfolder'])
-                #if values['subfolderstrue']:
-                    #subfolders = True
                 if values['inputfile'] != '':
                     inputfile = values['inputfile']
                 if values['xsltfile'] != '':
@@ -252,14 +232,27 @@ while True:
                 time.sleep(0.3)
                 window.find_element('output').update('')
                 window.refresh()
-                df=pd.read_csv(inputfile, sep = values['csvseparator'])
+
+                try:
+                    df=pd.read_csv(inputfile, sep = values['csvseparator'])
+
+                except Exception as e:
+                    sg.popup_error_with_traceback(f'Error! Sannolikt har du valt fel csv-separator. Fil kan kanske ändå skapas, men rådet är att välja rätt separator. Info:', e)
+
                 df = df.convert_dtypes()
-                df.to_xml(xmlfile)
-                doc = et.parse(xmlfile)
+                try:
+                    df.to_xml(xmlfile)
+                except Exception as e:
+                    sg.popup_error_with_traceback(f'Error! Sannolikt har du valt fel csv-separator. Fil kan kanske ändå skapas, men rådet är att välja rätt separator. Info:', e)
+                try:
+                    doc = et.parse(xmlfile)
+                except Exception as e:
+                    sg.popup_error_with_traceback(f'Error! Sannolikt har du valt fel csv-separator. Fil kan kanske ändå skapas, men rådet är att välja rätt separator. Info:', e)
                 xsl = et.parse(xsltfile)
                 transform = et.XSLT(xsl)
                 result = transform(doc)
                 result.write_output(xmlfile)
+                
                 #lösningen tillåter inte att man skriver över fil
                 try:
                     xmlschemadoc=etree.parse(schemafile)
