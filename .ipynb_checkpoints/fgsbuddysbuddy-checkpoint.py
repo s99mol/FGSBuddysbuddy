@@ -9,6 +9,7 @@ from lxml import etree
 import pandas as pd
 import shutil
 #import os.path
+from pathlib import Path
 
 # Funktion för att rensa alla input-fält
 def clearinput():
@@ -39,7 +40,8 @@ def buddywindow():
         [sg.Text('FGS-Buddysbuddy', font='Arial 12 bold', size=30)],
         [sg.Text(f'Version: {version}\nSkapad av: Martin Olsson\nLicens: Attribution-NonCommercial 4.0 International (CC BY-NC 4.0)', font='Consolas 10')],
         [sg.Text('Baserad på: Viktor Lundbergs FGS-Buddy v. 1.1.0', font='Consolas 10')],
-        [sg.Text('FGS-Buddy på github', font='Consolas 10 underline', text_color='blue', enable_events=True, key='githublink')],
+        [sg.Text('FGS-Buddysbuddy på github', font='Consolas 10 underline', text_color='blue', enable_events=True, key='githublink')],
+        [sg.Text('FGS-Buddy på github', font='Consolas 10 underline', text_color='blue', enable_events=True, key='githublink2')],
         [sg.Text('', font='Arial 12 bold', size=30)],
         [sg.Text('Release notes', font='Arial 10 bold', size=30)],
         [sg.Text(releasenotes, font='Consolas 8')],
@@ -56,14 +58,19 @@ def buddywindow():
             about.close()
             releasenotesdoc.close()
             break
-        if event == 'githublink':
+        elif event == 'githublink':
             webbrowser.open('https://github.com/s99mol/FGSBuddysbuddy')
+        elif event == 'githublink2':
+            webbrowser.open('https://github.com/Viktor-Lundberg/FGSBuddy')
 
 # Nuvarande version
 version = '0.0.1'
 
 # Current working directory
 cwd = os.getcwd()
+
+# hemfoldern
+home = Path.home()
 
 # Sätter färgtema
 sg.theme('greenMono') #LightGreen2 DarkBlue3 #reddit greenMono
@@ -106,7 +113,7 @@ layout = [
     [sg.Column(innehall, vertical_alignment='top')],
     [sg.Text('')],
     [sg.Output(size=(165,5), key='output', pad=5, background_color=	'pink', echo_stdout_stderr=True)],
-    [sg.Text('Outputkatalog'),sg.Input(default_text=cwd, tooltip="Välj katalog", size=65, key='outputfolderinput'), sg.FolderBrowse('Välj katalog',key='outputfolder', initial_folder=os.path.join(cwd)),sg.Submit('Skapa fil', key='create_metadatafile', size=15,button_color='black on pink'), sg.Button('Rensa', key='clear', size=15)],
+    [sg.Text('Outputkatalog'),sg.Input(default_text=home, tooltip="Välj katalog", size=65, key='outputfolderinput'), sg.FolderBrowse('Välj katalog', key='outputfolder', initial_folder=Path.home()),sg.Submit('Skapa fil', key='create_metadatafile', size=15,button_color='black on pink'), sg.Button('Rensa', key='clear', size=15)],
     
     ]
 
@@ -150,14 +157,6 @@ while True:
                 transform = et.XSLT(xsl)
                 result = transform(doc)
                 result.write_output(xmlfile)
-                
-                #misslyckat försök att hantera problemet att det blir except-meddelande när outputfolder = cwd
-                #current_directory = os.getcwd()
-                #final_directory = os.path.join(current_directory, r'new_folder')
-                #if not os.path.exists(final_directory):
-                    #os.makedirs(final_directory)
-                
-                #shutil.move(xmlfile, final_directory)
 
                 #testet visar att det inte finns ngn fil där, fast shutil är ändå inte nöjd, ger exception
                 #path = r''
@@ -168,7 +167,18 @@ while True:
                 try:
                     shutil.move(xmlfile, outputfolder)
                     print(f'Metadatafil skapad i outputkatalog. Bra jobbat!')
-                except: print(f'Det finns redan en fil i outputfolder med samma namn. Radera/flytta den innan du skapar en ny. Om outputkatalog är samma som programmets katalog beror detta meddelande på att det inte går att flytta en fil till en plats den redan befinner sig på.')
+                except Exception as e:
+                    sg.popup_error_with_traceback(f'Error! Sannolikt har du valt fel csv-separator. Fil kan kanske ändå skapas, men rådet är att välja rätt separator. Info:', e)
+                #except: print(f'Det finns redan en fil i outputfolder med samma namn. Radera/flytta den innan du skapar en ny. Om outputkatalog är samma som programmets katalog beror detta meddelande på att det inte går att flytta en fil till en plats den redan befinner sig på.')
+                #except:
+                    #felbeteende: när jag kör med default homepath får jag medd "no such file or directory" och filen flyttas inte. När jag aktivt anger home funkar det. Fråga: Hur anger man korrekt home?
+                    #misslyckat försök att hantera problemet att det blir except-meddelande när outputfolder = cwd
+                    #current_directory = os.getcwd()
+                    #final_directory = os.path.join(current_directory, r'new_folder')
+                    #if not os.path.exists(final_directory):
+                        #os.makedirs(final_directory)
+                    #shutil.move(xmlfile, final_directory)
+                    #shutil.move(xmlfile, os.path.join(cwd))
 
             # Hantering av xmlfil som input, med xmlschema
             elif values['inputfile'].endswith('.xml') and values['schemafile'] != '':
