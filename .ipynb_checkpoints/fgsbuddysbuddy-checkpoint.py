@@ -113,7 +113,7 @@ layout = [
     [sg.Column(innehall, vertical_alignment='top')],
     [sg.Text('')],
     [sg.Output(size=(165,5), key='output', pad=5, background_color=	'pink', echo_stdout_stderr=True)],
-    [sg.Text('Outputkatalog'),sg.Input(default_text=home, tooltip="Välj katalog", size=65, key='outputfolderinput'), sg.FolderBrowse('Välj katalog', key='outputfolder', initial_folder=Path.home()),sg.Submit('Skapa fil', key='create_metadatafile', size=15,button_color='black on pink'), sg.Button('Rensa', key='clear', size=15)],
+    [sg.Text('Outputkatalog'),sg.Input(default_text=home, tooltip="Välj katalog", size=65, key='outputfolder'), sg.FolderBrowse('Välj katalog', key='initialoutputfolder', initial_folder=Path.home()), sg.Submit('Skapa fil', key='create_metadatafile', size=15,button_color='black on pink'), sg.Button('Rensa', key='clear', size=15)],
     
     ]
 
@@ -167,9 +167,9 @@ while True:
                 try:
                     shutil.move(xmlfile, outputfolder)
                     print(f'Metadatafil skapad i outputkatalog. Bra jobbat!')
-                except Exception as e:
-                    sg.popup_error_with_traceback(f'Error! Sannolikt har du valt fel csv-separator. Fil kan kanske ändå skapas, men rådet är att välja rätt separator. Info:', e)
-                #except: print(f'Det finns redan en fil i outputfolder med samma namn. Radera/flytta den innan du skapar en ny. Om outputkatalog är samma som programmets katalog beror detta meddelande på att det inte går att flytta en fil till en plats den redan befinner sig på.')
+                #except Exception as e:
+                    sg.popup_error_with_traceback(f'Error! Info:', e)
+                except: print(f'Det finns redan en fil i outputfolder med samma namn. Radera/flytta den innan du skapar en ny. Om outputkatalog är samma som programmets katalog beror detta meddelande på att det inte går att flytta en fil till en plats den redan befinner sig på.')
                 #except:
                     #felbeteende: när jag kör med default homepath får jag medd "no such file or directory" och filen flyttas inte. När jag aktivt anger home funkar det. Fråga: Hur anger man korrekt home?
                     #misslyckat försök att hantera problemet att det blir except-meddelande när outputfolder = cwd

@@ -1,1 +1,1 @@
-Version 0.0.1* Baserad på FGS-Buddy 1.1.0Kända fel:* Om du skapar fil i defaultoutputkatalogen får du meddelandet att fil redan finns där.Att göra:* statistik från pandas* xslt-omat
+Version 0.0.1* Baserad på FGS-Buddy 1.1.0Kända fel:* Om du väljer den katalog där programmet körs som outputkatalog får du meddelandet att fil redan finns där.Att göra:* statistik från pandas* xslt-omat
