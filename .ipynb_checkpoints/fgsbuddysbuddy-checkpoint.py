@@ -163,16 +163,18 @@ while True:
                 #check_file = os.path.isfile(path)
                 #print(check_file)
                 #print(cwd)
-                
-                try:
-                    shutil.move(xmlfile, outputfolder)
-                    print(f'Metadatafil skapad i outputkatalog. Bra jobbat!')
-                #except Exception as e:
-                    sg.popup_error_with_traceback(f'Error! Info:', e)
-                except: print(f'Det finns redan en fil i outputfolder med samma namn. Radera/flytta den innan du skapar en ny. Om outputkatalog är samma som programmets katalog beror detta meddelande på att det inte går att flytta en fil till en plats den redan befinner sig på.')
-                #except:
-                    #felbeteende: när jag kör med default homepath får jag medd "no such file or directory" och filen flyttas inte. När jag aktivt anger home funkar det. Fråga: Hur anger man korrekt home?
-                    #misslyckat försök att hantera problemet att det blir except-meddelande när outputfolder = cwd
+                if (os.path.normpath(outputfolder)) == cwd:
+                    print(f'Grattis! Metadatafilen är nu skapad i outputkatalogen.')
+                    #print(Path(cwd))
+                    #print(os.path.normpath(cwd))
+                    print(os.path.normpath(outputfolder))
+                else:
+                    print (f'Flyttar till outputkatalogen...')
+                    try:
+                        shutil.move(xmlfile, outputfolder)
+                        print(f'Metadatafil skapad i outputkatalog. Bra jobbat!')
+                    except Exception as e:
+                        sg.popup_error_with_traceback(f'Det finns redan en fil med samma namn i outputkatalogen. Flytta/radera den och försök igen.', e)
                     #current_directory = os.getcwd()
                     #final_directory = os.path.join(current_directory, r'new_folder')
                     #if not os.path.exists(final_directory):
