@@ -77,20 +77,20 @@ sg.theme('greenMono') #LightGreen2 DarkBlue3 #reddit greenMono
 
 
 innehall = [  
-    [sg.Text('Skapa och validera metadatafil (xml) från xml eller semikolonseparerad csv med rubriker', font='Arial 12 bold', size=70)],
+    [sg.Text('Skapa och validera metadatafil (xml) från xml eller semikolonseparerad csv med rubriker', font='Arial 12 bold', size=75)],
     [sg.Text('Med denna metadataomat, ett komplement till FGS Buddy (länk i Hjälp-menyn) kan du skapa en metadatafil som valideras mot ett xsd-schema.')],
     [sg.Text('Utgå antingen från en semikolonseparerad csv-fil med rubriker eller en xml-fil.')],
     [sg.Text('Mappningen från input till metadatafil sker i den xslt-fil som ingår och som du kan kopiera och modiera efter behov.')],
     [sg.Text('')],
-    [sg.Text('Sökväg till inputfil:*')],
-    [sg.Input(tooltip="Välj inputfil", key='inputfile'), sg.FileBrowse('Välj fil', key="inputfileB", initial_folder=os.path.join(cwd) ), sg.Combo([';', ',', ':', '.', '|', 'tab', 'space'], default_value=';', key='csvseparator'), sg.Text ('Csv- eller xml-fil med metadatat du vill transformera.\nVälj filens separator om annan än semikolon (;)')],
-    [sg.Text('Sökväg till xsltfil:*')],
+    [sg.Text('Sökväg till inputfil (metadatat att utgå ifrån, .csv el. .xml):*', size=50), sg.Text('Csv-separator:'), sg.Text('Funktionsval:')],
+    [sg.Input(tooltip="Välj inputfil", key='inputfile'), sg.FileBrowse('Välj fil', key="inputfileB", initial_folder=os.path.join(cwd) ), sg.Combo([';', ',', ':', '.', '|', '\t', ' '], default_value=';', key='csvseparator'), sg.Combo(['Skapa xml-metadatafil', 'Enbart xml-validering', 'Xml till csv'], default_value='Skapa metadatafil', key='-FUNCTION_CHOOSER-')],
+    [sg.Text('Sökväg till xsltfil:')],
     [sg.Input(tooltip="Välj xslt", key='xsltfile'), sg.FileBrowse('Välj fil', key="xsltfileB", initial_folder=os.path.join(cwd) ), sg.Text ('För att transformera din input.')],
     [sg.Text('Sökväg till schemafil:')],
     [sg.Input(tooltip="Välj schemafil", key='schemafile'), sg.FileBrowse('Välj fil', key="schemafileB", initial_folder=os.path.join(cwd) ), sg.Text ('Använd om du vill validera den skapade metadatafilen.')],
-    [sg.Text('Döp din outputfil:*', tooltip='Välj filnamn på outputfilen')],
-    [sg.Input(key='filename',size=45, tooltip='Välj filnamn på outputfilen', default_text='metadata'), sg.Combo(['.xml'], default_value='.xml', key='filesuffix'), sg.Text ('Använd default eller välj ett eget namn. Filsuffix läggs till per automagi.\nFilnamnet får inte finnas redan i outputkatalogen.')],
-
+    [sg.Text('Döp din outputfil:', tooltip='Välj filnamn på outputfilen')],
+    [sg.Input(key='filename',size=45, tooltip='Välj filnamn på outputfilen', default_text='metadata'), sg.Combo(['.xml', '.csv'], default_value='.xml', key='filesuffix'), sg.Text ('Använd default eller välj ett eget namn. Filsuffix läggs till per automagi.\nERROR-hantering om filnamnet redan finns i berörda kataloger.')],
+#sg.Radio('Ja', 'validationready', default=False, key='-READY_FOR_VALIDATION-'), sg.Radio('Nej', 'validationready', default=True, key='-NOT_READY_FOR_VALIDATION-'
     ]
 
 space = [
@@ -113,7 +113,7 @@ layout = [
     [sg.Column(innehall, vertical_alignment='top')],
     [sg.Text('')],
     [sg.Output(size=(165,5), key='output', pad=5, background_color=	'pink', echo_stdout_stderr=True)],
-    [sg.Text('Outputkatalog'),sg.Input(default_text=home, tooltip="Välj katalog", size=65, key='outputfolder'), sg.FolderBrowse('Välj katalog', key='initialoutputfolder', initial_folder=Path.home()), sg.Submit('Skapa fil', key='create_metadatafile', size=15,button_color='black on pink'), sg.Button('Rensa', key='clear', size=15)],
+    [sg.Text('Outputkatalog'),sg.Input(default_text=home, tooltip="Välj katalog", size=65, key='outputfolder'), sg.FolderBrowse('Välj katalog', key='initialoutputfolder', initial_folder=Path.home()), sg.Submit('Skapa/validera fil', key='create_metadatafile', size=15,button_color='black on pink'), sg.Button('Rensa', key='clear', size=15)],
     
     ]
 
@@ -132,7 +132,7 @@ while True:
         case sg.WIN_CLOSED:
             break
 
-        # Startar processen för att skapa metadatafil om användaren trycker på "Skapa fil"-knappen
+        # Startar processen för att skapa metadatafil och/el validera om användaren trycker på "Skapa fil/validera"-knappen
         case 'create_metadatafile':
             window.find_element('output').Update('')
             window.refresh()
@@ -143,12 +143,33 @@ while True:
             filename = values['filename']
             filesuffix = values['filesuffix']
             xmlfile = filename+filesuffix
+            #csvfile = filename+filesuffix
 
             # Kontrollerar att inputfil och xsltfil finns och om schemafil är tom skapa metadatafil utan att validera.    
             if values['inputfile'] == '':
                 print(f'Du måste välja en inputfil!')
+            # Hantering när funktionsväljaren är vald till enbart validera.
+            elif values['inputfile'] != '' and values['-FUNCTION_CHOOSER-'] == 'Enbart xml-validering' and values['schemafile'] != '':
+                print(f'Validerar inputfil {inputfile}... den flyttar inte på sig eller byter namn utan ligger kvar där du lade den, i sitt ursprungliga skick.')
+                try:
+                    xmlschemadoc=etree.parse(schemafile)
+                    xmlschema=etree.XMLSchema(xmlschemadoc)
+                    xmldoc=etree.parse(inputfile)
+                    xmlschema.assertValid(xmldoc)
+                    print(f'Valid mot {schemafile}. Bra jobbat!')
+                except Exception as e: print(e)
+                
+            # Hantering när funktionsväljaren är vald till csv till xml-konvertering. Återstår fixa export av allt, knyta till outputfolder, välja separator, populera defaultvärden, tillåta namespace.
+            elif values['inputfile'] != '' and values['-FUNCTION_CHOOSER-'] == 'Xml till csv':
+                try:
+                    df = pd.read_xml(inputfile, xpath='.//ArkivobjektArende')
+                    outputfile = 'outputfile.csv'
+                    df.to_csv(outputfile, sep=';')
+                    print(f'Filen {outputfile} ligger i programmets katalog {cwd}. Det som exporterades var ArkivobjektArende. Detta är bara på experimentstadiet hittills.')
+                except Exception as e: print(e)
+            
             elif values['xsltfile'] == '':
-                print(f'Du måste välja en xsltfil!')
+                print(f'Du måste välja en xsltfil (eller en schemafil om det är så att du bara vill validera xml, fixar separat exception senare)!')
              
             # Hantering av xmlfil som input, utan xmlschema
             elif values['inputfile'].endswith('.xml') and values['schemafile'] == '':
@@ -156,25 +177,33 @@ while True:
                 xsl = et.parse(xsltfile)
                 transform = et.XSLT(xsl)
                 result = transform(doc)
-                result.write_output(xmlfile)
+                
+                #om det redan finns en likadan fil i outputfolder ska den inte skrivas över, if true = print... if false... result.write
+                if os.path.exists(os.path.join(os.getcwd(), xmlfile)) == True:
+                    print(f'ERROR: Det finns en fil med samma namn som det du döpt din fil till i programmets katalog {cwd}. Ta bort den eller döp om din outputfil.')
+                else:
+                    print (f'Fil existerar inte och kan därför skapas i {cwd}...')
+                    result.write_output(xmlfile)
 
                 #testet visar att det inte finns ngn fil där, fast shutil är ändå inte nöjd, ger exception
                 #path = r''
                 #check_file = os.path.isfile(path)
                 #print(check_file)
                 #print(cwd)
-                if (os.path.normpath(outputfolder)) == cwd:
-                    print(f'Grattis! Metadatafilen är nu skapad i outputkatalogen.')
-                    #print(Path(cwd))
-                    #print(os.path.normpath(cwd))
-                    print(os.path.normpath(outputfolder))
-                else:
-                    print (f'Flyttar till outputkatalogen...')
-                    try:
-                        shutil.move(xmlfile, outputfolder)
-                        print(f'Metadatafil skapad i outputkatalog. Bra jobbat!')
-                    except Exception as e:
-                        sg.popup_error_with_traceback(f'Det finns redan en fil med samma namn i outputkatalogen. Flytta/radera den och försök igen.', e)
+                
+                    if (os.path.normpath(outputfolder)) == cwd:
+                        print(f'Grattis! Metadatafil skapad i outputkatalog {cwd}.')
+                        #print(Path(cwd))
+                        #print(os.path.normpath(cwd))
+                        #print(os.path.normpath(outputfolder))
+                    
+                    else:
+                        print (f'Flyttar till outputkatalogen...')
+                        try:
+                            shutil.move(xmlfile, outputfolder)
+                            print(f'Metadatafil skapad i outputkatalog {outputfolder}. Bra jobbat!')
+                        except:
+                            print(f'ERROR: Det finns redan en fil med samma namn i outputkatalogen {outputfolder}. Flytta eller radera den eller döp om din outputfil, och försök igen.')
                     #current_directory = os.getcwd()
                     #final_directory = os.path.join(current_directory, r'new_folder')
                     #if not os.path.exists(final_directory):
