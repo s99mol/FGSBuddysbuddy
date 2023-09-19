@@ -28,10 +28,12 @@ En apparat som förvandlar csv eller xml till xml enligt ett givet xml-schema. D
 ## Ideas :star:
 * Analys av csv/xml
 * Editering av xslt
+* schematron or that kind of xslt in editing-GUI
 * Utveckla xml till csv
 * Mer exceptionhantering
 * Ta fram .exe-fil för Windows
 * Ta fram .dmg-fil för Mac
+* Language-files
 
 
 ---

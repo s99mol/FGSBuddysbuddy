@@ -1,1 +1,22 @@
-Version 0.0.1* Baserad på FGS-Buddy 1.1.0
+Version 0.0.1* A proof of concept based on FGS-Buddy 1.1.0 / POC baserad på FGS-Buddy 1.1.0
+
+Version 0.1.0
+* First tested version. / Första strukturellt testade versionen.
+
+Testcase v. 0.1.0
+Testdata from folder Testdata (https://github.com/s99mol/FGSBuddysbuddy/tree/master/Testdata)
+- GUI loads in Python v3.10.0 (Mac OS Ventura 13.5.2, M1): OK
+- Error message no inputfile: OK
+- Error message no xsltfile: OK
+- Error message when no schemafile when inputfile outputmetadata.xml and chooser 'Enbart xml-validering': OK
+- Inputfile: outputmetadata.xml with no errors, schemafile, chooser 'Enbart xml-validering': OK
+- Inputfile: outputmetadata_error.xml (with error), schemafile, chooser 'Enbart xml-validering': OK
+- As above but no schemafile, should give error: OK
+- "Rensa" cleans inputfields and goes back to default for combolists: OK
+- funktionchooser 'Xml till csv (experimental)': OK (funkar ej med namespace)
+- xmlinput, no schemafile: create in cwd and home, errorwarning when already exists: OK
+- xmlinput, with schemafile (with/without error): create in cwd and home, errorwarning when already exists: OK
+
+- csvinput, no schemafile:
+- csvinput, with schemafile (with/without error):
+

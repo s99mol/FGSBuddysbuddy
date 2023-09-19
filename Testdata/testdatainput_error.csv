@@ -37,9 +37,9 @@ dnr/2;;;Administrator;2016-05-18;0;Testärende för rosa knappen;;;;;;;
 dnr/20;;;Pippi-Viktualia Tjänstemannason;2018-07-10;0;Nytt ärende;;;;;;;
 dnr/21;;;Pippi-Viktualia Tjänstemannason;2018-07-10;0;Test av ärendetyp och diariebtkn;;;;;;;
 dnr/22;;;Pippi-Viktualia Tjänstemannason;2018-07-10;0;Nytt ärende;;;;;;;
-dnr/23;;;Annika Adminson;2018-07-11;0;Testar handlingsstatus för dalandebeslut;0;1;Dalandebeslut;;Dalandebeslut - Tillsättning av tillsättning;2018-07-11;
-dnr/23;;;Annika Adminson;2018-07-11;0;Testar handlingsstatus för dalandebeslut;0;2;;;Utbildingsmaterial_for_Slutgiltig.pptx;2018-07-13;Utbildingsmaterial_for_Slutgiltig.pptx
-dnr/23;;;Annika Adminson;2018-07-11;0;Testar handlingsstatus för dalandebeslut;0;3;;;Utbildingsmaterial_for_Slutgiltig.pptx;2018-07-13;Utbildingsmaterial_for_Slutgiltig.pptx
+dnr/23;;;Smurf Adminson;2018-07-11;0;Testar handlingsstatus för dalandebeslut;0;1;Dalandebeslut;;Dalandebeslut - Tillsättning av tillsättning;2018-07-11;
+dnr/23;;;Smurf Adminson;2018-07-11;0;Testar handlingsstatus för dalandebeslut;0;2;;;Utbildingsmaterial_for_Slutgiltig.pptx;2018-07-13;Utbildingsmaterial_for_Slutgiltig.pptx
+dnr/23;;;Smurf Adminson;2018-07-11;0;Testar handlingsstatus för dalandebeslut;0;3;;;Utbildingsmaterial_for_Slutgiltig.pptx;2018-07-13;Utbildingsmaterial_for_Slutgiltig.pptx
 dnr/24;2022-10-28;;Pippi-Viktualia Tjänstemannason;2018-08-28;1;test av..;0;1;Dalandebeslut;;Dalandebeslut;2018-09-18;Dalandebeslut.docx
 dnr/25;;;Pippi-Viktualia Tjänstemannason;2018-09-19;0;Testärende;;;;;;;
 dnr/26;;;Pippi-Viktualia Tjänstemannason;2018-10-09;0;Nytt ärende;;;;;;;
@@ -51,12 +51,12 @@ dnr/30;;;Pippi-Viktualia Tjänstemannason;2018-10-09;0;Nytt ärende;;;;;;;
 dnr/31;;;Pippi-Viktualia Tjänstemannason;2018-10-09;0;Nytt ärende;;;;;;;
 dnr/32;;;Pippi-Viktualia Tjänstemannason;2018-10-09;0;Nytt ärende;;;;;;;
 dnr/33;;;Pippi-Viktualia Tjänstemannason;2018-10-09;0;Nytt ärende;;;;;;;
-dnr/34;;;Annika Adminson;2018-10-11;0;Nytt ärende;;;;;;;
-dnr/35;;;Annika Adminson;2018-10-16;0;Nytt ärende;;;;;;;
-dnr/36;;;Annika Adminson;2018-10-16;0;Nytt ärende;;;;;;;
-dnr/37;;;Annika Adminson;2018-10-16;0;testar dra och släpp fil;0;1;Dalandebeslut;;Lönedatum för Truman;2019-03-21;Lönedatum 2019 Truman.pdf
-dnr/38;;;Annika Adminson;2018-10-16;0;Nytt ärende;;;;;;;
-dnr/39;;;Annika Adminson;2018-10-16;0;Nytt ärende;0;1;Dalandebeslut;;Dalandebeslut;2018-10-18;Dalandebeslut.docx
+dnr/34;;;Smurf Adminson;2018-10-11;0;Nytt ärende;;;;;;;
+dnr/35;;;Smurf Adminson;2018-10-16;0;Nytt ärende;;;;;;;
+dnr/36;;;Smurf Adminson;2018-10-16;0;Nytt ärende;;;;;;;
+dnr/37;;;Smurf Adminson;2018-10-16;0;testar dra och släpp fil;0;1;Dalandebeslut;;Lönedatum för Truman;2019-03-21;Lönedatum 2019 Truman.pdf
+dnr/38;;;Smurf Adminson;2018-10-16;0;Nytt ärende;;;;;;;
+dnr/39;;;Smurf Adminson;2018-10-16;0;Nytt ärende;0;1;Dalandebeslut;;Dalandebeslut;2018-10-18;Dalandebeslut.docx
 dnr/4;;;Pippi-Viktualia Tjänstemannason;2016-06-08;0;Organ1;;;;;;;
 dnr/40;;;Pippi-Viktualia Tjänstemannason;2019-02-21;0;Nytt ärende;;;;;;;
 dnr/41;;;Administrator;2019-11-05;0;Testar stämpling;0;1;Dalandebeslut;;Manual;2019-11-05;R2D2 Directorysync 1.1 Installation och konfiguration.pdf
@@ -92,7 +92,7 @@ dnr/56;;;Administrator;2021-08-16;0;Tesutskottet;0;2;Återkommande;;Återkommand
 dnr/57;;;Piprökare Administrator;2021-08-16;0;Test av piprökare efter databas flytt;;;;;;;
 dnr/58;;;Piprökare Administrator;2021-09-01;0;ZYtestar efter uppgradering till 2021 X1;0;1;Exploatering;;Test efter uppgradering till 2021 X1;2021-09-01;R2D2 2021 X1 Användarmanual.pdf
 dnr/58;;;Piprökare Administrator;2021-09-01;0;ZYtestar efter uppgradering till 2021 X1;0;1;Exploatering;;Test efter uppgradering till 2021 X1;2021-09-01;R2D2 2021 X1 Användarmanual.pdf.pdf
-dnr/59;;;Annika Adminson;2021-09-01;0;Testar efter uppgraderingen;;;;;;;
+dnr/59;;;Smurf Adminson;2021-09-01;0;Testar efter uppgraderingen;;;;;;;
 dnr/6;;;Administrator;2016-06-08;0;Organ1;;;;;;;
 dnr/60;;;Fantomen Byråkrat;2021-09-01;0;Nalles ärende;0;1;Dalandebeslut;;En annan handling;2021-09-01;Protokoll KSAU 2021-07-02.docx
 dnr/61;;;Tjänsteman af Fågelholk;2021-09-10;0;XYZ Testärende R2D2 2021 X1;;;;;;;
@@ -112,7 +112,7 @@ dnr/66;;;Piprökare Administrator;2021-12-13;0;Tesutskottet testar beev;;;;;;;
 dnr/67;;;Piprökare Administrator;2021-12-13;0;testärende;0;1;Till möte;;Testmöte Pippi (2022-02-18);2022-02-09;
 dnr/67;;;Piprökare Administrator;2021-12-13;0;testärende;0;2;Beslut;;Testmöte Pippi (2022-02-18 TN §1);2022-02-10;Testmöte Pippi (2022-02-18 TN §1).docx
 dnr/68;;;Administrator;2021-12-17;0;Test av grodor;;;;;;;
-dnr/69;;;Annika Adminson;2021-12-17;0;Testar lite grodor;;;;;;;
+dnr/69;;;Smurf Adminson;2021-12-17;0;Testar lite grodor;;;;;;;
 dnr/7;;;Pippi-Viktualia Tjänstemannason;2016-06-08;0;Organ1;;;;;;;
 dnr/70;;;Fantomen Byråkrat;2021-12-17;0;Testa nya grodor;;;;;;;
 dnr/71;;;Administrator;2022-02-08;0;Testar grodor;0;1;Tjosanhejsan;;Tjansteutlatande test av grodor;2022-02-08;Tjansteutlatande test av grodor.docx
