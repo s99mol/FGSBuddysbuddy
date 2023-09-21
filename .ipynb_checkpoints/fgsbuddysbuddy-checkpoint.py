@@ -123,40 +123,53 @@ window = sg.Window(f'FGS-Buddysbuddy v {version}',layout, font='Consolas 10', ic
 #forcedvaluesdict = {}
 #allvalues = False
 
-
-def outputandmove():
+# Funktion för att flytta den skapade filen från cwd till vald outputkatalog om annan katalog än cwd är vald som outputkatalog.
+def move():
 
     #if os.path.exists(os.path.join(os.getcwd(), xmlfile)) == True:
         #print(f'ERROR: Det finns en fil med samma namn som det du döpt din fil till i programmets katalog {cwd}. Ta bort den eller döp om din outputfil.')
     #else:
         #print (f'Fil med samma namn finns inte i {cwd} och kan därför skapas...')
         
-    #result.write_output(xmlfile)
+        #result.write_output(xmlfile)
 
-        if (os.path.normpath(outputfolder)) == cwd:
-            print(f'Grattis! Metadatafil skapad i outputkatalog {cwd}.')
-        
-        else:
-            print (f'Flyttar till outputkatalogen...')
-            try:
-                shutil.move(xmlfile, outputfolder)
-                print(f'Metadatafil skapad i outputkatalog {outputfolder}. Bra jobbat!')
-            except:
-                print(f'ERROR: Det finns redan en fil med samma namn i outputkatalogen {outputfolder}. Flytta eller radera den eller döp om din outputfil, och försök igen.')
+    if (os.path.normpath(outputfolder)) == cwd:
+        print(f'Grattis! Metadatafil skapad i outputkatalog {cwd}.')
+    
+    else:
+        print (f'Flyttar till outputkatalogen...')
+        try:
+            shutil.move(xmlfile, outputfolder)
+            print(f'Metadatafil skapad i outputkatalog {outputfolder}. Bra jobbat!')
+        except:
+            print(f'ERROR: Det finns redan en fil med samma namn i outputkatalogen {outputfolder}. Flytta eller radera den eller döp om din outputfil, och försök igen.')
 
+# Funktion för att transformera inputfilen till xmlfil enligt schemafilen.
 def xslttransform():
     try:
         if inputfile.endswith('.xml'):
             doc = et.parse(inputfile)
         else:
-            doc = et.parse(xmlfile)
+            doc = et.parse(csvtoxmlfile)
     except Exception as e:
         sg.popup_error_with_traceback(f'Error! Sannolikt har du valt fel csv-separator. Fil kan kanske ändå skapas, men rådet är att välja rätt separator. Info:', e)
     xsl = et.parse(xsltfile)
     transform = et.XSLT(xsl)
     result = transform(doc)
-    result.write_output(xmlfile)
-                
+
+
+    if os.path.exists(os.path.join(os.getcwd(), xmlfile)) == False:
+            print (f'Fil med samma namn finns inte i {cwd} och kan därför skapas...')
+            result.write_output(xmlfile)
+            
+            if schemafile != '':
+                print(f'Har du valt en schemafil så valideras xmlfilen.')
+                xmlschemavalidation()
+            move()
+    else:
+        print(f'ERROR: Det finns en fil med samma namn som det du döpt din fil till i programmets katalog {cwd}. Ta bort den eller döp om din outputfil.')   
+
+# Funktion för att konvertera csv-inputfil till xml-fil som mellanfil inför transformeringen.
 def csvtoxml():
     
     try:
@@ -167,10 +180,11 @@ def csvtoxml():
 
     df = df.convert_dtypes()
     try:
-        df.to_xml(xmlfile)
+        df.to_xml(csvtoxmlfile)
     except Exception as e:
         sg.popup_error_with_traceback(f'Error! Sannolikt har du valt fel csv-separator. Fil kan kanske ändå skapas, men rådet är att välja rätt separator. Info:', e)
-    
+
+# Funktion för att validera den skapade xmlfilen.
 def xmlschemavalidation():
     try:
         xmlfile = filename+filesuffix
@@ -197,6 +211,7 @@ while True:
             filesuffix = values['-FILESUFFIX-']
             xmlfile = filename+filesuffix
             #csvfile = filename+filesuffix
+            csvtoxmlfile = 'temp.xml'
             csvseparator = values['-CSVSEPARATOR-']
             xsltfile = values['-XSLTFILE-']
             schemafile = values['-SCHEMAFILE-']
@@ -238,10 +253,10 @@ while True:
             elif inputfile.endswith('.xml') and xsltfile != '':
                 
                 xslttransform()
-                if schemafile != '':
-                    print(f'Har du valt en schemafil så valideras xmlfilen.')
-                    xmlschemavalidation()
-                outputandmove()
+                #if schemafile != '':
+                    #print(f'Har du valt en schemafil så valideras xmlfilen.')
+                    #xmlschemavalidation()
+                #outputandmove()
 
             # Hantering av csv som input
             else:
@@ -253,10 +268,15 @@ while True:
                 window.refresh()
                 csvtoxml()
                 xslttransform()
-                if schemafile != '':
-                    print(f'Har du valt en schemafil så valideras xmlfilen.')
-                    xmlschemavalidation()
-                outputandmove()
+                #if schemafile != '':
+                    #print(f'Har du valt en schemafil så valideras xmlfilen.')
+                    #xmlschemavalidation()
+                #outputandmove()
+            if os.path.exists(csvtoxmlfile):
+                os.remove(csvtoxmlfile)
+                print(f'Tempfilen raderad.') 
+            else:
+                print(f'Tempfilen överskriven i ett tidigare skede.') 
         
         case 'clear':
             clearinput()
