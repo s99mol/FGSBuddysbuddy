@@ -1,12 +1,12 @@
 import os
 import time
 import PySimpleGUI as sg
-import json
+#import json
 import webbrowser
 from io import StringIO
-import lxml.etree as et
 from lxml import etree
 import pandas as pd
+import uuid
 import shutil
 from pathlib import Path
 
@@ -82,7 +82,7 @@ innehall = [
     [sg.Text('Mappningen från input till metadatafil sker i den xslt-fil som ingår och som du kan kopiera och modiera efter behov.')],
     [sg.Text('')],
     [sg.Text('Sökväg till inputfil (metadatat att utgå ifrån, .csv el. .xml):*', size=52), sg.Text('Csv-separator:'), sg.Text('Funktionsval:')],
-    [sg.Input(tooltip="Välj inputfil", key='inputfileB'), sg.FileBrowse('Välj fil', key="-INPUTFILE-", initial_folder=os.path.join(cwd) ), sg.Combo([';', ',', ':', '.', '|', '\t', ' '], default_value=';', size=8, key='-CSVSEPARATOR-'), sg.Combo(['Skapa xml-metadatafil', 'Enbart xml-validering', 'Xml till csv (experimental)'], default_value='Skapa metadatafil', key='-FUNCTION_CHOOSER-')],
+    [sg.Input(tooltip="Välj inputfil", key='inputfileB'), sg.FileBrowse('Välj fil', key="-INPUTFILE-", initial_folder=os.path.join(cwd) ), sg.Combo([';', ',', ':', '.', '|', '\t', ' '], default_value=';', size=8, key='-CSVSEPARATOR-'), sg.Combo(['Skapa xml-metadatafil', 'Enbart xml-validering', 'Csv-inputstatistik'], default_value='Skapa metadatafil', key='-FUNCTION_CHOOSER-')],
     [sg.Text('Sökväg till xsltfil:')],
     [sg.Input(tooltip="Välj xslt", key='xsltfile'), sg.FileBrowse('Välj fil', key="-XSLTFILE-", initial_folder=os.path.join(cwd) ), sg.Text ('För att transformera din input.')],
     [sg.Text('Sökväg till schemafil:')],
@@ -111,7 +111,7 @@ layout = [
     [sg.Column(space)],
     [sg.Column(innehall, vertical_alignment='top')],
     [sg.Text('')],
-    [sg.Output(size=(165,5), key='output', pad=5, background_color=	'pink', echo_stdout_stderr=True)],
+    [sg.Output(size=(165,20), key='output', pad=5, background_color=	'pink', echo_stdout_stderr=True)],
     [sg.Text('Outputkatalog'),sg.Input(default_text=home, tooltip="Välj katalog", size=65, key='-OUTPUTFOLDER-'), sg.FolderBrowse('Välj katalog', key='initialoutputfolder', initial_folder=Path.home()), sg.Submit('Skapa/validera fil', key='create_metadatafile', size=15,button_color='black on pink'), sg.Button('Rensa', key='clear', size=15)],
     
     ]
@@ -148,15 +148,22 @@ def move():
 def xslttransform():
     try:
         if inputfile.endswith('.xml'):
-            doc = et.parse(inputfile)
+            doc = etree.parse(inputfile)
         else:
-            doc = et.parse(csvtoxmlfile)
+            doc = etree.parse(csvtoxmlfile)
     except Exception as e:
         sg.popup_error_with_traceback(f'Error! Sannolikt har du valt fel csv-separator. Fil kan kanske ändå skapas, men rådet är att välja rätt separator. Info:', e)
-    xsl = et.parse(xsltfile)
-    transform = et.XSLT(xsl)
-    result = transform(doc)
 
+    #Hårdkodat... lägga till uuid
+    root = doc.getroot()
+    for ArkivobjektID_Arenden in root.iter('ArkivobjektID_Arende'):
+        ArkivobjektID_Arenden.set('Systemidentifierare', uuid.uuid4().hex)
+    for ArkivobjektID_Handlingar in root.iter('ArkivobjektID_Handling'):
+        ArkivobjektID_Handlingar.set('Systemidentifierare', uuid.uuid4().hex)
+    
+    xsl = etree.parse(xsltfile)
+    transform = etree.XSLT(xsl)
+    result = transform(doc)
 
     if os.path.exists(os.path.join(os.getcwd(), xmlfile)) == False:
             print (f'Fil med samma namn finns inte i {cwd} och kan därför skapas...')
@@ -218,11 +225,11 @@ while True:
             outputfolder = values['-OUTPUTFOLDER-']
 
             # Kontrollerar att inputfil och xsltfil finns och om schemafil är tom skapa metadatafil utan att validera. Denna är ännu 'standalone' till def:arna ovan.
-            inputfile = values['-INPUTFILE-']
-            schemafile = values['-SCHEMAFILE-']
             
+            # or not inputfile.endswith('.xml') or not inputfile.endswith('.csv')
             if inputfile == '':
-                print(f'Du måste välja en inputfil!')
+                print(f'Du måste välja en inputfil som har filändelse .xml eller .csv (små bokstäver)!')
+            
             # Hantering när funktionsväljaren är vald till enbart validera.
             elif inputfile != '' and values['-FUNCTION_CHOOSER-'] == 'Enbart xml-validering':
                 if schemafile.endswith('.xsd'):
@@ -238,25 +245,42 @@ while True:
                 except Exception as e: print(e)
                 
             # Hantering när funktionsväljaren är vald till csv till xml-konvertering. Standalone från def:arna. Återstår fixa export av allt, knyta till outputfolder, välja separator, populera defaultvärden, tillåta namespace. Hittills endast experiment.
-            elif inputfile != '' and values['-FUNCTION_CHOOSER-'] == 'Xml till csv (experimental)':
-                try:
-                    df = pd.read_xml(inputfile, xpath='.//ArkivobjektArende')
-                    outputfile = 'outputfile.csv'
-                    df.to_csv(outputfile, sep=';')
-                    print(f'Filen {outputfile} ligger i programmets katalog {cwd}. Det som exporterades var ArkivobjektArende. Detta är bara på experimentstadiet hittills.')
-                except Exception as e: print(e)
+            elif inputfile.endswith('.csv') and values['-FUNCTION_CHOOSER-'] == 'Csv-inputstatistik':
+                df = pd.read_csv(inputfile, sep=';')
+                print(f'Nedan följer en sammanfattning. Se även statistics.csv i {cwd}.')
+                # Antal unika per kolumn mm (alt. df.count() )
+                #inputfile.info()
+                df.count()
+                # Antal unika värden per kolumn
+                df.nunique()
+                # Group data by columns 'A' and 'C', and count unique values in column 'B'
+                unique_count = df.groupby(['ArkivobjektID_Arende', 'ArkivobjektID_Handling']).agg({'Lank': 'nunique'})
+                # Print the result
+                print(f'unique_count')
+                # Alla antal unika värden per kolumn sorterat på Ärende.
+                df.groupby(['ArkivobjektID_Arende']).nunique()
+                num_unique_rows = df.groupby(['ArkivobjektID_Arende']).count()
+                df2 = num_unique_rows
+                df2.to_csv('statistics.csv')
+                # Kolla dubletter
+                duplicate_rows = df.duplicated()
+                print('fduplicate_rows')
+                num_duplicate_rows = df.duplicated().sum()
+                print(f' "Number of duplicate rows: ", num_duplicate_rows')
+                print(f'{num_unique_rows}')
+                #try:
+                    #df = pd.read_xml(inputfile, xpath='.//ArkivobjektArende')
+                    #outputfile = 'outputfile.csv'
+                    #df.to_csv(outputfile, sep=';')
+                    #print(f'Filen {outputfile} ligger i programmets katalog {cwd}. Det som exporterades var ArkivobjektArende. Detta är bara på experimentstadiet hittills.')
+                #except Exception as e: print(e)
             
             elif xsltfile == '':
-                print(f'Du måste välja en xsltfil (eller en schemafil om det är så att du bara vill validera xml, fixar separat exception senare)!')
+                print(f'Du måste välja en xsltfil med filändelse .xsl eller .xslt (eller en schemafil om det är så att du bara vill validera xml, fixar separat exception senare)!')
              
             # Hantering av xmlfil som input
             elif inputfile.endswith('.xml') and xsltfile != '':
-                
                 xslttransform()
-                #if schemafile != '':
-                    #print(f'Har du valt en schemafil så valideras xmlfilen.')
-                    #xmlschemavalidation()
-                #outputandmove()
 
             # Hantering av csv som input
             else:
@@ -268,15 +292,12 @@ while True:
                 window.refresh()
                 csvtoxml()
                 xslttransform()
-                #if schemafile != '':
-                    #print(f'Har du valt en schemafil så valideras xmlfilen.')
-                    #xmlschemavalidation()
-                #outputandmove()
+
             if os.path.exists(csvtoxmlfile):
                 os.remove(csvtoxmlfile)
                 print(f'Tempfilen raderad.') 
             else:
-                print(f'Tempfilen överskriven i ett tidigare skede.') 
+                print(f'Slut i rutan!') 
         
         case 'clear':
             clearinput()

@@ -14,6 +14,9 @@
 	</xsl:template>
 	<xsl:template match="row" mode="firstkey">
 		<ArkivobjektArende>
+			<xsl:attribute name="Systemidentifierare">
+				<xsl:value-of select="ArkivobjektID_Arende/@Systemidentifierare"/>
+			</xsl:attribute>
 			<ArkivobjektID>
 				<xsl:value-of select="ArkivobjektID_Arende"/>
 			</ArkivobjektID>
@@ -51,12 +54,15 @@
 	</xsl:template>
 	<xsl:template match="row" mode="secondkey">
 		<ArkivobjektHandling>
+			<xsl:attribute name="Systemidentifierare">
+				<xsl:value-of select="ArkivobjektID_Handling/@Systemidentifierare"/>
+			</xsl:attribute>
 			<xsl:apply-templates select="key('secondkey', concat(ArkivobjektID_Arende, '|', ArkivobjektID_Handling))[generate-id() = generate-id(key('thirdkey', concat(ArkivobjektID_Arende, '|', ArkivobjektID_Handling))[1])]" mode="thirdkey"/>
 		</ArkivobjektHandling>
 	</xsl:template>
 	<xsl:template match="row" mode="thirdkey">
 		<ArkivobjektID>
-			<xsl:copy-of select="ArkivobjektID_Handling/text()"/>
+			<xsl:value-of select="ArkivobjektID_Handling"/>
 		</ArkivobjektID>
 		<KlassReferens>
 			<xsl:value-of select="KlassReferens_Handling"/>
