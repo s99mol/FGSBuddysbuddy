@@ -1,7 +1,6 @@
 import os
 import time
 import PySimpleGUI as sg
-#import json
 import webbrowser
 from io import StringIO
 from lxml import etree
@@ -9,6 +8,7 @@ import pandas as pd
 import uuid
 import shutil
 from pathlib import Path
+#import json
 
 # Funktion för att rensa alla input-fält
 def clearinput():
@@ -48,9 +48,9 @@ def buddywindow():
     ]
 
     # Skapar nya fönstret
-    about = sg.Window('Om FGS-Buddy', aboutlayout, icon="Buddy.ico")
+    about = sg.Window('Om FGS-Buddysbuddy', aboutlayout, icon="Buddysbuddy.ico")
     
-    # Programloop för "Om FGS-Buddy"-fönstret.
+    # Programloop för "Om FGS-Buddysbuddy"-fönstret.
     while True:
         event, values = about.read()
         if event == "Exit" or event == sg.WIN_CLOSED:
@@ -63,7 +63,7 @@ def buddywindow():
             webbrowser.open('https://github.com/Viktor-Lundberg/FGSBuddy')
 
 # Nuvarande version
-version = '0.0.1'
+version = '0.1.0'
 
 # Current working directory
 cwd = os.getcwd()
@@ -76,17 +76,16 @@ sg.theme('greenMono') #LightGreen2 DarkBlue3 #reddit greenMono
 
 
 innehall = [  
-    [sg.Text('Skapa och validera metadatafil (xml) från xml eller semikolonseparerad csv med rubriker', font='Arial 12 bold', size=75)],
-    [sg.Text('Med denna metadataomat, ett komplement till FGS Buddy (länk i Hjälp-menyn) kan du skapa en metadatafil som valideras mot ett xsd-schema.')],
-    [sg.Text('Utgå antingen från en semikolonseparerad csv-fil med rubriker eller en xml-fil.')],
-    [sg.Text('Mappningen från input till metadatafil sker i den xslt-fil som ingår och som du kan kopiera och modiera efter behov.')],
+    [sg.Text('Metadataomaten FGS Buddysbuddy', font='Arial 12 bold', size=75)],
+    [sg.Text('Med detta komplement till FGS Buddy (länk i Hjälp-menyn) kan du skapa en metadatafil, validera mot xmlschema och få statistik från csv-fil.')],
+    [sg.Text('Mappningen från input till metadatafil görs i en xslt-fil. Det finns en i testdatat som du kan modifiera efter behov.')],
     [sg.Text('')],
-    [sg.Text('Sökväg till inputfil (metadatat att utgå ifrån, .csv el. .xml):*', size=52), sg.Text('Csv-separator:'), sg.Text('Funktionsval:')],
-    [sg.Input(tooltip="Välj inputfil", key='inputfileB'), sg.FileBrowse('Välj fil', key="-INPUTFILE-", initial_folder=os.path.join(cwd) ), sg.Combo([';', ',', ':', '.', '|', '\t', ' '], default_value=';', size=8, key='-CSVSEPARATOR-'), sg.Combo(['Skapa xml-metadatafil', 'Enbart xml-validering', 'Csv-inputstatistik'], default_value='Skapa metadatafil', key='-FUNCTION_CHOOSER-')],
+    [sg.Text('Sökväg till inputfil med metadatat:*', size=52), sg.Text('Csv-separator:'), sg.Text('Välj vad du vill göra med inputfilen:')],
+    [sg.Input(tooltip="Välj inputfil", key='inputfileB'), sg.FileBrowse('Välj fil', tooltip="Filen måste ha ändelse .xml eller .csv, utf-8", key="-INPUTFILE-", initial_folder=os.path.join(cwd) ), sg.Combo([';', ',', ':', '.', '|', '\t'], default_value=';', size=8, key='-CSVSEPARATOR-'), sg.Combo(['Skapa xml-metadatafil', 'Enbart xml-validering', 'Csv-inputstatistik'], default_value='Skapa metadatafil', key='-FUNCTION_CHOOSER-')],
     [sg.Text('Sökväg till xsltfil:')],
-    [sg.Input(tooltip="Välj xslt", key='xsltfile'), sg.FileBrowse('Välj fil', key="-XSLTFILE-", initial_folder=os.path.join(cwd) ), sg.Text ('För att transformera din input.')],
+    [sg.Input(tooltip="Välj xslt", key='xsltfile'), sg.FileBrowse('Välj fil', tooltip="Filen måste ha ändelse .xsl eller .xslt", key="-XSLTFILE-", initial_folder=os.path.join(cwd) ), sg.Text ('För att transformera din input.')],
     [sg.Text('Sökväg till schemafil:')],
-    [sg.Input(tooltip="Välj schemafil", key='schemafileB'), sg.FileBrowse('Välj fil', key="-SCHEMAFILE-", initial_folder=os.path.join(cwd) ), sg.Text ('Använd om du vill validera den skapade metadatafilen.')],
+    [sg.Input(tooltip="Välj schemafil", key='schemafileB'), sg.FileBrowse('Välj fil', tooltip="Filen måste ha ändelse .xsd", key="-SCHEMAFILE-", initial_folder=os.path.join(cwd) ), sg.Text ('Använd om du vill validera den skapade metadatafilen.')],
     [sg.Text('Döp din outputfil:', tooltip='Välj filnamn på outputfilen')],
     [sg.Input(key='-FILENAME-',size=45, tooltip='Välj filnamn på outputfilen', default_text='metadata'), sg.Combo(['.xml', '.csv'], default_value='.xml', key='-FILESUFFIX-'), sg.Text ('Använd default eller välj ett eget namn. Filsuffix läggs till per automagi.\nERROR-hantering om filnamnet redan finns i berörda kataloger.')],
 #sg.Radio('Ja', 'validationready', default=False, key='-READY_FOR_VALIDATION-'), sg.Radio('Nej', 'validationready', default=True, key='-NOT_READY_FOR_VALIDATION-'
@@ -104,20 +103,20 @@ meny = [
 # GUI layout
 layout = [
     # OBS! Pysimplegui har problem med custom menubar (om det används syns inte applikationen i verktygsfältet, använd classic tills fix...)
-    #[sg.Titlebar('FGS-Buddysbuddy v 0.0.1 - Martin Olsson', font='Consolas 10', background_color='Black')],
+    #[sg.Titlebar('FGS-Buddysbuddy v 0.1.0 - Martin Olsson', font='Consolas 10', background_color='Black')],
     #[sg.MenubarCustom(meny, bar_background_color='Pink', bar_text_color='Black')],
     
     [sg.MenuBar(meny, background_color='Pink')],
     [sg.Column(space)],
     [sg.Column(innehall, vertical_alignment='top')],
     [sg.Text('')],
-    [sg.Output(size=(165,20), key='output', pad=5, background_color=	'pink', echo_stdout_stderr=True)],
-    [sg.Text('Outputkatalog'),sg.Input(default_text=home, tooltip="Välj katalog", size=65, key='-OUTPUTFOLDER-'), sg.FolderBrowse('Välj katalog', key='initialoutputfolder', initial_folder=Path.home()), sg.Submit('Skapa/validera fil', key='create_metadatafile', size=15,button_color='black on pink'), sg.Button('Rensa', key='clear', size=15)],
+    [sg.Output(size=(165,20), key='output', pad=5, background_color= 'pink', echo_stdout_stderr=True)],
+    [sg.Text('Outputkatalog'),sg.Input(default_text=home, tooltip="Välj katalog", size=65, key='-OUTPUTFOLDER-'), sg.FolderBrowse('Välj katalog', key='initialoutputfolder', initial_folder=Path.home()), sg.Submit('Utför!', tooltip="Vad som utförs beror på dina inställningar: Skapa fil, validera, csv-statistik.", key='create_metadatafile', size=15,button_color='black on pink'), sg.Button('Rensa', key='clear', size=15)],
     
     ]
 
 # Skapar "huvudfönstret"
-window = sg.Window(f'FGS-Buddysbuddy v {version}',layout, font='Consolas 10', icon="Buddy.ico", resizable=True, titlebar_background_color='green')
+window = sg.Window(f'FGS-Buddysbuddy v {version}',layout, font='Consolas 10', icon="Buddysbuddy.ico", resizable=True, titlebar_background_color='green')
 
 # Variabler för att kontrollera obligatoriska värden samt trigger för att visa/dölja alla element i layouten.
 #forcedvaluesdict = {}
@@ -155,11 +154,11 @@ def xslttransform():
         sg.popup_error_with_traceback(f'Error! Sannolikt har du valt fel csv-separator. Fil kan kanske ändå skapas, men rådet är att välja rätt separator. Info:', e)
 
     #Hårdkodat... lägga till uuid
-    #root = doc.getroot()
-    #for ArkivobjektID_Arenden in root.iter('ArkivobjektID_Arende'):
-        #ArkivobjektID_Arenden.set('Systemidentifierare', uuid.uuid4().hex)
-    #for ArkivobjektID_Handlingar in root.iter('ArkivobjektID_Handling'):
-        #ArkivobjektID_Handlingar.set('Systemidentifierare', uuid.uuid4().hex)
+    root = doc.getroot()
+    for ArkivobjektID_Arenden in root.iter('ArkivobjektID_Arende'):
+        ArkivobjektID_Arenden.set('Systemidentifierare', uuid.uuid4().hex)
+    for ArkivobjektID_Handlingar in root.iter('ArkivobjektID_Handling'):
+        ArkivobjektID_Handlingar.set('Systemidentifierare', uuid.uuid4().hex)
     
     xsl = etree.parse(xsltfile)
     transform = etree.XSLT(xsl)
@@ -244,34 +243,64 @@ while True:
                     print(f'Valid mot {schemafile}. Bra jobbat!')
                 except Exception as e: print(e)
                 
-            # Hantering när funktionsväljaren är vald till csv till xml-konvertering. Standalone från def:arna. Återstår fixa export av allt, knyta till outputfolder, välja separator, populera defaultvärden, tillåta namespace. Hittills endast experiment.
+            # Plocka ut statistik från csv-inputfil
             elif inputfile.endswith('.csv') and values['-FUNCTION_CHOOSER-'] == 'Csv-inputstatistik':
-                df = pd.read_csv(inputfile, sep=';')
-                print(f'Nedan följer en sammanfattning. Se även statistics.csv i {cwd}.')
+                df = pd.read_csv(inputfile, sep=';', engine='python')
+                df = df.convert_dtypes()
+                print(f'Nedan följer en sammanfattning. Se all statistik i mappen csv_statistics i {cwd}.')
                 # Antal unika per kolumn mm (alt. df.count() )
-                #inputfile.info()
-                df.count()
+                #df.info()
                 # Antal unika värden per kolumn
-                df.nunique()
+                s1 = df.count()
+                s2 = df.nunique()
+                df1 = pd.concat([s1, s2], axis=1)
+                df1.rename(columns = {0:'Antal', 1:'Antal unika'}, inplace = True)
+                print(df1)
+                
                 # Group data by columns 'A' and 'C', and count unique values in column 'B'
                 unique_count = df.groupby(['ArkivobjektID_Arende', 'ArkivobjektID_Handling']).agg({'Lank': 'nunique'})
-                # Print the result
-                print(f'unique_count')
+                print(unique_count)
                 # Alla antal unika värden per kolumn sorterat på Ärende.
                 df.groupby(['ArkivobjektID_Arende']).nunique()
                 num_unique_rows = df.groupby(['ArkivobjektID_Arende']).count()
                 df2 = num_unique_rows
-                df2.to_csv('statistics.csv')
                 # Kolla dubletter
                 duplicate_rows = df.duplicated()
-                print('fduplicate_rows')
+                print(duplicate_rows)
                 num_duplicate_rows = df.duplicated().sum()
-                print(f' "Number of duplicate rows: ", num_duplicate_rows')
-                print(f'{num_unique_rows}')
+                print("Number of duplicate rows: ", num_duplicate_rows)
+                print(num_unique_rows)
+                csvstatisticsfolder = './csv_statistics'
+                path = os.path.join('csv_statistics_' + str(uuid.uuid4().hex))
+                
+                if os.path.exists(os.path.join(os.getcwd(), csvstatisticsfolder)) == True:
+                    path = os.path.join('csv_statistics_' + str(uuid.uuid4().hex))
+                    os.mkdir(path)
+                    os.chdir(path)
+                    df1.to_csv('totals_and_unique.csv')
+                    df2.to_csv('unique_rows.csv')
+                    unique_count.to_csv('unique_count.csv')
+                    duplicate_rows.to_csv('duplicate_rows.csv')
+                    #num_duplicate_rows.to_csv('')
+                    num_unique_rows.to_csv('num_unique_rows.csv')
+                    os.chdir(cwd)
+                else:
+                    csvstatisticsfolder = './csv_statistics'
+                    path = csvstatisticsfolder
+                    os.mkdir(path)
+                    df1.to_csv('./csv_statistics/totals_and_unique.csv')
+                    df2.to_csv('./csv_statistics/unique_rows.csv')
+                    unique_count.to_csv('./csv_statistics/unique_count.csv')
+                    duplicate_rows.to_csv('./csv_statistics/duplicate_rows.csv')
+                    #num_duplicate_rows.to_csv('')
+                    num_unique_rows.to_csv('./csv_statistics/num_unique_rows.csv')
+                
+
+                # Hantering när funktionsväljaren är vald till csv till xml-konvertering. Standalone från def:arna. Återstår fixa export av allt, knyta till outputfolder, välja separator, populera defaultvärden, tillåta namespace. Hittills endast experiment.
                 #try:
                     #df = pd.read_xml(inputfile, xpath='.//ArkivobjektArende')
                     #outputfile = 'outputfile.csv'
-                    #df.to_csv(outputfile, sep=';')
+                    #df.to_csv(outputfile, sep=';', engine='python')
                     #print(f'Filen {outputfile} ligger i programmets katalog {cwd}. Det som exporterades var ArkivobjektArende. Detta är bara på experimentstadiet hittills.')
                 #except Exception as e: print(e)
             
