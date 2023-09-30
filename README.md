@@ -1,7 +1,7 @@
 # FGS Buddysbuddy :sunglasses:
 
 
-<div style="text-align:center">
+<div style="text-align: center">
 
 ![Buddyn](Buddysbuddy.ico)<br>
 
@@ -9,9 +9,6 @@ En GUI-försedd metadataomat inom Buddy-projektet. Buddy-projektet vänder sig f
 </div>
 
 ---
-
-![Screenshot1](fgsbuddysbuddy_screen1.png)
-![Screenshot2](fgsbuddysbuddy_screen2.png)
 
 ## Features :star:
 * Huvudarbetsprocess:
@@ -28,7 +25,9 @@ En GUI-försedd metadataomat inom Buddy-projektet. Buddy-projektet vänder sig f
 	
 	Se även systemtestcasen redovisade i releasenotes. I mappen Testdata finns testfiler som kan användas för att bekanta sig med Buddysbuddy.
 
+![Screenshot1](fgsbuddysbuddy_screen1.png "width: 50%")
 
+![Screenshot2](fgsbuddysbuddy_screen2.png "width: 50%")
 ---
 
 ## Ideas :star:
