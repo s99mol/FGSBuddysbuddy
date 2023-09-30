@@ -1,5 +1,4 @@
 import os
-import time
 import PySimpleGUI as sg
 import webbrowser
 from io import StringIO
@@ -72,22 +71,22 @@ cwd = os.getcwd()
 home = Path.home()
 
 # Sätter färgtema
-sg.theme('greenMono') #LightGreen2 DarkBlue3 #reddit greenMono
+sg.theme('greenMono')
 
 
 innehall = [  
-    [sg.Text('Metadataomaten FGS Buddysbuddy', font='Arial 12 bold', size=75)],
+    [sg.Text('Metadataomaten FGS-Buddysbuddy', font='Arial 12 bold', size=75)],
     [sg.Text('Med detta komplement till FGS Buddy (länk i Hjälp-menyn) kan du skapa en metadatafil, validera mot xmlschema och få statistik från csv-fil.')],
     [sg.Text('Mappningen från input till metadatafil görs i en xslt-fil. Det finns en i testdatat som du kan modifiera efter behov.')],
     [sg.Text('')],
     [sg.Text('Sökväg till inputfil med metadatat:*', size=52), sg.Text('Csv-separator:'), sg.Text('Välj vad du vill göra med inputfilen:')],
-    [sg.Input(tooltip="Välj inputfil", key='inputfileB'), sg.FileBrowse('Välj fil', tooltip="Filen måste ha ändelse .xml eller .csv, utf-8", key="-INPUTFILE-", initial_folder=os.path.join(cwd) ), sg.Combo([';', ',', ':', '.', '|', '\t'], default_value=';', size=8, key='-CSVSEPARATOR-'), sg.Combo(['Skapa xml-metadatafil', 'Enbart xml-validering', 'Csv-inputstatistik'], default_value='Skapa metadatafil', key='-FUNCTION_CHOOSER-')],
-    [sg.Text('Sökväg till xsltfil:')],
-    [sg.Input(tooltip="Välj xslt", key='xsltfile'), sg.FileBrowse('Välj fil', tooltip="Filen måste ha ändelse .xsl eller .xslt", key="-XSLTFILE-", initial_folder=os.path.join(cwd) ), sg.Text ('För att transformera din input.')],
-    [sg.Text('Sökväg till schemafil:')],
-    [sg.Input(tooltip="Välj schemafil", key='schemafileB'), sg.FileBrowse('Välj fil', tooltip="Filen måste ha ändelse .xsd", key="-SCHEMAFILE-", initial_folder=os.path.join(cwd) ), sg.Text ('Använd om du vill validera den skapade metadatafilen.')],
+    [sg.Input(tooltip="Välj inputfil (.xml, .csv)", key='inputfileB'), sg.FileBrowse('Välj fil', tooltip=".xml eller .csv, utf-8", key="-INPUTFILE-", initial_folder=os.path.join(cwd) ), sg.Combo([';', ',', ':', '.', '|', '\t'], default_value=';', size=8, tooltip='Den tomma är tab.', key='-CSVSEPARATOR-'), sg.Combo(['Skapa xml-metadatafil', 'Enbart xml-validering', 'Csv-inputstatistik'], default_value='Skapa metadatafil', key='-FUNCTION_CHOOSER-')],
+    [sg.Text('Sökväg till xsltfilen som transformerar din input:')],
+    [sg.Input(tooltip="Välj xslt (.xsl, .xslt)", key='xsltfile'), sg.FileBrowse('Välj fil', tooltip=".xsl eller .xslt", key="-XSLTFILE-", initial_folder=os.path.join(cwd) )],
+    [sg.Text('Sökväg till schemafil som validerar xmlfilen:')],
+    [sg.Input(tooltip="Välj schemafil (.xsd)", key='schemafileB'), sg.FileBrowse('Välj fil', tooltip=".xsd", key="-SCHEMAFILE-", initial_folder=os.path.join(cwd) )],
     [sg.Text('Döp din outputfil:', tooltip='Välj filnamn på outputfilen')],
-    [sg.Input(key='-FILENAME-',size=45, tooltip='Välj filnamn på outputfilen', default_text='metadata'), sg.Combo(['.xml', '.csv'], default_value='.xml', key='-FILESUFFIX-'), sg.Text ('Använd default eller välj ett eget namn. Filsuffix läggs till per automagi.\nERROR-hantering om filnamnet redan finns i berörda kataloger.')],
+    [sg.Input(key='-FILENAME-',size=45, tooltip='Välj filnamn på outputfilen. Använd default eller välj ett eget namn. Filsuffix läggs till per automagi.\nERROR-hantering om filnamnet redan finns i berörda kataloger.', default_text='metadata'), sg.Combo(['.xml', '.csv'], default_value='.xml', key='-FILESUFFIX-')],
 #sg.Radio('Ja', 'validationready', default=False, key='-READY_FOR_VALIDATION-'), sg.Radio('Nej', 'validationready', default=True, key='-NOT_READY_FOR_VALIDATION-'
     ]
 
@@ -97,7 +96,7 @@ space = [
     
 # Menyraden
 meny = [
-    ['FGS-dokumentation', ['FGS-Paketstruktur v 1.2','FGS-Paketstruktur v 1.2 - tillägg','Schema v 1.2']],['Hjälp', ['Om FGS-Buddysbuddy']]
+    ['FGS-dokumentation', ['Om FGS-scheman','FGS-scheman']],['Hjälp', ['Om FGS-Buddysbuddy']]
      ]
     
 # GUI layout
@@ -105,43 +104,28 @@ layout = [
     # OBS! Pysimplegui har problem med custom menubar (om det används syns inte applikationen i verktygsfältet, använd classic tills fix...)
     #[sg.Titlebar('FGS-Buddysbuddy v 0.1.0 - Martin Olsson', font='Consolas 10', background_color='Black')],
     #[sg.MenubarCustom(meny, bar_background_color='Pink', bar_text_color='Black')],
-    
     [sg.MenuBar(meny, background_color='Pink')],
     [sg.Column(space)],
     [sg.Column(innehall, vertical_alignment='top')],
     [sg.Text('')],
     [sg.Output(size=(165,20), key='output', pad=5, background_color= 'pink', echo_stdout_stderr=True)],
-    [sg.Text('Outputkatalog'),sg.Input(default_text=home, tooltip="Välj katalog", size=65, key='-OUTPUTFOLDER-'), sg.FolderBrowse('Välj katalog', key='initialoutputfolder', initial_folder=Path.home()), sg.Submit('Utför!', tooltip="Vad som utförs beror på dina inställningar: Skapa fil, validera, csv-statistik.", key='create_metadatafile', size=15,button_color='black on pink'), sg.Button('Rensa', key='clear', size=15)],
-    
+    [sg.Text('Outputkatalog'),sg.Input(default_text=home, tooltip="Välj katalog om du vill ha annan än den förinställda.", size=65, key='-OUTPUTFOLDER-'), sg.FolderBrowse('Välj katalog', key='initialoutputfolder', initial_folder=Path.home()), sg.Submit('Utför!', tooltip="Vad som utförs beror på dina inställningar: Skapa fil, validera, csv-statistik.", key='create', size=15,button_color='black on pink'), sg.Button('Rensa', key='clear', size=15)],   
     ]
 
 # Skapar "huvudfönstret"
 window = sg.Window(f'FGS-Buddysbuddy v {version}',layout, font='Consolas 10', icon="Buddysbuddy.ico", resizable=True, titlebar_background_color='green')
 
-# Variabler för att kontrollera obligatoriska värden samt trigger för att visa/dölja alla element i layouten.
-#forcedvaluesdict = {}
-#allvalues = False
-
-# Funktion för att flytta den skapade filen från cwd till vald outputkatalog om annan katalog än cwd är vald som outputkatalog.
-def move():
-
-    #if os.path.exists(os.path.join(os.getcwd(), xmlfile)) == True:
-        #print(f'ERROR: Det finns en fil med samma namn som det du döpt din fil till i programmets katalog {cwd}. Ta bort den eller döp om din outputfil.')
-    #else:
-        #print (f'Fil med samma namn finns inte i {cwd} och kan därför skapas...')
-        
-        #result.write_output(xmlfile)
-
-    if (os.path.normpath(outputfolder)) == cwd:
-        print(f'Grattis! Metadatafil skapad i outputkatalog {cwd}.')
-    
-    else:
-        print (f'Flyttar till outputkatalogen...')
-        try:
-            shutil.move(xmlfile, outputfolder)
-            print(f'Metadatafil skapad i outputkatalog {outputfolder}. Bra jobbat!')
-        except:
-            print(f'ERROR: Det finns redan en fil med samma namn i outputkatalogen {outputfolder}. Flytta eller radera den eller döp om din outputfil, och försök igen.')
+# Funktion för att konvertera csv-inputfil till xml-fil som mellanfil inför transformeringen.
+def csvtoxml():
+    try:
+        df=pd.read_csv(inputfile, sep = csvseparator, engine='python')
+    except Exception as e:
+        sg.popup_error_with_traceback(f'Error! Sannolikt har du valt fel csv-separator. Fil kan kanske ändå skapas, men rådet är att välja rätt separator. Info:', e)
+    df = df.convert_dtypes()
+    try:
+        df.to_xml(csvtoxmlfile)
+    except Exception as e:
+        sg.popup_error_with_traceback(f'Error! Sannolikt har du valt fel csv-separator. Fil kan kanske ändå skapas, men rådet är att välja rätt separator. Info:', e)
 
 # Funktion för att transformera inputfilen till xmlfil enligt schemafilen.
 def xslttransform():
@@ -173,22 +157,7 @@ def xslttransform():
                 xmlschemavalidation()
             move()
     else:
-        print(f'ERROR: Det finns en fil med samma namn som det du döpt din fil till i programmets katalog {cwd}. Ta bort den eller döp om din outputfil.')   
-
-# Funktion för att konvertera csv-inputfil till xml-fil som mellanfil inför transformeringen.
-def csvtoxml():
-    
-    try:
-        df=pd.read_csv(inputfile, sep = csvseparator)
-
-    except Exception as e:
-        sg.popup_error_with_traceback(f'Error! Sannolikt har du valt fel csv-separator. Fil kan kanske ändå skapas, men rådet är att välja rätt separator. Info:', e)
-
-    df = df.convert_dtypes()
-    try:
-        df.to_xml(csvtoxmlfile)
-    except Exception as e:
-        sg.popup_error_with_traceback(f'Error! Sannolikt har du valt fel csv-separator. Fil kan kanske ändå skapas, men rådet är att välja rätt separator. Info:', e)
+        print(f'ERROR: Det finns en fil med samma namn som det du döpt din fil till i programmets katalog {cwd}. Ta bort den eller döp om din outputfil.')
 
 # Funktion för att validera den skapade xmlfilen.
 def xmlschemavalidation():
@@ -201,6 +170,19 @@ def xmlschemavalidation():
         print(f'Valid mot {schemafile}. Bra jobbat!')
     except Exception as e: print(e)
 
+# Funktion för att flytta den skapade filen från cwd till vald outputkatalog om annan katalog än cwd är vald som outputkatalog.
+def move():
+    if (os.path.normpath(outputfolder)) == cwd:
+        print(f'Grattis! Metadatafil skapad i outputkatalog {cwd}.')
+    
+    else:
+        print (f'Flyttar till outputkatalogen...')
+        try:
+            shutil.move(xmlfile, outputfolder)
+            print(f'Metadatafil skapad i outputkatalog {outputfolder}. Bra jobbat!')
+        except:
+            print(f'ERROR: Det finns redan en fil med samma namn i outputkatalogen {outputfolder}. Flytta eller radera den eller döp om din outputfil, och försök igen.')    
+
 # Program-Loop
 while True:
     event, values = window.read()
@@ -209,7 +191,7 @@ while True:
             break     
         
         # Startar processen för att skapa metadatafil och/el validera om användaren trycker på "Skapa fil/validera"-knappen
-        case 'create_metadatafile':
+        case 'create':
             window.find_element('output').Update('')
             window.refresh()
             inputfile = values['-INPUTFILE-']
@@ -223,9 +205,7 @@ while True:
             schemafile = values['-SCHEMAFILE-']
             outputfolder = values['-OUTPUTFOLDER-']
 
-            # Kontrollerar att inputfil och xsltfil finns och om schemafil är tom skapa metadatafil utan att validera. Denna är ännu 'standalone' till def:arna ovan.
-            
-            # or not inputfile.endswith('.xml') or not inputfile.endswith('.csv')
+            # Kontrollerar att inputfil är vald.
             if inputfile == '':
                 print(f'Du måste välja en inputfil som har filändelse .xml eller .csv (små bokstäver)!')
             
@@ -256,8 +236,7 @@ while True:
                 df1 = pd.concat([s1, s2], axis=1)
                 df1.rename(columns = {0:'Antal', 1:'Antal unika'}, inplace = True)
                 print(df1)
-                
-                # Group data by columns 'A' and 'C', and count unique values in column 'B'
+                # Gruppera på kolumner (utveckling: välja vilka gruppera på)
                 unique_count = df.groupby(['ArkivobjektID_Arende', 'ArkivobjektID_Handling']).agg({'Lank': 'nunique'})
                 print(unique_count)
                 # Alla antal unika värden per kolumn sorterat på Ärende.
@@ -295,7 +274,6 @@ while True:
                     #num_duplicate_rows.to_csv('')
                     num_unique_rows.to_csv('./csv_statistics/num_unique_rows.csv')
                 
-
                 # Hantering när funktionsväljaren är vald till csv till xml-konvertering. Standalone från def:arna. Återstår fixa export av allt, knyta till outputfolder, välja separator, populera defaultvärden, tillåta namespace. Hittills endast experiment.
                 #try:
                     #df = pd.read_xml(inputfile, xpath='.//ArkivobjektArende')
@@ -303,9 +281,18 @@ while True:
                     #df.to_csv(outputfile, sep=';', engine='python')
                     #print(f'Filen {outputfile} ligger i programmets katalog {cwd}. Det som exporterades var ArkivobjektArende. Detta är bara på experimentstadiet hittills.')
                 #except Exception as e: print(e)
-            
+
+            # Hantering när ingen xslt-fil är vald.
             elif xsltfile == '':
-                print(f'Du måste välja en xsltfil med filändelse .xsl eller .xslt (eller en schemafil om det är så att du bara vill validera xml, fixar separat exception senare)!')
+                print(f'Du måste välja en xsltfil med filändelse .xsl eller .xslt!')
+
+            # Hantering när ingen input finns i 'Döp din outputfil' (default raderas med rensaknappen).
+            elif filename == '':
+                print(f'Du måste skriva in ett värde i Döp din outputfil så att din metadatafil får ett filnamn!')
+                
+            # Hantering när ingen input finns i outputkatalog (default raderas med rensaknappen).
+            elif outputfolder == '':
+                print(f'Du måste välja en outputkatalog så att du vet var din metadatafil hamnar!')
              
             # Hantering av xmlfil som input
             elif inputfile.endswith('.xml') and xsltfile != '':
@@ -315,10 +302,6 @@ while True:
             else:
                 if inputfile.endswith('.csv') and xsltfile != '':
                     print(f'Skapar metadatafil...')
-                window.refresh()
-                time.sleep(0.3)
-                window.find_element('output').update('')
-                window.refresh()
                 csvtoxml()
                 xslttransform()
 
@@ -330,15 +313,12 @@ while True:
         
         case 'clear':
             clearinput()
-
         
         # Meny - FGS-dokumentation
-        case 'FGS-Paketstruktur v 1.2':
-            webbrowser.open('https://riksarkivet.se/Media/pdf-filer/doi-t/FGS_Paketstruktur_RAFGS1V1_2.pdf')
-        case 'FGS-Paketstruktur v 1.2 - tillägg':
-            webbrowser.open('https://riksarkivet.se/Media/pdf-filer/doi-t/FGS_Paketstruktur_Tillagg_RAFGS1V1_2A20171025.pdf')
-        case 'Schema v 1.2':
-            webbrowser.open('http://xml.ra.se/e-arkiv/METS/CSPackageMETS.xsd')
+        case 'Om FGS-scheman':
+            webbrowser.open('https://riksarkivet.se/faststallda-kommande-fgser')
+        case 'FGS-scheman':
+            webbrowser.open('http://xml.ra.se/e-arkiv/')
         
         # Meny - Hjälp
         case 'Om FGS-Buddysbuddy':

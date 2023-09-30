@@ -1,22 +1,29 @@
-Version 0.0.1* A proof of concept based on FGS-Buddy 1.1.0 / POC baserad på FGS-Buddy 1.1.0
 
 Version 0.1.0
-* First tested version. / Första strukturellt testade versionen.
+* First system tested version. / Första strukturellt systemtestade versionen.
 
 Testcase v. 0.1.0
 Testdata from folder Testdata (https://github.com/s99mol/FGSBuddysbuddy/tree/master/Testdata)
-- GUI loads in Python v3.10.0 (Mac OS Ventura 13.5.2, M1): OK
+
+Testing button 'Create'/'Utför' in various input combinations:
+- GUI loads in Python v3.10.0 (Mac OS Ventura 13.5.2, M1): OK (but no menu)
 - Error message no inputfile: OK
 - Error message no xsltfile: OK
-- Error message when no schemafile when inputfile outputmetadata.xml and chooser 'Enbart xml-validering': OK
-- Inputfile: outputmetadata.xml with no errors, schemafile, chooser 'Enbart xml-validering': OK
-- Inputfile: outputmetadata_error.xml (with error), schemafile, chooser 'Enbart xml-validering': OK
-- As above but no schemafile, should give error: OK
-- "Rensa" cleans inputfields and goes back to default for combolists: OK
-- funktionchooser 'Xml till csv (experimental)': OK (funkar ej med namespace)
-- xmlinput, no schemafile: create in cwd and home, errorwarning when already exists: OK
-- xmlinput, with schemafile (with/without error): create in cwd and home, errorwarning when already exists: OK
+- Error message when no schemafile when inputfile 'testmetadata_output.xml' and chooser 'Enbart xml-validering': OK
+- Inputfile: 'testmetadata_output.xml' and 'testmetadata_output_error.xml', schemafile 'arendehantering.xsd', chooser 'Enbart xml-validering': OK
+- Inputfile 'testdatainput.csv', funktionchooser 'Csv-inputstatistik', creates folder with 5 files in cwd and some statistics in program window: OK
+- Repeat above 5 times = 5 more folders created with same 5 files in each: OK
+- Error-message when try to create statistics from xml-file: Yes, but wrong error-message.
+Chooser 'Skapa metadatafil':
+- Inputfile 'testdatainput.xml', no schemafile: create in cwd and home, errorwarning when already exists: OK
+(*Erased input in Schemafile can cause validation to execute, might need to restart, does it matter...?)
+- Inputfile 'testdatainput.xml'/'testdatainput_error.xml', with schemafile: Outputcatalog cwd and home, errorwarning when already exists: OK
+- Inoutfile 'testdatainput.csv'/'testdatainput_error.csv', no schemafile: OK
+- Inoutfile 'testdatainput.csv'/'testdatainput_error.csv', with schemafile: OK
 
-- csvinput, no schemafile:
-- csvinput, with schemafile (with/without error):
-
+Testing button 'Clean'/'Rensa':
+- "Rensa" cleans inputfields and goes back to default for combolists: OK
+- Error-messages when try to create metadatafile without values in filename or outputfolder: OK
+
+Version 0.0.1
+* A proof of concept based on FGS-Buddy 1.1.0 / POC baserad på FGS-Buddy 1.1.0
