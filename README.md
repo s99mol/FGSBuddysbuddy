@@ -1,15 +1,17 @@
 # FGS Buddysbuddy :sunglasses:
 
 
-<div style="text-align: center;">
+<div style="text-align:center">
 
 ![Buddyn](Buddysbuddy.ico)<br>
 
-
-
-En GUI-försedd metadataomat inom Byddy-projektet som gör saker med din xml- eller csv-fil, se vidare Features. Buddy-projektet vänder sig främst till arkivarier och sådana som håller på med strukturerad metadata inom arkivdomänen, men alla är förstås välkomna! 
-
+En GUI-försedd metadataomat inom Buddy-projektet. Buddy-projektet vänder sig främst till arkivarier och sådana som håller på med strukturerad metadata inom arkivdomänen, men alla är förstås välkomna!
 </div>
+
+---
+
+![Screenshot1](fgsbuddysbuddy_screen1.png)
+![Screenshot2](fgsbuddysbuddy_screen2.png)
 
 ## Features :star:
 * Huvudarbetsprocess:
@@ -19,7 +21,7 @@ En GUI-försedd metadataomat inom Byddy-projektet som gör saker med din xml- el
   *   Namnge xml-outputfilen (om du vill ändra default).
   *   Välj outputkatalog (om du vill ändra default).
   *   Skapa filen!
-  *   Gå till FGS Buddy med filen och infoga i FGS-paketet.
+  *   Gå till [FGS Buddy](https://github.com/Viktor-Lundberg/FGSBuddy) med filen och infoga i FGS-paketet.
 * Samt:
 	* Validera färdig xml-fil separat
 	* Plocka ut statistik från csv-inputfil
@@ -28,10 +30,6 @@ En GUI-försedd metadataomat inom Byddy-projektet som gör saker med din xml- el
 
 
 ---
-
-
-![](screenv1_1.PNG)
-
 
 ## Ideas :star:
 * Funktion för uuid-tilldelning (nu "hårdkodad")
@@ -49,9 +47,8 @@ En GUI-försedd metadataomat inom Byddy-projektet som gör saker med din xml- el
 ## Kom igång :rocket:
 
 1. [Ladda ner den senaste releasen av FGS-Buddysbuddy.](https://github.com/s99mol/FGSBuddysbuddy)
-2. Kör py-filen med Python 3
-	
-	Eller be Buddy-projektet att snabba på med .exe-versionen.
+2. Kör py-filen med Python 3 (eller be Buddy-projektet att snabba på med .exe-versionen).
+3. Arbeta enligt Feautures ovan.
   
 ---
 
@@ -64,9 +61,11 @@ En GUI-försedd metadataomat inom Byddy-projektet som gör saker med din xml- el
 * Uuid-tilldelningen finns endast för specifik mappning.
 * Huvudmenyn fungerar inte på Mac, åtminstone inte M1.
 * Allmän koduppstädning och bättre lösningar.
-* Missvisande felmeddelande när man försöker skapa statistik från en xml-fil
-* Om man först angett schemafil och sedan vill köra utan kan det vara nödvändigt att starta om programmet
+* Missvisande felmeddelande när man försöker skapa statistik från en xml-fil.
+* På Mac får kolumnerna i statistikoutputen i det stora fönstret inte rak vänsterjustering.
+* Om man först angett schemafil och sedan vill köra utan kan det vara nödvändigt att starta om programmet.
 * Fixa i testmappens testxslt.xsl så att tomma taggar utesluts.
+* Det ska vara FGS Buddysbuddy och inte FGS-Buddysbuddy
 
 
 ---
