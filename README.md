@@ -22,6 +22,7 @@
 	
 
 	![Screenshot1](fgsbuddysbuddy_screen1.png "skärmdump 1") ![Screenshot2](fgsbuddysbuddy_screen2.png "skärmdump 2")
+	[![Screenshot1](Screenshots/fgsbuddysbuddy_screen1.png)](Screenshots/fgsbuddysbuddy_screen1_big.png) 	[![Screenshot2](Screenshots/fgsbuddysbuddy_screen2.png)](Screenshots/fgsbuddysbuddy_screen2_big.png)
 
 
 ---
@@ -42,7 +43,7 @@
 
 ## Kom igång :rocket:
 
-1. [Ladda ner den senaste releasen av FGS-Buddysbuddy.](https://github.com/s99mol/FGSBuddysbuddy)
+1. [Ladda ner .py-filen, .txt-filen och .ico-filen och testdatat.](https://github.com/s99mol/FGSBuddysbuddy)
 2. Kör py-filen med Python 3 (eller be Buddy-projektet att snabba på med .exe-versionen).
 3. Arbeta enligt Feautures ovan.
   
@@ -62,7 +63,6 @@
 - [ ] Om man först angett schemafil och sedan vill köra utan kan det vara nödvändigt att starta om programmet.
 - [ ] Fixa i testmappens testxslt.xsl så att tomma taggar utesluts.
 - [ ] Det ska vara FGS Buddysbuddy och inte FGS-Buddysbuddy.
-- [ ] Kontrollera koden i denna readme mot [Githubs Markdown specification.](https://github.github.com/gfm/)
 
 ---
 
