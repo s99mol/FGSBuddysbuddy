@@ -1,6 +1,6 @@
 # FGS Buddysbuddy :sunglasses:
 
- En GUI-försedd metadataomat inom Buddy-projektet. Buddy-projektet vänder sig främst till arkivarier och sådana som håller på med strukturerad metadata inom arkivdomänen, men alla är förstås välkomna! ![Buddyn](Buddysbuddy.ico "Buddysbuddy-ikonen")
+ <img align="left" src="Buddysbuddy.ico" alt="Buddysbuddy-logotyp"> En GUI-försedd metadataomat inom Buddy-projektet. Buddy-projektet vänder sig till arkivarier och sådana som håller på med strukturerad metadata inom arkivdomänen, och alla andra
 
 
 ---
@@ -20,7 +20,7 @@
 	
 	Se även systemtestcasen redovisade i releasenotes. I mappen Testdata finns testfiler som kan användas för att bekanta sig med Buddysbuddy.
 	
-	[![Screenshot1](Screenshots/fgsbuddysbuddy_screen1.png)](Screenshots/fgsbuddysbuddy_screen1_big.png)[![Screenshot2](Screenshots/fgsbuddysbuddy_screen2.png)](Screenshots/fgsbuddysbuddy_screen2_big.png)
+	[![Screenshot1](Screenshots/fgsbuddysbuddy_screen1.png "Liten skärmdump 1")](Screenshots/fgsbuddysbuddy_screen1_big.png "Stor skärmdump 1")[![Screenshot2](Screenshots/fgsbuddysbuddy_screen2.png "Liten skärmdump 2")](Screenshots/fgsbuddysbuddy_screen2_big.png "Stor skärmdump 2")
 
 
 ---
@@ -49,9 +49,9 @@
 
 ## Kända problem/fix :warning:
 
-* Rekommendation: Installera FGS-buddysbuddy på en lokal disk (exempelvis c:). Applikationen kan ta lång tid att starta om den körs från en nätverksdisk. 
-* Rekommendation: Kör skriptet och de framtida programfilerna från katalog du som användare har skrivbehörighet till. Fil skrivs till current working directory i de flesta funktionerna.
-* Möjligen: Tooltips på flera rader laddas inte alltid. - workaround flytta muspekaren från fältet och försök igen.
+:exclamation: Rekommendation: Installera FGS-buddysbuddy på en lokal disk (exempelvis c:). Applikationen kan ta lång tid att starta om den körs från en nätverksdisk. 
+:exclamation: Rekommendation: Kör skriptet och de framtida programfilerna från katalog du som användare har skrivbehörighet till. Fil skrivs till current working directory i de flesta funktionerna.
+:question: Möjligen: Tooltips på flera rader laddas inte alltid. - workaround flytta muspekaren från fältet och försök igen.
 - [ ] Det går säkert att lägga in mer exception-hantering.
 - [ ] Uuid-tilldelningen finns endast för specifik mappning.
 - [ ] Huvudmenyn fungerar inte på Mac, åtminstone inte M1.
