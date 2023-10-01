@@ -1,9 +1,6 @@
 # FGS Buddysbuddy :sunglasses:
 
-
-|               			  				|  														|
-| ------------------------------------------|-------------------------------------------------------|
-| ![Buddyn](Buddysbuddy.ico)  				| En GUI-försedd metadataomat inom Buddy-projektet. Buddy-projektet vänder sig främst till arkivarier och sådana som håller på med strukturerad metadata inom arkivdomänen, men alla är förstås välkomna! 			 |
+![Buddyn](Buddysbuddy.ico "Buddysbuddy-ikonen") En GUI-försedd metadataomat inom Buddy-projektet. Buddy-projektet vänder sig främst till arkivarier och sådana som håller på med strukturerad metadata inom arkivdomänen, men alla är förstås välkomna!
 
 
 ---
