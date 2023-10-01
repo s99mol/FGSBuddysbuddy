@@ -47,7 +47,7 @@
 
 ## Kom igång :rocket:
 
-1. [Ladda ner .py-filen, .txt-filen och .ico-filen och testdatat.](https://github.com/s99mol/FGSBuddysbuddy)
+1. [Ladda ner hela release-zip:en eller bara .py-filen, .txt-filen och .ico-filen och testdatat.](https://github.com/s99mol/FGSBuddysbuddy)
 2. Kör py-filen med Python 3 (eller be Buddy-projektet att snabba på med .exe-versionen).
 3. Arbeta enligt Feautures ovan.
   
