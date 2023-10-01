@@ -23,9 +23,8 @@
 	
 	Se även systemtestcasen redovisade i releasenotes. I mappen Testdata finns testfiler som kan användas för att bekanta sig med Buddysbuddy.
 	
-	|               							  |  											|
-	| --------------------------------------------|---------------------------------------------|
-	| ![Screenshot1](fgsbuddysbuddy_screen1.png)  | ![Screenshot2](fgsbuddysbuddy_screen2.png)  |
+
+	![Screenshot1](fgsbuddysbuddy_screen1.png "skärmdump 1") ![Screenshot2](fgsbuddysbuddy_screen2.png "skärmdump 2")
 
 
 ---
