@@ -1,10 +1,12 @@
 # FGS Buddysbuddy :sunglasses:
 
  <img align="left" src="Buddysbuddy.ico" alt="Buddysbuddy-logotyp"> En GUI-försedd metadataomat inom Buddy-projektet. Buddy-projektet vänder sig till arkivarier och sådana som håller på med strukturerad metadata inom arkivdomänen, och alla andra
- 
- 
- 
- 
+
+
+
+
+
+
 
 
 ---
@@ -24,7 +26,7 @@
 	
 	Se även systemtestcasen redovisade i releasenotes. I mappen Testdata finns testfiler som kan användas för att bekanta sig med Buddysbuddy.
 	
-	[![Screenshot1](Screenshots/fgsbuddysbuddy_screen1.png "Liten skärmdump 1")](Screenshots/fgsbuddysbuddy_screen1_big.png "Stor skärmdump 1")[![Screenshot2](Screenshots/fgsbuddysbuddy_screen2.png "Liten skärmdump 2")](Screenshots/fgsbuddysbuddy_screen2_big.png "Stor skärmdump 2")
+	[![Screenshot1](Screenshots/fgsbuddysbuddy_screen1.png "Liten skärmdump 1, klicka för större")](Screenshots/fgsbuddysbuddy_screen1_big.png "Stor skärmdump 1")[![Screenshot2](Screenshots/fgsbuddysbuddy_screen2.png "Liten skärmdump 2, klicka för större")](Screenshots/fgsbuddysbuddy_screen2_big.png "Stor skärmdump 2")
 
 
 ---
