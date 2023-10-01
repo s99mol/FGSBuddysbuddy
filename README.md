@@ -1,5 +1,8 @@
 # FGS Buddysbuddy :sunglasses:
 
+
+|               			  |  																					|
+| ----------------------------|------------------------------------------------------------------------------------ |
 | ![Buddyn](Buddysbuddy.ico)  | En GUI-försedd metadataomat inom Buddy-projektet. Buddy-projektet vänder sig främst till arkivarier och sådana som håller på med strukturerad metadata inom arkivdomänen, men alla är förstås välkomna! |
 
 
@@ -20,6 +23,8 @@
 	
 	Se även systemtestcasen redovisade i releasenotes. I mappen Testdata finns testfiler som kan användas för att bekanta sig med Buddysbuddy.
 	
+	|               							  |  											|
+	| --------------------------------------------|---------------------------------------------|
 	| ![Screenshot1](fgsbuddysbuddy_screen1.png)  | ![Screenshot2](fgsbuddysbuddy_screen2.png)  |
 
 
