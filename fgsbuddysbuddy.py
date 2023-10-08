@@ -27,7 +27,7 @@ def clearinput():
             continue
     window.refresh()
 
-# Funktion för att skapa popup-fönstret "Om FGS-Buddysbuddysbuddy"
+# Funktion för att skapa popup-fönstret "Om FGS Buddysbuddysbuddy"
 def buddywindow():
     # Hämtar alla releasenotes från txt-fil och lägger i variabeln releasenotes
     with open('releasenotes.txt', encoding='utf-8') as releasenotesdoc:
@@ -35,10 +35,10 @@ def buddywindow():
 
     # Layout för fönstret
     aboutlayout = [
-        [sg.Text('FGS-Buddysbuddy', font='Arial 12 bold', size=30)],
+        [sg.Text('FGS Buddysbuddy', font='Arial 12 bold', size=30)],
         [sg.Text(f'Version: {version}\nSkapad av: Martin Olsson\nLicens: Attribution-NonCommercial 4.0 International (CC BY-NC 4.0)', font='Consolas 10')],
         [sg.Text('Baserad på: Viktor Lundbergs FGS-Buddy v. 1.1.0', font='Consolas 10')],
-        [sg.Text('FGS-Buddysbuddy på github', font='Consolas 10 underline', text_color='blue', enable_events=True, key='githublink')],
+        [sg.Text('FGS Buddysbuddy på github', font='Consolas 10 underline', text_color='blue', enable_events=True, key='githublink')],
         [sg.Text('FGS-Buddy på github', font='Consolas 10 underline', text_color='blue', enable_events=True, key='githublink2')],
         [sg.Text('', font='Arial 12 bold', size=30)],
         [sg.Text('Release notes', font='Arial 10 bold', size=30)],
@@ -47,9 +47,9 @@ def buddywindow():
     ]
 
     # Skapar nya fönstret
-    about = sg.Window('Om FGS-Buddysbuddy', aboutlayout, icon="Buddysbuddy.ico")
+    about = sg.Window('Om FGS Buddysbuddy', aboutlayout, icon="Buddysbuddy.ico")
     
-    # Programloop för "Om FGS-Buddysbuddy"-fönstret.
+    # Programloop för "Om FGS Buddysbuddy"-fönstret.
     while True:
         event, values = about.read()
         if event == "Exit" or event == sg.WIN_CLOSED:
@@ -75,7 +75,7 @@ sg.theme('greenMono')
 
 
 innehall = [  
-    [sg.Text('Metadataomaten FGS-Buddysbuddy', font='Arial 12 bold', size=75)],
+    [sg.Text('Metadataomaten FGS Buddysbuddy', font='Arial 12 bold', size=75)],
     [sg.Text('Med detta komplement till FGS Buddy (länk i Hjälp-menyn) kan du skapa en metadatafil, validera mot xmlschema och få statistik från csv-fil.')],
     [sg.Text('Mappningen från input till metadatafil görs i en xslt-fil. Det finns en i testdatat som du kan modifiera efter behov.')],
     [sg.Text('')],
@@ -96,13 +96,13 @@ space = [
     
 # Menyraden
 meny = [
-    ['FGS-dokumentation', ['Om FGS-scheman','FGS-scheman']],['Hjälp', ['Om FGS-Buddysbuddy']]
+    ['FGS-dokumentation', ['Om FGS-scheman','FGS-scheman']],['Hjälp', ['Om FGS Buddysbuddy']]
      ]
     
 # GUI layout
 layout = [
     # OBS! Pysimplegui har problem med custom menubar (om det används syns inte applikationen i verktygsfältet, använd classic tills fix...)
-    #[sg.Titlebar('FGS-Buddysbuddy v 0.1.0 - Martin Olsson', font='Consolas 10', background_color='Black')],
+    #[sg.Titlebar('FGS Buddysbuddy v 0.1.0 - Martin Olsson', font='Consolas 10', background_color='Black')],
     #[sg.MenubarCustom(meny, bar_background_color='Pink', bar_text_color='Black')],
     [sg.MenuBar(meny, background_color='Pink')],
     [sg.Column(space)],
@@ -113,7 +113,7 @@ layout = [
     ]
 
 # Skapar "huvudfönstret"
-window = sg.Window(f'FGS-Buddysbuddy v {version}',layout, font='Consolas 10', icon="Buddysbuddy.ico", resizable=True, titlebar_background_color='green')
+window = sg.Window(f'FGS Buddysbuddy v {version}',layout, font='Consolas 10', icon="Buddysbuddy.ico", resizable=True, titlebar_background_color='green')
 
 # Funktion för att konvertera csv-inputfil till xml-fil som mellanfil inför transformeringen.
 def csvtoxml():
@@ -321,7 +321,7 @@ while True:
             webbrowser.open('http://xml.ra.se/e-arkiv/')
         
         # Meny - Hjälp
-        case 'Om FGS-Buddysbuddy':
+        case 'Om FGS Buddysbuddy':
             sg.Window.disappear(window)
             buddywindow()
             sg.Window.reappear(window)

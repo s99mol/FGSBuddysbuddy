@@ -13,13 +13,13 @@
 
 ## Features :star:
 * Huvudflöde:
-  *   Välj antingen csv-fil med rubriker (encoding utf-8, defaultseparator är semikolon) eller en xml-fil med flat strutur.
+  *   Välj antingen csv-fil med rubriker (encoding UTF-8, defaultseparator är semikolon) eller en xml-fil med flat strutur.
   *   Välj matchande xslt-fil där rubrikerna i csv-filen eller taggar i xml-filen mappar mot värden i xslt-filen.
   *   Välj xml-schemafil (.xsd) om du vill validera filen i samband med skapandet.
   *   Namnge xml-outputfilen (om du vill ändra default).
   *   Välj outputkatalog (om du vill ändra default).
   *   Skapa filen!
-  *   Gå till [FGS Buddy](https://github.com/Viktor-Lundberg/FGSBuddy) med filen och infoga i FGS-paketet.
+  *   Välj filen som metadatafil i [FGS Buddy](https://github.com/Viktor-Lundberg/FGSBuddy) och skapa FGS-paket.
 * Samt:
 	* Validera färdig xml-fil separat
 	* Plocka ut statistik från csv-inputfil
@@ -28,6 +28,22 @@
 	
 	[![Screenshot1](Screenshots/fgsbuddysbuddy_screen1.png "Liten skärmdump 1, klicka för större")](Screenshots/fgsbuddysbuddy_screen1_big.png "Stor skärmdump 1")[![Screenshot2](Screenshots/fgsbuddysbuddy_screen2.png "Liten skärmdump 2, klicka för större")](Screenshots/fgsbuddysbuddy_screen2_big.png "Stor skärmdump 2")
 
+---
+
+# FAQ :question:
+
+* Vilka egenskaper bör min csv-inputfil ha? Varför fungerar det inte med min csv-fil?
+  Svar:
+  * Encoding: UTF-8
+  * Rubriker utan blanksteg och "konstiga tecken" som '/' (å, ä, ö går bra, även '_' och '-').
+  * Defaultseparator är semikolon (';') men kan ändras.
+  * Får du inte någon output från sista raden, kolla att det finns radavslutningstecken, vilket skapas om sista raden är en blankrad.
+  * Ett vanligt fel är att antalet separatorer inte stämmer med rubrikraden. Exempelvis kan ett semikolon i en sträng tolkas som separator.
+* Varför måste min csv-fil ha rubriker?
+  Svar: Det måste finnas en första rad med rubriker därför att det är dessa som i xslt-filen mappas in i xml-taggarna. Exempel:
+  			<Skapad> (xml-element som skrivs till xml-outputfilen)
+				<xsl:value-of select="Skapad_Arende"/> ('Skapad_Arende' kommer ursprungligen från csv-filens rubrikrad.)
+			</Skapad>
 
 ---
 
@@ -47,7 +63,7 @@
 
 ## Kom igång :rocket:
 
-1. [Ladda ner hela release-zip:en eller bara .py-filen, .txt-filen och .ico-filen och testdatat.](https://github.com/s99mol/FGSBuddysbuddy)
+1. [Ladda ner .py-filen, .txt-filen och .ico-filen och testdatat.](https://github.com/s99mol/FGSBuddysbuddy)
 2. Kör py-filen med Python 3 (eller be Buddy-projektet att snabba på med .exe-versionen).
 3. Arbeta enligt Feautures ovan.
   
@@ -65,8 +81,8 @@
 - [ ] Missvisande felmeddelande när man försöker skapa statistik från en xml-fil.
 - [ ] På Mac får kolumnerna i statistikoutputen i det stora fönstret inte rak vänsterjustering.
 - [ ] Om man först angett schemafil och sedan vill köra utan kan det vara nödvändigt att starta om programmet.
-- [ ] Fixa i testmappens testxslt.xsl så att tomma taggar utesluts.
-- [ ] Det ska vara FGS Buddysbuddy och inte FGS-Buddysbuddy.
+- [x] Fixa i testmappens testxslt.xsl så att tomma taggar utesluts och lägg in kommentarer.
+- [x] Det ska vara FGS Buddysbuddy och inte FGS-Buddysbuddy.
 
 ---
 
