@@ -42,10 +42,10 @@
 * Varför måste min csv-fil ha rubriker? <br/>
   Svar: Det måste finnas en första rad med rubriker därför att det är dessa som i xslt-filen mappas in i xml-taggarna. Exempel:
   
-  			``` <Skapad> (xml-element som skrivs till xml-outputfilen)
-				<xsl:value-of select="Skapad_Arende"/> ('Skapad_Arende' kommer ursprungligen från csv-filens rubrikrad.)
-			</Skapad>
-                       ``` 
+  ``` <Skapad> (xml-element som skrivs till xml-outputfilen)
+	<xsl:value-of select="Skapad_Arende"/> ('Skapad_Arende' kommer ursprungligen från csv-filens rubrikrad.)
+      </Skapad>
+``` 
 
 ---
 
