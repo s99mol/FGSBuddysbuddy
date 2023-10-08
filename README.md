@@ -41,9 +41,10 @@
   * Ett vanligt fel är att antalet separatorer inte stämmer med rubrikraden. Exempelvis kan ett semikolon i en sträng tolkas som separator.
 * Varför måste min csv-fil ha rubriker? <br/>
   Svar: Det måste finnas en första rad med rubriker därför att det är dessa som i xslt-filen mappas in i xml-taggarna. Exempel:
-  			<Skapad> (xml-element som skrivs till xml-outputfilen)
+  			<!-- <Skapad> (xml-element som skrivs till xml-outputfilen)
 				<xsl:value-of select="Skapad_Arende"/> ('Skapad_Arende' kommer ursprungligen från csv-filens rubrikrad.)
 			</Skapad>
+   			-->
 
 ---
 
