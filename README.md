@@ -32,14 +32,14 @@
 
 # FAQ :question:
 
-* Vilka egenskaper bör min csv-inputfil ha? Varför fungerar det inte med min csv-fil?
+* Vilka egenskaper bör min csv-inputfil ha? Varför fungerar det inte med min csv-fil?<br/>
   Svar:
   * Encoding: UTF-8
   * Rubriker utan blanksteg och "konstiga tecken" som '/' (å, ä, ö går bra, även '_' och '-').
   * Defaultseparator är semikolon (';') men kan ändras.
   * Får du inte någon output från sista raden, kolla att det finns radavslutningstecken, vilket skapas om sista raden är en blankrad.
   * Ett vanligt fel är att antalet separatorer inte stämmer med rubrikraden. Exempelvis kan ett semikolon i en sträng tolkas som separator.
-* Varför måste min csv-fil ha rubriker?
+* Varför måste min csv-fil ha rubriker? <br/>
   Svar: Det måste finnas en första rad med rubriker därför att det är dessa som i xslt-filen mappas in i xml-taggarna. Exempel:
   			<Skapad> (xml-element som skrivs till xml-outputfilen)
 				<xsl:value-of select="Skapad_Arende"/> ('Skapad_Arende' kommer ursprungligen från csv-filens rubrikrad.)
