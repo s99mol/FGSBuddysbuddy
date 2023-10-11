@@ -67,7 +67,7 @@
 
 ## Kom igång :rocket:
 
-1. [Ladda ner .py-filen, .txt-filen och .ico-filen och testdatat.](https://github.com/s99mol/FGSBuddysbuddy)
+1. [Ladda ner .py-filen, .txt-filen, releasenotes, .ico-filen och testdatat.](https://github.com/s99mol/FGSBuddysbuddy)
 2. Kör py-filen med Python 3 (eller be Buddy-projektet att snabba på med .exe-versionen).
 3. Arbeta enligt Feautures ovan.
   
@@ -80,6 +80,7 @@
 * :question: Möjligen: Tooltips på flera rader laddas inte alltid. - workaround flytta muspekaren från fältet och försök igen.
 - [ ] Det går säkert att lägga in mer exception-hantering.
 - [ ] Uuid-tilldelningen finns endast för specifik mappning.
+- [ ] Group-funktion i statistikfunktionen kräver en rubrik 'Lank'.
 - [ ] Huvudmenyn fungerar inte på Mac, åtminstone inte M1.
 - [ ] Allmän koduppstädning och bättre lösningar.
 - [ ] Missvisande felmeddelande när man försöker skapa statistik från en xml-fil.
