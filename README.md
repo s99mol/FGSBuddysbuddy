@@ -86,6 +86,7 @@
 - [ ] Missvisande felmeddelande när man försöker skapa statistik från en xml-fil.
 - [ ] På Mac får kolumnerna i statistikoutputen i det stora fönstret inte rak vänsterjustering.
 - [ ] Om man först angett schemafil och sedan vill köra utan kan det vara nödvändigt att starta om programmet.
+- [ ] Vid sällsynta tillfällen ges felet "Start tag expected, '<' not found, line 1, column 1" fast det är en csv-fil som inputfil. Workaround: Starta om och försök igen.
 - [x] Fixa i testmappens testxslt.xsl så att tomma taggar utesluts och lägg in kommentarer.
 - [x] Det ska vara FGS Buddysbuddy och inte FGS-Buddysbuddy.
 
