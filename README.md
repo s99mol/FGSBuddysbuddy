@@ -23,6 +23,7 @@
 * Samt:
 	* Validera färdig xml-fil separat
 	* Plocka ut statistik från csv-inputfil
+	* Schematron-validering genom att välja schematronfil som schemafile (v.0.2.0).
 	
 	Se även systemtestcasen redovisade i releasenotes. I mappen Testdata finns testfiler som kan användas för att bekanta sig med Buddysbuddy.
 	
@@ -53,7 +54,7 @@
 
 ## Ideas :star:
 
-- [ ] Funktion för uuid-tilldelning (nu "hårdkodad")
+- [x] Funktion för uuid-tilldelning (v.0.2.0)
 - [ ] Jämföra inputdata med outputdata i syfte att säkerställa processuell kvalitet
 - [ ] Editering av xslt och ev schematron
 - [ ] Xml till csv-konvertering
@@ -67,7 +68,7 @@
 
 ## Kom igång :rocket:
 
-1. [Ladda ner .py-filen, .txt-filen, releasenotes, .ico-filen och testdatat.](https://github.com/s99mol/FGSBuddysbuddy)
+1. [Ladda ner den senaste releasen och packa upp på lämplig plats.](https://github.com/s99mol/FGSBuddysbuddy/releases)
 2. Kör py-filen med Python 3 (eller be Buddy-projektet att snabba på med .exe-versionen).
 3. Arbeta enligt Feautures ovan.
   
@@ -79,16 +80,16 @@
 * :exclamation: Rekommendation: Kör skriptet och de framtida programfilerna från katalog du som användare har skrivbehörighet till. Fil skrivs till current working directory i de flesta funktionerna.
 * :question: Möjligen: Tooltips på flera rader laddas inte alltid. - workaround flytta muspekaren från fältet och försök igen.
 - [ ] Det går säkert att lägga in mer exception-hantering.
-- [ ] Uuid-tilldelningen finns endast för specifik mappning.
-- [ ] Group-funktion i statistikfunktionen kräver en rubrik 'Lank'.
+- [x] Uuid-tilldelningen finns endast för specifik mappning (v.0.2.0).
+- [x] Group-funktion i statistikfunktionen kräver en rubrik 'Lank' (v.0.2.0).
 - [ ] Huvudmenyn fungerar inte på Mac, åtminstone inte M1.
 - [ ] Allmän koduppstädning och bättre lösningar.
 - [ ] Missvisande felmeddelande när man försöker skapa statistik från en xml-fil.
 - [ ] På Mac får kolumnerna i statistikoutputen i det stora fönstret inte rak vänsterjustering.
 - [ ] Om man först angett schemafil och sedan vill köra utan kan det vara nödvändigt att starta om programmet.
 - [ ] Vid sällsynta tillfällen ges felet "Start tag expected, '<' not found, line 1, column 1" fast det är en csv-fil som inputfil. Workaround: Starta om och försök igen.
-- [x] Fixa i testmappens testxslt.xsl så att tomma taggar utesluts och lägg in kommentarer.
-- [x] Det ska vara FGS Buddysbuddy och inte FGS-Buddysbuddy.
+- [x] Fixa i testmappens testxslt.xsl så att tomma taggar utesluts och lägg in kommentarer (v.0.2.0).
+- [x] Det ska vara FGS Buddysbuddy och inte FGS-Buddysbuddy (v.0.2.0).
 
 ---
 
