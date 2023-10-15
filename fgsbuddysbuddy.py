@@ -3,6 +3,7 @@ import PySimpleGUI as sg
 import webbrowser
 from io import StringIO
 from lxml import etree
+from lxml import isoschematron
 import pandas as pd
 import uuid
 import shutil
@@ -62,7 +63,7 @@ def buddywindow():
             webbrowser.open('https://github.com/Viktor-Lundberg/FGSBuddy')
 
 # Nuvarande version
-version = '0.1.0'
+version = '0.2.0'
 
 # Current working directory
 cwd = os.getcwd()
@@ -73,14 +74,13 @@ home = Path.home()
 # Sätter färgtema
 sg.theme('greenMono')
 
-
 innehall = [  
     [sg.Text('Metadataomaten FGS Buddysbuddy', font='Arial 12 bold', size=75)],
-    [sg.Text('Med detta komplement till FGS Buddy (länk i Hjälp-menyn) kan du skapa en metadatafil, validera mot xmlschema och få statistik från csv-fil.')],
+    [sg.Text('Komplement till FGS Buddy (länk i Hjälp-menyn). Skapa metadatafil, validera mot xmlschema/schematron, statistik från csv-fil.')],
     [sg.Text('Mappningen från input till metadatafil görs i en xslt-fil. Det finns en i testdatat som du kan modifiera efter behov.')],
     [sg.Text('')],
     [sg.Text('Sökväg till inputfil med metadatat:*', size=52), sg.Text('Csv-separator:'), sg.Text('Välj vad du vill göra med inputfilen:')],
-    [sg.Input(tooltip="Välj inputfil (.xml, .csv)", key='inputfileB'), sg.FileBrowse('Välj fil', tooltip=".xml eller .csv, utf-8", key="-INPUTFILE-", initial_folder=os.path.join(cwd) ), sg.Combo([';', ',', ':', '.', '|', '\t'], default_value=';', size=8, tooltip='Den tomma är tab.', key='-CSVSEPARATOR-'), sg.Combo(['Skapa xml-metadatafil', 'Enbart xml-validering', 'Csv-inputstatistik'], default_value='Skapa metadatafil', key='-FUNCTION_CHOOSER-')],
+    [sg.Input(tooltip="Välj inputfil (.xml, .csv)", key='inputfileB'), sg.FileBrowse('Välj fil', tooltip=".xml eller .csv, utf-8", key="-INPUTFILE-", initial_folder=os.path.join(cwd) ), sg.Combo([';', ',', ':', '.', '|', '\t'], default_value=';', size=8, tooltip='Den tomma är tab.', key='-CSVSEPARATOR-'), sg.Combo(['Skapa xml-metadatafil', 'Enbart xml-validering', 'Csv-inputstatistik', 'Schematron (experimental)'], default_value='Skapa metadatafil', key='-FUNCTION_CHOOSER-')],
     [sg.Text('Sökväg till xsltfilen som transformerar din input:')],
     [sg.Input(tooltip="Välj xslt (.xsl, .xslt)", key='xsltfile'), sg.FileBrowse('Välj fil', tooltip=".xsl eller .xslt", key="-XSLTFILE-", initial_folder=os.path.join(cwd) )],
     [sg.Text('Sökväg till schemafil som validerar xmlfilen:')],
@@ -102,7 +102,7 @@ meny = [
 # GUI layout
 layout = [
     # OBS! Pysimplegui har problem med custom menubar (om det används syns inte applikationen i verktygsfältet, använd classic tills fix...)
-    #[sg.Titlebar('FGS Buddysbuddy v 0.1.0 - Martin Olsson', font='Consolas 10', background_color='Black')],
+    #[sg.Titlebar('FGS Buddysbuddy v 0.2.0 - Martin Olsson', font='Consolas 10', background_color='Black')],
     #[sg.MenubarCustom(meny, bar_background_color='Pink', bar_text_color='Black')],
     [sg.MenuBar(meny, background_color='Pink')],
     [sg.Column(space)],
@@ -114,6 +114,84 @@ layout = [
 
 # Skapar "huvudfönstret"
 window = sg.Window(f'FGS Buddysbuddy v {version}',layout, font='Consolas 10', icon="Buddysbuddy.ico", resizable=True, titlebar_background_color='green')
+
+# Funktion för att plocka ut statistik från csv-inputfil. MER ATT JOBBA PÅ
+def statistics():
+    print(f'Nedan följer en sammanfattning. Se all statistik i mappen csv_statistics i {cwd}.')
+    # Antal unika per kolumn mm (alt. df.count() )
+    #df.info()
+    # Antal unika värden per kolumn
+    s1 = df.count()
+    s2 = df.nunique()
+    df1 = pd.concat([s1, s2], axis=1)
+    df1.rename(columns = {0:'Antal', 1:'Antal unika'}, inplace = True)
+    print(df1)
+    # Gruppera på kolumner
+    unique_count = df.groupby([values['-COLUMN_CHOOSER_1-'], values['-COLUMN_CHOOSER_2-'], values['-COLUMN_CHOOSER_3-']]).nunique()
+    #unique_count = df.groupby([values['-COLUMN_CHOOSER_1-'], values['-COLUMN_CHOOSER_2-']]) [values['-COLUMN_CHOOSER_3-']].nunique()
+    #unique_count = df.groupby(['ArkivobjektID_Arende', 'ArkivobjektID_Handling']).agg({'Lank': 'nunique'})
+    #df_unique=df.groupby('ID')['country','color'].nunique()
+    # df.groupby('column')['column'].nunique()
+    print(unique_count)
+    # Alla antal unika värden per kolumn sorterat på användarens val.
+    df.groupby([values['-COLUMN_CHOOSER_1-']]).nunique()
+    num_unique_rows = df.groupby([values['-COLUMN_CHOOSER_1-']]).count()
+    df2 = num_unique_rows
+    # Kolla dubletter
+    duplicate_rows = df.duplicated()
+    print(duplicate_rows)
+    num_duplicate_rows = df.duplicated().sum()
+    print("Number of duplicate rows: ", num_duplicate_rows)
+    print(num_unique_rows)
+    csvstatisticsfolder = './csv_statistics'
+    path = os.path.join('csv_statistics_' + str(uuid.uuid4().hex))
+    
+    if os.path.exists(os.path.join(os.getcwd(), csvstatisticsfolder)) == True:
+        path = os.path.join('csv_statistics_' + str(uuid.uuid4().hex))
+        os.mkdir(path)
+        os.chdir(path)
+        df1.to_csv('totals_and_unique.csv')
+        df2.to_csv('unique_rows.csv')
+        unique_count.to_csv('unique_count.csv')
+        duplicate_rows.to_csv('duplicate_rows.csv')
+        #num_duplicate_rows.to_csv('')
+        num_unique_rows.to_csv('num_unique_rows.csv')
+        os.chdir(cwd)
+    else:
+        csvstatisticsfolder = './csv_statistics'
+        path = csvstatisticsfolder
+        os.mkdir(path)
+        df1.to_csv('./csv_statistics/totals_and_unique.csv')
+        df2.to_csv('./csv_statistics/unique_rows.csv')
+        unique_count.to_csv('./csv_statistics/unique_count.csv')
+        duplicate_rows.to_csv('./csv_statistics/duplicate_rows.csv')
+        #num_duplicate_rows.to_csv('')
+        num_unique_rows.to_csv('./csv_statistics/num_unique_rows.csv')
+        
+# Funktion för att validera xml-fil med schematron-regler i vald schematronfil (.sch)
+def schematron():
+
+    # Parse schema
+    sct_doc = etree.parse(schematronfile)
+    schematron = isoschematron.Schematron(sct_doc, store_report = True)
+       
+    notValid = inputfile
+    
+    # Parse xml
+    doc = etree.parse(notValid)
+
+    # Validera mot schema
+    validationResult = schematron.validate(doc)
+
+    # Valideringsrapport
+    report = schematron.validation_report
+
+    print("is valid: " + str(validationResult))
+    print(type(report))
+    print(report)
+    report.write('Schematronreport.xml', encoding='UTF-8')
+    print(f'Schematronreport.xml sparad i {cwd}.')
+    
 
 # Funktion för att konvertera csv-inputfil till xml-fil som mellanfil inför transformeringen.
 def csvtoxml():
@@ -137,13 +215,55 @@ def xslttransform():
     except Exception as e:
         sg.popup_error_with_traceback(f'Error! Sannolikt har du valt fel csv-separator. Fil kan kanske ändå skapas, men rådet är att välja rätt separator. Info:', e)
 
-    #Hårdkodat... lägga till uuid
-    root = doc.getroot()
-    for ArkivobjektID_Arenden in root.iter('ArkivobjektID_Arende'):
-        ArkivobjektID_Arenden.set('Systemidentifierare', uuid.uuid4().hex)
-    for ArkivobjektID_Handlingar in root.iter('ArkivobjektID_Handling'):
-        ArkivobjektID_Handlingar.set('Systemidentifierare', uuid.uuid4().hex)
+    elemList = []
     
+    for elem in doc.iter():
+        elemList.append(elem.tag)
+    
+    # Tar bort (ev) dubletter, skriver ut listan (ej  nödvändigt)
+    elemList = list(set(elemList))
+    print(elemList)
+        
+    layoutelementchooser = [
+        [sg.Text('Sätt uuid till Systemidentifierare (attr.):', tooltip='Du måste ha Systemidentifierare som attribut i din xslt-fil för det valda elementet.'), sg.Combo(elemList, key='-ELEMENT_CHOOSER_1-')],
+        [sg.Text('Sätt uuid till Systemidentifierare (attr.):', tooltip='Du måste ha Systemidentifierare som attribut i din xslt-fil för det valda elementet.'), sg.Combo(elemList, key='-ELEMENT_CHOOSER_2-')],
+        [sg.Button('Skapa', size=15, button_color='black on pink'), sg.Button('Stäng')] 
+        ]
+
+    # Skapar elementväljarfönster för uuid. MER ATT JOBBA PÅ. Gör det valbart vilket attribut peka på, 0:* element.
+    elementchooserwindow = sg.Window(f'FGS Buddysbuddy v {version}',layoutelementchooser, font='Consolas 10', icon="Buddysbuddy.ico", resizable=True, titlebar_background_color='green')
+
+    while True:
+        event, values = elementchooserwindow.read()
+        print(event, values)
+        if event == sg.WIN_CLOSED or event == 'Stäng':
+            break
+        if event == 'Skapa':
+            if values['-ELEMENT_CHOOSER_1-'] in elemList and values['-ELEMENT_CHOOSER_2-'] in elemList:
+                root = doc.getroot()
+                for values['-ELEMENT_CHOOSER_1-'] in root.iter(values['-ELEMENT_CHOOSER_1-']):
+                    values['-ELEMENT_CHOOSER_1-'].set('Systemidentifierare', uuid.uuid4().hex)
+                for values['-ELEMENT_CHOOSER_2-'] in root.iter(values['-ELEMENT_CHOOSER_2-']):
+                    values['-ELEMENT_CHOOSER_2-'].set('Systemidentifierare', uuid.uuid4().hex)
+                break
+                
+            elif values['-ELEMENT_CHOOSER_1-'] in elemList:
+                root = doc.getroot()
+                for values['-ELEMENT_CHOOSER_1-'] in root.iter(values['-ELEMENT_CHOOSER_1-']):
+                    values['-ELEMENT_CHOOSER_1-'].set('Systemidentifierare', uuid.uuid4().hex)
+                break
+                
+            elif values['-ELEMENT_CHOOSER_2-'] in elemList:
+                root = doc.getroot()
+                for values['-ELEMENT_CHOOSER_2-'] in root.iter(values['-ELEMENT_CHOOSER_2-']):
+                    values['-ELEMENT_CHOOSER_2-'].set('Systemidentifierare', uuid.uuid4().hex)
+                break
+            
+            else:
+                print('Välj minst en eller klicka Stäng för att gå vidare utan att skapa uuid till Systemidentifierare!')
+    
+    elementchooserwindow.close()
+
     xsl = etree.parse(xsltfile)
     transform = etree.XSLT(xsl)
     result = transform(doc)
@@ -225,55 +345,34 @@ while True:
                 
             # Plocka ut statistik från csv-inputfil
             elif inputfile.endswith('.csv') and values['-FUNCTION_CHOOSER-'] == 'Csv-inputstatistik':
-                df = pd.read_csv(inputfile, sep=';', engine='python')
+                df = pd.read_csv(inputfile, sep = csvseparator, engine='python')
                 df = df.convert_dtypes()
-                print(f'Nedan följer en sammanfattning. Se all statistik i mappen csv_statistics i {cwd}.')
-                # Antal unika per kolumn mm (alt. df.count() )
-                #df.info()
-                # Antal unika värden per kolumn
-                s1 = df.count()
-                s2 = df.nunique()
-                df1 = pd.concat([s1, s2], axis=1)
-                df1.rename(columns = {0:'Antal', 1:'Antal unika'}, inplace = True)
-                print(df1)
-                # Gruppera på kolumner (utveckling: välja vilka gruppera på)
-                unique_count = df.groupby(['ArkivobjektID_Arende', 'ArkivobjektID_Handling']).agg({'Lank': 'nunique'})
-                print(unique_count)
-                # Alla antal unika värden per kolumn sorterat på Ärende.
-                df.groupby(['ArkivobjektID_Arende']).nunique()
-                num_unique_rows = df.groupby(['ArkivobjektID_Arende']).count()
-                df2 = num_unique_rows
-                # Kolla dubletter
-                duplicate_rows = df.duplicated()
-                print(duplicate_rows)
-                num_duplicate_rows = df.duplicated().sum()
-                print("Number of duplicate rows: ", num_duplicate_rows)
-                print(num_unique_rows)
-                csvstatisticsfolder = './csv_statistics'
-                path = os.path.join('csv_statistics_' + str(uuid.uuid4().hex))
+                columnchoices = df.columns.tolist()
                 
-                if os.path.exists(os.path.join(os.getcwd(), csvstatisticsfolder)) == True:
-                    path = os.path.join('csv_statistics_' + str(uuid.uuid4().hex))
-                    os.mkdir(path)
-                    os.chdir(path)
-                    df1.to_csv('totals_and_unique.csv')
-                    df2.to_csv('unique_rows.csv')
-                    unique_count.to_csv('unique_count.csv')
-                    duplicate_rows.to_csv('duplicate_rows.csv')
-                    #num_duplicate_rows.to_csv('')
-                    num_unique_rows.to_csv('num_unique_rows.csv')
-                    os.chdir(cwd)
-                else:
-                    csvstatisticsfolder = './csv_statistics'
-                    path = csvstatisticsfolder
-                    os.mkdir(path)
-                    df1.to_csv('./csv_statistics/totals_and_unique.csv')
-                    df2.to_csv('./csv_statistics/unique_rows.csv')
-                    unique_count.to_csv('./csv_statistics/unique_count.csv')
-                    duplicate_rows.to_csv('./csv_statistics/duplicate_rows.csv')
-                    #num_duplicate_rows.to_csv('')
-                    num_unique_rows.to_csv('./csv_statistics/num_unique_rows.csv')
+                 # Layoyt för val av kolumner för csv-statistik.
+                layoutcolchooser = [
+                    [sg.Text('Gruppering nivå 1:'), sg.Combo(columnchoices, key='-COLUMN_CHOOSER_1-')],
+                    [sg.Text('Gruppering nivå 2:'), sg.Combo(columnchoices, key='-COLUMN_CHOOSER_2-')],
+                    [sg.Text('Gruppering nivå 3:'), sg.Combo(columnchoices, key='-COLUMN_CHOOSER_3-')],
+                    [sg.Button('Skapa', size=15, button_color='black on pink'), sg.Button('Stäng')] 
+                    ]
+
+                # Skapar kolumnväljarfönster för csv-statistik.
+                colchooserwindow = sg.Window(f'FGS Buddysbuddy v {version}',layoutcolchooser, font='Consolas 10', icon="Buddysbuddy.ico", resizable=True, titlebar_background_color='green')
+
+                while True:
+                    event, values = colchooserwindow.read()
+                    print(event, values)
+                    if event == sg.WIN_CLOSED or event == 'Stäng':
+                        break
+                    if event == 'Skapa':
+                        if values['-COLUMN_CHOOSER_1-'] in columnchoices and values['-COLUMN_CHOOSER_2-'] in columnchoices and values['-COLUMN_CHOOSER_3-'] in columnchoices:
+                            statistics()
+                        else:
+                            print('Alla måste fyllas i!')
                 
+                colchooserwindow.close()
+                        
                 # Hantering när funktionsväljaren är vald till csv till xml-konvertering. Standalone från def:arna. Återstår fixa export av allt, knyta till outputfolder, välja separator, populera defaultvärden, tillåta namespace. Hittills endast experiment.
                 #try:
                     #df = pd.read_xml(inputfile, xpath='.//ArkivobjektArende')
@@ -282,6 +381,14 @@ while True:
                     #print(f'Filen {outputfile} ligger i programmets katalog {cwd}. Det som exporterades var ArkivobjektArende. Detta är bara på experimentstadiet hittills.')
                 #except Exception as e: print(e)
 
+            # Hantering vid schematron-experiment. Plan att schematronvalidering ska ingå i huvudflödet.
+            elif values['-FUNCTION_CHOOSER-'] == 'Schematron (experimental)':
+                if schemafile.endswith('.sch'):
+                    schematronfile = values['-SCHEMAFILE-']
+                    schematron()
+                else:
+                    print(f'Du måste välja en schematronfil med ändelsen .sch i fältet för schemafil för att kunna validera din inputfil.')
+            
             # Hantering när ingen xslt-fil är vald.
             elif xsltfile == '':
                 print(f'Du måste välja en xsltfil med filändelse .xsl eller .xslt!')
