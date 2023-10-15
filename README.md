@@ -62,6 +62,7 @@
 - [ ] Ta fram .dmg-fil för Mac
 - [ ] Language-files
 - [ ] Anpassa testdatat till FGS 2.0
+- [ ] Extrahera metadata från filer
 
 
 ---
