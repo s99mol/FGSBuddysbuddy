@@ -1,3 +1,10 @@
+Version 0.2.0
+* Added window for selecting which element to use for adding uuid-value for fgs 1.0-attribute 'Systemidentifierare'.
+* Added window for selecting whick csv-rows to group by in the csv-statistics function.
+* Added option in the "functions chooser" to validate xml-inputfile with schematron by selection schematron file.
+* Added to Testdata 'schematrontest.sch'.
+* FGS-Buddysbuddy --> FGS Buddysbuddy and other minor changes.
+* Updated the testxslt.xsl to omit empty tags.
 
 Version 0.1.0
 * First system tested version. / Första strukturellt systemtestade versionen.
