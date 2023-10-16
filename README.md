@@ -98,10 +98,10 @@
 
 * Viktor Lundberg - Har bidragit med [FGS Buddy](https://github.com/Viktor-Lundberg/FGSBuddy), som FGS Buddysbuddy utgått från och använt som mall, samt agerat bollplank.
 * The following Python-libraries are used, thank you all!
-*	The Python Standard Library
-* 	lxml
-* 	pandas
-* 	PySimpleGUI
+	* The Python Standard Library
+	* lxml
+	* pandas
+	* PySimpleGUI
 * Glasögon till ikonen hämtade från - [http://clipart-library.com/](http://clipart-library.com/)
 
 ---
