@@ -321,7 +321,7 @@ def mapping():
     elemList = list(set(elemList))
     #print(elemList)
     elemList.sort()
-    xsddoc = 'arendehantering.xsd'
+    xsddoc = schemafile
     tree = etree.parse(xsddoc)
     #attrListxsd = tree.xpath(".//@ref")
     attrListxsd_arende = tree.xpath("xs:complexType[@name='ArkivobjektArendeTyp']/xs:sequence/xs:element/@ref", namespaces={'xs':'http://www.w3.org/2001/XMLSchema'})
@@ -439,7 +439,8 @@ def mapping():
                 [sg.Column(bilagatyp)],
                 [sg.Column([create_row3(0, 1)], k='-ROW_PANEL3-')],
                 [sg.Text('+Rad', enable_events=True, k='-ADD_ITEM3-', tooltip='Lägg till en bilagerad')],
-            
+                
+                #[sg.Text('Schema mappa till'),sg.Input(default_text=cwd, tooltip="Välj schema", size=65, key='outputfolderinput'), sg.FolderBrowse('Välj katalog', key="outputfolder", initial_folder=os.path.join(cwd))],
                 [sg.Submit('Skapa mappning', key='createXslt', size=15, button_color='black on pink'), sg.Text('', size=15),
                 sg.Button("Stäng", enable_events=True, key='-EXIT-', tooltip='Stäng fönstret'),
                 ],
