@@ -1,4 +1,7 @@
-Version 0.2.0
+Version 0.2.1
+Changed to FreeSimpleGUI
+
+Version 0.2.0 (withdrawn)
 * Added window for selecting which element to use for adding uuid-value for fgs 1.0-attribute 'Systemidentifierare'.
 * Added window for selecting whick csv-rows to group by in the csv-statistics function.
 * Added option in the "functions chooser" to validate xml-inputfile with schematron by selection schematron file.
@@ -6,7 +9,7 @@ Version 0.2.0
 * FGS-Buddysbuddy --> FGS Buddysbuddy and other minor changes.
 * Updated the testxslt.xsl to omit empty tags.
 
-Version 0.1.0
+Version 0.1.0 (withdrawn)
 * First system tested version. / Första strukturellt systemtestade versionen.
 
 Testcase v. 0.1.0
@@ -32,5 +35,5 @@ Testing button 'Clean'/'Rensa':
 - "Rensa" cleans inputfields and goes back to default for combolists: OK
 - Error-messages when try to create metadatafile without values in filename or outputfolder: OK
 
-Version 0.0.1
+Version 0.0.1 (withdrawn)
 * A proof of concept based on FGS-Buddy 1.1.0 / POC baserad på FGS-Buddy 1.1.0
