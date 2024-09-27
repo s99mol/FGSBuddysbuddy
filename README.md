@@ -101,5 +101,5 @@
 	* The Python Standard Library
 	* lxml
 	* pandas
-	* PySimpleGUI
+	* FreeSimpleGUI
 * Glasögon till ikonen hämtade från - [http://clipart-library.com/](http://clipart-library.com/)
