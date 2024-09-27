@@ -1,5 +1,5 @@
 import os
-import PySimpleGUI as sg
+import FreeSimpleGUI as sg
 import webbrowser
 from io import StringIO
 from lxml import etree
