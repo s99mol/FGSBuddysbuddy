@@ -9,7 +9,7 @@ import uuid
 import shutil
 from pathlib import Path
 import time
-import xsltmapper_function_small_arkivit as Xsltfunc
+import xsltmapper_function_small_larosaten as Xsltfunc
 #import json
 
 # Funktion för att rensa alla input-fält
