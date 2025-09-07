@@ -1,3 +1,20 @@
+Version 0.3.0 2025-09-07
+
+Substantially reworked with new tab based GUI:
+* Input Analyser: Load xml, json or csv as input file, preview as table & hierarchy and pass keys to XSLT Mapper tab.
+* XSLT Mapper: Map objects, configure xslt and generate files (xslt, xml).
+* Transformer: Transform with xslt stylesheet to xml. Option to validate xml file.
+* Validator: Validate xml file
+* Package Creator (SIP): This is for now just a reference to FGS Buddy
+
+See folder Test_v0_3_0 for testing of xslt generation.
+
+Known issues:
+* Not possible to name the xml file when using "Generate, Transform and Validate in one go".
+* If you use more than one screen, the pop-up windows might turn up on another screen than expected.
+* There are cases where you need to restart Buddysbuddy to generate xslt, since there are no delete buttons. It's not always possible to delete values manually.
+* When configuring XSLT hierarchy with objects without a mapping, all input data is dumped into the xsl since there is no template. This should be fixed by creating empty templates.
+
 Version 0.2.1
 Changed to FreeSimpleGUI
 
