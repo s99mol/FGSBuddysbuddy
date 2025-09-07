@@ -1,0 +1,3074 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<Leveransobjekt xmlns="http://xml.ra.se/e-arkiv/FGS-ERMS">
+  <ArkivobjektListaArenden>
+    <ArkivobjektArende Systemidentifierare="19fb12ac6a4f46f3b7716d01082febf8">
+      <ArkivobjektID>dnr/1</ArkivobjektID>
+      <ArendeTyp>0</ArendeTyp>
+      <Agent>
+        <Roll>Registrator</Roll>
+        <Namn>Administrator</Namn>
+      </Agent>
+      <Skapad>2016-05-10</Skapad>
+      <Arendemening>Organ1</Arendemening>
+      <ArkivobjektListaHandlingar>
+        <ArkivobjektHandling Systemidentifierare="17d5f8a4f2204374b64485cc5c6ba213">
+          <ArkivobjektID>dnr/1/1</ArkivobjektID>
+          <KlassReferens>0</KlassReferens>
+          <Rubrik>blalalal</Rubrik>
+          <Skapad>2016-05-10</Skapad>
+          <Bilaga Namn="Meddelandetext.txt" Lank="Meddelandetext.txt">
+            <Bevaras>true</Bevaras>
+          </Bilaga>
+          <Bilaga Namn="ominstallation Linux 17.docx" Lank="ominstallation Linux 17.docx">
+            <Bevaras>true</Bevaras>
+          </Bilaga>
+        </ArkivobjektHandling>
+        <ArkivobjektHandling Systemidentifierare="5346b446b6c34ca29276b7cd01be75be">
+          <ArkivobjektID>dnr/1/2</ArkivobjektID>
+          <KlassReferens>0</KlassReferens>
+          <Handlingstyp>Återkommande</Handlingstyp>
+          <Rubrik>Återkommande.doc</Rubrik>
+          <Skapad>2016-05-10</Skapad>
+          <Bilaga Namn="Återkommande.doc" Lank="Återkommande.doc">
+            <Bevaras>true</Bevaras>
+          </Bilaga>
+        </ArkivobjektHandling>
+      </ArkivobjektListaHandlingar>
+    </ArkivobjektArende>
+    <ArkivobjektArende Systemidentifierare="b2b59c9dfcd94da19761c2fae633cab5">
+      <ArkivobjektID>dnr/10</ArkivobjektID>
+      <ArendeTyp>0</ArendeTyp>
+      <Agent>
+        <Roll>Registrator</Roll>
+        <Namn>Tjänsteman af Fågelholk</Namn>
+      </Agent>
+      <Skapad>2017-03-10</Skapad>
+      <Arendemening>Tesutskottet 2018-12-24 XYZ</Arendemening>
+      <ArkivobjektListaHandlingar>
+        <ArkivobjektHandling Systemidentifierare="e269f56abba84e15a9cea0c7f09de3a1">
+          <ArkivobjektID>dnr/10/1</ArkivobjektID>
+          <KlassReferens>0</KlassReferens>
+          <Handlingstyp>Återkommande</Handlingstyp>
+          <Rubrik>Återkommande.doc</Rubrik>
+          <Skapad>2017-03-10</Skapad>
+          <Bilaga Namn="Återkommande.doc" Lank="Återkommande.doc">
+            <Bevaras>true</Bevaras>
+          </Bilaga>
+        </ArkivobjektHandling>
+        <ArkivobjektHandling Systemidentifierare="ab4004ac8306422b9aa1242a24cf122c">
+          <ArkivobjektID>dnr/10/2</ArkivobjektID>
+          <KlassReferens>0</KlassReferens>
+          <Handlingstyp>Protokoll</Handlingstyp>
+          <Rubrik>Antikvarisk.doc</Rubrik>
+          <Skapad>2017-03-10</Skapad>
+          <Bilaga Namn="Antikvarisk.doc" Lank="Antikvarisk.doc">
+            <Bevaras>true</Bevaras>
+          </Bilaga>
+        </ArkivobjektHandling>
+        <ArkivobjektHandling Systemidentifierare="a8b99adeeea54af284321fca0af3883e">
+          <ArkivobjektID>dnr/10/3</ArkivobjektID>
+          <KlassReferens>0</KlassReferens>
+          <Handlingstyp>Protokoll</Handlingstyp>
+          <Rubrik>Antikvarisk.doc</Rubrik>
+          <Skapad>2017-03-16</Skapad>
+        </ArkivobjektHandling>
+        <ArkivobjektHandling Systemidentifierare="9436fb9cc33846df821378f2cf4bb379">
+          <ArkivobjektID>dnr/10/4</ArkivobjektID>
+          <KlassReferens>0</KlassReferens>
+          <Handlingstyp>Protokoll</Handlingstyp>
+          <Rubrik>Antikvarisk.doc</Rubrik>
+          <Skapad>2017-04-08</Skapad>
+          <Bilaga Namn="Antikvarisk.doc" Lank="Antikvarisk.doc">
+            <Bevaras>true</Bevaras>
+          </Bilaga>
+        </ArkivobjektHandling>
+        <ArkivobjektHandling Systemidentifierare="3a9789cffc3944708157826c80e40754">
+          <ArkivobjektID>dnr/10/5</ArkivobjektID>
+          <KlassReferens>0</KlassReferens>
+          <Handlingstyp>Protokoll</Handlingstyp>
+          <Rubrik>Antikvarisk.doc</Rubrik>
+          <Skapad>2017-06-19</Skapad>
+          <Bilaga Namn="Antikvarisk.doc" Lank="Antikvarisk.doc">
+            <Bevaras>true</Bevaras>
+          </Bilaga>
+        </ArkivobjektHandling>
+        <ArkivobjektHandling Systemidentifierare="39134db97192491f8ad74750859c6cef">
+          <ArkivobjektID>dnr/10/6</ArkivobjektID>
+          <KlassReferens>0</KlassReferens>
+          <Handlingstyp>Protokoll</Handlingstyp>
+          <Rubrik>Antikvarisk.doc</Rubrik>
+          <Skapad>2017-09-05</Skapad>
+          <Bilaga Namn="Antikvarisk.doc" Lank="Antikvarisk.doc">
+            <Bevaras>true</Bevaras>
+          </Bilaga>
+        </ArkivobjektHandling>
+        <ArkivobjektHandling Systemidentifierare="6e8d45250409424197351c4158bde57b">
+          <ArkivobjektID>dnr/10/7</ArkivobjektID>
+          <KlassReferens>0</KlassReferens>
+          <Handlingstyp>Återkommande</Handlingstyp>
+          <Rubrik>Återkommande.doc</Rubrik>
+          <Skapad>2017-09-05</Skapad>
+          <Bilaga Namn="Återkommande.doc" Lank="Återkommande.doc">
+            <Bevaras>true</Bevaras>
+          </Bilaga>
+        </ArkivobjektHandling>
+        <ArkivobjektHandling Systemidentifierare="cb37f00629854626a8de250ad9415bff">
+          <ArkivobjektID>dnr/10/8</ArkivobjektID>
+          <KlassReferens>0</KlassReferens>
+          <Handlingstyp>Protokoll</Handlingstyp>
+          <Rubrik>Antikvarisk.doc</Rubrik>
+          <Skapad>2017-09-05</Skapad>
+          <Bilaga Namn="Antikvarisk.doc" Lank="Antikvarisk.doc">
+            <Bevaras>true</Bevaras>
+          </Bilaga>
+        </ArkivobjektHandling>
+        <ArkivobjektHandling Systemidentifierare="a04f14292a8443059b274958c6773a40">
+          <ArkivobjektID>dnr/10/9</ArkivobjektID>
+          <KlassReferens>0</KlassReferens>
+          <Handlingstyp>Återkommande</Handlingstyp>
+          <Rubrik>Återkommande.doc</Rubrik>
+          <Skapad>2018-01-30</Skapad>
+          <Bilaga Namn="Återkommande.doc" Lank="Återkommande.doc">
+            <Bevaras>true</Bevaras>
+          </Bilaga>
+        </ArkivobjektHandling>
+        <ArkivobjektHandling Systemidentifierare="b72472ab2a074d7c8081bb793430e039">
+          <ArkivobjektID>dnr/10/10</ArkivobjektID>
+          <KlassReferens>0</KlassReferens>
+          <Handlingstyp>Protokoll</Handlingstyp>
+          <Rubrik>Antikvarisk.doc</Rubrik>
+          <Skapad>2018-03-15</Skapad>
+          <Bilaga Namn="Antikvarisk.doc" Lank="Antikvarisk.doc">
+            <Bevaras>true</Bevaras>
+          </Bilaga>
+        </ArkivobjektHandling>
+        <ArkivobjektHandling Systemidentifierare="8fcd529827e94452bbabd7e347b4cc0b">
+          <ArkivobjektID>dnr/10/11</ArkivobjektID>
+          <KlassReferens>0</KlassReferens>
+          <Handlingstyp>Återkommande</Handlingstyp>
+          <Rubrik>Återkommande.doc</Rubrik>
+          <Skapad>2018-03-15</Skapad>
+          <Bilaga Namn="Återkommande.doc" Lank="Återkommande.doc">
+            <Bevaras>true</Bevaras>
+          </Bilaga>
+        </ArkivobjektHandling>
+        <ArkivobjektHandling Systemidentifierare="bc7ef23f78d34723982d9a6682cf6504">
+          <ArkivobjektID>dnr/10/12</ArkivobjektID>
+          <KlassReferens>0</KlassReferens>
+          <Handlingstyp>Protokoll</Handlingstyp>
+          <Rubrik>Antikvarisk.doc</Rubrik>
+          <Skapad>2018-03-15</Skapad>
+          <Bilaga Namn="Antikvarisk.doc" Lank="Antikvarisk.doc">
+            <Bevaras>true</Bevaras>
+          </Bilaga>
+        </ArkivobjektHandling>
+        <ArkivobjektHandling Systemidentifierare="d4be89318c39459bbc0d7a64cf3a81b3">
+          <ArkivobjektID>dnr/10/13</ArkivobjektID>
+          <KlassReferens>0</KlassReferens>
+          <Handlingstyp>Återkommande</Handlingstyp>
+          <Rubrik>Återkommande.doc</Rubrik>
+          <Skapad>2018-03-20</Skapad>
+          <Bilaga Namn="Återkommande.doc" Lank="Återkommande.doc">
+            <Bevaras>true</Bevaras>
+          </Bilaga>
+        </ArkivobjektHandling>
+        <ArkivobjektHandling Systemidentifierare="c3295077f7b44935a67ffec532da0259">
+          <ArkivobjektID>dnr/10/14</ArkivobjektID>
+          <KlassReferens>0</KlassReferens>
+          <Handlingstyp>Återkommande</Handlingstyp>
+          <Rubrik>Återkommande.doc</Rubrik>
+          <Skapad>2018-03-20</Skapad>
+          <Bilaga Namn="Återkommande.doc" Lank="Återkommande.doc">
+            <Bevaras>true</Bevaras>
+          </Bilaga>
+        </ArkivobjektHandling>
+      </ArkivobjektListaHandlingar>
+    </ArkivobjektArende>
+    <ArkivobjektArende Systemidentifierare="9fc0578a698640ad9a1ce73dc0742498">
+      <ArkivobjektID>dnr/11</ArkivobjektID>
+      <ArendeTyp>0</ArendeTyp>
+      <Agent>
+        <Roll>Registrator</Roll>
+        <Namn>Tjänsteman af Fågelholk</Namn>
+      </Agent>
+      <Skapad>2017-03-10</Skapad>
+      <Arendemening>XYZ Testärende 1</Arendemening>
+      <ArkivobjektListaHandlingar>
+        <ArkivobjektHandling Systemidentifierare="b8ccd794fbea4072bce370aef9f1fecc">
+          <ArkivobjektID>dnr/11/1</ArkivobjektID>
+          <KlassReferens>0</KlassReferens>
+          <Handlingstyp>Till möte</Handlingstyp>
+          <Rubrik>Tesutskottet 2017-12-24 XYZ (2017-12-24)</Rubrik>
+          <Skapad>2017-03-10</Skapad>
+        </ArkivobjektHandling>
+        <ArkivobjektHandling Systemidentifierare="6ba387b5e40f47eb9fde368721b815ee">
+          <ArkivobjektID>dnr/11/2</ArkivobjektID>
+          <KlassReferens>0</KlassReferens>
+          <Handlingstyp>Beslut</Handlingstyp>
+          <Rubrik>Tesutskottet 2017-12-24 c (2017-12-24  TN §1)</Rubrik>
+          <Skapad>2017-12-24</Skapad>
+          <Bilaga Namn="Tesutskottet 2017-12-24 XYZ (2017-12-24 TN §1).doc" Lank="Tesutskottet 2017-12-24 XYZ (2017-12-24 TN §1).doc">
+            <Bevaras>true</Bevaras>
+          </Bilaga>
+        </ArkivobjektHandling>
+        <ArkivobjektHandling Systemidentifierare="41f91595f3184578a9d6bf63c1a89871">
+          <ArkivobjektID>dnr/11/3</ArkivobjektID>
+          <KlassReferens>0</KlassReferens>
+          <Rubrik>Test av handling</Rubrik>
+          <Skapad>2017-05-08</Skapad>
+        </ArkivobjektHandling>
+      </ArkivobjektListaHandlingar>
+    </ArkivobjektArende>
+    <ArkivobjektArende Systemidentifierare="b35ed7e357e348a8a2d4c8055bfa6ab5">
+      <ArkivobjektID>dnr/12</ArkivobjektID>
+      <ArendeTyp>0</ArendeTyp>
+      <Agent>
+        <Roll>Registrator</Roll>
+        <Namn>Pippi-Viktualia Tjänstemannason</Namn>
+      </Agent>
+      <Skapad>2017-04-08</Skapad>
+      <Arendemening>Tesutskottet</Arendemening>
+      <ArkivobjektListaHandlingar>
+        <ArkivobjektHandling Systemidentifierare="513b151562af47949db1556739c2c19d">
+          <ArkivobjektID>dnr/12/1</ArkivobjektID>
+          <KlassReferens>0</KlassReferens>
+          <Handlingstyp>Återkommande</Handlingstyp>
+          <Rubrik>Återkommande.doc</Rubrik>
+          <Skapad>2017-04-08</Skapad>
+          <Bilaga Namn="Återkommande.doc" Lank="Återkommande.doc">
+            <Bevaras>true</Bevaras>
+          </Bilaga>
+        </ArkivobjektHandling>
+        <ArkivobjektHandling Systemidentifierare="0aaac2ea50204d229472c414db9041b4">
+          <ArkivobjektID>dnr/12/2</ArkivobjektID>
+          <KlassReferens>0</KlassReferens>
+          <Handlingstyp>Protokoll</Handlingstyp>
+          <Rubrik>Antikvarisk.doc</Rubrik>
+          <Skapad>2017-04-08</Skapad>
+          <Bilaga Namn="Antikvarisk.doc" Lank="Antikvarisk.doc">
+            <Bevaras>true</Bevaras>
+          </Bilaga>
+        </ArkivobjektHandling>
+      </ArkivobjektListaHandlingar>
+    </ArkivobjektArende>
+    <ArkivobjektArende Systemidentifierare="3ca0896d06c248049d57a6983d406acc">
+      <ArkivobjektID>dnr/13</ArkivobjektID>
+      <ArendeTyp>0</ArendeTyp>
+      <Agent>
+        <Roll>Registrator</Roll>
+        <Namn>Pippi-Viktualia Tjänstemannason</Namn>
+      </Agent>
+      <Skapad>2017-04-12</Skapad>
+      <Arendemening>Test</Arendemening>
+      <ArkivobjektListaHandlingar>
+        <ArkivobjektHandling Systemidentifierare="f0c90f6898734f84b60e7635269857ef">
+          <ArkivobjektID>dnr/13/1</ArkivobjektID>
+          <KlassReferens>0</KlassReferens>
+          <Handlingstyp>Återkommande</Handlingstyp>
+          <Rubrik>Återkommande.doc</Rubrik>
+          <Skapad>2017-04-12</Skapad>
+          <Bilaga Namn="Återkommande.doc" Lank="Återkommande.doc">
+            <Bevaras>true</Bevaras>
+          </Bilaga>
+        </ArkivobjektHandling>
+      </ArkivobjektListaHandlingar>
+    </ArkivobjektArende>
+    <ArkivobjektArende Systemidentifierare="5760f2af2cdc4291bf7701458328c58b">
+      <ArkivobjektID>dnr/14</ArkivobjektID>
+      <ArendeTyp>0</ArendeTyp>
+      <Agent>
+        <Roll>Registrator</Roll>
+        <Namn>Tjänsteman af Fågelholk</Namn>
+      </Agent>
+      <Skapad>2017-09-05</Skapad>
+      <Arendemening>Test av nya björnar XYZ</Arendemening>
+      <ArkivobjektListaHandlingar>
+        <ArkivobjektHandling Systemidentifierare="cd6d32a051b94be9bddf6251c6836ce2">
+          <ArkivobjektID>dnr/14/1</ArkivobjektID>
+          <KlassReferens>0</KlassReferens>
+          <Rubrik>Test</Rubrik>
+          <Skapad>2017-09-05</Skapad>
+        </ArkivobjektHandling>
+      </ArkivobjektListaHandlingar>
+    </ArkivobjektArende>
+    <ArkivobjektArende Systemidentifierare="8e00e5acf71448ffb9b070d80a680ebc">
+      <ArkivobjektID>dnr/15</ArkivobjektID>
+      <KlassReferens>2017-12-11</KlassReferens>
+      <ArendeTyp>1</ArendeTyp>
+      <Agent>
+        <Roll>Registrator</Roll>
+        <Namn>Pippi-Viktualia Tjänstemannason</Namn>
+      </Agent>
+      <Skapad>2017-12-11</Skapad>
+      <Arendemening>testärende</Arendemening>
+      <ArkivobjektListaHandlingar>
+        <ArkivobjektHandling Systemidentifierare="7f5c52c47bc845a598a08fb24665054f">
+          <ArkivobjektID>dnr/15/1</ArkivobjektID>
+          <KlassReferens>0</KlassReferens>
+          <Rubrik>handla handling</Rubrik>
+          <Skapad>2017-12-11</Skapad>
+          <Bilaga Namn="Meddelandetext.txt" Lank="Meddelandetext.txt">
+            <Bevaras>true</Bevaras>
+          </Bilaga>
+        </ArkivobjektHandling>
+      </ArkivobjektListaHandlingar>
+    </ArkivobjektArende>
+    <ArkivobjektArende Systemidentifierare="e2ad1021825a4d7e81bcb29cb16e3e9f">
+      <ArkivobjektID>dnr/16</ArkivobjektID>
+      <ArendeTyp>0</ArendeTyp>
+      <Agent>
+        <Roll>Registrator</Roll>
+        <Namn>Pippi-Viktualia Tjänstemannason</Namn>
+      </Agent>
+      <Skapad>2018-01-12</Skapad>
+      <Arendemening>Tesutskottet</Arendemening>
+      <ArkivobjektListaHandlingar>
+        <ArkivobjektHandling Systemidentifierare="ab0adb8e154f402ab40f13c2751d7060">
+          <ArkivobjektID>dnr/16/1</ArkivobjektID>
+          <KlassReferens>0</KlassReferens>
+          <Handlingstyp>Återkommande</Handlingstyp>
+          <Rubrik>Återkommande.doc</Rubrik>
+          <Skapad>2018-01-17</Skapad>
+          <Bilaga Namn="Återkommande.doc" Lank="Återkommande.doc">
+            <Bevaras>true</Bevaras>
+          </Bilaga>
+        </ArkivobjektHandling>
+        <ArkivobjektHandling Systemidentifierare="e7cafbd7b0b34424adb7ac140fdb9ff4">
+          <ArkivobjektID>dnr/16/2</ArkivobjektID>
+          <KlassReferens>0</KlassReferens>
+          <Handlingstyp>Återkommande</Handlingstyp>
+          <Rubrik>Återkommande.doc</Rubrik>
+          <Skapad>2018-01-17</Skapad>
+          <Bilaga Namn="Återkommande.doc" Lank="Återkommande.doc">
+            <Bevaras>true</Bevaras>
+          </Bilaga>
+        </ArkivobjektHandling>
+        <ArkivobjektHandling Systemidentifierare="f8bd0fdf294a44f9a32afeac1665d216">
+          <ArkivobjektID>dnr/16/3</ArkivobjektID>
+          <KlassReferens>0</KlassReferens>
+          <Handlingstyp>Återkommande</Handlingstyp>
+          <Rubrik>Återkommande.doc</Rubrik>
+          <Skapad>2018-02-23</Skapad>
+          <Bilaga Namn="Återkommande.doc" Lank="Återkommande.doc">
+            <Bevaras>true</Bevaras>
+          </Bilaga>
+        </ArkivobjektHandling>
+        <ArkivobjektHandling Systemidentifierare="d26647b0a3184d348d1de478cf8e6c62">
+          <ArkivobjektID>dnr/16/4</ArkivobjektID>
+          <KlassReferens>0</KlassReferens>
+          <Handlingstyp>Återkommande</Handlingstyp>
+          <Rubrik>Återkommande.doc</Rubrik>
+          <Skapad>2018-03-16</Skapad>
+          <Bilaga Namn="Återkommande.doc" Lank="Återkommande.doc">
+            <Bevaras>true</Bevaras>
+          </Bilaga>
+        </ArkivobjektHandling>
+        <ArkivobjektHandling Systemidentifierare="a2f9459f237c47c3b357d0eeba7e81eb">
+          <ArkivobjektID>dnr/16/5</ArkivobjektID>
+          <KlassReferens>0</KlassReferens>
+          <Handlingstyp>Återkommande</Handlingstyp>
+          <Rubrik>Återkommande.doc</Rubrik>
+          <Skapad>2018-03-16</Skapad>
+          <Bilaga Namn="Återkommande.doc" Lank="Återkommande.doc">
+            <Bevaras>true</Bevaras>
+          </Bilaga>
+        </ArkivobjektHandling>
+      </ArkivobjektListaHandlingar>
+    </ArkivobjektArende>
+    <ArkivobjektArende Systemidentifierare="8ebd40d0a8114f30bff0503ab63596ca">
+      <ArkivobjektID>dnr/17</ArkivobjektID>
+      <ArendeTyp>0</ArendeTyp>
+      <Agent>
+        <Roll>Registrator</Roll>
+        <Namn>Pippi-Viktualia Tjänstemannason</Namn>
+      </Agent>
+      <Skapad>2018-01-12</Skapad>
+      <Arendemening>Testutskottet</Arendemening>
+      <ArkivobjektListaHandlingar>
+        <ArkivobjektHandling Systemidentifierare="f47c626f09a8454792d0ace8ddea3002">
+          <ArkivobjektID>dnr/17/1</ArkivobjektID>
+          <KlassReferens>0</KlassReferens>
+          <Beskrivning>Handlingen &lt;Återkommande.doc&gt; makulerades av Pippi-Viktualia Tjänstemannason MED ORSAK test 2018-01-12 08:54</Beskrivning>
+          <Rubrik>--- Makulerad ---</Rubrik>
+          <Skapad>2018-01-12</Skapad>
+        </ArkivobjektHandling>
+        <ArkivobjektHandling Systemidentifierare="e4595775c4a44256b06572f996ce0bca">
+          <ArkivobjektID>dnr/17/2</ArkivobjektID>
+          <KlassReferens>0</KlassReferens>
+          <Handlingstyp>Återkommande</Handlingstyp>
+          <Rubrik>Återkommande.doc</Rubrik>
+          <Skapad>2018-01-12</Skapad>
+          <Bilaga Namn="Återkommande.doc" Lank="Återkommande.doc">
+            <Bevaras>true</Bevaras>
+          </Bilaga>
+        </ArkivobjektHandling>
+      </ArkivobjektListaHandlingar>
+    </ArkivobjektArende>
+    <ArkivobjektArende Systemidentifierare="0e0108792cfd4d97ac3f51688d078b8d">
+      <ArkivobjektID>dnr/18</ArkivobjektID>
+      <ArendeTyp>0</ArendeTyp>
+      <Agent>
+        <Roll>Registrator</Roll>
+        <Namn>Tjänsteman af Fågelholk</Namn>
+      </Agent>
+      <Skapad>2018-03-15</Skapad>
+      <Arendemening>XYZ Testärende omedelbart justerat</Arendemening>
+    </ArkivobjektArende>
+    <ArkivobjektArende Systemidentifierare="363a243cb2e24378a054b13303295a21">
+      <ArkivobjektID>dnr/19</ArkivobjektID>
+      <ArendeTyp>0</ArendeTyp>
+      <Agent>
+        <Roll>Registrator</Roll>
+        <Namn>Pippi-Viktualia Tjänstemannason</Namn>
+      </Agent>
+      <Skapad>2018-03-20</Skapad>
+      <Arendemening>test av omedelbar justering</Arendemening>
+      <ArkivobjektListaHandlingar>
+        <ArkivobjektHandling Systemidentifierare="6e3b4cae3d0340de8882e75879532825">
+          <ArkivobjektID>dnr/19/1</ArkivobjektID>
+          <KlassReferens>0</KlassReferens>
+          <Handlingstyp>Återkommande</Handlingstyp>
+          <Rubrik>Återkommande.doc</Rubrik>
+          <Skapad>2018-03-20</Skapad>
+          <Bilaga Namn="Återkommande.doc" Lank="Återkommande.doc">
+            <Bevaras>true</Bevaras>
+          </Bilaga>
+        </ArkivobjektHandling>
+      </ArkivobjektListaHandlingar>
+    </ArkivobjektArende>
+    <ArkivobjektArende Systemidentifierare="f6001bf023654b2eb1db007ee7566b27">
+      <ArkivobjektID>dnr/2</ArkivobjektID>
+      <ArendeTyp>0</ArendeTyp>
+      <Agent>
+        <Roll>Registrator</Roll>
+        <Namn>Administrator</Namn>
+      </Agent>
+      <Skapad>2016-05-18</Skapad>
+      <Arendemening>Testärende för rosa knappen</Arendemening>
+    </ArkivobjektArende>
+    <ArkivobjektArende Systemidentifierare="f156ef986a1641aca813747e1b459503">
+      <ArkivobjektID>dnr/20</ArkivobjektID>
+      <ArendeTyp>0</ArendeTyp>
+      <Agent>
+        <Roll>Registrator</Roll>
+        <Namn>Pippi-Viktualia Tjänstemannason</Namn>
+      </Agent>
+      <Skapad>2018-07-10</Skapad>
+      <Arendemening>Nytt ärende</Arendemening>
+    </ArkivobjektArende>
+    <ArkivobjektArende Systemidentifierare="aec537b10d7845909424116213086465">
+      <ArkivobjektID>dnr/21</ArkivobjektID>
+      <ArendeTyp>0</ArendeTyp>
+      <Agent>
+        <Roll>Registrator</Roll>
+        <Namn>Pippi-Viktualia Tjänstemannason</Namn>
+      </Agent>
+      <Skapad>2018-07-10</Skapad>
+      <Arendemening>Test av ärendetyp och diariebtkn</Arendemening>
+    </ArkivobjektArende>
+    <ArkivobjektArende Systemidentifierare="2f0562866ff140c9a761f240f5a9efb0">
+      <ArkivobjektID>dnr/22</ArkivobjektID>
+      <ArendeTyp>0</ArendeTyp>
+      <Agent>
+        <Roll>Registrator</Roll>
+        <Namn>Pippi-Viktualia Tjänstemannason</Namn>
+      </Agent>
+      <Skapad>2018-07-10</Skapad>
+      <Arendemening>Nytt ärende</Arendemening>
+    </ArkivobjektArende>
+    <ArkivobjektArende Systemidentifierare="bcf81d3cbdcf465f8581f3d7bcf42c43">
+      <ArkivobjektID>dnr/23</ArkivobjektID>
+      <ArendeTyp>0</ArendeTyp>
+      <Agent>
+        <Roll>Registrator</Roll>
+        <Namn>Smurf Adminson</Namn>
+      </Agent>
+      <Skapad>2018-07-11</Skapad>
+      <Arendemening>Testar handlingsstatus för dalandebeslut</Arendemening>
+      <ArkivobjektListaHandlingar>
+        <ArkivobjektHandling Systemidentifierare="486b93afd3014babae8e59a15c360a3e">
+          <ArkivobjektID>dnr/23/1</ArkivobjektID>
+          <KlassReferens>0</KlassReferens>
+          <Handlingstyp>Dalandebeslut</Handlingstyp>
+          <Rubrik>Dalandebeslut - Tillsättning av tillsättning</Rubrik>
+          <Skapad>2018-07-11</Skapad>
+        </ArkivobjektHandling>
+        <ArkivobjektHandling Systemidentifierare="e1f9c0e878434984a74d182822c1f0f9">
+          <ArkivobjektID>dnr/23/2</ArkivobjektID>
+          <KlassReferens>0</KlassReferens>
+          <Rubrik>Utbildingsmaterial_for_Slutgiltig.pptx</Rubrik>
+          <Skapad>2018-07-13</Skapad>
+          <Bilaga Namn="Utbildingsmaterial_for_Slutgiltig.pptx" Lank="Utbildingsmaterial_for_Slutgiltig.pptx">
+            <Bevaras>true</Bevaras>
+          </Bilaga>
+        </ArkivobjektHandling>
+        <ArkivobjektHandling Systemidentifierare="c53982f2caa0485986cce45c20e0685f">
+          <ArkivobjektID>dnr/23/3</ArkivobjektID>
+          <KlassReferens>0</KlassReferens>
+          <Rubrik>Utbildingsmaterial_for_Slutgiltig.pptx</Rubrik>
+          <Skapad>2018-07-13</Skapad>
+          <Bilaga Namn="Utbildingsmaterial_for_Slutgiltig.pptx" Lank="Utbildingsmaterial_for_Slutgiltig.pptx">
+            <Bevaras>true</Bevaras>
+          </Bilaga>
+        </ArkivobjektHandling>
+      </ArkivobjektListaHandlingar>
+    </ArkivobjektArende>
+    <ArkivobjektArende Systemidentifierare="cf5b73ff693a4fe2b4f8cc5e9bdeb2c2">
+      <ArkivobjektID>dnr/24</ArkivobjektID>
+      <KlassReferens>2022-10-28</KlassReferens>
+      <ArendeTyp>1</ArendeTyp>
+      <Agent>
+        <Roll>Registrator</Roll>
+        <Namn>Pippi-Viktualia Tjänstemannason</Namn>
+      </Agent>
+      <Skapad>2018-08-28</Skapad>
+      <Arendemening>test av..</Arendemening>
+      <ArkivobjektListaHandlingar>
+        <ArkivobjektHandling Systemidentifierare="38b53428710d4d548c282efa30a09eae">
+          <ArkivobjektID>dnr/24/1</ArkivobjektID>
+          <KlassReferens>0</KlassReferens>
+          <Handlingstyp>Dalandebeslut</Handlingstyp>
+          <Rubrik>Dalandebeslut</Rubrik>
+          <Skapad>2018-09-18</Skapad>
+          <Bilaga Namn="Dalandebeslut.docx" Lank="Dalandebeslut.docx">
+            <Bevaras>true</Bevaras>
+          </Bilaga>
+        </ArkivobjektHandling>
+      </ArkivobjektListaHandlingar>
+    </ArkivobjektArende>
+    <ArkivobjektArende Systemidentifierare="a46443c2bc134bd6a828b02a42b471b1">
+      <ArkivobjektID>dnr/25</ArkivobjektID>
+      <ArendeTyp>0</ArendeTyp>
+      <Agent>
+        <Roll>Registrator</Roll>
+        <Namn>Pippi-Viktualia Tjänstemannason</Namn>
+      </Agent>
+      <Skapad>2018-09-19</Skapad>
+      <Arendemening>Testärende</Arendemening>
+    </ArkivobjektArende>
+    <ArkivobjektArende Systemidentifierare="d3ffe5a7b8c241cb8485a66eb1149889">
+      <ArkivobjektID>dnr/26</ArkivobjektID>
+      <ArendeTyp>0</ArendeTyp>
+      <Agent>
+        <Roll>Registrator</Roll>
+        <Namn>Pippi-Viktualia Tjänstemannason</Namn>
+      </Agent>
+      <Skapad>2018-10-09</Skapad>
+      <Arendemening>Nytt ärende</Arendemening>
+    </ArkivobjektArende>
+    <ArkivobjektArende Systemidentifierare="892a14b3281648bd97ce899a1fd86881">
+      <ArkivobjektID>dnr/27</ArkivobjektID>
+      <ArendeTyp>0</ArendeTyp>
+      <Agent>
+        <Roll>Registrator</Roll>
+        <Namn>Pippi-Viktualia Tjänstemannason</Namn>
+      </Agent>
+      <Skapad>2018-10-09</Skapad>
+      <Arendemening>Nytt ärende</Arendemening>
+    </ArkivobjektArende>
+    <ArkivobjektArende Systemidentifierare="9ed7c35c527840b3bbbc59c70f0c69cc">
+      <ArkivobjektID>dnr/28</ArkivobjektID>
+      <ArendeTyp>0</ArendeTyp>
+      <Agent>
+        <Roll>Registrator</Roll>
+        <Namn>Pippi-Viktualia Tjänstemannason</Namn>
+      </Agent>
+      <Skapad>2018-10-09</Skapad>
+      <Arendemening>Nytt ärende</Arendemening>
+    </ArkivobjektArende>
+    <ArkivobjektArende Systemidentifierare="6a4b67bce3414a019940c917b2aa988a">
+      <ArkivobjektID>dnr/29</ArkivobjektID>
+      <ArendeTyp>0</ArendeTyp>
+      <Agent>
+        <Roll>Registrator</Roll>
+        <Namn>Pippi-Viktualia Tjänstemannason</Namn>
+      </Agent>
+      <Skapad>2018-10-09</Skapad>
+      <Arendemening>Nytt ärende</Arendemening>
+    </ArkivobjektArende>
+    <ArkivobjektArende Systemidentifierare="68102e956a3145659be36eadff4f6c78">
+      <ArkivobjektID>dnr/3</ArkivobjektID>
+      <ArendeTyp>0</ArendeTyp>
+      <Agent>
+        <Roll>Registrator</Roll>
+        <Namn>Administrator</Namn>
+      </Agent>
+      <Skapad>2016-05-18</Skapad>
+      <Arendemening>Flytta paragrafer mellan beslutande organ i samma serie</Arendemening>
+    </ArkivobjektArende>
+    <ArkivobjektArende Systemidentifierare="4e93e85451de426db2d3f39272338327">
+      <ArkivobjektID>dnr/30</ArkivobjektID>
+      <ArendeTyp>0</ArendeTyp>
+      <Agent>
+        <Roll>Registrator</Roll>
+        <Namn>Pippi-Viktualia Tjänstemannason</Namn>
+      </Agent>
+      <Skapad>2018-10-09</Skapad>
+      <Arendemening>Nytt ärende</Arendemening>
+    </ArkivobjektArende>
+    <ArkivobjektArende Systemidentifierare="ef56e0e625b7418090e04d5f6a0a5d04">
+      <ArkivobjektID>dnr/31</ArkivobjektID>
+      <ArendeTyp>0</ArendeTyp>
+      <Agent>
+        <Roll>Registrator</Roll>
+        <Namn>Pippi-Viktualia Tjänstemannason</Namn>
+      </Agent>
+      <Skapad>2018-10-09</Skapad>
+      <Arendemening>Nytt ärende</Arendemening>
+    </ArkivobjektArende>
+    <ArkivobjektArende Systemidentifierare="0186c39cc3a84f8fbcc9331a83969694">
+      <ArkivobjektID>dnr/32</ArkivobjektID>
+      <ArendeTyp>0</ArendeTyp>
+      <Agent>
+        <Roll>Registrator</Roll>
+        <Namn>Pippi-Viktualia Tjänstemannason</Namn>
+      </Agent>
+      <Skapad>2018-10-09</Skapad>
+      <Arendemening>Nytt ärende</Arendemening>
+    </ArkivobjektArende>
+    <ArkivobjektArende Systemidentifierare="b102ee619d39434ba37275d943a6c0f5">
+      <ArkivobjektID>dnr/33</ArkivobjektID>
+      <ArendeTyp>0</ArendeTyp>
+      <Agent>
+        <Roll>Registrator</Roll>
+        <Namn>Pippi-Viktualia Tjänstemannason</Namn>
+      </Agent>
+      <Skapad>2018-10-09</Skapad>
+      <Arendemening>Nytt ärende</Arendemening>
+    </ArkivobjektArende>
+    <ArkivobjektArende Systemidentifierare="2cb751a1b1424ad8acc0e45ee978a0a4">
+      <ArkivobjektID>dnr/34</ArkivobjektID>
+      <ArendeTyp>0</ArendeTyp>
+      <Agent>
+        <Roll>Registrator</Roll>
+        <Namn>Smurf Adminson</Namn>
+      </Agent>
+      <Skapad>2018-10-11</Skapad>
+      <Arendemening>Nytt ärende</Arendemening>
+    </ArkivobjektArende>
+    <ArkivobjektArende Systemidentifierare="cfe24c8830e14726a6f989eadbd7589a">
+      <ArkivobjektID>dnr/35</ArkivobjektID>
+      <ArendeTyp>0</ArendeTyp>
+      <Agent>
+        <Roll>Registrator</Roll>
+        <Namn>Smurf Adminson</Namn>
+      </Agent>
+      <Skapad>2018-10-16</Skapad>
+      <Arendemening>Nytt ärende</Arendemening>
+    </ArkivobjektArende>
+    <ArkivobjektArende Systemidentifierare="c625a31204c3431299922dd61d227b5a">
+      <ArkivobjektID>dnr/36</ArkivobjektID>
+      <ArendeTyp>0</ArendeTyp>
+      <Agent>
+        <Roll>Registrator</Roll>
+        <Namn>Smurf Adminson</Namn>
+      </Agent>
+      <Skapad>2018-10-16</Skapad>
+      <Arendemening>Nytt ärende</Arendemening>
+    </ArkivobjektArende>
+    <ArkivobjektArende Systemidentifierare="90d602a1e6c045d9bfb6ab88bf924eda">
+      <ArkivobjektID>dnr/37</ArkivobjektID>
+      <ArendeTyp>0</ArendeTyp>
+      <Agent>
+        <Roll>Registrator</Roll>
+        <Namn>Smurf Adminson</Namn>
+      </Agent>
+      <Skapad>2018-10-16</Skapad>
+      <Arendemening>testar dra och släpp fil</Arendemening>
+      <ArkivobjektListaHandlingar>
+        <ArkivobjektHandling Systemidentifierare="43f66fe73b7f413cb53f2d04da5851bc">
+          <ArkivobjektID>dnr/37/1</ArkivobjektID>
+          <KlassReferens>0</KlassReferens>
+          <Handlingstyp>Dalandebeslut</Handlingstyp>
+          <Rubrik>Lönedatum för Truman</Rubrik>
+          <Skapad>2019-03-21</Skapad>
+          <Bilaga Namn="Lönedatum 2019 Truman.pdf" Lank="Lönedatum 2019 Truman.pdf">
+            <Bevaras>true</Bevaras>
+          </Bilaga>
+        </ArkivobjektHandling>
+      </ArkivobjektListaHandlingar>
+    </ArkivobjektArende>
+    <ArkivobjektArende Systemidentifierare="e9d506f09b4640b9a2494720f8577387">
+      <ArkivobjektID>dnr/38</ArkivobjektID>
+      <ArendeTyp>0</ArendeTyp>
+      <Agent>
+        <Roll>Registrator</Roll>
+        <Namn>Smurf Adminson</Namn>
+      </Agent>
+      <Skapad>2018-10-16</Skapad>
+      <Arendemening>Nytt ärende</Arendemening>
+    </ArkivobjektArende>
+    <ArkivobjektArende Systemidentifierare="a5f2017b319942c18e1447ef48c86ca9">
+      <ArkivobjektID>dnr/39</ArkivobjektID>
+      <ArendeTyp>0</ArendeTyp>
+      <Agent>
+        <Roll>Registrator</Roll>
+        <Namn>Smurf Adminson</Namn>
+      </Agent>
+      <Skapad>2018-10-16</Skapad>
+      <Arendemening>Nytt ärende</Arendemening>
+      <ArkivobjektListaHandlingar>
+        <ArkivobjektHandling Systemidentifierare="2918e9fa1bb74ed29cb84deafa71180e">
+          <ArkivobjektID>dnr/39/1</ArkivobjektID>
+          <KlassReferens>0</KlassReferens>
+          <Handlingstyp>Dalandebeslut</Handlingstyp>
+          <Rubrik>Dalandebeslut</Rubrik>
+          <Skapad>2018-10-18</Skapad>
+          <Bilaga Namn="Dalandebeslut.docx" Lank="Dalandebeslut.docx">
+            <Bevaras>true</Bevaras>
+          </Bilaga>
+        </ArkivobjektHandling>
+      </ArkivobjektListaHandlingar>
+    </ArkivobjektArende>
+    <ArkivobjektArende Systemidentifierare="3190a35b112d41d0a8c19ecfa365e1ee">
+      <ArkivobjektID>dnr/4</ArkivobjektID>
+      <ArendeTyp>0</ArendeTyp>
+      <Agent>
+        <Roll>Registrator</Roll>
+        <Namn>Pippi-Viktualia Tjänstemannason</Namn>
+      </Agent>
+      <Skapad>2016-06-08</Skapad>
+      <Arendemening>Organ1</Arendemening>
+    </ArkivobjektArende>
+    <ArkivobjektArende Systemidentifierare="b5f5e524d9d74a2caa635c3436c7a44e">
+      <ArkivobjektID>dnr/40</ArkivobjektID>
+      <ArendeTyp>0</ArendeTyp>
+      <Agent>
+        <Roll>Registrator</Roll>
+        <Namn>Pippi-Viktualia Tjänstemannason</Namn>
+      </Agent>
+      <Skapad>2019-02-21</Skapad>
+      <Arendemening>Nytt ärende</Arendemening>
+    </ArkivobjektArende>
+    <ArkivobjektArende Systemidentifierare="63643b1e660a4fff876e5618192eb1ce">
+      <ArkivobjektID>dnr/41</ArkivobjektID>
+      <ArendeTyp>0</ArendeTyp>
+      <Agent>
+        <Roll>Registrator</Roll>
+        <Namn>Administrator</Namn>
+      </Agent>
+      <Skapad>2019-11-05</Skapad>
+      <Arendemening>Testar stämpling</Arendemening>
+      <ArkivobjektListaHandlingar>
+        <ArkivobjektHandling Systemidentifierare="6ec8af17d7294666b0ee9044e06d658c">
+          <ArkivobjektID>dnr/41/1</ArkivobjektID>
+          <KlassReferens>0</KlassReferens>
+          <Handlingstyp>Dalandebeslut</Handlingstyp>
+          <Rubrik>Manual</Rubrik>
+          <Skapad>2019-11-05</Skapad>
+          <Bilaga Namn="R2D2 Directorysync 1.1 Installation och konfiguration.pdf" Lank="R2D2 Directorysync 1.1 Installation och konfiguration.pdf">
+            <Bevaras>true</Bevaras>
+          </Bilaga>
+        </ArkivobjektHandling>
+        <ArkivobjektHandling Systemidentifierare="60448ec6284a4eeca30f98b606a2f3e9">
+          <ArkivobjektID>dnr/41/2</ArkivobjektID>
+          <KlassReferens>0</KlassReferens>
+          <Handlingstyp>Remiss</Handlingstyp>
+          <Rubrik>Rutin</Rubrik>
+          <Skapad>2019-11-05</Skapad>
+          <Bilaga Namn="Rutin - komplettering till överklagande av planer.docx" Lank="Rutin - komplettering till överklagande av planer.docx">
+            <Bevaras>true</Bevaras>
+          </Bilaga>
+        </ArkivobjektHandling>
+        <ArkivobjektHandling Systemidentifierare="bfed2d99b6be47b0a072e83dbbeb62e0">
+          <ArkivobjektID>dnr/41/3</ArkivobjektID>
+          <KlassReferens>0</KlassReferens>
+          <Handlingstyp>Remiss</Handlingstyp>
+          <Rubrik>Testar stämpling</Rubrik>
+          <Skapad>2019-11-08</Skapad>
+          <Bilaga Namn="Rutin - komplettering till överklagande av planer.docx" Lank="Rutin - komplettering till överklagande av planer.docx">
+            <Bevaras>true</Bevaras>
+          </Bilaga>
+          <Bilaga Namn="meddelande.txt" Lank="meddelande.txt">
+            <Bevaras>true</Bevaras>
+          </Bilaga>
+        </ArkivobjektHandling>
+        <ArkivobjektHandling Systemidentifierare="4485f73cdcd8443993ac5d8b5256e4a9">
+          <ArkivobjektID>dnr/41/4</ArkivobjektID>
+          <KlassReferens>0</KlassReferens>
+          <Handlingstyp>Remiss</Handlingstyp>
+          <Rubrik>Remiss Testar stämpling</Rubrik>
+          <Skapad>2019-11-08</Skapad>
+          <Bilaga Namn="Remissvar från kommunstyrelsen.docx" Lank="Remissvar från kommunstyrelsen.docx">
+            <Bevaras>true</Bevaras>
+          </Bilaga>
+          <Bilaga Namn="meddelande.txt" Lank="meddelande.txt">
+            <Bevaras>true</Bevaras>
+          </Bilaga>
+        </ArkivobjektHandling>
+        <ArkivobjektHandling Systemidentifierare="8cc2bf6c6a4b4e6e8f5ea59f8a3c7655">
+          <ArkivobjektID>dnr/41/5</ArkivobjektID>
+          <KlassReferens>0</KlassReferens>
+          <Handlingstyp>Remiss</Handlingstyp>
+          <Rubrik>Remiss Testar stämpling</Rubrik>
+          <Skapad>2019-11-08</Skapad>
+          <Bilaga Namn="meddelande.txt" Lank="meddelande.txt">
+            <Bevaras>true</Bevaras>
+          </Bilaga>
+        </ArkivobjektHandling>
+      </ArkivobjektListaHandlingar>
+    </ArkivobjektArende>
+    <ArkivobjektArende Systemidentifierare="c431f5bb6fd048a984c2ea7f55f4b22a">
+      <ArkivobjektID>dnr/42</ArkivobjektID>
+      <ArendeTyp>0</ArendeTyp>
+      <Agent>
+        <Roll>Registrator</Roll>
+        <Namn>Administrator</Namn>
+      </Agent>
+      <Skapad>2019-12-02</Skapad>
+      <Arendemening>Testar handlingstyper kopplad till process</Arendemening>
+      <ArkivobjektListaHandlingar>
+        <ArkivobjektHandling Systemidentifierare="c58d45539a7e4519b4a98c712c63cca5">
+          <ArkivobjektID>dnr/42/1</ArkivobjektID>
+          <KlassReferens>0</KlassReferens>
+          <Handlingstyp>Verksamhetsberättelse</Handlingstyp>
+          <Rubrik>Verksamhetsberättelse</Rubrik>
+          <Skapad>2020-02-13</Skapad>
+        </ArkivobjektHandling>
+      </ArkivobjektListaHandlingar>
+    </ArkivobjektArende>
+    <ArkivobjektArende Systemidentifierare="e5c2205acb9e4f5ab6b1c82c1449d717">
+      <ArkivobjektID>dnr/43</ArkivobjektID>
+      <ArendeTyp>0</ArendeTyp>
+      <Forvaringsplats>Se nya riktlinjer KS 2019/123</Forvaringsplats>
+      <Agent>
+        <Roll>Registrator</Roll>
+        <Namn>Administrator</Namn>
+      </Agent>
+      <Skapad>2019-12-02</Skapad>
+      <Arendemening>Testar handlingstyper kopplade till ärendetyp - Styrande dokument</Arendemening>
+      <ArkivobjektListaHandlingar>
+        <ArkivobjektHandling Systemidentifierare="e5dc05addbc649b98accf14d465151d2">
+          <ArkivobjektID>dnr/43/1</ArkivobjektID>
+          <KlassReferens>0</KlassReferens>
+          <Handlingstyp>Instruktion</Handlingstyp>
+          <Rubrik>Instruktion</Rubrik>
+          <Skapad>2019-12-02</Skapad>
+        </ArkivobjektHandling>
+        <ArkivobjektHandling Systemidentifierare="558e074521584f558c1b374de263f4ea">
+          <ArkivobjektID>dnr/43/2</ArkivobjektID>
+          <KlassReferens>0</KlassReferens>
+          <Handlingstyp>Riktlinjer</Handlingstyp>
+          <Rubrik>Riktlinjer</Rubrik>
+          <Skapad>2020-02-18</Skapad>
+        </ArkivobjektHandling>
+      </ArkivobjektListaHandlingar>
+    </ArkivobjektArende>
+    <ArkivobjektArende Systemidentifierare="f068a46fc92a423cb15aed028677acc2">
+      <ArkivobjektID>dnr/44</ArkivobjektID>
+      <ArendeTyp>0</ArendeTyp>
+      <Agent>
+        <Roll>Registrator</Roll>
+        <Namn>Administrator</Namn>
+      </Agent>
+      <Skapad>2019-12-03</Skapad>
+      <Arendemening>Testar handlingstyper kopplade till ärendetyp</Arendemening>
+      <ArkivobjektListaHandlingar>
+        <ArkivobjektHandling Systemidentifierare="720c22c904f2448eb42a865ab81cadd8">
+          <ArkivobjektID>dnr/44/1</ArkivobjektID>
+          <KlassReferens>0</KlassReferens>
+          <Handlingstyp>Reglemente</Handlingstyp>
+          <Rubrik>Reglemente</Rubrik>
+          <Skapad>2019-12-03</Skapad>
+        </ArkivobjektHandling>
+      </ArkivobjektListaHandlingar>
+    </ArkivobjektArende>
+    <ArkivobjektArende Systemidentifierare="e1c103a2bd9348ccb1216b5204a214b5">
+      <ArkivobjektID>dnr/45</ArkivobjektID>
+      <ArendeTyp>0</ArendeTyp>
+      <Agent>
+        <Roll>Registrator</Roll>
+        <Namn>Tjänsteman af Fågelholk</Namn>
+      </Agent>
+      <Skapad>2019-12-16</Skapad>
+      <Arendemening>XYZ Test av nytt tjänsteutlåtande</Arendemening>
+    </ArkivobjektArende>
+    <ArkivobjektArende Systemidentifierare="100471b17b894f2ca182f0d8ac80efbe">
+      <ArkivobjektID>dnr/46</ArkivobjektID>
+      <ArendeTyp>0</ArendeTyp>
+      <Agent>
+        <Roll>Registrator</Roll>
+        <Namn>Paulina Handläggarson</Namn>
+      </Agent>
+      <Skapad>2020-03-11</Skapad>
+      <Arendemening>Testpaulina</Arendemening>
+      <ArkivobjektListaHandlingar>
+        <ArkivobjektHandling Systemidentifierare="532caa0a4a8f4c0aa50232be17e12c77">
+          <ArkivobjektID>dnr/46/1</ArkivobjektID>
+          <KlassReferens>0</KlassReferens>
+          <Handlingstyp>Beslut</Handlingstyp>
+          <Rubrik>Kamomillastads AB (2020-03-17 4)</Rubrik>
+          <Skapad>2020-03-17</Skapad>
+        </ArkivobjektHandling>
+        <ArkivobjektHandling Systemidentifierare="778815ff797b4f33b4f2888242aeee15">
+          <ArkivobjektID>dnr/46/2</ArkivobjektID>
+          <KlassReferens>0</KlassReferens>
+          <Handlingstyp>Beslut</Handlingstyp>
+          <Rubrik>Kamomillastads AB (2020-03-17 4)</Rubrik>
+          <Skapad>2020-03-17</Skapad>
+        </ArkivobjektHandling>
+      </ArkivobjektListaHandlingar>
+    </ArkivobjektArende>
+    <ArkivobjektArende Systemidentifierare="7b451644c7f947bd9d47964fad171208">
+      <ArkivobjektID>dnr/47</ArkivobjektID>
+      <ArendeTyp>0</ArendeTyp>
+      <Agent>
+        <Roll>Registrator</Roll>
+        <Namn>Administrator</Namn>
+      </Agent>
+      <Skapad>2020-06-11</Skapad>
+      <Arendemening>Utlämnande av allmän handling</Arendemening>
+    </ArkivobjektArende>
+    <ArkivobjektArende Systemidentifierare="d3000eb7554c4b5994891f59aca862ba">
+      <ArkivobjektID>dnr/48</ArkivobjektID>
+      <ArendeTyp>0</ArendeTyp>
+      <Agent>
+        <Roll>Registrator</Roll>
+        <Namn>Administrator</Namn>
+      </Agent>
+      <Skapad>2020-06-11</Skapad>
+      <Arendemening>remiss test</Arendemening>
+      <ArkivobjektListaHandlingar>
+        <ArkivobjektHandling Systemidentifierare="9ceee8e285f84b37b3fa9ab606e066af">
+          <ArkivobjektID>dnr/48/1</ArkivobjektID>
+          <KlassReferens>0</KlassReferens>
+          <Handlingstyp>Remiss</Handlingstyp>
+          <Rubrik>test</Rubrik>
+          <Skapad>2020-06-11</Skapad>
+          <Bilaga Namn="meddelande.txt" Lank="meddelande.txt">
+            <Bevaras>true</Bevaras>
+          </Bilaga>
+        </ArkivobjektHandling>
+        <ArkivobjektHandling Systemidentifierare="2b0770c51dc54bcba55825ddc4156ae9">
+          <ArkivobjektID>dnr/48/2</ArkivobjektID>
+          <KlassReferens>0</KlassReferens>
+          <Handlingstyp>Remissvar</Handlingstyp>
+          <Rubrik>test</Rubrik>
+          <Skapad>2020-06-11</Skapad>
+          <Bilaga Namn="meddelande.txt" Lank="meddelande.txt">
+            <Bevaras>true</Bevaras>
+          </Bilaga>
+          <Bilaga Namn="meddelande.txt" Lank="meddelande.txt">
+            <Bevaras>true</Bevaras>
+          </Bilaga>
+        </ArkivobjektHandling>
+      </ArkivobjektListaHandlingar>
+    </ArkivobjektArende>
+    <ArkivobjektArende Systemidentifierare="477ab21cdc38440ca03477d58d3f7af6">
+      <ArkivobjektID>dnr/49</ArkivobjektID>
+      <ArendeTyp>0</ArendeTyp>
+      <Agent>
+        <Roll>Registrator</Roll>
+        <Namn>Piprökare Administrator</Namn>
+      </Agent>
+      <Skapad>2020-08-17</Skapad>
+      <Arendemening>Piprökare - Testärende efter uppgradering</Arendemening>
+      <ArkivobjektListaHandlingar>
+        <ArkivobjektHandling Systemidentifierare="c1d6d3896b6f4a71b8193ab618225076">
+          <ArkivobjektID>dnr/49/1</ArkivobjektID>
+          <KlassReferens>0</KlassReferens>
+          <Handlingstyp>Instruktion</Handlingstyp>
+          <Beskrivning>test</Beskrivning>
+          <Rubrik>Test</Rubrik>
+          <Skapad>2020-08-17</Skapad>
+          <Bilaga Namn="R2D2 2020 X1 Användarmanual.pdf" Lank="R2D2 2020 X1 Användarmanual.pdf">
+            <Bevaras>true</Bevaras>
+          </Bilaga>
+          <Bilaga Namn="R2D2 2020 X1 Användarmanual.pdf.pdf" Lank="R2D2 2020 X1 Användarmanual.pdf.pdf">
+            <Bevaras>true</Bevaras>
+          </Bilaga>
+        </ArkivobjektHandling>
+        <ArkivobjektHandling Systemidentifierare="c4c496351fa7498cbb74c044db7cb05c">
+          <ArkivobjektID>dnr/49/2</ArkivobjektID>
+          <KlassReferens>0</KlassReferens>
+          <Handlingstyp>Instruktion</Handlingstyp>
+          <Rubrik>Test efter rättning av fritextsökningen</Rubrik>
+          <Skapad>2020-08-24</Skapad>
+          <Bilaga Namn="R2D2 2020 X1 Snabbguide.pdf" Lank="R2D2 2020 X1 Snabbguide.pdf">
+            <Bevaras>true</Bevaras>
+          </Bilaga>
+        </ArkivobjektHandling>
+      </ArkivobjektListaHandlingar>
+    </ArkivobjektArende>
+    <ArkivobjektArende Systemidentifierare="ac807072914f476c9ed790d9c92580a7">
+      <ArkivobjektID>dnr/5</ArkivobjektID>
+      <ArendeTyp>0</ArendeTyp>
+      <Agent>
+        <Roll>Registrator</Roll>
+        <Namn>Administrator</Namn>
+      </Agent>
+      <Skapad>2016-06-08</Skapad>
+      <Arendemening>Organ1</Arendemening>
+    </ArkivobjektArende>
+    <ArkivobjektArende Systemidentifierare="0926bc28ca9d45cba4518bb06e9e7502">
+      <ArkivobjektID>dnr/50</ArkivobjektID>
+      <ArendeTyp>0</ArendeTyp>
+      <Agent>
+        <Roll>Registrator</Roll>
+        <Namn>Administrator</Namn>
+      </Agent>
+      <Skapad>2020-08-18</Skapad>
+      <Arendemening>Testar tjänsteutlåtande</Arendemening>
+    </ArkivobjektArende>
+    <ArkivobjektArende Systemidentifierare="fc5528f4b9ad475fa4d3f62ff9354a21">
+      <ArkivobjektID>dnr/51</ArkivobjektID>
+      <ArendeTyp>0</ArendeTyp>
+      <Agent>
+        <Roll>Registrator</Roll>
+        <Namn>Tjänsteman af Fågelholk</Namn>
+      </Agent>
+      <Skapad>2020-12-08</Skapad>
+      <Arendemening>Testärende 2020 XYZ</Arendemening>
+    </ArkivobjektArende>
+    <ArkivobjektArende Systemidentifierare="0ba42f1237b0453da1779016d5bd396c">
+      <ArkivobjektID>dnr/52</ArkivobjektID>
+      <ArendeTyp>0</ArendeTyp>
+      <Agent>
+        <Roll>Registrator</Roll>
+        <Namn>Administrator</Namn>
+      </Agent>
+      <Skapad>2021-04-16</Skapad>
+      <Arendemening>testar mall</Arendemening>
+    </ArkivobjektArende>
+    <ArkivobjektArende Systemidentifierare="aecfaa6b8a414b98a97c6fe3e252b465">
+      <ArkivobjektID>dnr/53</ArkivobjektID>
+      <ArendeTyp>0</ArendeTyp>
+      <Agent>
+        <Roll>Registrator</Roll>
+        <Namn>Piprökare Administrator</Namn>
+      </Agent>
+      <Skapad>2021-05-18</Skapad>
+      <Arendemening>Ärendemening</Arendemening>
+    </ArkivobjektArende>
+    <ArkivobjektArende Systemidentifierare="6bdff626ff84486cabb4260b9d12c66e">
+      <ArkivobjektID>dnr/54</ArkivobjektID>
+      <ArendeTyp>0</ArendeTyp>
+      <Agent>
+        <Roll>Registrator</Roll>
+        <Namn>Administrator</Namn>
+      </Agent>
+      <Skapad>2021-07-07</Skapad>
+      <Arendemening>Tesutskottet</Arendemening>
+    </ArkivobjektArende>
+    <ArkivobjektArende Systemidentifierare="fd263a4efed9426a86e5e039854a47f8">
+      <ArkivobjektID>dnr/55</ArkivobjektID>
+      <ArendeTyp>0</ArendeTyp>
+      <Agent>
+        <Roll>Registrator</Roll>
+        <Namn>Administrator</Namn>
+      </Agent>
+      <Skapad>2021-08-16</Skapad>
+      <Arendemening>Testar efter databasflytt</Arendemening>
+      <ArkivobjektListaHandlingar>
+        <ArkivobjektHandling Systemidentifierare="914bb43de83742979d66f4fcf9418a03">
+          <ArkivobjektID>dnr/55/1</ArkivobjektID>
+          <KlassReferens>0</KlassReferens>
+          <Handlingstyp>Bokslut</Handlingstyp>
+          <Rubrik>Test</Rubrik>
+          <Skapad>2021-08-16</Skapad>
+        </ArkivobjektHandling>
+      </ArkivobjektListaHandlingar>
+    </ArkivobjektArende>
+    <ArkivobjektArende Systemidentifierare="61042c13d7934be0986a271ca540c212">
+      <ArkivobjektID>dnr/56</ArkivobjektID>
+      <ArendeTyp>0</ArendeTyp>
+      <Agent>
+        <Roll>Registrator</Roll>
+        <Namn>Administrator</Namn>
+      </Agent>
+      <Skapad>2021-08-16</Skapad>
+      <Arendemening>Tesutskottet</Arendemening>
+      <ArkivobjektListaHandlingar>
+        <ArkivobjektHandling Systemidentifierare="70d684998b474b57bc52bbd1b7d6dbd3">
+          <ArkivobjektID>dnr/56/1</ArkivobjektID>
+          <KlassReferens>0</KlassReferens>
+          <Handlingstyp>Återkommande</Handlingstyp>
+          <Rubrik>Återkommande</Rubrik>
+          <Skapad>2021-12-08</Skapad>
+          <Bilaga Namn="Återkommande.docx" Lank="Återkommande.docx">
+            <Bevaras>true</Bevaras>
+          </Bilaga>
+        </ArkivobjektHandling>
+        <ArkivobjektHandling Systemidentifierare="1c1a280ed15645c499b8bcf6c1729139">
+          <ArkivobjektID>dnr/56/2</ArkivobjektID>
+          <KlassReferens>0</KlassReferens>
+          <Handlingstyp>Återkommande</Handlingstyp>
+          <Rubrik>Återkommande</Rubrik>
+          <Skapad>2021-12-09</Skapad>
+          <Bilaga Namn="Återkommande.docx" Lank="Återkommande.docx">
+            <Bevaras>true</Bevaras>
+          </Bilaga>
+        </ArkivobjektHandling>
+      </ArkivobjektListaHandlingar>
+    </ArkivobjektArende>
+    <ArkivobjektArende Systemidentifierare="6951853e6766472cbd57ecd4af2588c0">
+      <ArkivobjektID>dnr/57</ArkivobjektID>
+      <ArendeTyp>0</ArendeTyp>
+      <Agent>
+        <Roll>Registrator</Roll>
+        <Namn>Piprökare Administrator</Namn>
+      </Agent>
+      <Skapad>2021-08-16</Skapad>
+      <Arendemening>Test av piprökare efter databas flytt</Arendemening>
+    </ArkivobjektArende>
+    <ArkivobjektArende Systemidentifierare="328c676e2c264d2a9db2a039807ef505">
+      <ArkivobjektID>dnr/58</ArkivobjektID>
+      <ArendeTyp>0</ArendeTyp>
+      <Agent>
+        <Roll>Registrator</Roll>
+        <Namn>Piprökare Administrator</Namn>
+      </Agent>
+      <Skapad>2021-09-01</Skapad>
+      <Arendemening>ZYtestar efter uppgradering till 2021 X1</Arendemening>
+      <ArkivobjektListaHandlingar>
+        <ArkivobjektHandling Systemidentifierare="6c18f671fc98408ab438d50b429a0440">
+          <ArkivobjektID>dnr/58/1</ArkivobjektID>
+          <KlassReferens>0</KlassReferens>
+          <Handlingstyp>Exploatering</Handlingstyp>
+          <Rubrik>Test efter uppgradering till 2021 X1</Rubrik>
+          <Skapad>2021-09-01</Skapad>
+          <Bilaga Namn="R2D2 2021 X1 Användarmanual.pdf" Lank="R2D2 2021 X1 Användarmanual.pdf">
+            <Bevaras>true</Bevaras>
+          </Bilaga>
+          <Bilaga Namn="R2D2 2021 X1 Användarmanual.pdf.pdf" Lank="R2D2 2021 X1 Användarmanual.pdf.pdf">
+            <Bevaras>true</Bevaras>
+          </Bilaga>
+        </ArkivobjektHandling>
+      </ArkivobjektListaHandlingar>
+    </ArkivobjektArende>
+    <ArkivobjektArende Systemidentifierare="512a49308f8f43248628b593ca1bafc1">
+      <ArkivobjektID>dnr/59</ArkivobjektID>
+      <ArendeTyp>0</ArendeTyp>
+      <Agent>
+        <Roll>Registrator</Roll>
+        <Namn>Smurf Adminson</Namn>
+      </Agent>
+      <Skapad>2021-09-01</Skapad>
+      <Arendemening>Testar efter uppgraderingen</Arendemening>
+    </ArkivobjektArende>
+    <ArkivobjektArende Systemidentifierare="b5f2d635b4a64d159aaea742a74da011">
+      <ArkivobjektID>dnr/6</ArkivobjektID>
+      <ArendeTyp>0</ArendeTyp>
+      <Agent>
+        <Roll>Registrator</Roll>
+        <Namn>Administrator</Namn>
+      </Agent>
+      <Skapad>2016-06-08</Skapad>
+      <Arendemening>Organ1</Arendemening>
+    </ArkivobjektArende>
+    <ArkivobjektArende Systemidentifierare="d98800e8467b4ef9a620603a3b16d691">
+      <ArkivobjektID>dnr/60</ArkivobjektID>
+      <ArendeTyp>0</ArendeTyp>
+      <Agent>
+        <Roll>Registrator</Roll>
+        <Namn>Fantomen Byråkrat</Namn>
+      </Agent>
+      <Skapad>2021-09-01</Skapad>
+      <Arendemening>Nalles ärende</Arendemening>
+      <ArkivobjektListaHandlingar>
+        <ArkivobjektHandling Systemidentifierare="18ecda7745bb4702a13b1abc175e9f8c">
+          <ArkivobjektID>dnr/60/1</ArkivobjektID>
+          <KlassReferens>0</KlassReferens>
+          <Handlingstyp>Dalandebeslut</Handlingstyp>
+          <Rubrik>En annan handling</Rubrik>
+          <Skapad>2021-09-01</Skapad>
+          <Bilaga Namn="Protokoll KSAU 2021-07-02.docx" Lank="Protokoll KSAU 2021-07-02.docx">
+            <Bevaras>true</Bevaras>
+          </Bilaga>
+        </ArkivobjektHandling>
+      </ArkivobjektListaHandlingar>
+    </ArkivobjektArende>
+    <ArkivobjektArende Systemidentifierare="7f308f749b054a0ca56414c470236031">
+      <ArkivobjektID>dnr/61</ArkivobjektID>
+      <ArendeTyp>0</ArendeTyp>
+      <Agent>
+        <Roll>Registrator</Roll>
+        <Namn>Tjänsteman af Fågelholk</Namn>
+      </Agent>
+      <Skapad>2021-09-10</Skapad>
+      <Arendemening>XYZ Testärende R2D2 2021 X1</Arendemening>
+    </ArkivobjektArende>
+    <ArkivobjektArende Systemidentifierare="7ede79bf33dd4114abd23cd84c4bf186">
+      <ArkivobjektID>dnr/62</ArkivobjektID>
+      <ArendeTyp>0</ArendeTyp>
+      <Agent>
+        <Roll>Registrator</Roll>
+        <Namn>Tjänsteman af Fågelholk</Namn>
+      </Agent>
+      <Skapad>2021-09-10</Skapad>
+      <Arendemening>Tesutskottet 2021-12-24 XYZ</Arendemening>
+      <ArkivobjektListaHandlingar>
+        <ArkivobjektHandling Systemidentifierare="b53a5b7dd84a4b379eaf6b59b4ea561a">
+          <ArkivobjektID>dnr/62/1</ArkivobjektID>
+          <KlassReferens>0</KlassReferens>
+          <Handlingstyp>Återkommande</Handlingstyp>
+          <Rubrik>Återkommande</Rubrik>
+          <Skapad>2021-09-10</Skapad>
+          <Bilaga Namn="Återkommande.docx" Lank="Återkommande.docx">
+            <Bevaras>true</Bevaras>
+          </Bilaga>
+        </ArkivobjektHandling>
+        <ArkivobjektHandling Systemidentifierare="49c04db556ca4c3395cfe72d55a56cfd">
+          <ArkivobjektID>dnr/62/2</ArkivobjektID>
+          <KlassReferens>0</KlassReferens>
+          <Handlingstyp>Protokoll</Handlingstyp>
+          <Rubrik>Antikvarisk</Rubrik>
+          <Skapad>2021-09-10</Skapad>
+          <Bilaga Namn="Antikvarisk.docx" Lank="Antikvarisk.docx">
+            <Bevaras>true</Bevaras>
+          </Bilaga>
+        </ArkivobjektHandling>
+        <ArkivobjektHandling Systemidentifierare="9a0ccd895ebf4a6298e10ff788184dea">
+          <ArkivobjektID>dnr/62/3</ArkivobjektID>
+          <KlassReferens>0</KlassReferens>
+          <Handlingstyp>Protokoll</Handlingstyp>
+          <Rubrik>Antikvarisk</Rubrik>
+          <Skapad>2021-09-10</Skapad>
+          <Bilaga Namn="Antikvarisk.docx" Lank="Antikvarisk.docx">
+            <Bevaras>true</Bevaras>
+          </Bilaga>
+        </ArkivobjektHandling>
+      </ArkivobjektListaHandlingar>
+    </ArkivobjektArende>
+    <ArkivobjektArende Systemidentifierare="b807f294e2214f5e8839128d3ec0a70d">
+      <ArkivobjektID>dnr/63</ArkivobjektID>
+      <ArendeTyp>0</ArendeTyp>
+      <Agent>
+        <Roll>Registrator</Roll>
+        <Namn>Administrator</Namn>
+      </Agent>
+      <Skapad>2021-09-15</Skapad>
+      <Arendemening>Remiss</Arendemening>
+      <ArkivobjektListaHandlingar>
+        <ArkivobjektHandling Systemidentifierare="d692dc8ddd2f44e9ae7c113aa590c710">
+          <ArkivobjektID>dnr/63/1</ArkivobjektID>
+          <KlassReferens>0</KlassReferens>
+          <Handlingstyp>Remiss</Handlingstyp>
+          <Rubrik>Tjosanhejsan Remiss</Rubrik>
+          <Skapad>2021-09-15</Skapad>
+          <Bilaga Namn="Tjosanhejsan Remiss.docx" Lank="Tjosanhejsan Remiss.docx">
+            <Bevaras>true</Bevaras>
+          </Bilaga>
+        </ArkivobjektHandling>
+        <ArkivobjektHandling Systemidentifierare="38b00a9b9c894c50ad4a2ae1df49c6c8">
+          <ArkivobjektID>dnr/63/2</ArkivobjektID>
+          <KlassReferens>0</KlassReferens>
+          <Handlingstyp>Remiss</Handlingstyp>
+          <Rubrik>Remiss</Rubrik>
+          <Skapad>2021-09-15</Skapad>
+          <Bilaga Namn="Tjosanhejsan Remiss.docx" Lank="Tjosanhejsan Remiss.docx">
+            <Bevaras>true</Bevaras>
+          </Bilaga>
+          <Bilaga Namn="meddelande.txt" Lank="meddelande.txt">
+            <Bevaras>true</Bevaras>
+          </Bilaga>
+        </ArkivobjektHandling>
+        <ArkivobjektHandling Systemidentifierare="a87b9ae6611b476eb7f48850c9bc21a4">
+          <ArkivobjektID>dnr/63/3</ArkivobjektID>
+          <KlassReferens>0</KlassReferens>
+          <Handlingstyp>Remiss</Handlingstyp>
+          <Rubrik>Remiss</Rubrik>
+          <Skapad>2021-09-15</Skapad>
+          <Bilaga Namn="Tjosanhejsan Remiss.docx" Lank="Tjosanhejsan Remiss.docx">
+            <Bevaras>true</Bevaras>
+          </Bilaga>
+          <Bilaga Namn="meddelande.txt" Lank="meddelande.txt">
+            <Bevaras>true</Bevaras>
+          </Bilaga>
+        </ArkivobjektHandling>
+        <ArkivobjektHandling Systemidentifierare="43264efab7904db7ba62d083f84760a4">
+          <ArkivobjektID>dnr/63/4</ArkivobjektID>
+          <KlassReferens>0</KlassReferens>
+          <Handlingstyp>Remissvar</Handlingstyp>
+          <Rubrik>Remiss</Rubrik>
+          <Skapad>2021-09-15</Skapad>
+          <Bilaga Namn="Remissvar.docx" Lank="Remissvar.docx">
+            <Bevaras>true</Bevaras>
+          </Bilaga>
+          <Bilaga Namn="meddelande.txt" Lank="meddelande.txt">
+            <Bevaras>true</Bevaras>
+          </Bilaga>
+        </ArkivobjektHandling>
+      </ArkivobjektListaHandlingar>
+    </ArkivobjektArende>
+    <ArkivobjektArende Systemidentifierare="0050cf0671b24b3b87382ca35e402fc5">
+      <ArkivobjektID>dnr/64</ArkivobjektID>
+      <ArendeTyp>0</ArendeTyp>
+      <Agent>
+        <Roll>Registrator</Roll>
+        <Namn>Administrator</Namn>
+      </Agent>
+      <Skapad>2021-12-02</Skapad>
+      <Arendemening>Test</Arendemening>
+      <ArkivobjektListaHandlingar>
+        <ArkivobjektHandling Systemidentifierare="87f46ef7f59544b8b05280efb3b96502">
+          <ArkivobjektID>dnr/64/1</ArkivobjektID>
+          <KlassReferens>0</KlassReferens>
+          <Handlingstyp>Styrdokument</Handlingstyp>
+          <Rubrik>Styrdokument</Rubrik>
+          <Skapad>2021-12-02</Skapad>
+        </ArkivobjektHandling>
+      </ArkivobjektListaHandlingar>
+    </ArkivobjektArende>
+    <ArkivobjektArende Systemidentifierare="c6311aa162734d98a891d6e0c0964403">
+      <ArkivobjektID>dnr/65</ArkivobjektID>
+      <ArendeTyp>0</ArendeTyp>
+      <Agent>
+        <Roll>Registrator</Roll>
+        <Namn>Piprökare Administrator</Namn>
+      </Agent>
+      <Skapad>2021-12-10</Skapad>
+      <Arendemening>Tesutskottet dwadwa</Arendemening>
+    </ArkivobjektArende>
+    <ArkivobjektArende Systemidentifierare="eddd5e3553414617a5815bb97a5e03ff">
+      <ArkivobjektID>dnr/66</ArkivobjektID>
+      <ArendeTyp>0</ArendeTyp>
+      <Agent>
+        <Roll>Registrator</Roll>
+        <Namn>Piprökare Administrator</Namn>
+      </Agent>
+      <Skapad>2021-12-13</Skapad>
+      <Arendemening>Tesutskottet testar beev</Arendemening>
+    </ArkivobjektArende>
+    <ArkivobjektArende Systemidentifierare="a749e7debf734aa98b1a8e7cab87ab6a">
+      <ArkivobjektID>dnr/67</ArkivobjektID>
+      <ArendeTyp>0</ArendeTyp>
+      <Agent>
+        <Roll>Registrator</Roll>
+        <Namn>Piprökare Administrator</Namn>
+      </Agent>
+      <Skapad>2021-12-13</Skapad>
+      <Arendemening>testärende</Arendemening>
+      <ArkivobjektListaHandlingar>
+        <ArkivobjektHandling Systemidentifierare="495d54b7090c4381b742e4ee98ed6bc1">
+          <ArkivobjektID>dnr/67/1</ArkivobjektID>
+          <KlassReferens>0</KlassReferens>
+          <Handlingstyp>Till möte</Handlingstyp>
+          <Rubrik>Testmöte Pippi (2022-02-18)</Rubrik>
+          <Skapad>2022-02-09</Skapad>
+        </ArkivobjektHandling>
+        <ArkivobjektHandling Systemidentifierare="391d17112da749ef9a0552a7bdfc43ca">
+          <ArkivobjektID>dnr/67/2</ArkivobjektID>
+          <KlassReferens>0</KlassReferens>
+          <Handlingstyp>Beslut</Handlingstyp>
+          <Rubrik>Testmöte Pippi (2022-02-18 TN §1)</Rubrik>
+          <Skapad>2022-02-10</Skapad>
+          <Bilaga Namn="Testmöte Pippi (2022-02-18 TN §1).docx" Lank="Testmöte Pippi (2022-02-18 TN §1).docx">
+            <Bevaras>true</Bevaras>
+          </Bilaga>
+        </ArkivobjektHandling>
+      </ArkivobjektListaHandlingar>
+    </ArkivobjektArende>
+    <ArkivobjektArende Systemidentifierare="da21cbbb8bfd44f7877baf8fe24d1c78">
+      <ArkivobjektID>dnr/68</ArkivobjektID>
+      <ArendeTyp>0</ArendeTyp>
+      <Agent>
+        <Roll>Registrator</Roll>
+        <Namn>Administrator</Namn>
+      </Agent>
+      <Skapad>2021-12-17</Skapad>
+      <Arendemening>Test av grodor</Arendemening>
+    </ArkivobjektArende>
+    <ArkivobjektArende Systemidentifierare="fb08942b993d4ff1ab964b5df770c3ef">
+      <ArkivobjektID>dnr/69</ArkivobjektID>
+      <ArendeTyp>0</ArendeTyp>
+      <Agent>
+        <Roll>Registrator</Roll>
+        <Namn>Smurf Adminson</Namn>
+      </Agent>
+      <Skapad>2021-12-17</Skapad>
+      <Arendemening>Testar lite grodor</Arendemening>
+    </ArkivobjektArende>
+    <ArkivobjektArende Systemidentifierare="01d9faccb49941fc9ac44b2510d57e8c">
+      <ArkivobjektID>dnr/7</ArkivobjektID>
+      <ArendeTyp>0</ArendeTyp>
+      <Agent>
+        <Roll>Registrator</Roll>
+        <Namn>Pippi-Viktualia Tjänstemannason</Namn>
+      </Agent>
+      <Skapad>2016-06-08</Skapad>
+      <Arendemening>Organ1</Arendemening>
+    </ArkivobjektArende>
+    <ArkivobjektArende Systemidentifierare="cb1a97d25aec42169d38ea987f05a84a">
+      <ArkivobjektID>dnr/70</ArkivobjektID>
+      <ArendeTyp>0</ArendeTyp>
+      <Agent>
+        <Roll>Registrator</Roll>
+        <Namn>Fantomen Byråkrat</Namn>
+      </Agent>
+      <Skapad>2021-12-17</Skapad>
+      <Arendemening>Testa nya grodor</Arendemening>
+    </ArkivobjektArende>
+    <ArkivobjektArende Systemidentifierare="b1025fa23e914a218b65b8081f4d52ee">
+      <ArkivobjektID>dnr/71</ArkivobjektID>
+      <ArendeTyp>0</ArendeTyp>
+      <Agent>
+        <Roll>Registrator</Roll>
+        <Namn>Administrator</Namn>
+      </Agent>
+      <Skapad>2022-02-08</Skapad>
+      <Arendemening>Testar grodor</Arendemening>
+      <ArkivobjektListaHandlingar>
+        <ArkivobjektHandling Systemidentifierare="60d6c9f1a07641259494874f59a29e1a">
+          <ArkivobjektID>dnr/71/1</ArkivobjektID>
+          <KlassReferens>0</KlassReferens>
+          <Handlingstyp>Tjosanhejsan</Handlingstyp>
+          <Rubrik>Tjansteutlatande test av grodor</Rubrik>
+          <Skapad>2022-02-08</Skapad>
+          <Bilaga Namn="Tjansteutlatande test av grodor.docx" Lank="Tjansteutlatande test av grodor.docx">
+            <Bevaras>true</Bevaras>
+          </Bilaga>
+        </ArkivobjektHandling>
+        <ArkivobjektHandling Systemidentifierare="e98c01c11307455882bf5bbdaea235fe">
+          <ArkivobjektID>dnr/71/2</ArkivobjektID>
+          <KlassReferens>0</KlassReferens>
+          <Handlingstyp>Till möte</Handlingstyp>
+          <Rubrik>Tesutskottet (2022-02-14)</Rubrik>
+          <Skapad>2022-02-08</Skapad>
+        </ArkivobjektHandling>
+        <ArkivobjektHandling Systemidentifierare="3f4a75f4781d496c958462adf3362f94">
+          <ArkivobjektID>dnr/71/3</ArkivobjektID>
+          <KlassReferens>0</KlassReferens>
+          <Rubrik>Avsändare/mottagare</Rubrik>
+          <Skapad>2022-02-08</Skapad>
+        </ArkivobjektHandling>
+        <ArkivobjektHandling Systemidentifierare="ea3b20b36e5441b4b1f129eaeb8d0932">
+          <ArkivobjektID>dnr/71/4</ArkivobjektID>
+          <KlassReferens>0</KlassReferens>
+          <Handlingstyp>Beslut</Handlingstyp>
+          <Rubrik>Tesutskottet Valentin (2022-02-15 TN §2)</Rubrik>
+          <Skapad>2022-02-14</Skapad>
+          <Bilaga Namn="Tesutskottet Valentin (2022-02-15 TN §2).docx" Lank="Tesutskottet Valentin (2022-02-15 TN §2).docx">
+            <Bevaras>true</Bevaras>
+          </Bilaga>
+        </ArkivobjektHandling>
+      </ArkivobjektListaHandlingar>
+    </ArkivobjektArende>
+    <ArkivobjektArende Systemidentifierare="4dac319cf35a4eea932a49905e0e187c">
+      <ArkivobjektID>dnr/72</ArkivobjektID>
+      <ArendeTyp>0</ArendeTyp>
+      <Agent>
+        <Roll>Registrator</Roll>
+        <Namn>Administrator</Namn>
+      </Agent>
+      <Skapad>2022-02-08</Skapad>
+      <Arendemening>Tesutskottet</Arendemening>
+      <ArkivobjektListaHandlingar>
+        <ArkivobjektHandling Systemidentifierare="262fdd6d510b4e339c9529cd260d29b8">
+          <ArkivobjektID>dnr/72/1</ArkivobjektID>
+          <KlassReferens>0</KlassReferens>
+          <Handlingstyp>Återkommande</Handlingstyp>
+          <Rubrik>Återkommande</Rubrik>
+          <Skapad>2022-02-15</Skapad>
+          <Bilaga Namn="Återkommande.docx" Lank="Återkommande.docx">
+            <Bevaras>true</Bevaras>
+          </Bilaga>
+        </ArkivobjektHandling>
+      </ArkivobjektListaHandlingar>
+    </ArkivobjektArende>
+    <ArkivobjektArende Systemidentifierare="7cdb90090a3e4e55a44a2d55766adbb9">
+      <ArkivobjektID>dnr/73</ArkivobjektID>
+      <ArendeTyp>0</ArendeTyp>
+      <Agent>
+        <Roll>Registrator</Roll>
+        <Namn>Administrator</Namn>
+      </Agent>
+      <Skapad>2022-02-08</Skapad>
+      <Arendemening>Testmöte Pippi</Arendemening>
+      <ArkivobjektListaHandlingar>
+        <ArkivobjektHandling Systemidentifierare="96b101c0b96b4ca98547c47deb4b1dce">
+          <ArkivobjektID>dnr/73/1</ArkivobjektID>
+          <KlassReferens>0</KlassReferens>
+          <Handlingstyp>Återkommande</Handlingstyp>
+          <Rubrik>Återkommande</Rubrik>
+          <Skapad>2022-02-09</Skapad>
+          <Bilaga Namn="Återkommande.docx" Lank="Återkommande.docx">
+            <Bevaras>true</Bevaras>
+          </Bilaga>
+        </ArkivobjektHandling>
+        <ArkivobjektHandling Systemidentifierare="de00c2253bd6436b8774118538202d5b">
+          <ArkivobjektID>dnr/73/2</ArkivobjektID>
+          <KlassReferens>0</KlassReferens>
+          <Handlingstyp>Återkommande</Handlingstyp>
+          <Rubrik>Återkommande</Rubrik>
+          <Skapad>2022-02-09</Skapad>
+          <Bilaga Namn="Återkommande.docx" Lank="Återkommande.docx">
+            <Bevaras>true</Bevaras>
+          </Bilaga>
+        </ArkivobjektHandling>
+        <ArkivobjektHandling Systemidentifierare="130bb59b3a464c4a94d8c6bfdb3703a4">
+          <ArkivobjektID>dnr/73/3</ArkivobjektID>
+          <KlassReferens>0</KlassReferens>
+          <Handlingstyp>Protokoll</Handlingstyp>
+          <Rubrik>Antikvarisk</Rubrik>
+          <Skapad>2022-02-09</Skapad>
+          <Bilaga Namn="Antikvarisk.docx" Lank="Antikvarisk.docx">
+            <Bevaras>true</Bevaras>
+          </Bilaga>
+        </ArkivobjektHandling>
+        <ArkivobjektHandling Systemidentifierare="fc64dbf064254c0bbe3756357b4ab9f1">
+          <ArkivobjektID>dnr/73/4</ArkivobjektID>
+          <KlassReferens>0</KlassReferens>
+          <Handlingstyp>Återkommande</Handlingstyp>
+          <Rubrik>Återkommande</Rubrik>
+          <Skapad>2022-02-09</Skapad>
+          <Bilaga Namn="Återkommande.docx" Lank="Återkommande.docx">
+            <Bevaras>true</Bevaras>
+          </Bilaga>
+        </ArkivobjektHandling>
+        <ArkivobjektHandling Systemidentifierare="470cc5be8a804b6aa31f481adde03ac0">
+          <ArkivobjektID>dnr/73/5</ArkivobjektID>
+          <KlassReferens>0</KlassReferens>
+          <Handlingstyp>Protokoll</Handlingstyp>
+          <Rubrik>Antikvarisk</Rubrik>
+          <Skapad>2022-02-09</Skapad>
+          <Bilaga Namn="Antikvarisk.docx" Lank="Antikvarisk.docx">
+            <Bevaras>true</Bevaras>
+          </Bilaga>
+        </ArkivobjektHandling>
+        <ArkivobjektHandling Systemidentifierare="3b0bac65a0a84d87b8c8076d0960c51d">
+          <ArkivobjektID>dnr/73/6</ArkivobjektID>
+          <KlassReferens>0</KlassReferens>
+          <Handlingstyp>Protokoll</Handlingstyp>
+          <Rubrik>Antikvarisk</Rubrik>
+          <Skapad>2022-02-09</Skapad>
+          <Bilaga Namn="Antikvarisk.docx" Lank="Antikvarisk.docx">
+            <Bevaras>true</Bevaras>
+          </Bilaga>
+        </ArkivobjektHandling>
+        <ArkivobjektHandling Systemidentifierare="77f72d57916740958307d1b27c93bc8c">
+          <ArkivobjektID>dnr/73/7</ArkivobjektID>
+          <KlassReferens>0</KlassReferens>
+          <Handlingstyp>Återkommande</Handlingstyp>
+          <Rubrik>Återkommande</Rubrik>
+          <Skapad>2022-02-10</Skapad>
+          <Bilaga Namn="Återkommande.docx" Lank="Återkommande.docx">
+            <Bevaras>true</Bevaras>
+          </Bilaga>
+        </ArkivobjektHandling>
+        <ArkivobjektHandling Systemidentifierare="b99e7073cb5f4c19949897f7f69fbaa9">
+          <ArkivobjektID>dnr/73/8</ArkivobjektID>
+          <KlassReferens>0</KlassReferens>
+          <Handlingstyp>Återkommande</Handlingstyp>
+          <Rubrik>Återkommande</Rubrik>
+          <Skapad>2022-02-15</Skapad>
+          <Bilaga Namn="Återkommande.docx" Lank="Återkommande.docx">
+            <Bevaras>true</Bevaras>
+          </Bilaga>
+        </ArkivobjektHandling>
+        <ArkivobjektHandling Systemidentifierare="fa1c0a02c50646239168f6731ddc1da4">
+          <ArkivobjektID>dnr/73/9</ArkivobjektID>
+          <KlassReferens>0</KlassReferens>
+          <Handlingstyp>Återkommande</Handlingstyp>
+          <Rubrik>Återkommande</Rubrik>
+          <Skapad>2022-02-22</Skapad>
+          <Bilaga Namn="Återkommande.docx" Lank="Återkommande.docx">
+            <Bevaras>true</Bevaras>
+          </Bilaga>
+        </ArkivobjektHandling>
+        <ArkivobjektHandling Systemidentifierare="204849bd311a4f419e7eca31952b39d9">
+          <ArkivobjektID>dnr/73/10</ArkivobjektID>
+          <KlassReferens>0</KlassReferens>
+          <Handlingstyp>Protokoll</Handlingstyp>
+          <Rubrik>Antikvarisk</Rubrik>
+          <Skapad>2022-02-22</Skapad>
+          <Bilaga Namn="Antikvarisk.docx" Lank="Antikvarisk.docx">
+            <Bevaras>true</Bevaras>
+          </Bilaga>
+        </ArkivobjektHandling>
+      </ArkivobjektListaHandlingar>
+    </ArkivobjektArende>
+    <ArkivobjektArende Systemidentifierare="d4f7c39f991549e1b1084772cb6fb3a5">
+      <ArkivobjektID>dnr/74</ArkivobjektID>
+      <ArendeTyp>0</ArendeTyp>
+      <Agent>
+        <Roll>Registrator</Roll>
+        <Namn>Stålmannen Sekreterarsson</Namn>
+      </Agent>
+      <Skapad>2022-02-08</Skapad>
+      <Arendemening>Boklärd</Arendemening>
+      <ArkivobjektListaHandlingar>
+        <ArkivobjektHandling Systemidentifierare="25897f502e4142bba5b45887036ebbbd">
+          <ArkivobjektID>dnr/74/1</ArkivobjektID>
+          <KlassReferens>0</KlassReferens>
+          <Rubrik>Avsändare/mottagare</Rubrik>
+          <Skapad>2022-02-08</Skapad>
+        </ArkivobjektHandling>
+      </ArkivobjektListaHandlingar>
+    </ArkivobjektArende>
+    <ArkivobjektArende Systemidentifierare="e8ff290100ab42e59bb0d2f46061d94a">
+      <ArkivobjektID>dnr/75</ArkivobjektID>
+      <ArendeTyp>0</ArendeTyp>
+      <Agent>
+        <Roll>Registrator</Roll>
+        <Namn>Administrator</Namn>
+      </Agent>
+      <Skapad>2022-02-08</Skapad>
+      <Arendemening>Ansökan om parkeringstillstånd</Arendemening>
+    </ArkivobjektArende>
+    <ArkivobjektArende Systemidentifierare="4d4658191a0543d79f7e2483009c216b">
+      <ArkivobjektID>dnr/76</ArkivobjektID>
+      <ArendeTyp>0</ArendeTyp>
+      <Agent>
+        <Roll>Registrator</Roll>
+        <Namn>Administrator</Namn>
+      </Agent>
+      <Skapad>2022-02-10</Skapad>
+      <Arendemening>Tesutskottet</Arendemening>
+    </ArkivobjektArende>
+    <ArkivobjektArende Systemidentifierare="93afce720a394349bb01b39183d07a95">
+      <ArkivobjektID>dnr/77</ArkivobjektID>
+      <ArendeTyp>0</ArendeTyp>
+      <Agent>
+        <Roll>Registrator</Roll>
+        <Namn>Administrator</Namn>
+      </Agent>
+      <Skapad>2022-02-10</Skapad>
+      <Arendemening>Upphandling av punktlighet</Arendemening>
+      <ArkivobjektListaHandlingar>
+        <ArkivobjektHandling Systemidentifierare="4ce5b6e071d547eabedeea2a2e3da3f5">
+          <ArkivobjektID>dnr/77/1</ArkivobjektID>
+          <KlassReferens>0</KlassReferens>
+          <Handlingstyp>Tjosanhejsan</Handlingstyp>
+          <Rubrik>Tjansteutlatande upphandling av punktlighet</Rubrik>
+          <Skapad>2022-02-10</Skapad>
+          <Bilaga Namn="Tjansteutlatande upphandling av punktlighet.docx" Lank="Tjansteutlatande upphandling av punktlighet.docx">
+            <Bevaras>true</Bevaras>
+          </Bilaga>
+        </ArkivobjektHandling>
+        <ArkivobjektHandling Systemidentifierare="51a38ebe8ade48d4a81c84033490a97f">
+          <ArkivobjektID>dnr/77/2</ArkivobjektID>
+          <KlassReferens>0</KlassReferens>
+          <Handlingstyp>Till möte</Handlingstyp>
+          <Rubrik>Tesutskottet (2022-02-25)</Rubrik>
+          <Skapad>2022-02-10</Skapad>
+          <Bilaga Namn="paragraf.txt" Lank="paragraf.txt">
+            <Bevaras>true</Bevaras>
+          </Bilaga>
+        </ArkivobjektHandling>
+      </ArkivobjektListaHandlingar>
+    </ArkivobjektArende>
+    <ArkivobjektArende Systemidentifierare="aeadbfb8d45943a98b0d20234e63e4bd">
+      <ArkivobjektID>dnr/78</ArkivobjektID>
+      <ArendeTyp>0</ArendeTyp>
+      <Agent>
+        <Roll>Registrator</Roll>
+        <Namn>Stålmannen Sekreterarsson</Namn>
+      </Agent>
+      <Skapad>2022-02-10</Skapad>
+      <Arendemening>Tesutskottet</Arendemening>
+      <ArkivobjektListaHandlingar>
+        <ArkivobjektHandling Systemidentifierare="930153535df1474f81c63e93eb709306">
+          <ArkivobjektID>dnr/78/1</ArkivobjektID>
+          <KlassReferens>0</KlassReferens>
+          <Handlingstyp>Återkommande</Handlingstyp>
+          <Rubrik>Återkommande</Rubrik>
+          <Skapad>2022-02-10</Skapad>
+          <Bilaga Namn="Återkommande.docx" Lank="Återkommande.docx">
+            <Bevaras>true</Bevaras>
+          </Bilaga>
+        </ArkivobjektHandling>
+      </ArkivobjektListaHandlingar>
+    </ArkivobjektArende>
+    <ArkivobjektArende Systemidentifierare="fee258f9365a4edcb8b1212836b90bce">
+      <ArkivobjektID>dnr/79</ArkivobjektID>
+      <ArendeTyp>0</ArendeTyp>
+      <Agent>
+        <Roll>Registrator</Roll>
+        <Namn>Stålmannen Sekreterarsson</Namn>
+      </Agent>
+      <Skapad>2022-02-10</Skapad>
+      <Arendemening>Boklärd testar grodor 1</Arendemening>
+      <ArkivobjektListaHandlingar>
+        <ArkivobjektHandling Systemidentifierare="b92b095983b2449aa293c424690302d5">
+          <ArkivobjektID>dnr/79/1</ArkivobjektID>
+          <KlassReferens>0</KlassReferens>
+          <Handlingstyp>Dalandebeslut</Handlingstyp>
+          <Rubrik>Tjansteutlatande SL</Rubrik>
+          <Skapad>2022-02-10</Skapad>
+          <Bilaga Namn="Tjansteutlatande SL.docx" Lank="Tjansteutlatande SL.docx">
+            <Bevaras>true</Bevaras>
+          </Bilaga>
+        </ArkivobjektHandling>
+        <ArkivobjektHandling Systemidentifierare="ab2dc5c40f32450887f8a3a9f29e4c45">
+          <ArkivobjektID>dnr/79/2</ArkivobjektID>
+          <KlassReferens>0</KlassReferens>
+          <Handlingstyp>Granskningsutlåtande</Handlingstyp>
+          <Rubrik>Ordforandebeslut SL</Rubrik>
+          <Skapad>2022-02-10</Skapad>
+          <Bilaga Namn="Ordforandebeslut SL.docx" Lank="Ordforandebeslut SL.docx">
+            <Bevaras>true</Bevaras>
+          </Bilaga>
+        </ArkivobjektHandling>
+        <ArkivobjektHandling Systemidentifierare="ddb6451654994f33a8f070790b9a3f77">
+          <ArkivobjektID>dnr/79/3</ArkivobjektID>
+          <KlassReferens>0</KlassReferens>
+          <Handlingstyp>Granskningsyttrande</Handlingstyp>
+          <Rubrik>Namndens_yttrande SL</Rubrik>
+          <Skapad>2022-02-10</Skapad>
+          <Bilaga Namn="Namndens_yttrande SL.docx" Lank="Namndens_yttrande SL.docx">
+            <Bevaras>true</Bevaras>
+          </Bilaga>
+        </ArkivobjektHandling>
+        <ArkivobjektHandling Systemidentifierare="a5dafeb4773c4c00a6000cd1fcc1794c">
+          <ArkivobjektID>dnr/79/4</ArkivobjektID>
+          <KlassReferens>0</KlassReferens>
+          <Handlingstyp>Dalandebeslut</Handlingstyp>
+          <Rubrik>Forvaltningens_yttrande SL</Rubrik>
+          <Skapad>2022-02-10</Skapad>
+          <Bilaga Namn="Forvaltningens_yttrande SL.docx" Lank="Forvaltningens_yttrande SL.docx">
+            <Bevaras>true</Bevaras>
+          </Bilaga>
+        </ArkivobjektHandling>
+        <ArkivobjektHandling Systemidentifierare="a793cc8f7d7244e1914bb981208f6db3">
+          <ArkivobjektID>dnr/79/5</ArkivobjektID>
+          <KlassReferens>0</KlassReferens>
+          <Handlingstyp>Budget</Handlingstyp>
+          <Rubrik>Dalandebeslut SL</Rubrik>
+          <Skapad>2022-02-10</Skapad>
+          <Bilaga Namn="Dalandebeslut SL.docx" Lank="Dalandebeslut SL.docx">
+            <Bevaras>true</Bevaras>
+          </Bilaga>
+        </ArkivobjektHandling>
+      </ArkivobjektListaHandlingar>
+    </ArkivobjektArende>
+    <ArkivobjektArende Systemidentifierare="47cfb6ed94354fb085f37fc6fef38df4">
+      <ArkivobjektID>dnr/8</ArkivobjektID>
+      <ArendeTyp>0</ArendeTyp>
+      <Agent>
+        <Roll>Registrator</Roll>
+        <Namn>Administrator</Namn>
+      </Agent>
+      <Skapad>2017-01-23</Skapad>
+      <Arendemening>Bara för test av Sekretess</Arendemening>
+      <ArkivobjektListaHandlingar>
+        <ArkivobjektHandling Systemidentifierare="0d58bf4ee7ec4d53a44591ae5aaf87d6">
+          <ArkivobjektID>dnr/8/1</ArkivobjektID>
+          <KlassReferens>1</KlassReferens>
+          <Rubrik>Test</Rubrik>
+          <Skapad>2017-01-23</Skapad>
+          <Bilaga Namn="Meddelandetext.txt" Lank="Meddelandetext.txt">
+            <Bevaras>true</Bevaras>
+          </Bilaga>
+        </ArkivobjektHandling>
+      </ArkivobjektListaHandlingar>
+    </ArkivobjektArende>
+    <ArkivobjektArende Systemidentifierare="119572b3d0e44464bd75eafce76e2392">
+      <ArkivobjektID>dnr/80</ArkivobjektID>
+      <KlassReferens>2022-02-14</KlassReferens>
+      <ArendeTyp>1</ArendeTyp>
+      <Agent>
+        <Roll>Registrator</Roll>
+        <Namn>Fantomen Byråkrat</Namn>
+      </Agent>
+      <Skapad>2022-02-14</Skapad>
+      <Arendemening>Testutskottet</Arendemening>
+      <ArkivobjektListaHandlingar>
+        <ArkivobjektHandling Systemidentifierare="77c43c8a7cf445589c5f9ab3c4c30aeb">
+          <ArkivobjektID>dnr/80/1</ArkivobjektID>
+          <KlassReferens>0</KlassReferens>
+          <Handlingstyp>Återkommande</Handlingstyp>
+          <Rubrik>Återkommande</Rubrik>
+          <Skapad>2022-02-14</Skapad>
+          <Bilaga Namn="Återkommande.docx" Lank="Återkommande.docx">
+            <Bevaras>true</Bevaras>
+          </Bilaga>
+        </ArkivobjektHandling>
+        <ArkivobjektHandling Systemidentifierare="e047034a80fa43e0bb37f443c08bb58a">
+          <ArkivobjektID>dnr/80/2</ArkivobjektID>
+          <KlassReferens>0</KlassReferens>
+          <Handlingstyp>Protokoll</Handlingstyp>
+          <Rubrik>Antikvarisk</Rubrik>
+          <Skapad>2022-02-14</Skapad>
+          <Bilaga Namn="Antikvarisk.docx" Lank="Antikvarisk.docx">
+            <Bevaras>true</Bevaras>
+          </Bilaga>
+        </ArkivobjektHandling>
+        <ArkivobjektHandling Systemidentifierare="e24d1937fbe74770a9ea1fd89bb70652">
+          <ArkivobjektID>dnr/80/3</ArkivobjektID>
+          <KlassReferens>0</KlassReferens>
+          <Handlingstyp>Protokoll, omedelbar justering</Handlingstyp>
+          <Rubrik>Protokoll § 1</Rubrik>
+          <Skapad>2022-02-14</Skapad>
+          <Bilaga Namn="Protokoll § 1.docx" Lank="Protokoll § 1.docx">
+            <Bevaras>true</Bevaras>
+          </Bilaga>
+        </ArkivobjektHandling>
+      </ArkivobjektListaHandlingar>
+    </ArkivobjektArende>
+    <ArkivobjektArende Systemidentifierare="8ea8dbdb239242f784db35be0fd7d728">
+      <ArkivobjektID>dnr/81</ArkivobjektID>
+      <ArendeTyp>0</ArendeTyp>
+      <Agent>
+        <Roll>Registrator</Roll>
+        <Namn>Fantomen Byråkrat</Namn>
+      </Agent>
+      <Skapad>2022-02-14</Skapad>
+      <Arendemening>Nalles nya testärende med expedieringar</Arendemening>
+      <ArkivobjektListaHandlingar>
+        <ArkivobjektHandling Systemidentifierare="1e01510acdb243099ecafb7713bc1fc7">
+          <ArkivobjektID>dnr/81/1</ArkivobjektID>
+          <KlassReferens>0</KlassReferens>
+          <Handlingstyp>Dalandebeslut</Handlingstyp>
+          <Rubrik>Dalandebeslut</Rubrik>
+          <Skapad>2022-02-14</Skapad>
+          <Bilaga Namn="Dalandebeslut.docx" Lank="Dalandebeslut.docx">
+            <Bevaras>true</Bevaras>
+          </Bilaga>
+        </ArkivobjektHandling>
+        <ArkivobjektHandling Systemidentifierare="e05feb2ce9474486b4eeec4a3833ee3d">
+          <ArkivobjektID>dnr/81/2</ArkivobjektID>
+          <KlassReferens>0</KlassReferens>
+          <Handlingstyp>Tjosanhejsan</Handlingstyp>
+          <Rubrik>Tjosanhejsan</Rubrik>
+          <Skapad>2022-02-14</Skapad>
+          <Bilaga Namn="Tjansteutlatande.docx" Lank="Tjansteutlatande.docx">
+            <Bevaras>true</Bevaras>
+          </Bilaga>
+        </ArkivobjektHandling>
+      </ArkivobjektListaHandlingar>
+    </ArkivobjektArende>
+    <ArkivobjektArende Systemidentifierare="f6bf775d4787473197cd7a1b8501fc7c">
+      <ArkivobjektID>dnr/82</ArkivobjektID>
+      <KlassReferens>2022-02-15</KlassReferens>
+      <ArendeTyp>0</ArendeTyp>
+      <Agent>
+        <Roll>Registrator</Roll>
+        <Namn>Spindelmannen Sakkunnigson</Namn>
+      </Agent>
+      <Skapad>2022-02-14</Skapad>
+      <Arendemening>Tesutskottet Valentin</Arendemening>
+      <ArkivobjektListaHandlingar>
+        <ArkivobjektHandling Systemidentifierare="3ff5e2a4c3c64e34b7714ac74c1bc9ed">
+          <ArkivobjektID>dnr/82/1</ArkivobjektID>
+          <KlassReferens>0</KlassReferens>
+          <Handlingstyp>Återkommande</Handlingstyp>
+          <Rubrik>Återkommande</Rubrik>
+          <Skapad>2022-02-14</Skapad>
+          <Bilaga Namn="Återkommande.docx" Lank="Återkommande.docx">
+            <Bevaras>true</Bevaras>
+          </Bilaga>
+        </ArkivobjektHandling>
+        <ArkivobjektHandling Systemidentifierare="3165c4dd3561463b91d3c1deba0ddc08">
+          <ArkivobjektID>dnr/82/2</ArkivobjektID>
+          <KlassReferens>0</KlassReferens>
+          <Handlingstyp>Protokoll</Handlingstyp>
+          <Rubrik>Antikvarisk</Rubrik>
+          <Skapad>2022-02-14</Skapad>
+          <Bilaga Namn="Antikvarisk.docx" Lank="Antikvarisk.docx">
+            <Bevaras>true</Bevaras>
+          </Bilaga>
+        </ArkivobjektHandling>
+      </ArkivobjektListaHandlingar>
+    </ArkivobjektArende>
+    <ArkivobjektArende Systemidentifierare="f5a95bd053824a8cb610b27e370f3718">
+      <ArkivobjektID>dnr/83</ArkivobjektID>
+      <ArendeTyp>0</ArendeTyp>
+      <Agent>
+        <Roll>Registrator</Roll>
+        <Namn>Fantomen Byråkrat</Namn>
+      </Agent>
+      <Skapad>2022-02-16</Skapad>
+      <Arendemening>Testutskottet AI</Arendemening>
+    </ArkivobjektArende>
+    <ArkivobjektArende Systemidentifierare="193d29f6703b49948f1d2faf65185a95">
+      <ArkivobjektID>dnr/84</ArkivobjektID>
+      <ArendeTyp>0</ArendeTyp>
+      <Agent>
+        <Roll>Registrator</Roll>
+        <Namn>Fantomen Byråkrat</Namn>
+      </Agent>
+      <Skapad>2022-02-25</Skapad>
+      <Arendemening>Testutskottet Brasagatan</Arendemening>
+      <ArkivobjektListaHandlingar>
+        <ArkivobjektHandling Systemidentifierare="21985979cc7a4af5984860abf7c5a40e">
+          <ArkivobjektID>dnr/84/1</ArkivobjektID>
+          <KlassReferens>0</KlassReferens>
+          <Handlingstyp>Återkommande</Handlingstyp>
+          <Rubrik>Återkommande</Rubrik>
+          <Skapad>2022-02-25</Skapad>
+          <Bilaga Namn="Återkommande.docx" Lank="Återkommande.docx">
+            <Bevaras>true</Bevaras>
+          </Bilaga>
+        </ArkivobjektHandling>
+        <ArkivobjektHandling Systemidentifierare="98960e6b022d4bc4bd8f7e3562a01bec">
+          <ArkivobjektID>dnr/84/2</ArkivobjektID>
+          <KlassReferens>0</KlassReferens>
+          <Handlingstyp>Protokoll</Handlingstyp>
+          <Rubrik>Antikvarisk</Rubrik>
+          <Skapad>2022-02-25</Skapad>
+          <Bilaga Namn="Antikvarisk.docx" Lank="Antikvarisk.docx">
+            <Bevaras>true</Bevaras>
+          </Bilaga>
+        </ArkivobjektHandling>
+      </ArkivobjektListaHandlingar>
+    </ArkivobjektArende>
+    <ArkivobjektArende Systemidentifierare="30ce95c2a8004f2eaaec6d7d28263184">
+      <ArkivobjektID>dnr/85</ArkivobjektID>
+      <ArendeTyp>0</ArendeTyp>
+      <Agent>
+        <Roll>Registrator</Roll>
+        <Namn>Spindelmannen Sakkunnigson</Namn>
+      </Agent>
+      <Skapad>2022-02-25</Skapad>
+      <Arendemening>Testa grodor 2</Arendemening>
+      <ArkivobjektListaHandlingar>
+        <ArkivobjektHandling Systemidentifierare="408f890af4ca48aa932455299749b9f5">
+          <ArkivobjektID>dnr/85/1</ArkivobjektID>
+          <KlassReferens>0</KlassReferens>
+          <Handlingstyp>Beslut</Handlingstyp>
+          <Rubrik>Tesutskottet 2022-02-28 grodor 2 (2022-02-28 TN §2)</Rubrik>
+          <Skapad>2022-02-25</Skapad>
+          <Bilaga Namn="Tesutskottet 2022-02-28 grodor 2 (2022-02-28 TN §2).docx" Lank="Tesutskottet 2022-02-28 grodor 2 (2022-02-28 TN §2).docx">
+            <Bevaras>true</Bevaras>
+          </Bilaga>
+        </ArkivobjektHandling>
+      </ArkivobjektListaHandlingar>
+    </ArkivobjektArende>
+    <ArkivobjektArende Systemidentifierare="98955bfdf69d4d64a9b7265f6717147e">
+      <ArkivobjektID>dnr/86</ArkivobjektID>
+      <ArendeTyp>0</ArendeTyp>
+      <Agent>
+        <Roll>Registrator</Roll>
+        <Namn>Fantomen Byråkrat</Namn>
+      </Agent>
+      <Skapad>2022-02-25</Skapad>
+      <Arendemening>Nalles Skåneärende</Arendemening>
+      <ArkivobjektListaHandlingar>
+        <ArkivobjektHandling Systemidentifierare="9af81beec0b94e31ab1692c10db8db2f">
+          <ArkivobjektID>dnr/86/1</ArkivobjektID>
+          <KlassReferens>0</KlassReferens>
+          <Handlingstyp>Tjosanhejsan</Handlingstyp>
+          <Rubrik>Tjosanhejsan</Rubrik>
+          <Skapad>2022-02-25</Skapad>
+          <Bilaga Namn="Tjosanhejsan.docx" Lank="Tjosanhejsan.docx">
+            <Bevaras>true</Bevaras>
+          </Bilaga>
+        </ArkivobjektHandling>
+        <ArkivobjektHandling Systemidentifierare="22651d198cc24c06af2a1b4b343ecf16">
+          <ArkivobjektID>dnr/86/2</ArkivobjektID>
+          <KlassReferens>0</KlassReferens>
+          <Handlingstyp>Till möte</Handlingstyp>
+          <Rubrik>Testutskottet 2022-06-13 (2022-06-13)</Rubrik>
+          <Skapad>2022-06-13</Skapad>
+        </ArkivobjektHandling>
+      </ArkivobjektListaHandlingar>
+    </ArkivobjektArende>
+    <ArkivobjektArende Systemidentifierare="de3706016a6f47deae321a0c382a21f7">
+      <ArkivobjektID>dnr/87</ArkivobjektID>
+      <ArendeTyp>0</ArendeTyp>
+      <Agent>
+        <Roll>Registrator</Roll>
+        <Namn>Spindelmannen Sakkunnigson</Namn>
+      </Agent>
+      <Skapad>2022-02-25</Skapad>
+      <Arendemening>Tesutskottet 2022-02-28 grodor 2</Arendemening>
+      <ArkivobjektListaHandlingar>
+        <ArkivobjektHandling Systemidentifierare="ca30a24a771340b0aa222030ad3c4a7d">
+          <ArkivobjektID>dnr/87/1</ArkivobjektID>
+          <KlassReferens>0</KlassReferens>
+          <Handlingstyp>Återkommande</Handlingstyp>
+          <Rubrik>Återkommande</Rubrik>
+          <Skapad>2022-02-25</Skapad>
+          <Bilaga Namn="Återkommande.docx" Lank="Återkommande.docx">
+            <Bevaras>true</Bevaras>
+          </Bilaga>
+        </ArkivobjektHandling>
+        <ArkivobjektHandling Systemidentifierare="787dced5815f48e69212471045dc1b45">
+          <ArkivobjektID>dnr/87/2</ArkivobjektID>
+          <KlassReferens>0</KlassReferens>
+          <Handlingstyp>Protokoll</Handlingstyp>
+          <Rubrik>Antikvarisk</Rubrik>
+          <Skapad>2022-02-25</Skapad>
+          <Bilaga Namn="Antikvarisk.docx" Lank="Antikvarisk.docx">
+            <Bevaras>true</Bevaras>
+          </Bilaga>
+        </ArkivobjektHandling>
+      </ArkivobjektListaHandlingar>
+    </ArkivobjektArende>
+    <ArkivobjektArende Systemidentifierare="08dccceedc32461cac404103ed02a605">
+      <ArkivobjektID>dnr/88</ArkivobjektID>
+      <ArendeTyp>0</ArendeTyp>
+      <Agent>
+        <Roll>Registrator</Roll>
+        <Namn>Administrator</Namn>
+      </Agent>
+      <Skapad>2022-02-28</Skapad>
+      <Arendemening>Testar engelska</Arendemening>
+    </ArkivobjektArende>
+    <ArkivobjektArende Systemidentifierare="aba7451ba5424c8eb1110be0112bd76d">
+      <ArkivobjektID>dnr/89</ArkivobjektID>
+      <ArendeTyp>0</ArendeTyp>
+      <Agent>
+        <Roll>Registrator</Roll>
+        <Namn>Stålmannen Sekreterarsson</Namn>
+      </Agent>
+      <Skapad>2022-03-01</Skapad>
+      <Arendemening>Tesutskottet (test av anslag SL)</Arendemening>
+      <ArkivobjektListaHandlingar>
+        <ArkivobjektHandling Systemidentifierare="94d298f59ef943ffaba342c2df71ce93">
+          <ArkivobjektID>dnr/89/1</ArkivobjektID>
+          <KlassReferens>0</KlassReferens>
+          <Handlingstyp>Återkommande</Handlingstyp>
+          <Rubrik>Återkommande</Rubrik>
+          <Skapad>2022-03-01</Skapad>
+          <Bilaga Namn="Återkommande.docx" Lank="Återkommande.docx">
+            <Bevaras>true</Bevaras>
+          </Bilaga>
+        </ArkivobjektHandling>
+      </ArkivobjektListaHandlingar>
+    </ArkivobjektArende>
+    <ArkivobjektArende Systemidentifierare="5d8f213343ab45bfbb62261a5e15c9f3">
+      <ArkivobjektID>dnr/9</ArkivobjektID>
+      <ArendeTyp>0</ArendeTyp>
+      <Agent>
+        <Roll>Registrator</Roll>
+        <Namn>Administrator</Namn>
+      </Agent>
+      <Skapad>2017-01-28</Skapad>
+      <Arendemening>Piprökare Test efter uppgradering</Arendemening>
+      <ArkivobjektListaHandlingar>
+        <ArkivobjektHandling Systemidentifierare="24bab3c339334a81adb11cf83da600b8">
+          <ArkivobjektID>dnr/9/1</ArkivobjektID>
+          <KlassReferens>0</KlassReferens>
+          <Rubrik>Ladda upp fil</Rubrik>
+          <Skapad>2017-01-28</Skapad>
+          <Bilaga Namn="Protokoll 2015-12-14.pdf" Lank="Protokoll 2015-12-14.pdf">
+            <Bevaras>true</Bevaras>
+          </Bilaga>
+        </ArkivobjektHandling>
+      </ArkivobjektListaHandlingar>
+    </ArkivobjektArende>
+    <ArkivobjektArende Systemidentifierare="0eff2474fdce4cd0afe4e721350c722c">
+      <ArkivobjektID>dnr/90</ArkivobjektID>
+      <ArendeTyp>0</ArendeTyp>
+      <Agent>
+        <Roll>Registrator</Roll>
+        <Namn>Administrator</Namn>
+      </Agent>
+      <Skapad>2022-03-01</Skapad>
+      <Arendemening>Styrdokument</Arendemening>
+      <ArkivobjektListaHandlingar>
+        <ArkivobjektHandling Systemidentifierare="816dcc1bf6c44fd888a95837f3e25bdb">
+          <ArkivobjektID>dnr/90/1</ArkivobjektID>
+          <KlassReferens>0</KlassReferens>
+          <Handlingstyp>Strategi</Handlingstyp>
+          <Rubrik>Testar numrering</Rubrik>
+          <Skapad>2022-03-01</Skapad>
+          <Bilaga Namn="10. Meetings Plus 9.0 - MDM Administration Manual.pdf" Lank="10. Meetings Plus 9.0 - MDM Administration Manual.pdf">
+            <Bevaras>true</Bevaras>
+          </Bilaga>
+        </ArkivobjektHandling>
+      </ArkivobjektListaHandlingar>
+    </ArkivobjektArende>
+    <ArkivobjektArende Systemidentifierare="64887fa3a36647eb9cd0b50163b3ffa6">
+      <ArkivobjektID>dnr/91</ArkivobjektID>
+      <ArendeTyp>0</ArendeTyp>
+      <Agent>
+        <Roll>Registrator</Roll>
+        <Namn>Administrator</Namn>
+      </Agent>
+      <Skapad>2022-03-01</Skapad>
+      <Arendemening>Strategi</Arendemening>
+      <ArkivobjektListaHandlingar>
+        <ArkivobjektHandling Systemidentifierare="2f219ece38a24b048915a259ccf7e9c4">
+          <ArkivobjektID>dnr/91/1</ArkivobjektID>
+          <KlassReferens>0</KlassReferens>
+          <Handlingstyp>Strategi</Handlingstyp>
+          <Rubrik>Strategi</Rubrik>
+          <Skapad>2022-03-01</Skapad>
+        </ArkivobjektHandling>
+        <ArkivobjektHandling Systemidentifierare="893bab5e506c4742a29c239a7874a931">
+          <ArkivobjektID>dnr/91/2</ArkivobjektID>
+          <KlassReferens>0</KlassReferens>
+          <Handlingstyp>Föreskrifter</Handlingstyp>
+          <Rubrik>Föreskrifter</Rubrik>
+          <Skapad>2022-03-07</Skapad>
+        </ArkivobjektHandling>
+      </ArkivobjektListaHandlingar>
+    </ArkivobjektArende>
+    <ArkivobjektArende Systemidentifierare="9ef5e0effbea43e4b2f55df466442f53">
+      <ArkivobjektID>dnr/92</ArkivobjektID>
+      <ArendeTyp>0</ArendeTyp>
+      <Agent>
+        <Roll>Registrator</Roll>
+        <Namn>Administrator</Namn>
+      </Agent>
+      <Skapad>2022-03-03</Skapad>
+      <Arendemening>Riktlinje</Arendemening>
+      <ArkivobjektListaHandlingar>
+        <ArkivobjektHandling Systemidentifierare="c4ecea25cd344c5290a20b817ae6596c">
+          <ArkivobjektID>dnr/92/1</ArkivobjektID>
+          <KlassReferens>0</KlassReferens>
+          <Handlingstyp>Strategi</Handlingstyp>
+          <Rubrik>Riktlinje</Rubrik>
+          <Skapad>2022-03-03</Skapad>
+        </ArkivobjektHandling>
+      </ArkivobjektListaHandlingar>
+    </ArkivobjektArende>
+    <ArkivobjektArende Systemidentifierare="71e54a243e4f47bda1b186636d02f476">
+      <ArkivobjektID>dnr/93</ArkivobjektID>
+      <ArendeTyp>0</ArendeTyp>
+      <Agent>
+        <Roll>Registrator</Roll>
+        <Namn>Fantomen Byråkrat</Namn>
+      </Agent>
+      <Skapad>2022-03-30</Skapad>
+      <Arendemening>Tesutskottet 30/3</Arendemening>
+    </ArkivobjektArende>
+    <ArkivobjektArende Systemidentifierare="a41686ce20c046e082b61e0b2b4c7b08">
+      <ArkivobjektID>dnr/94</ArkivobjektID>
+      <ArendeTyp>0</ArendeTyp>
+      <Agent>
+        <Roll>Registrator</Roll>
+        <Namn>Fantomen Byråkrat</Namn>
+      </Agent>
+      <Skapad>2022-04-11</Skapad>
+      <Arendemening>Tesutskottet 11 april</Arendemening>
+    </ArkivobjektArende>
+    <ArkivobjektArende Systemidentifierare="1429ddac75694c1cbb0a5e600f6ad795">
+      <ArkivobjektID>dnr/95</ArkivobjektID>
+      <ArendeTyp>0</ArendeTyp>
+      <Agent>
+        <Roll>Registrator</Roll>
+        <Namn>Fantomen Byråkrat</Namn>
+      </Agent>
+      <Skapad>2022-04-11</Skapad>
+      <Arendemening>Påsklovsärende</Arendemening>
+      <ArkivobjektListaHandlingar>
+        <ArkivobjektHandling Systemidentifierare="01aadba2bdce40b7bd1e42256108920a">
+          <ArkivobjektID>dnr/95/1</ArkivobjektID>
+          <KlassReferens>0</KlassReferens>
+          <Handlingstyp>Tjosanhejsan</Handlingstyp>
+          <Rubrik>Tjosanhejsan påsklovet</Rubrik>
+          <Skapad>2022-04-11</Skapad>
+          <Bilaga Namn="Tjosanhejsan påsklovet.docx" Lank="Tjosanhejsan påsklovet.docx">
+            <Bevaras>true</Bevaras>
+          </Bilaga>
+        </ArkivobjektHandling>
+        <ArkivobjektHandling Systemidentifierare="9bb5a890466f4757b32c86cc0549de1e">
+          <ArkivobjektID>dnr/95/2</ArkivobjektID>
+          <KlassReferens>0</KlassReferens>
+          <Handlingstyp>Dalandebeslut</Handlingstyp>
+          <Rubrik>Dalandebeslut Brasagatan 4</Rubrik>
+          <Skapad>2022-04-11</Skapad>
+          <Bilaga Namn="Dalandebeslut.docx" Lank="Dalandebeslut.docx">
+            <Bevaras>true</Bevaras>
+          </Bilaga>
+        </ArkivobjektHandling>
+      </ArkivobjektListaHandlingar>
+    </ArkivobjektArende>
+    <ArkivobjektArende Systemidentifierare="7384b1fc69b34f4fb21929b893f8f620">
+      <ArkivobjektID>dnr/96</ArkivobjektID>
+      <ArendeTyp>0</ArendeTyp>
+      <Agent>
+        <Roll>Registrator</Roll>
+        <Namn>Administrator</Namn>
+      </Agent>
+      <Skapad>2022-04-11</Skapad>
+      <Arendemening>Testar grodor igen 2022-04-11</Arendemening>
+      <ArkivobjektListaHandlingar>
+        <ArkivobjektHandling Systemidentifierare="d6ecfa2e701d4246b4803cfa5e951218">
+          <ArkivobjektID>dnr/96/1</ArkivobjektID>
+          <KlassReferens>0</KlassReferens>
+          <Rubrik>Avsändare/mottagare</Rubrik>
+          <Skapad>2022-04-11</Skapad>
+        </ArkivobjektHandling>
+      </ArkivobjektListaHandlingar>
+    </ArkivobjektArende>
+    <ArkivobjektArende Systemidentifierare="71fde4ce88d84dbeb287034c833a24be">
+      <ArkivobjektID>dnr/97</ArkivobjektID>
+      <ArendeTyp>0</ArendeTyp>
+      <Agent>
+        <Roll>Registrator</Roll>
+        <Namn>Piprökare Administrator</Namn>
+      </Agent>
+      <Skapad>2022-04-14</Skapad>
+      <Arendemening>Test ärende piprökare</Arendemening>
+      <ArkivobjektListaHandlingar>
+        <ArkivobjektHandling Systemidentifierare="a8cc90583f2145a9b2f66d733bea7d38">
+          <ArkivobjektID>dnr/97/1</ArkivobjektID>
+          <KlassReferens>0</KlassReferens>
+          <Handlingstyp>Till möte</Handlingstyp>
+          <Rubrik>Piprökare testar (2022-07-13)</Rubrik>
+          <Skapad>2022-04-14</Skapad>
+        </ArkivobjektHandling>
+      </ArkivobjektListaHandlingar>
+    </ArkivobjektArende>
+    <ArkivobjektArende Systemidentifierare="3ec9ecbb91ff46b1a8ff507f87b6abbe">
+      <ArkivobjektID>dnr/98</ArkivobjektID>
+      <ArendeTyp>0</ArendeTyp>
+      <Agent>
+        <Roll>Registrator</Roll>
+        <Namn>Piprökare Administrator</Namn>
+      </Agent>
+      <Skapad>2022-04-14</Skapad>
+      <Arendemening>Piprökare testar</Arendemening>
+      <ArkivobjektListaHandlingar>
+        <ArkivobjektHandling Systemidentifierare="5abe909a6fae47b1802277e204dfae23">
+          <ArkivobjektID>dnr/98/1</ArkivobjektID>
+          <KlassReferens>0</KlassReferens>
+          <Handlingstyp>Återkommande</Handlingstyp>
+          <Rubrik>Återkommande</Rubrik>
+          <Skapad>2022-05-01</Skapad>
+          <Bilaga Namn="Återkommande.docx" Lank="Återkommande.docx">
+            <Bevaras>true</Bevaras>
+          </Bilaga>
+        </ArkivobjektHandling>
+        <ArkivobjektHandling Systemidentifierare="40430f7e87074f948695b0247563043f">
+          <ArkivobjektID>dnr/98/2</ArkivobjektID>
+          <KlassReferens>0</KlassReferens>
+          <Handlingstyp>Återkommande</Handlingstyp>
+          <Rubrik>Återkommande</Rubrik>
+          <Skapad>2022-05-01</Skapad>
+          <Bilaga Namn="Återkommande.docx" Lank="Återkommande.docx">
+            <Bevaras>true</Bevaras>
+          </Bilaga>
+        </ArkivobjektHandling>
+      </ArkivobjektListaHandlingar>
+    </ArkivobjektArende>
+    <ArkivobjektArende Systemidentifierare="6d6338625aa9481a9ef63bbb9ec661e3">
+      <ArkivobjektID>dnr/99</ArkivobjektID>
+      <ArendeTyp>0</ArendeTyp>
+      <Agent>
+        <Roll>Registrator</Roll>
+        <Namn>Administrator</Namn>
+      </Agent>
+      <Skapad>2022-04-28</Skapad>
+      <Arendemening>Testar gallring</Arendemening>
+    </ArkivobjektArende>
+    <ArkivobjektArende Systemidentifierare="73d35b0cb3a140138340118fe8358865">
+      <ArkivobjektID>dnr 2022/1</ArkivobjektID>
+      <ArendeTyp>0</ArendeTyp>
+      <Agent>
+        <Roll>Registrator</Roll>
+        <Namn>Administrator</Namn>
+      </Agent>
+      <Skapad>2022-04-28</Skapad>
+      <Arendemening>Testar gallring</Arendemening>
+      <ArkivobjektListaHandlingar>
+        <ArkivobjektHandling Systemidentifierare="7047fef7bfc747d99cc0797b2d5f93e6">
+          <ArkivobjektID>dnr 2022/1/1</ArkivobjektID>
+          <KlassReferens>0</KlassReferens>
+          <Handlingstyp>Instruktion</Handlingstyp>
+          <Rubrik>Brev att gallra nr 1</Rubrik>
+          <Skapad>2022-04-28</Skapad>
+        </ArkivobjektHandling>
+        <ArkivobjektHandling Systemidentifierare="5c823a6a1cab4dd18b59cea8562c6d56">
+          <ArkivobjektID>dnr 2022/1/2</ArkivobjektID>
+          <KlassReferens>0</KlassReferens>
+          <Handlingstyp>Instruktion</Handlingstyp>
+          <Rubrik>Brev att gallra nr 2</Rubrik>
+          <Skapad>2022-04-28</Skapad>
+        </ArkivobjektHandling>
+        <ArkivobjektHandling Systemidentifierare="3d2a1f68145e4fd0aa0362197759e750">
+          <ArkivobjektID>dnr 2022/1/3</ArkivobjektID>
+          <KlassReferens>0</KlassReferens>
+          <Handlingstyp>Instruktion</Handlingstyp>
+          <Rubrik>Brev att gallra nr 3</Rubrik>
+          <Skapad>2022-04-28</Skapad>
+        </ArkivobjektHandling>
+      </ArkivobjektListaHandlingar>
+    </ArkivobjektArende>
+    <ArkivobjektArende Systemidentifierare="3e6ae073469a49c698c8a3b4f14cabd5">
+      <ArkivobjektID>dnr 2022/10</ArkivobjektID>
+      <ArendeTyp>0</ArendeTyp>
+      <Agent>
+        <Roll>Registrator</Roll>
+        <Namn>Spindelmannen Sakkunnigson</Namn>
+      </Agent>
+      <Skapad>2022-06-02</Skapad>
+      <Arendemening>Testärende 2 juni 2022</Arendemening>
+      <ArkivobjektListaHandlingar>
+        <ArkivobjektHandling Systemidentifierare="4358a4fd21564d708c4adecad7a30794">
+          <ArkivobjektID>dnr 2022/10/1</ArkivobjektID>
+          <KlassReferens>0</KlassReferens>
+          <Handlingstyp>Beslut</Handlingstyp>
+          <Rubrik>Tesutskottet 2022-08-10 (2022-08-10 TN §2)</Rubrik>
+          <Skapad>2022-06-02</Skapad>
+          <Bilaga Namn="Tesutskottet 2022-08-10 (2022-08-10 TN §2).docx" Lank="Tesutskottet 2022-08-10 (2022-08-10 TN §2).docx">
+            <Bevaras>true</Bevaras>
+          </Bilaga>
+        </ArkivobjektHandling>
+      </ArkivobjektListaHandlingar>
+    </ArkivobjektArende>
+    <ArkivobjektArende Systemidentifierare="7c5c04ba45e64d4287352ab554ef3a11">
+      <ArkivobjektID>dnr 2022/11</ArkivobjektID>
+      <ArendeTyp>0</ArendeTyp>
+      <Agent>
+        <Roll>Registrator</Roll>
+        <Namn>Stålmannen Sekreterarsson</Namn>
+      </Agent>
+      <Skapad>2022-06-07</Skapad>
+      <Arendemening>Tesutskottet 2022-06-15 (SL)</Arendemening>
+      <ArkivobjektListaHandlingar>
+        <ArkivobjektHandling Systemidentifierare="ff9a63df57e84e328627797ed6f90ed0">
+          <ArkivobjektID>dnr 2022/11/1</ArkivobjektID>
+          <KlassReferens>0</KlassReferens>
+          <Handlingstyp>Återkommande</Handlingstyp>
+          <Rubrik>Återkommande</Rubrik>
+          <Skapad>2022-06-07</Skapad>
+          <Bilaga Namn="Återkommande.docx" Lank="Återkommande.docx">
+            <Bevaras>true</Bevaras>
+          </Bilaga>
+        </ArkivobjektHandling>
+      </ArkivobjektListaHandlingar>
+    </ArkivobjektArende>
+    <ArkivobjektArende Systemidentifierare="482ca67fc55c48848afe1142f9f2fa02">
+      <ArkivobjektID>dnr 2022/12</ArkivobjektID>
+      <ArendeTyp>0</ArendeTyp>
+      <Agent>
+        <Roll>Registrator</Roll>
+        <Namn>Stålmannen Sekreterarsson</Namn>
+      </Agent>
+      <Skapad>2022-06-07</Skapad>
+      <Arendemening>Testärende juni 2022</Arendemening>
+      <ArkivobjektListaHandlingar>
+        <ArkivobjektHandling Systemidentifierare="beb67c2023454ca2a4769f833afb2ce6">
+          <ArkivobjektID>dnr 2022/12/1</ArkivobjektID>
+          <KlassReferens>0</KlassReferens>
+          <Handlingstyp>Föreskrifter</Handlingstyp>
+          <Rubrik>Testhandling 1</Rubrik>
+          <Skapad>2022-06-07</Skapad>
+          <Bilaga Namn="Återkommande VN 2022-06-09.docx" Lank="Återkommande VN 2022-06-09.docx">
+            <Bevaras>true</Bevaras>
+          </Bilaga>
+          <Bilaga Namn="Återkommande VN 2022-06-09.pdf" Lank="Återkommande VN 2022-06-09.pdf">
+            <Bevaras>true</Bevaras>
+          </Bilaga>
+          <Bilaga Namn="Bestämmelser om omställningsstöd och pensionsförmåner för förtroendevalda.pdf" Lank="Bestämmelser om omställningsstöd och pensionsförmåner för förtroendevalda.pdf">
+            <Bevaras>true</Bevaras>
+          </Bilaga>
+        </ArkivobjektHandling>
+      </ArkivobjektListaHandlingar>
+    </ArkivobjektArende>
+    <ArkivobjektArende Systemidentifierare="36f06e120dc542848f38539d02bcb913">
+      <ArkivobjektID>dnr 2022/13</ArkivobjektID>
+      <ArendeTyp>0</ArendeTyp>
+      <Agent>
+        <Roll>Registrator</Roll>
+        <Namn>Fantomen Byråkrat</Namn>
+      </Agent>
+      <Skapad>2022-06-13</Skapad>
+      <Arendemening>Testutskottet 2022-06-13</Arendemening>
+      <ArkivobjektListaHandlingar>
+        <ArkivobjektHandling Systemidentifierare="5b2b9a8813cb47d4909f017d15307aa1">
+          <ArkivobjektID>dnr 2022/13/1</ArkivobjektID>
+          <KlassReferens>0</KlassReferens>
+          <Handlingstyp>Återkommande</Handlingstyp>
+          <Rubrik>Återkommande</Rubrik>
+          <Skapad>2022-06-13</Skapad>
+          <Bilaga Namn="Återkommande.docx" Lank="Återkommande.docx">
+            <Bevaras>true</Bevaras>
+          </Bilaga>
+        </ArkivobjektHandling>
+        <ArkivobjektHandling Systemidentifierare="73d84a89540044b09c0090bb8fb0ddea">
+          <ArkivobjektID>dnr 2022/13/2</ArkivobjektID>
+          <KlassReferens>0</KlassReferens>
+          <Handlingstyp>Protokoll, omedelbar justering</Handlingstyp>
+          <Rubrik>Protokoll § 2</Rubrik>
+          <Skapad>2022-06-13</Skapad>
+          <Bilaga Namn="Protokoll § 2.docx" Lank="Protokoll § 2.docx">
+            <Bevaras>true</Bevaras>
+          </Bilaga>
+        </ArkivobjektHandling>
+      </ArkivobjektListaHandlingar>
+    </ArkivobjektArende>
+    <ArkivobjektArende Systemidentifierare="0dbeb340099c49f0b8172fd9412ab1d4">
+      <ArkivobjektID>dnr 2022/14</ArkivobjektID>
+      <ArendeTyp>0</ArendeTyp>
+      <Agent>
+        <Roll>Registrator</Roll>
+        <Namn>Fantomen Byråkrat</Namn>
+      </Agent>
+      <Skapad>2022-06-13</Skapad>
+      <Arendemening>Badajoz!</Arendemening>
+      <ArkivobjektListaHandlingar>
+        <ArkivobjektHandling Systemidentifierare="d296818301db47e2809ce52820095260">
+          <ArkivobjektID>dnr 2022/14/1</ArkivobjektID>
+          <KlassReferens>0</KlassReferens>
+          <Handlingstyp>Beslut</Handlingstyp>
+          <Rubrik>Testutskottet 2022-06-13 (2022-06-13 TN §2)</Rubrik>
+          <Skapad>2022-06-13</Skapad>
+          <Bilaga Namn="Testutskottet 2022-06-13 (2022-06-13 TN §2).docx" Lank="Testutskottet 2022-06-13 (2022-06-13 TN §2).docx">
+            <Bevaras>true</Bevaras>
+          </Bilaga>
+        </ArkivobjektHandling>
+        <ArkivobjektHandling Systemidentifierare="cadab9554ebf410285191a17b67a277f">
+          <ArkivobjektID>dnr 2022/14/2</ArkivobjektID>
+          <KlassReferens>0</KlassReferens>
+          <Handlingstyp>Beslut</Handlingstyp>
+          <Rubrik>Testutskottet 2022-07-08 (2022-07-08 TN §3)</Rubrik>
+          <Skapad>2022-07-07</Skapad>
+          <Bilaga Namn="Testutskottet 2022-07-08 (2022-07-08 TN §3).docx" Lank="Testutskottet 2022-07-08 (2022-07-08 TN §3).docx">
+            <Bevaras>true</Bevaras>
+          </Bilaga>
+        </ArkivobjektHandling>
+        <ArkivobjektHandling Systemidentifierare="a5de30fd75754f7c98c06fb91ec71d57">
+          <ArkivobjektID>dnr 2022/14/3</ArkivobjektID>
+          <KlassReferens>0</KlassReferens>
+          <Handlingstyp>Beslut</Handlingstyp>
+          <Rubrik>Testutskottet 2022-09-21 (2022-09-21 TN §2)</Rubrik>
+          <Skapad>2022-09-21</Skapad>
+          <Bilaga Namn="Testutskottet 2022-09-21 (2022-09-21 TN §2).docx" Lank="Testutskottet 2022-09-21 (2022-09-21 TN §2).docx">
+            <Bevaras>true</Bevaras>
+          </Bilaga>
+        </ArkivobjektHandling>
+      </ArkivobjektListaHandlingar>
+    </ArkivobjektArende>
+    <ArkivobjektArende Systemidentifierare="a00f02fadb854cf2bd9c1f6a24ac0045">
+      <ArkivobjektID>dnr 2022/15</ArkivobjektID>
+      <ArendeTyp>0</ArendeTyp>
+      <Agent>
+        <Roll>Registrator</Roll>
+        <Namn>Spindelmannen Sakkunnigson</Namn>
+      </Agent>
+      <Skapad>2022-06-29</Skapad>
+      <Arendemening>Tesutskottet 2022-06-30</Arendemening>
+      <ArkivobjektListaHandlingar>
+        <ArkivobjektHandling Systemidentifierare="74993b3f534e4a268a9527c4841d7959">
+          <ArkivobjektID>dnr 2022/15/1</ArkivobjektID>
+          <KlassReferens>0</KlassReferens>
+          <Handlingstyp>Återkommande</Handlingstyp>
+          <Rubrik>Återkommande</Rubrik>
+          <Skapad>2022-06-29</Skapad>
+          <Bilaga Namn="Återkommande.docx" Lank="Återkommande.docx">
+            <Bevaras>true</Bevaras>
+          </Bilaga>
+        </ArkivobjektHandling>
+      </ArkivobjektListaHandlingar>
+    </ArkivobjektArende>
+    <ArkivobjektArende Systemidentifierare="3380488a5ff441939ccd87c8993e256f">
+      <ArkivobjektID>dnr 2022/16</ArkivobjektID>
+      <ArendeTyp>0</ArendeTyp>
+      <Agent>
+        <Roll>Registrator</Roll>
+        <Namn>Spindelmannen Sakkunnigson</Namn>
+      </Agent>
+      <Skapad>2022-06-29</Skapad>
+      <Arendemening>Tesutskottet</Arendemening>
+      <ArkivobjektListaHandlingar>
+        <ArkivobjektHandling Systemidentifierare="e9935a14f5e9464c8e24dcd59ed11b8f">
+          <ArkivobjektID>dnr 2022/16/1</ArkivobjektID>
+          <KlassReferens>0</KlassReferens>
+          <Handlingstyp>Återkommande</Handlingstyp>
+          <Rubrik>Återkommande</Rubrik>
+          <Skapad>2022-06-29</Skapad>
+          <Bilaga Namn="Återkommande.docx" Lank="Återkommande.docx">
+            <Bevaras>true</Bevaras>
+          </Bilaga>
+        </ArkivobjektHandling>
+      </ArkivobjektListaHandlingar>
+    </ArkivobjektArende>
+    <ArkivobjektArende Systemidentifierare="211b3148ead84e9c8ca7ba9385736de3">
+      <ArkivobjektID>dnr 2022/17</ArkivobjektID>
+      <ArendeTyp>0</ArendeTyp>
+      <Agent>
+        <Roll>Registrator</Roll>
+        <Namn>Fantomen Byråkrat</Namn>
+      </Agent>
+      <Skapad>2022-06-29</Skapad>
+      <Arendemening>Ärende Nollberga C</Arendemening>
+    </ArkivobjektArende>
+    <ArkivobjektArende Systemidentifierare="1efa30ebb1124129addfd6356783c416">
+      <ArkivobjektID>dnr 2022/18</ArkivobjektID>
+      <ArendeTyp>0</ArendeTyp>
+      <Agent>
+        <Roll>Registrator</Roll>
+        <Namn>Fantomen Byråkrat</Namn>
+      </Agent>
+      <Skapad>2022-06-29</Skapad>
+      <Arendemening>Testutskottet Nollbergamötet</Arendemening>
+    </ArkivobjektArende>
+    <ArkivobjektArende Systemidentifierare="aa7e39a8f97747e896919477028ee841">
+      <ArkivobjektID>dnr 2022/19</ArkivobjektID>
+      <ArendeTyp>0</ArendeTyp>
+      <Agent>
+        <Roll>Registrator</Roll>
+        <Namn>Fantomen Byråkrat</Namn>
+      </Agent>
+      <Skapad>2022-07-07</Skapad>
+      <Arendemening>Lovisa</Arendemening>
+      <ArkivobjektListaHandlingar>
+        <ArkivobjektHandling Systemidentifierare="f053664815bc477cbb6f4041aeba0526">
+          <ArkivobjektID>dnr 2022/19/1</ArkivobjektID>
+          <KlassReferens>0</KlassReferens>
+          <Handlingstyp>Beslut</Handlingstyp>
+          <Rubrik>Testutskottet 2022-07-08 (2022-07-08 TN §2)</Rubrik>
+          <Skapad>2022-07-07</Skapad>
+          <Bilaga Namn="Testutskottet 2022-07-08 (2022-07-08 TN §2).docx" Lank="Testutskottet 2022-07-08 (2022-07-08 TN §2).docx">
+            <Bevaras>true</Bevaras>
+          </Bilaga>
+        </ArkivobjektHandling>
+        <ArkivobjektHandling Systemidentifierare="cebd34b5d64643d28913af0613ce7b6f">
+          <ArkivobjektID>dnr 2022/19/2</ArkivobjektID>
+          <KlassReferens>0</KlassReferens>
+          <Handlingstyp>Tjosanhejsan</Handlingstyp>
+          <Rubrik>Tjosanhejsan Lovisa</Rubrik>
+          <Skapad>2022-10-11</Skapad>
+          <Bilaga Namn="Tjosanhejsan Lovisa.docx" Lank="Tjosanhejsan Lovisa.docx">
+            <Bevaras>true</Bevaras>
+          </Bilaga>
+        </ArkivobjektHandling>
+      </ArkivobjektListaHandlingar>
+    </ArkivobjektArende>
+    <ArkivobjektArende Systemidentifierare="526b294fda8444b1916ef9913a7aae1a">
+      <ArkivobjektID>dnr 2022/2</ArkivobjektID>
+      <ArendeTyp>0</ArendeTyp>
+      <Agent>
+        <Roll>Registrator</Roll>
+        <Namn>Administrator</Namn>
+      </Agent>
+      <Skapad>2022-05-03</Skapad>
+      <Arendemening>Föreningsbidrag 2022</Arendemening>
+      <ArkivobjektListaHandlingar>
+        <ArkivobjektHandling Systemidentifierare="b3d4a6337327492ab76024ed1dc79e67">
+          <ArkivobjektID>dnr 2022/2/1</ArkivobjektID>
+          <KlassReferens>0</KlassReferens>
+          <Handlingstyp>Ansökan</Handlingstyp>
+          <Rubrik>Ansökan 1</Rubrik>
+          <Skapad>2022-05-03</Skapad>
+          <Bilaga Namn="Brev.docx" Lank="Brev.docx">
+            <Bevaras>true</Bevaras>
+          </Bilaga>
+        </ArkivobjektHandling>
+        <ArkivobjektHandling Systemidentifierare="8678d610d2394b49be6ca0f76be49513">
+          <ArkivobjektID>dnr 2022/2/2</ArkivobjektID>
+          <KlassReferens>0</KlassReferens>
+          <Handlingstyp>Ansökan</Handlingstyp>
+          <Rubrik>Ansökan 2</Rubrik>
+          <Skapad>2022-05-03</Skapad>
+          <Bilaga Namn="Brev.docx" Lank="Brev.docx">
+            <Bevaras>true</Bevaras>
+          </Bilaga>
+        </ArkivobjektHandling>
+        <ArkivobjektHandling Systemidentifierare="e47e2948f356402dabc6d441de8c1d59">
+          <ArkivobjektID>dnr 2022/2/3</ArkivobjektID>
+          <KlassReferens>0</KlassReferens>
+          <Handlingstyp>Ansökan</Handlingstyp>
+          <Rubrik>Ansökan 3</Rubrik>
+          <Skapad>2022-05-03</Skapad>
+          <Bilaga Namn="Brev.docx" Lank="Brev.docx">
+            <Bevaras>true</Bevaras>
+          </Bilaga>
+        </ArkivobjektHandling>
+      </ArkivobjektListaHandlingar>
+    </ArkivobjektArende>
+    <ArkivobjektArende Systemidentifierare="2d13b7eb16384a7b94691b2bd4bd3666">
+      <ArkivobjektID>dnr 2022/20</ArkivobjektID>
+      <ArendeTyp>0</ArendeTyp>
+      <Agent>
+        <Roll>Registrator</Roll>
+        <Namn>Fantomen Byråkrat</Namn>
+      </Agent>
+      <Skapad>2022-07-07</Skapad>
+      <Arendemening>Testutskottet 2022-07-08</Arendemening>
+      <ArkivobjektListaHandlingar>
+        <ArkivobjektHandling Systemidentifierare="926ce88f7c9c49209104cf6db8b86b8e">
+          <ArkivobjektID>dnr 2022/20/1</ArkivobjektID>
+          <KlassReferens>0</KlassReferens>
+          <Handlingstyp>Återkommande</Handlingstyp>
+          <Rubrik>Återkommande</Rubrik>
+          <Skapad>2022-07-07</Skapad>
+          <Bilaga Namn="Återkommande.docx" Lank="Återkommande.docx">
+            <Bevaras>true</Bevaras>
+          </Bilaga>
+        </ArkivobjektHandling>
+        <ArkivobjektHandling Systemidentifierare="e29a9f7d74764e7d8ec5de566467dfeb">
+          <ArkivobjektID>dnr 2022/20/2</ArkivobjektID>
+          <KlassReferens>0</KlassReferens>
+          <Beskrivning>Handlingen &lt;Antikvarisk&gt; makulerades av Anna Ingemarsdotter MED ORSAK  2022-07-07 12:20</Beskrivning>
+          <Rubrik>--- Makulerad ---</Rubrik>
+          <Skapad>2022-07-07</Skapad>
+        </ArkivobjektHandling>
+        <ArkivobjektHandling Systemidentifierare="d3322868611f4c5a8ed69e7d0d392957">
+          <ArkivobjektID>dnr 2022/20/3</ArkivobjektID>
+          <KlassReferens>0</KlassReferens>
+          <Handlingstyp>Protokoll, omedelbar justering</Handlingstyp>
+          <Rubrik>Protokoll § 2</Rubrik>
+          <Skapad>2022-07-07</Skapad>
+          <Bilaga Namn="Protokoll § 2.docx" Lank="Protokoll § 2.docx">
+            <Bevaras>true</Bevaras>
+          </Bilaga>
+        </ArkivobjektHandling>
+        <ArkivobjektHandling Systemidentifierare="1556b99f51d74345a5c1aef33ceaed24">
+          <ArkivobjektID>dnr 2022/20/4</ArkivobjektID>
+          <KlassReferens>0</KlassReferens>
+          <Handlingstyp>Protokoll</Handlingstyp>
+          <Rubrik>Antikvarisk</Rubrik>
+          <Skapad>2022-07-07</Skapad>
+          <Bilaga Namn="Antikvarisk.docx" Lank="Antikvarisk.docx">
+            <Bevaras>true</Bevaras>
+          </Bilaga>
+        </ArkivobjektHandling>
+      </ArkivobjektListaHandlingar>
+    </ArkivobjektArende>
+    <ArkivobjektArende Systemidentifierare="168e9d3803be4d6f9c953a226948b4c2">
+      <ArkivobjektID>dnr 2022/21</ArkivobjektID>
+      <ArendeTyp>0</ArendeTyp>
+      <Agent>
+        <Roll>Registrator</Roll>
+        <Namn>Spindelmannen Sakkunnigson</Namn>
+      </Agent>
+      <Skapad>2022-07-07</Skapad>
+      <Arendemening>Testärende 2022-07-11</Arendemening>
+    </ArkivobjektArende>
+    <ArkivobjektArende Systemidentifierare="50c017032e7b4eb7b2293cbdb6aa4c58">
+      <ArkivobjektID>dnr 2022/22</ArkivobjektID>
+      <ArendeTyp>0</ArendeTyp>
+      <Agent>
+        <Roll>Registrator</Roll>
+        <Namn>Spindelmannen Sakkunnigson</Namn>
+      </Agent>
+      <Skapad>2022-07-11</Skapad>
+      <Arendemening>Tesutskottet 12 juli</Arendemening>
+      <ArkivobjektListaHandlingar>
+        <ArkivobjektHandling Systemidentifierare="23f1ade0cbc94848bd8c09d0249f2928">
+          <ArkivobjektID>dnr 2022/22/1</ArkivobjektID>
+          <KlassReferens>0</KlassReferens>
+          <Handlingstyp>Återkommande</Handlingstyp>
+          <Rubrik>Återkommande</Rubrik>
+          <Skapad>2022-07-11</Skapad>
+          <Bilaga Namn="Återkommande.docx" Lank="Återkommande.docx">
+            <Bevaras>true</Bevaras>
+          </Bilaga>
+        </ArkivobjektHandling>
+      </ArkivobjektListaHandlingar>
+    </ArkivobjektArende>
+    <ArkivobjektArende Systemidentifierare="bea68d5d9ca5480283fd725530c6fe1d">
+      <ArkivobjektID>dnr 2022/23</ArkivobjektID>
+      <ArendeTyp>0</ArendeTyp>
+      <Agent>
+        <Roll>Registrator</Roll>
+        <Namn>Stålmannen Sekreterarsson</Namn>
+      </Agent>
+      <Skapad>2022-07-13</Skapad>
+      <Arendemening>Tesutskottet 2022-07-20</Arendemening>
+      <ArkivobjektListaHandlingar>
+        <ArkivobjektHandling Systemidentifierare="4254e75870d44af4ab77b893422d07f5">
+          <ArkivobjektID>dnr 2022/23/1</ArkivobjektID>
+          <KlassReferens>0</KlassReferens>
+          <Handlingstyp>Återkommande</Handlingstyp>
+          <Rubrik>Återkommande</Rubrik>
+          <Skapad>2022-07-13</Skapad>
+          <Bilaga Namn="Återkommande.docx" Lank="Återkommande.docx">
+            <Bevaras>true</Bevaras>
+          </Bilaga>
+        </ArkivobjektHandling>
+      </ArkivobjektListaHandlingar>
+    </ArkivobjektArende>
+    <ArkivobjektArende Systemidentifierare="3b6fe3b270e6479a8a334843794a8018">
+      <ArkivobjektID>dnr 2022/24</ArkivobjektID>
+      <ArendeTyp>0</ArendeTyp>
+      <Agent>
+        <Roll>Registrator</Roll>
+        <Namn>Nyxon Admin</Namn>
+      </Agent>
+      <Skapad>2022-08-19</Skapad>
+      <Arendemening>Nyxontest 2</Arendemening>
+      <ArkivobjektListaHandlingar>
+        <ArkivobjektHandling Systemidentifierare="83189e71192a48c78b1145e2e5252352">
+          <ArkivobjektID>dnr 2022/24/1</ArkivobjektID>
+          <KlassReferens>0</KlassReferens>
+          <Handlingstyp>Återkommande</Handlingstyp>
+          <Rubrik>Återkommande</Rubrik>
+          <Skapad>2022-08-19</Skapad>
+          <Bilaga Namn="Återkommande.docx" Lank="Återkommande.docx">
+            <Bevaras>true</Bevaras>
+          </Bilaga>
+        </ArkivobjektHandling>
+        <ArkivobjektHandling Systemidentifierare="cf1c4e04ef3c480e926db1893f852f31">
+          <ArkivobjektID>dnr 2022/24/2</ArkivobjektID>
+          <KlassReferens>0</KlassReferens>
+          <Handlingstyp>Protokoll</Handlingstyp>
+          <Rubrik>Antikvarisk</Rubrik>
+          <Skapad>2022-10-25</Skapad>
+          <Bilaga Namn="Antikvarisk.docx" Lank="Antikvarisk.docx">
+            <Bevaras>true</Bevaras>
+          </Bilaga>
+        </ArkivobjektHandling>
+        <ArkivobjektHandling Systemidentifierare="a891e97b52774cc19bb6dbd2fd4718c6">
+          <ArkivobjektID>dnr 2022/24/3</ArkivobjektID>
+          <KlassReferens>0</KlassReferens>
+          <Handlingstyp>Protokoll</Handlingstyp>
+          <Rubrik>Antikvarisk</Rubrik>
+          <Skapad>2022-10-25</Skapad>
+          <Bilaga Namn="Antikvarisk.docx" Lank="Antikvarisk.docx">
+            <Bevaras>true</Bevaras>
+          </Bilaga>
+        </ArkivobjektHandling>
+      </ArkivobjektListaHandlingar>
+    </ArkivobjektArende>
+    <ArkivobjektArende Systemidentifierare="4d9e315d67f649ea83cacae0a949a766">
+      <ArkivobjektID>dnr 2022/25</ArkivobjektID>
+      <ArendeTyp>0</ArendeTyp>
+      <Agent>
+        <Roll>Registrator</Roll>
+        <Namn>Fantomen Byråkrat</Namn>
+      </Agent>
+      <Skapad>2022-09-21</Skapad>
+      <Arendemening>Testutskottet 2022-09-21</Arendemening>
+      <ArkivobjektListaHandlingar>
+        <ArkivobjektHandling Systemidentifierare="2f971d96ae0b425080c4113db24375cf">
+          <ArkivobjektID>dnr 2022/25/1</ArkivobjektID>
+          <KlassReferens>0</KlassReferens>
+          <Handlingstyp>Återkommande</Handlingstyp>
+          <Rubrik>Återkommande</Rubrik>
+          <Skapad>2022-09-21</Skapad>
+          <Bilaga Namn="Återkommande.docx" Lank="Återkommande.docx">
+            <Bevaras>true</Bevaras>
+          </Bilaga>
+        </ArkivobjektHandling>
+      </ArkivobjektListaHandlingar>
+    </ArkivobjektArende>
+    <ArkivobjektArende Systemidentifierare="e35a293163eb498992ace90956ab757a">
+      <ArkivobjektID>dnr 2022/26</ArkivobjektID>
+      <ArendeTyp>0</ArendeTyp>
+      <Agent>
+        <Roll>Registrator</Roll>
+        <Namn>Spindelmannen Sakkunnigson</Namn>
+      </Agent>
+      <Skapad>2022-09-21</Skapad>
+      <Arendemening>Tesutskottet 18</Arendemening>
+    </ArkivobjektArende>
+    <ArkivobjektArende Systemidentifierare="5a6464eebc71451abfb7d8f2c73c10af">
+      <ArkivobjektID>dnr 2022/27</ArkivobjektID>
+      <ArendeTyp>0</ArendeTyp>
+      <Agent>
+        <Roll>Registrator</Roll>
+        <Namn>Fantomen Byråkrat</Namn>
+      </Agent>
+      <Skapad>2022-10-11</Skapad>
+      <Arendemening>Testutskottet 2022-10-11</Arendemening>
+      <ArkivobjektListaHandlingar>
+        <ArkivobjektHandling Systemidentifierare="1d950960190f4bc3853de7ab96d27416">
+          <ArkivobjektID>dnr 2022/27/1</ArkivobjektID>
+          <KlassReferens>0</KlassReferens>
+          <Handlingstyp>Återkommande</Handlingstyp>
+          <Rubrik>Återkommande</Rubrik>
+          <Skapad>2022-10-11</Skapad>
+          <Bilaga Namn="Återkommande.docx" Lank="Återkommande.docx">
+            <Bevaras>true</Bevaras>
+          </Bilaga>
+        </ArkivobjektHandling>
+        <ArkivobjektHandling Systemidentifierare="d09be200040b4d059e3a20507053a7cf">
+          <ArkivobjektID>dnr 2022/27/2</ArkivobjektID>
+          <KlassReferens>0</KlassReferens>
+          <Handlingstyp>Återkommande</Handlingstyp>
+          <Rubrik>Återkommande</Rubrik>
+          <Skapad>2022-10-25</Skapad>
+          <Bilaga Namn="Återkommande.docx" Lank="Återkommande.docx">
+            <Bevaras>true</Bevaras>
+          </Bilaga>
+        </ArkivobjektHandling>
+      </ArkivobjektListaHandlingar>
+    </ArkivobjektArende>
+    <ArkivobjektArende Systemidentifierare="ea388f23bc664229a966b22a68a8de44">
+      <ArkivobjektID>dnr 2022/28</ArkivobjektID>
+      <KlassReferens>2022-10-28</KlassReferens>
+      <ArendeTyp>1</ArendeTyp>
+      <Forvaringsplats>Hänvisning</Forvaringsplats>
+      <Agent>
+        <Roll>Registrator</Roll>
+        <Namn>Hulken von Bosboren</Namn>
+      </Agent>
+      <Skapad>2022-10-28</Skapad>
+      <Arendemening>Testar flera handlingar med flera bilagor i varje handling</Arendemening>
+      <ArkivobjektListaHandlingar>
+        <ArkivobjektHandling Systemidentifierare="bf21b599054947538a760ca65d0f29ad">
+          <ArkivobjektID>dnr 2022/28/1</ArkivobjektID>
+          <KlassReferens>0</KlassReferens>
+          <Handlingstyp>Verksamhetsberättelse</Handlingstyp>
+          <Rubrik>Handl 1: Testar flera handlingar med flera bilagor i varje handling</Rubrik>
+          <Skapad>2022-10-28</Skapad>
+          <Bilaga Namn="testfil1_handling1.txt" Lank="testfil1_handling1.txt">
+            <Bevaras>true</Bevaras>
+          </Bilaga>
+          <Bilaga Namn="testfil2_handling1.txt" Lank="testfil2_handling1.txt">
+            <Bevaras>true</Bevaras>
+          </Bilaga>
+          <Bilaga Namn="testfil3_handling1.txt" Lank="testfil3_handling1.txt">
+            <Bevaras>true</Bevaras>
+          </Bilaga>
+          <Bilaga Namn="testfil4_handling1.txt" Lank="testfil4_handling1.txt">
+            <Bevaras>true</Bevaras>
+          </Bilaga>
+          <Bilaga Namn="testfil5_handling1.txt" Lank="testfil5_handling1.txt">
+            <Bevaras>true</Bevaras>
+          </Bilaga>
+        </ArkivobjektHandling>
+        <ArkivobjektHandling Systemidentifierare="bac1ab1e93ba4c50b776a900c2991263">
+          <ArkivobjektID>dnr 2022/28/2</ArkivobjektID>
+          <KlassReferens>0</KlassReferens>
+          <Handlingstyp>Samrådshandling</Handlingstyp>
+          <Rubrik>Handling 2: Testar flera handlingar med flera bilagor i varje handling</Rubrik>
+          <Skapad>2022-10-28</Skapad>
+          <Bilaga Namn="testfil1_handling2.txt" Lank="testfil1_handling2.txt">
+            <Bevaras>true</Bevaras>
+          </Bilaga>
+          <Bilaga Namn="testfil2_handling2.txt" Lank="testfil2_handling2.txt">
+            <Bevaras>true</Bevaras>
+          </Bilaga>
+          <Bilaga Namn="testfil3_handling2.txt" Lank="testfil3_handling2.txt">
+            <Bevaras>true</Bevaras>
+          </Bilaga>
+          <Bilaga Namn="testfil4_handling2.txt" Lank="testfil4_handling2.txt">
+            <Bevaras>true</Bevaras>
+          </Bilaga>
+          <Bilaga Namn="testfil5_handling2.txt" Lank="testfil5_handling2.txt">
+            <Bevaras>true</Bevaras>
+          </Bilaga>
+        </ArkivobjektHandling>
+      </ArkivobjektListaHandlingar>
+    </ArkivobjektArende>
+    <ArkivobjektArende Systemidentifierare="7cb657a1c9e44a02bcd7069e2e28d584">
+      <ArkivobjektID>dnr 2022/29</ArkivobjektID>
+      <ArendeTyp>0</ArendeTyp>
+      <Agent>
+        <Roll>Registrator</Roll>
+        <Namn>Administrator</Namn>
+      </Agent>
+      <Skapad>2022-12-06</Skapad>
+      <Arendemening>Nytt ärende för test av arbetsdokument</Arendemening>
+    </ArkivobjektArende>
+    <ArkivobjektArende Systemidentifierare="32f3be67443e416999e6edc0f104f451">
+      <ArkivobjektID>dnr 2022/3</ArkivobjektID>
+      <KlassReferens>2022-05-11</KlassReferens>
+      <ArendeTyp>1</ArendeTyp>
+      <Forvaringsplats>hänvisning</Forvaringsplats>
+      <Agent>
+        <Roll>Registrator</Roll>
+        <Namn>Hulken von Bosboren</Namn>
+      </Agent>
+      <Skapad>2022-05-11</Skapad>
+      <Arendemening>Arkiveringsärende ärendemening</Arendemening>
+      <ArkivobjektListaHandlingar>
+        <ArkivobjektHandling Systemidentifierare="d5449587ee0841bf95b659c39d054dfc">
+          <ArkivobjektID>dnr 2022/3/1</ArkivobjektID>
+          <KlassReferens>0</KlassReferens>
+          <Handlingstyp>Beslut</Handlingstyp>
+          <Beskrivning>ännu mer info</Beskrivning>
+          <Rubrik>arkiveringshandling åtgärd/handl</Rubrik>
+          <Skapad>2022-05-11</Skapad>
+          <Bilaga Namn="Remissvar_Formel_XY_KS2021_18.pdf" Lank="Remissvar_Formel_XY_KS2021_18.pdf">
+            <Bevaras>true</Bevaras>
+          </Bilaga>
+        </ArkivobjektHandling>
+      </ArkivobjektListaHandlingar>
+    </ArkivobjektArende>
+    <ArkivobjektArende Systemidentifierare="7d05c63b93bf4f898493a394e28a6f1f">
+      <ArkivobjektID>dnr 2022/30</ArkivobjektID>
+      <ArendeTyp>0</ArendeTyp>
+      <Agent>
+        <Roll>Registrator</Roll>
+        <Namn>Fantomen Byråkrat</Namn>
+      </Agent>
+      <Skapad>2022-12-06</Skapad>
+      <Arendemening>Testutskottet 2022-12-06</Arendemening>
+    </ArkivobjektArende>
+    <ArkivobjektArende Systemidentifierare="425c90ed8e5f47ff931518607714fd72">
+      <ArkivobjektID>dnr 2022/31</ArkivobjektID>
+      <ArendeTyp>0</ArendeTyp>
+      <Agent>
+        <Roll>Registrator</Roll>
+        <Namn>Fantomen Byråkrat</Namn>
+      </Agent>
+      <Skapad>2022-12-06</Skapad>
+      <Arendemening>Nalles ärende 2022-12-06</Arendemening>
+    </ArkivobjektArende>
+    <ArkivobjektArende Systemidentifierare="8ccb2e3a00e545f681679b287275298b">
+      <ArkivobjektID>dnr 2022/32</ArkivobjektID>
+      <ArendeTyp>0</ArendeTyp>
+      <Agent>
+        <Roll>Registrator</Roll>
+        <Namn>Spindelmannen Sakkunnigson</Namn>
+      </Agent>
+      <Skapad>2022-12-06</Skapad>
+      <Arendemening>Test 2022-12-06</Arendemening>
+    </ArkivobjektArende>
+    <ArkivobjektArende Systemidentifierare="805ec9c76dd64e438cb43cc4ba258488">
+      <ArkivobjektID>dnr 2022/33</ArkivobjektID>
+      <ArendeTyp>0</ArendeTyp>
+      <Agent>
+        <Roll>Registrator</Roll>
+        <Namn>Stålmannen Sekreterarsson</Namn>
+      </Agent>
+      <Skapad>2022-12-07</Skapad>
+      <Arendemening>Boklärd testar 2022-12-07</Arendemening>
+    </ArkivobjektArende>
+    <ArkivobjektArende Systemidentifierare="92f8218244654549894eae5d390bba29">
+      <ArkivobjektID>dnr 2022/4</ArkivobjektID>
+      <ArendeTyp>0</ArendeTyp>
+      <Agent>
+        <Roll>Registrator</Roll>
+        <Namn>Nyxon Admin</Namn>
+      </Agent>
+      <Skapad>2022-05-25</Skapad>
+      <Arendemening>Nyxon Testar</Arendemening>
+      <ArkivobjektListaHandlingar>
+        <ArkivobjektHandling Systemidentifierare="b5ba87b59a0d49feb2132220df9a3af8">
+          <ArkivobjektID>dnr 2022/4/1</ArkivobjektID>
+          <KlassReferens>0</KlassReferens>
+          <Handlingstyp>Återkommande</Handlingstyp>
+          <Rubrik>Återkommande</Rubrik>
+          <Skapad>2022-05-25</Skapad>
+          <Bilaga Namn="Återkommande.docx" Lank="Återkommande.docx">
+            <Bevaras>true</Bevaras>
+          </Bilaga>
+        </ArkivobjektHandling>
+      </ArkivobjektListaHandlingar>
+    </ArkivobjektArende>
+    <ArkivobjektArende Systemidentifierare="a5fddb6be2e24256a170ced05ca73e44">
+      <ArkivobjektID>dnr 2022/5</ArkivobjektID>
+      <KlassReferens>2022-05-31</KlassReferens>
+      <ArendeTyp>1</ArendeTyp>
+      <Forvaringsplats>Hänvisning</Forvaringsplats>
+      <Agent>
+        <Roll>Registrator</Roll>
+        <Namn>Hulken von Bosboren</Namn>
+      </Agent>
+      <Skapad>2022-05-31</Skapad>
+      <Arendemening>testar div attribut</Arendemening>
+      <ArkivobjektListaHandlingar>
+        <ArkivobjektHandling Systemidentifierare="5c0796d0f1e04aa4931b76c5d2cfb873">
+          <ArkivobjektID>dnr 2022/5/1</ArkivobjektID>
+          <KlassReferens>1</KlassReferens>
+          <Handlingstyp>Ansökan</Handlingstyp>
+          <Beskrivning>information 1</Beskrivning>
+          <Rubrik>åtgärd handling rubrik</Rubrik>
+          <Skapad>2022-05-31</Skapad>
+        </ArkivobjektHandling>
+      </ArkivobjektListaHandlingar>
+    </ArkivobjektArende>
+    <ArkivobjektArende Systemidentifierare="b8725c00b22b4a67aeebb35e609bbf0d">
+      <ArkivobjektID>dnr 2022/6</ArkivobjektID>
+      <ArendeTyp>0</ArendeTyp>
+      <Agent>
+        <Roll>Registrator</Roll>
+        <Namn>Administrator</Namn>
+      </Agent>
+      <Skapad>2022-06-02</Skapad>
+      <Arendemening>testar grodor 2022-06-02</Arendemening>
+    </ArkivobjektArende>
+    <ArkivobjektArende Systemidentifierare="289742f86ace4a43b3b8f673b0890afb">
+      <ArkivobjektID>dnr 2022/7</ArkivobjektID>
+      <ArendeTyp>0</ArendeTyp>
+      <Agent>
+        <Roll>Registrator</Roll>
+        <Namn>Fantomen Byråkrat</Namn>
+      </Agent>
+      <Skapad>2022-06-02</Skapad>
+      <Arendemening>Testutskottet 2022-06-02</Arendemening>
+      <ArkivobjektListaHandlingar>
+        <ArkivobjektHandling Systemidentifierare="fbaf8801204a4d2687bfcf35c45dc110">
+          <ArkivobjektID>dnr 2022/7/1</ArkivobjektID>
+          <KlassReferens>0</KlassReferens>
+          <Handlingstyp>Återkommande</Handlingstyp>
+          <Rubrik>Återkommande</Rubrik>
+          <Skapad>2022-06-02</Skapad>
+          <Bilaga Namn="Återkommande.docx" Lank="Återkommande.docx">
+            <Bevaras>true</Bevaras>
+          </Bilaga>
+        </ArkivobjektHandling>
+        <ArkivobjektHandling Systemidentifierare="a9dc41a24237493fb32d4394765a7e07">
+          <ArkivobjektID>dnr 2022/7/2</ArkivobjektID>
+          <KlassReferens>0</KlassReferens>
+          <Handlingstyp>Protokoll</Handlingstyp>
+          <Rubrik>Antikvarisk</Rubrik>
+          <Skapad>2022-06-02</Skapad>
+          <Bilaga Namn="Antikvarisk.docx" Lank="Antikvarisk.docx">
+            <Bevaras>true</Bevaras>
+          </Bilaga>
+        </ArkivobjektHandling>
+      </ArkivobjektListaHandlingar>
+    </ArkivobjektArende>
+    <ArkivobjektArende Systemidentifierare="1843cce339c34a51a13ec30b06078d38">
+      <ArkivobjektID>dnr 2022/8</ArkivobjektID>
+      <ArendeTyp>0</ArendeTyp>
+      <Agent>
+        <Roll>Registrator</Roll>
+        <Namn>Fantomen Byråkrat</Namn>
+      </Agent>
+      <Skapad>2022-06-02</Skapad>
+      <Arendemening>Grodanboll student</Arendemening>
+      <ArkivobjektListaHandlingar>
+        <ArkivobjektHandling Systemidentifierare="ad52c6fc15ae4733a86818f41e929950">
+          <ArkivobjektID>dnr 2022/8/1</ArkivobjektID>
+          <KlassReferens>0</KlassReferens>
+          <Handlingstyp>Tjosanhejsan</Handlingstyp>
+          <Rubrik>Tjosanhejsan Grodanboll student</Rubrik>
+          <Skapad>2022-06-02</Skapad>
+          <Bilaga Namn="Tjosanhejsan Grodanboll student.docx" Lank="Tjosanhejsan Grodanboll student.docx">
+            <Bevaras>true</Bevaras>
+          </Bilaga>
+        </ArkivobjektHandling>
+        <ArkivobjektHandling Systemidentifierare="f450ffc082bd49e5a13e8177a742bc2b">
+          <ArkivobjektID>dnr 2022/8/2</ArkivobjektID>
+          <KlassReferens>0</KlassReferens>
+          <Handlingstyp>Beslut</Handlingstyp>
+          <Rubrik>Testutskottet 2022-06-02 (2022-06-02 TN §2)</Rubrik>
+          <Skapad>2022-06-03</Skapad>
+          <Bilaga Namn="Testutskottet 2022-06-02 (2022-06-02 TN §2).docx" Lank="Testutskottet 2022-06-02 (2022-06-02 TN §2).docx">
+            <Bevaras>true</Bevaras>
+          </Bilaga>
+        </ArkivobjektHandling>
+        <ArkivobjektHandling Systemidentifierare="a224e49627704eb79a8d6839f9de1554">
+          <ArkivobjektID>dnr 2022/8/3</ArkivobjektID>
+          <KlassReferens>0</KlassReferens>
+          <Handlingstyp>Till möte</Handlingstyp>
+          <Rubrik>Testutskottet 2022-06-13 (2022-06-13)</Rubrik>
+          <Skapad>2022-06-13</Skapad>
+        </ArkivobjektHandling>
+        <ArkivobjektHandling Systemidentifierare="8dece0d5bde04feea6a558244cb52642">
+          <ArkivobjektID>dnr 2022/8/4</ArkivobjektID>
+          <KlassReferens>0</KlassReferens>
+          <Handlingstyp>Beslut</Handlingstyp>
+          <Rubrik>Testutskottet 2022-07-08 (2022-07-08 TN §4)</Rubrik>
+          <Skapad>2022-07-07</Skapad>
+          <Bilaga Namn="Testutskottet 2022-07-08 (2022-07-08 TN §4).docx" Lank="Testutskottet 2022-07-08 (2022-07-08 TN §4).docx">
+            <Bevaras>true</Bevaras>
+          </Bilaga>
+        </ArkivobjektHandling>
+      </ArkivobjektListaHandlingar>
+    </ArkivobjektArende>
+    <ArkivobjektArende Systemidentifierare="6e90f494c2364d63b3f274efb8f1df2f">
+      <ArkivobjektID>dnr 2022/9</ArkivobjektID>
+      <ArendeTyp>0</ArendeTyp>
+      <Agent>
+        <Roll>Registrator</Roll>
+        <Namn>Spindelmannen Sakkunnigson</Namn>
+      </Agent>
+      <Skapad>2022-06-02</Skapad>
+      <Arendemening>Tesutskottet 2022-08-10</Arendemening>
+      <ArkivobjektListaHandlingar>
+        <ArkivobjektHandling Systemidentifierare="fad382d3e4e24b2eb9b2a16c052ad101">
+          <ArkivobjektID>dnr 2022/9/1</ArkivobjektID>
+          <KlassReferens>0</KlassReferens>
+          <Handlingstyp>Återkommande</Handlingstyp>
+          <Rubrik>Återkommande</Rubrik>
+          <Skapad>2022-06-02</Skapad>
+          <Bilaga Namn="Återkommande.docx" Lank="Återkommande.docx">
+            <Bevaras>true</Bevaras>
+          </Bilaga>
+        </ArkivobjektHandling>
+        <ArkivobjektHandling Systemidentifierare="f193624149934880b1c1aecec3928aa4">
+          <ArkivobjektID>dnr 2022/9/2</ArkivobjektID>
+          <KlassReferens>0</KlassReferens>
+          <Beskrivning>Handlingen &lt;Antikvarisk&gt; makulerades av Brandman Adminsson MED ORSAK  2022-06-02 14:52</Beskrivning>
+          <Rubrik>--- Makulerad ---</Rubrik>
+          <Skapad>2022-06-02</Skapad>
+        </ArkivobjektHandling>
+        <ArkivobjektHandling Systemidentifierare="6411baff8d084588a0a6492cac17d4a0">
+          <ArkivobjektID>dnr 2022/9/3</ArkivobjektID>
+          <KlassReferens>0</KlassReferens>
+          <Handlingstyp>Protokoll</Handlingstyp>
+          <Rubrik>Antikvarisk</Rubrik>
+          <Skapad>2022-06-02</Skapad>
+          <Bilaga Namn="Antikvarisk.docx" Lank="Antikvarisk.docx">
+            <Bevaras>true</Bevaras>
+          </Bilaga>
+        </ArkivobjektHandling>
+      </ArkivobjektListaHandlingar>
+    </ArkivobjektArende>
+  </ArkivobjektListaArenden>
+</Leveransobjekt>

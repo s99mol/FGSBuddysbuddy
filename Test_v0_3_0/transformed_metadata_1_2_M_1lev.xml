@@ -1,0 +1,558 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<Leveransobjekt xmlns="http://xml.ra.se/e-arkiv/FGS-ERMS">
+  <ArkivobjektListaHandlingar>
+    <ArkivobjektHandling>
+      <ArkivobjektID>1</ArkivobjektID>
+      <KlassReferens>0</KlassReferens>
+      <Rubrik>blalalal</Rubrik>
+      <Skapad>2016-05-10</Skapad>
+      <Bilaga Namn="Meddelandetext.txt" Lank="Meddelandetext.txt">
+        <Bevaras>true</Bevaras>
+      </Bilaga>
+      <Bilaga Namn="ominstallation Linux 17.docx" Lank="ominstallation Linux 17.docx">
+        <Bevaras>true</Bevaras>
+      </Bilaga>
+      <Bilaga Namn="Återkommande.doc" Lank="Återkommande.doc">
+        <Bevaras>true</Bevaras>
+      </Bilaga>
+      <Bilaga Namn="Återkommande.doc" Lank="Återkommande.doc">
+        <Bevaras>true</Bevaras>
+      </Bilaga>
+      <Bilaga Namn="Återkommande.doc" Lank="Återkommande.doc">
+        <Bevaras>true</Bevaras>
+      </Bilaga>
+      <Bilaga Namn="Meddelandetext.txt" Lank="Meddelandetext.txt">
+        <Bevaras>true</Bevaras>
+      </Bilaga>
+      <Bilaga Namn="Återkommande.doc" Lank="Återkommande.doc">
+        <Bevaras>true</Bevaras>
+      </Bilaga>
+      <Bilaga Namn="Återkommande.doc" Lank="Återkommande.doc">
+        <Bevaras>true</Bevaras>
+      </Bilaga>
+      <Bilaga Namn="Dalandebeslut.docx" Lank="Dalandebeslut.docx">
+        <Bevaras>true</Bevaras>
+      </Bilaga>
+      <Bilaga Namn="Lönedatum 2019 Truman.pdf" Lank="Lönedatum 2019 Truman.pdf">
+        <Bevaras>true</Bevaras>
+      </Bilaga>
+      <Bilaga Namn="Dalandebeslut.docx" Lank="Dalandebeslut.docx">
+        <Bevaras>true</Bevaras>
+      </Bilaga>
+      <Bilaga Namn="R2D2 Directorysync 1.1 Installation och konfiguration.pdf" Lank="R2D2 Directorysync 1.1 Installation och konfiguration.pdf">
+        <Bevaras>true</Bevaras>
+      </Bilaga>
+      <Bilaga Namn="meddelande.txt" Lank="meddelande.txt">
+        <Bevaras>true</Bevaras>
+      </Bilaga>
+      <Bilaga Namn="R2D2 2020 X1 Användarmanual.pdf" Lank="R2D2 2020 X1 Användarmanual.pdf">
+        <Bevaras>true</Bevaras>
+      </Bilaga>
+      <Bilaga Namn="R2D2 2020 X1 Användarmanual.pdf.pdf" Lank="R2D2 2020 X1 Användarmanual.pdf.pdf">
+        <Bevaras>true</Bevaras>
+      </Bilaga>
+      <Bilaga Namn="Återkommande.docx" Lank="Återkommande.docx">
+        <Bevaras>true</Bevaras>
+      </Bilaga>
+      <Bilaga Namn="R2D2 2021 X1 Användarmanual.pdf" Lank="R2D2 2021 X1 Användarmanual.pdf">
+        <Bevaras>true</Bevaras>
+      </Bilaga>
+      <Bilaga Namn="R2D2 2021 X1 Användarmanual.pdf.pdf" Lank="R2D2 2021 X1 Användarmanual.pdf.pdf">
+        <Bevaras>true</Bevaras>
+      </Bilaga>
+      <Bilaga Namn="Protokoll KSAU 2021-07-02.docx" Lank="Protokoll KSAU 2021-07-02.docx">
+        <Bevaras>true</Bevaras>
+      </Bilaga>
+      <Bilaga Namn="Återkommande.docx" Lank="Återkommande.docx">
+        <Bevaras>true</Bevaras>
+      </Bilaga>
+      <Bilaga Namn="Tjosanhejsan Remiss.docx" Lank="Tjosanhejsan Remiss.docx">
+        <Bevaras>true</Bevaras>
+      </Bilaga>
+      <Bilaga Namn="Tjansteutlatande test av grodor.docx" Lank="Tjansteutlatande test av grodor.docx">
+        <Bevaras>true</Bevaras>
+      </Bilaga>
+      <Bilaga Namn="Återkommande.docx" Lank="Återkommande.docx">
+        <Bevaras>true</Bevaras>
+      </Bilaga>
+      <Bilaga Namn="Återkommande.docx" Lank="Återkommande.docx">
+        <Bevaras>true</Bevaras>
+      </Bilaga>
+      <Bilaga Namn="Tjansteutlatande upphandling av punktlighet.docx" Lank="Tjansteutlatande upphandling av punktlighet.docx">
+        <Bevaras>true</Bevaras>
+      </Bilaga>
+      <Bilaga Namn="Återkommande.docx" Lank="Återkommande.docx">
+        <Bevaras>true</Bevaras>
+      </Bilaga>
+      <Bilaga Namn="Tjansteutlatande SL.docx" Lank="Tjansteutlatande SL.docx">
+        <Bevaras>true</Bevaras>
+      </Bilaga>
+      <Bilaga Namn="Meddelandetext.txt" Lank="Meddelandetext.txt">
+        <Bevaras>true</Bevaras>
+      </Bilaga>
+      <Bilaga Namn="Återkommande.docx" Lank="Återkommande.docx">
+        <Bevaras>true</Bevaras>
+      </Bilaga>
+      <Bilaga Namn="Dalandebeslut.docx" Lank="Dalandebeslut.docx">
+        <Bevaras>true</Bevaras>
+      </Bilaga>
+      <Bilaga Namn="Återkommande.docx" Lank="Återkommande.docx">
+        <Bevaras>true</Bevaras>
+      </Bilaga>
+      <Bilaga Namn="Återkommande.docx" Lank="Återkommande.docx">
+        <Bevaras>true</Bevaras>
+      </Bilaga>
+      <Bilaga Namn="Tesutskottet 2022-02-28 grodor 2 (2022-02-28 TN §2).docx" Lank="Tesutskottet 2022-02-28 grodor 2 (2022-02-28 TN §2).docx">
+        <Bevaras>true</Bevaras>
+      </Bilaga>
+      <Bilaga Namn="Tjosanhejsan.docx" Lank="Tjosanhejsan.docx">
+        <Bevaras>true</Bevaras>
+      </Bilaga>
+      <Bilaga Namn="Återkommande.docx" Lank="Återkommande.docx">
+        <Bevaras>true</Bevaras>
+      </Bilaga>
+      <Bilaga Namn="Återkommande.docx" Lank="Återkommande.docx">
+        <Bevaras>true</Bevaras>
+      </Bilaga>
+      <Bilaga Namn="Protokoll 2015-12-14.pdf" Lank="Protokoll 2015-12-14.pdf">
+        <Bevaras>true</Bevaras>
+      </Bilaga>
+      <Bilaga Namn="10. Meetings Plus 9.0 - MDM Administration Manual.pdf" Lank="10. Meetings Plus 9.0 - MDM Administration Manual.pdf">
+        <Bevaras>true</Bevaras>
+      </Bilaga>
+      <Bilaga Namn="Tjosanhejsan påsklovet.docx" Lank="Tjosanhejsan påsklovet.docx">
+        <Bevaras>true</Bevaras>
+      </Bilaga>
+      <Bilaga Namn="Återkommande.docx" Lank="Återkommande.docx">
+        <Bevaras>true</Bevaras>
+      </Bilaga>
+      <Bilaga Namn="Tesutskottet 2022-08-10 (2022-08-10 TN §2).docx" Lank="Tesutskottet 2022-08-10 (2022-08-10 TN §2).docx">
+        <Bevaras>true</Bevaras>
+      </Bilaga>
+      <Bilaga Namn="Återkommande.docx" Lank="Återkommande.docx">
+        <Bevaras>true</Bevaras>
+      </Bilaga>
+      <Bilaga Namn="Återkommande VN 2022-06-09.docx" Lank="Återkommande VN 2022-06-09.docx">
+        <Bevaras>true</Bevaras>
+      </Bilaga>
+      <Bilaga Namn="Återkommande VN 2022-06-09.pdf" Lank="Återkommande VN 2022-06-09.pdf">
+        <Bevaras>true</Bevaras>
+      </Bilaga>
+      <Bilaga Namn="Bestämmelser om omställningsstöd och pensionsförmåner för förtroendevalda.pdf" Lank="Bestämmelser om omställningsstöd och pensionsförmåner för förtroendevalda.pdf">
+        <Bevaras>true</Bevaras>
+      </Bilaga>
+      <Bilaga Namn="Återkommande.docx" Lank="Återkommande.docx">
+        <Bevaras>true</Bevaras>
+      </Bilaga>
+      <Bilaga Namn="Testutskottet 2022-06-13 (2022-06-13 TN §2).docx" Lank="Testutskottet 2022-06-13 (2022-06-13 TN §2).docx">
+        <Bevaras>true</Bevaras>
+      </Bilaga>
+      <Bilaga Namn="Återkommande.docx" Lank="Återkommande.docx">
+        <Bevaras>true</Bevaras>
+      </Bilaga>
+      <Bilaga Namn="Återkommande.docx" Lank="Återkommande.docx">
+        <Bevaras>true</Bevaras>
+      </Bilaga>
+      <Bilaga Namn="Testutskottet 2022-07-08 (2022-07-08 TN §2).docx" Lank="Testutskottet 2022-07-08 (2022-07-08 TN §2).docx">
+        <Bevaras>true</Bevaras>
+      </Bilaga>
+      <Bilaga Namn="Brev.docx" Lank="Brev.docx">
+        <Bevaras>true</Bevaras>
+      </Bilaga>
+      <Bilaga Namn="Återkommande.docx" Lank="Återkommande.docx">
+        <Bevaras>true</Bevaras>
+      </Bilaga>
+      <Bilaga Namn="Återkommande.docx" Lank="Återkommande.docx">
+        <Bevaras>true</Bevaras>
+      </Bilaga>
+      <Bilaga Namn="Återkommande.docx" Lank="Återkommande.docx">
+        <Bevaras>true</Bevaras>
+      </Bilaga>
+      <Bilaga Namn="Återkommande.docx" Lank="Återkommande.docx">
+        <Bevaras>true</Bevaras>
+      </Bilaga>
+      <Bilaga Namn="Återkommande.docx" Lank="Återkommande.docx">
+        <Bevaras>true</Bevaras>
+      </Bilaga>
+      <Bilaga Namn="Återkommande.docx" Lank="Återkommande.docx">
+        <Bevaras>true</Bevaras>
+      </Bilaga>
+      <Bilaga Namn="testfil1_handling1.txt" Lank="testfil1_handling1.txt">
+        <Bevaras>true</Bevaras>
+      </Bilaga>
+      <Bilaga Namn="testfil2_handling1.txt" Lank="testfil2_handling1.txt">
+        <Bevaras>true</Bevaras>
+      </Bilaga>
+      <Bilaga Namn="testfil3_handling1.txt" Lank="testfil3_handling1.txt">
+        <Bevaras>true</Bevaras>
+      </Bilaga>
+      <Bilaga Namn="testfil4_handling1.txt" Lank="testfil4_handling1.txt">
+        <Bevaras>true</Bevaras>
+      </Bilaga>
+      <Bilaga Namn="testfil5_handling1.txt" Lank="testfil5_handling1.txt">
+        <Bevaras>true</Bevaras>
+      </Bilaga>
+      <Bilaga Namn="Remissvar_Formel_XY_KS2021_18.pdf" Lank="Remissvar_Formel_XY_KS2021_18.pdf">
+        <Bevaras>true</Bevaras>
+      </Bilaga>
+      <Bilaga Namn="Återkommande.docx" Lank="Återkommande.docx">
+        <Bevaras>true</Bevaras>
+      </Bilaga>
+      <Bilaga Namn="Återkommande.docx" Lank="Återkommande.docx">
+        <Bevaras>true</Bevaras>
+      </Bilaga>
+      <Bilaga Namn="Tjosanhejsan Grodanboll student.docx" Lank="Tjosanhejsan Grodanboll student.docx">
+        <Bevaras>true</Bevaras>
+      </Bilaga>
+      <Bilaga Namn="Återkommande.docx" Lank="Återkommande.docx">
+        <Bevaras>true</Bevaras>
+      </Bilaga>
+    </ArkivobjektHandling>
+    <ArkivobjektHandling>
+      <ArkivobjektID>2</ArkivobjektID>
+      <KlassReferens>0</KlassReferens>
+      <Handlingstyp>Återkommande</Handlingstyp>
+      <Rubrik>Återkommande.doc</Rubrik>
+      <Skapad>2016-05-10</Skapad>
+      <Bilaga Namn="Återkommande.doc" Lank="Återkommande.doc">
+        <Bevaras>true</Bevaras>
+      </Bilaga>
+      <Bilaga Namn="Antikvarisk.doc" Lank="Antikvarisk.doc">
+        <Bevaras>true</Bevaras>
+      </Bilaga>
+      <Bilaga Namn="Tesutskottet 2017-12-24 XYZ (2017-12-24 TN §1).doc" Lank="Tesutskottet 2017-12-24 XYZ (2017-12-24 TN §1).doc">
+        <Bevaras>true</Bevaras>
+      </Bilaga>
+      <Bilaga Namn="Antikvarisk.doc" Lank="Antikvarisk.doc">
+        <Bevaras>true</Bevaras>
+      </Bilaga>
+      <Bilaga Namn="Återkommande.doc" Lank="Återkommande.doc">
+        <Bevaras>true</Bevaras>
+      </Bilaga>
+      <Bilaga Namn="Återkommande.doc" Lank="Återkommande.doc">
+        <Bevaras>true</Bevaras>
+      </Bilaga>
+      <Bilaga Namn="Utbildingsmaterial_for_Slutgiltig.pptx" Lank="Utbildingsmaterial_for_Slutgiltig.pptx">
+        <Bevaras>true</Bevaras>
+      </Bilaga>
+      <Bilaga Namn="Rutin - komplettering till överklagande av planer.docx" Lank="Rutin - komplettering till överklagande av planer.docx">
+        <Bevaras>true</Bevaras>
+      </Bilaga>
+      <Bilaga Namn="meddelande.txt" Lank="meddelande.txt">
+        <Bevaras>true</Bevaras>
+      </Bilaga>
+      <Bilaga Namn="meddelande.txt" Lank="meddelande.txt">
+        <Bevaras>true</Bevaras>
+      </Bilaga>
+      <Bilaga Namn="R2D2 2020 X1 Snabbguide.pdf" Lank="R2D2 2020 X1 Snabbguide.pdf">
+        <Bevaras>true</Bevaras>
+      </Bilaga>
+      <Bilaga Namn="Återkommande.docx" Lank="Återkommande.docx">
+        <Bevaras>true</Bevaras>
+      </Bilaga>
+      <Bilaga Namn="Antikvarisk.docx" Lank="Antikvarisk.docx">
+        <Bevaras>true</Bevaras>
+      </Bilaga>
+      <Bilaga Namn="Tjosanhejsan Remiss.docx" Lank="Tjosanhejsan Remiss.docx">
+        <Bevaras>true</Bevaras>
+      </Bilaga>
+      <Bilaga Namn="meddelande.txt" Lank="meddelande.txt">
+        <Bevaras>true</Bevaras>
+      </Bilaga>
+      <Bilaga Namn="Testmöte Pippi (2022-02-18 TN §1).docx" Lank="Testmöte Pippi (2022-02-18 TN §1).docx">
+        <Bevaras>true</Bevaras>
+      </Bilaga>
+      <Bilaga Namn="Återkommande.docx" Lank="Återkommande.docx">
+        <Bevaras>true</Bevaras>
+      </Bilaga>
+      <Bilaga Namn="paragraf.txt" Lank="paragraf.txt">
+        <Bevaras>true</Bevaras>
+      </Bilaga>
+      <Bilaga Namn="Ordforandebeslut SL.docx" Lank="Ordforandebeslut SL.docx">
+        <Bevaras>true</Bevaras>
+      </Bilaga>
+      <Bilaga Namn="Antikvarisk.docx" Lank="Antikvarisk.docx">
+        <Bevaras>true</Bevaras>
+      </Bilaga>
+      <Bilaga Namn="Tjansteutlatande.docx" Lank="Tjansteutlatande.docx">
+        <Bevaras>true</Bevaras>
+      </Bilaga>
+      <Bilaga Namn="Antikvarisk.docx" Lank="Antikvarisk.docx">
+        <Bevaras>true</Bevaras>
+      </Bilaga>
+      <Bilaga Namn="Antikvarisk.docx" Lank="Antikvarisk.docx">
+        <Bevaras>true</Bevaras>
+      </Bilaga>
+      <Bilaga Namn="Antikvarisk.docx" Lank="Antikvarisk.docx">
+        <Bevaras>true</Bevaras>
+      </Bilaga>
+      <Bilaga Namn="Dalandebeslut.docx" Lank="Dalandebeslut.docx">
+        <Bevaras>true</Bevaras>
+      </Bilaga>
+      <Bilaga Namn="Återkommande.docx" Lank="Återkommande.docx">
+        <Bevaras>true</Bevaras>
+      </Bilaga>
+      <Bilaga Namn="Protokoll § 2.docx" Lank="Protokoll § 2.docx">
+        <Bevaras>true</Bevaras>
+      </Bilaga>
+      <Bilaga Namn="Testutskottet 2022-07-08 (2022-07-08 TN §3).docx" Lank="Testutskottet 2022-07-08 (2022-07-08 TN §3).docx">
+        <Bevaras>true</Bevaras>
+      </Bilaga>
+      <Bilaga Namn="Tjosanhejsan Lovisa.docx" Lank="Tjosanhejsan Lovisa.docx">
+        <Bevaras>true</Bevaras>
+      </Bilaga>
+      <Bilaga Namn="Brev.docx" Lank="Brev.docx">
+        <Bevaras>true</Bevaras>
+      </Bilaga>
+      <Bilaga Namn="Antikvarisk.docx" Lank="Antikvarisk.docx">
+        <Bevaras>true</Bevaras>
+      </Bilaga>
+      <Bilaga Namn="Återkommande.docx" Lank="Återkommande.docx">
+        <Bevaras>true</Bevaras>
+      </Bilaga>
+      <Bilaga Namn="testfil1_handling2.txt" Lank="testfil1_handling2.txt">
+        <Bevaras>true</Bevaras>
+      </Bilaga>
+      <Bilaga Namn="testfil2_handling2.txt" Lank="testfil2_handling2.txt">
+        <Bevaras>true</Bevaras>
+      </Bilaga>
+      <Bilaga Namn="testfil3_handling2.txt" Lank="testfil3_handling2.txt">
+        <Bevaras>true</Bevaras>
+      </Bilaga>
+      <Bilaga Namn="testfil4_handling2.txt" Lank="testfil4_handling2.txt">
+        <Bevaras>true</Bevaras>
+      </Bilaga>
+      <Bilaga Namn="testfil5_handling2.txt" Lank="testfil5_handling2.txt">
+        <Bevaras>true</Bevaras>
+      </Bilaga>
+      <Bilaga Namn="Antikvarisk.docx" Lank="Antikvarisk.docx">
+        <Bevaras>true</Bevaras>
+      </Bilaga>
+      <Bilaga Namn="Testutskottet 2022-06-02 (2022-06-02 TN §2).docx" Lank="Testutskottet 2022-06-02 (2022-06-02 TN §2).docx">
+        <Bevaras>true</Bevaras>
+      </Bilaga>
+    </ArkivobjektHandling>
+    <ArkivobjektHandling>
+      <ArkivobjektID>3</ArkivobjektID>
+      <KlassReferens>0</KlassReferens>
+      <Handlingstyp>Protokoll</Handlingstyp>
+      <Rubrik>Antikvarisk.doc</Rubrik>
+      <Skapad>2017-03-16</Skapad>
+      <Bilaga Namn="Återkommande.doc" Lank="Återkommande.doc">
+        <Bevaras>true</Bevaras>
+      </Bilaga>
+      <Bilaga Namn="Utbildingsmaterial_for_Slutgiltig.pptx" Lank="Utbildingsmaterial_for_Slutgiltig.pptx">
+        <Bevaras>true</Bevaras>
+      </Bilaga>
+      <Bilaga Namn="Rutin - komplettering till överklagande av planer.docx" Lank="Rutin - komplettering till överklagande av planer.docx">
+        <Bevaras>true</Bevaras>
+      </Bilaga>
+      <Bilaga Namn="meddelande.txt" Lank="meddelande.txt">
+        <Bevaras>true</Bevaras>
+      </Bilaga>
+      <Bilaga Namn="Antikvarisk.docx" Lank="Antikvarisk.docx">
+        <Bevaras>true</Bevaras>
+      </Bilaga>
+      <Bilaga Namn="Tjosanhejsan Remiss.docx" Lank="Tjosanhejsan Remiss.docx">
+        <Bevaras>true</Bevaras>
+      </Bilaga>
+      <Bilaga Namn="meddelande.txt" Lank="meddelande.txt">
+        <Bevaras>true</Bevaras>
+      </Bilaga>
+      <Bilaga Namn="Antikvarisk.docx" Lank="Antikvarisk.docx">
+        <Bevaras>true</Bevaras>
+      </Bilaga>
+      <Bilaga Namn="Namndens_yttrande SL.docx" Lank="Namndens_yttrande SL.docx">
+        <Bevaras>true</Bevaras>
+      </Bilaga>
+      <Bilaga Namn="Protokoll § 1.docx" Lank="Protokoll § 1.docx">
+        <Bevaras>true</Bevaras>
+      </Bilaga>
+      <Bilaga Namn="Testutskottet 2022-09-21 (2022-09-21 TN §2).docx" Lank="Testutskottet 2022-09-21 (2022-09-21 TN §2).docx">
+        <Bevaras>true</Bevaras>
+      </Bilaga>
+      <Bilaga Namn="Brev.docx" Lank="Brev.docx">
+        <Bevaras>true</Bevaras>
+      </Bilaga>
+      <Bilaga Namn="Protokoll § 2.docx" Lank="Protokoll § 2.docx">
+        <Bevaras>true</Bevaras>
+      </Bilaga>
+      <Bilaga Namn="Antikvarisk.docx" Lank="Antikvarisk.docx">
+        <Bevaras>true</Bevaras>
+      </Bilaga>
+      <Bilaga Namn="Antikvarisk.docx" Lank="Antikvarisk.docx">
+        <Bevaras>true</Bevaras>
+      </Bilaga>
+    </ArkivobjektHandling>
+    <ArkivobjektHandling>
+      <ArkivobjektID>4</ArkivobjektID>
+      <KlassReferens>0</KlassReferens>
+      <Handlingstyp>Protokoll</Handlingstyp>
+      <Rubrik>Antikvarisk.doc</Rubrik>
+      <Skapad>2017-04-08</Skapad>
+      <Bilaga Namn="Antikvarisk.doc" Lank="Antikvarisk.doc">
+        <Bevaras>true</Bevaras>
+      </Bilaga>
+      <Bilaga Namn="Återkommande.doc" Lank="Återkommande.doc">
+        <Bevaras>true</Bevaras>
+      </Bilaga>
+      <Bilaga Namn="Remissvar från kommunstyrelsen.docx" Lank="Remissvar från kommunstyrelsen.docx">
+        <Bevaras>true</Bevaras>
+      </Bilaga>
+      <Bilaga Namn="meddelande.txt" Lank="meddelande.txt">
+        <Bevaras>true</Bevaras>
+      </Bilaga>
+      <Bilaga Namn="Remissvar.docx" Lank="Remissvar.docx">
+        <Bevaras>true</Bevaras>
+      </Bilaga>
+      <Bilaga Namn="meddelande.txt" Lank="meddelande.txt">
+        <Bevaras>true</Bevaras>
+      </Bilaga>
+      <Bilaga Namn="Tesutskottet Valentin (2022-02-15 TN §2).docx" Lank="Tesutskottet Valentin (2022-02-15 TN §2).docx">
+        <Bevaras>true</Bevaras>
+      </Bilaga>
+      <Bilaga Namn="Återkommande.docx" Lank="Återkommande.docx">
+        <Bevaras>true</Bevaras>
+      </Bilaga>
+      <Bilaga Namn="Forvaltningens_yttrande SL.docx" Lank="Forvaltningens_yttrande SL.docx">
+        <Bevaras>true</Bevaras>
+      </Bilaga>
+      <Bilaga Namn="Antikvarisk.docx" Lank="Antikvarisk.docx">
+        <Bevaras>true</Bevaras>
+      </Bilaga>
+      <Bilaga Namn="Testutskottet 2022-07-08 (2022-07-08 TN §4).docx" Lank="Testutskottet 2022-07-08 (2022-07-08 TN §4).docx">
+        <Bevaras>true</Bevaras>
+      </Bilaga>
+    </ArkivobjektHandling>
+    <ArkivobjektHandling>
+      <ArkivobjektID>5</ArkivobjektID>
+      <KlassReferens>0</KlassReferens>
+      <Handlingstyp>Protokoll</Handlingstyp>
+      <Rubrik>Antikvarisk.doc</Rubrik>
+      <Skapad>2017-06-19</Skapad>
+      <Bilaga Namn="Antikvarisk.doc" Lank="Antikvarisk.doc">
+        <Bevaras>true</Bevaras>
+      </Bilaga>
+      <Bilaga Namn="Återkommande.doc" Lank="Återkommande.doc">
+        <Bevaras>true</Bevaras>
+      </Bilaga>
+      <Bilaga Namn="meddelande.txt" Lank="meddelande.txt">
+        <Bevaras>true</Bevaras>
+      </Bilaga>
+      <Bilaga Namn="Antikvarisk.docx" Lank="Antikvarisk.docx">
+        <Bevaras>true</Bevaras>
+      </Bilaga>
+      <Bilaga Namn="Dalandebeslut SL.docx" Lank="Dalandebeslut SL.docx">
+        <Bevaras>true</Bevaras>
+      </Bilaga>
+    </ArkivobjektHandling>
+    <ArkivobjektHandling>
+      <ArkivobjektID>6</ArkivobjektID>
+      <KlassReferens>0</KlassReferens>
+      <Handlingstyp>Protokoll</Handlingstyp>
+      <Rubrik>Antikvarisk.doc</Rubrik>
+      <Skapad>2017-09-05</Skapad>
+      <Bilaga Namn="Antikvarisk.doc" Lank="Antikvarisk.doc">
+        <Bevaras>true</Bevaras>
+      </Bilaga>
+      <Bilaga Namn="Antikvarisk.docx" Lank="Antikvarisk.docx">
+        <Bevaras>true</Bevaras>
+      </Bilaga>
+    </ArkivobjektHandling>
+    <ArkivobjektHandling>
+      <ArkivobjektID>7</ArkivobjektID>
+      <KlassReferens>0</KlassReferens>
+      <Handlingstyp>Återkommande</Handlingstyp>
+      <Rubrik>Återkommande.doc</Rubrik>
+      <Skapad>2017-09-05</Skapad>
+      <Bilaga Namn="Återkommande.doc" Lank="Återkommande.doc">
+        <Bevaras>true</Bevaras>
+      </Bilaga>
+      <Bilaga Namn="Återkommande.docx" Lank="Återkommande.docx">
+        <Bevaras>true</Bevaras>
+      </Bilaga>
+    </ArkivobjektHandling>
+    <ArkivobjektHandling>
+      <ArkivobjektID>8</ArkivobjektID>
+      <KlassReferens>0</KlassReferens>
+      <Handlingstyp>Protokoll</Handlingstyp>
+      <Rubrik>Antikvarisk.doc</Rubrik>
+      <Skapad>2017-09-05</Skapad>
+      <Bilaga Namn="Antikvarisk.doc" Lank="Antikvarisk.doc">
+        <Bevaras>true</Bevaras>
+      </Bilaga>
+      <Bilaga Namn="Återkommande.docx" Lank="Återkommande.docx">
+        <Bevaras>true</Bevaras>
+      </Bilaga>
+    </ArkivobjektHandling>
+    <ArkivobjektHandling>
+      <ArkivobjektID>9</ArkivobjektID>
+      <KlassReferens>0</KlassReferens>
+      <Handlingstyp>Återkommande</Handlingstyp>
+      <Rubrik>Återkommande.doc</Rubrik>
+      <Skapad>2018-01-30</Skapad>
+      <Bilaga Namn="Återkommande.doc" Lank="Återkommande.doc">
+        <Bevaras>true</Bevaras>
+      </Bilaga>
+      <Bilaga Namn="Återkommande.docx" Lank="Återkommande.docx">
+        <Bevaras>true</Bevaras>
+      </Bilaga>
+    </ArkivobjektHandling>
+    <ArkivobjektHandling>
+      <ArkivobjektID>10</ArkivobjektID>
+      <KlassReferens>0</KlassReferens>
+      <Handlingstyp>Protokoll</Handlingstyp>
+      <Rubrik>Antikvarisk.doc</Rubrik>
+      <Skapad>2018-03-15</Skapad>
+      <Bilaga Namn="Antikvarisk.doc" Lank="Antikvarisk.doc">
+        <Bevaras>true</Bevaras>
+      </Bilaga>
+      <Bilaga Namn="Antikvarisk.docx" Lank="Antikvarisk.docx">
+        <Bevaras>true</Bevaras>
+      </Bilaga>
+    </ArkivobjektHandling>
+    <ArkivobjektHandling>
+      <ArkivobjektID>11</ArkivobjektID>
+      <KlassReferens>0</KlassReferens>
+      <Handlingstyp>Återkommande</Handlingstyp>
+      <Rubrik>Återkommande.doc</Rubrik>
+      <Skapad>2018-03-15</Skapad>
+      <Bilaga Namn="Återkommande.doc" Lank="Återkommande.doc">
+        <Bevaras>true</Bevaras>
+      </Bilaga>
+    </ArkivobjektHandling>
+    <ArkivobjektHandling>
+      <ArkivobjektID>12</ArkivobjektID>
+      <KlassReferens>0</KlassReferens>
+      <Handlingstyp>Protokoll</Handlingstyp>
+      <Rubrik>Antikvarisk.doc</Rubrik>
+      <Skapad>2018-03-15</Skapad>
+      <Bilaga Namn="Antikvarisk.doc" Lank="Antikvarisk.doc">
+        <Bevaras>true</Bevaras>
+      </Bilaga>
+    </ArkivobjektHandling>
+    <ArkivobjektHandling>
+      <ArkivobjektID>13</ArkivobjektID>
+      <KlassReferens>0</KlassReferens>
+      <Handlingstyp>Återkommande</Handlingstyp>
+      <Rubrik>Återkommande.doc</Rubrik>
+      <Skapad>2018-03-20</Skapad>
+      <Bilaga Namn="Återkommande.doc" Lank="Återkommande.doc">
+        <Bevaras>true</Bevaras>
+      </Bilaga>
+    </ArkivobjektHandling>
+    <ArkivobjektHandling>
+      <ArkivobjektID>14</ArkivobjektID>
+      <KlassReferens>0</KlassReferens>
+      <Handlingstyp>Återkommande</Handlingstyp>
+      <Rubrik>Återkommande.doc</Rubrik>
+      <Skapad>2018-03-20</Skapad>
+      <Bilaga Namn="Återkommande.doc" Lank="Återkommande.doc">
+        <Bevaras>true</Bevaras>
+      </Bilaga>
+    </ArkivobjektHandling>
+    <ArkivobjektHandling>
+      <ArkivobjektID/>
+    </ArkivobjektHandling>
+  </ArkivobjektListaHandlingar>
+</Leveransobjekt>
