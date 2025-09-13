@@ -45,6 +45,7 @@
 
 ## Ideas :star:
 
+- [ ] Implement better support for DILCIS.eu/XML/ERMS (see Known issues)
 - [ ] New tab Output Analyser
 - [ ] XSD Analyser
 - [ ] Extract metadata from files
@@ -60,8 +61,16 @@
   
 ---
 
-## Kända problem/fix :warning:
+## Known issues :warning:
 
+- [ ] XSLT Generation: Not possible to have parallell children to root element, like DILCIS.eu/XML/ERMS mandates:
+  	```
+   <erms>
+		<control>...</control>
+   		<aggregations>...</control>
+   </erms>
+	``` 
+	  
 - [ ] Not possible to name the xml file when using "Generate, Transform and Validate in one go".
 - [ ] If you use more than one screen, the pop-up windows might turn up on another screen than expected.
 - [ ] There are cases where you need to restart Buddysbuddy to generate xslt, since there are no delete buttons. It's not always possible to delete values manually.
