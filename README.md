@@ -71,6 +71,8 @@
    </erms>
 	``` 
 	  
+- [ ] When loading input file after xsd file, it overrides "-> XSD Element" under "Add New Simple Mapping". Workaround: Load xsd after input file.
+- [ ] Sometimes dropdowns can be too large in vertical size so that the arrow to the right is hidden.
 - [ ] Not possible to name the xml file when using "Generate, Transform and Validate in one go".
 - [ ] If you use more than one screen, the pop-up windows might turn up on another screen than expected.
 - [ ] There are cases where you need to restart Buddysbuddy to generate xslt, since there are no delete buttons. It's not always possible to delete values manually.
