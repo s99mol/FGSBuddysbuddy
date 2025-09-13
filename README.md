@@ -13,20 +13,12 @@
 ---
 
 ## Features :star:
-* Huvudflöde:
-  *   Välj antingen csv-fil med rubriker (encoding UTF-8, defaultseparator är semikolon) eller en xml-fil med flat strutur.
-  *   Välj matchande xslt-fil där rubrikerna i csv-filen eller taggar i xml-filen mappar mot värden i xslt-filen.
-  *   Välj xml-schemafil (.xsd) om du vill validera filen i samband med skapandet.
-  *   Namnge xml-outputfilen (om du vill ändra default).
-  *   Välj outputkatalog (om du vill ändra default).
-  *   Skapa filen!
-  *   Välj filen som metadatafil i [FGS Buddy](https://github.com/Viktor-Lundberg/FGSBuddy) och skapa FGS-paket.
-* Samt:
-	* Validera färdig xml-fil separat
-	* Plocka ut statistik från csv-inputfil
-	* Schematron-validering genom att välja schematronfil som schemafile (v.0.2.0).
-	
-	Se även systemtestcasen redovisade i releasenotes. I mappen Testdata finns testfiler som kan användas för att bekanta sig med Buddysbuddy.
+* Tabs:
+  *	Input Analyser: Preview data viewer as table and by selected hierarchy keys. Pass selected keys to XSLT Mapper.
+  *	XSLT Mapper: Map input file headers to schema (xsd) and genereate xslt mapping file. Option to generate, transform and validate in one go.
+  *	Transformer: Transform with optional xsd validation
+  *	Validator: Validate against xsd or Schematron (sch).
+  *	Package Creater: A reference to FGS Buddy
 	
 	[![Screenshot1](Screenshots/fgsbuddysbuddy_screen1.png "Liten skärmdump 1, klicka för större")](Screenshots/fgsbuddysbuddy_screen1_big.png "Stor skärmdump 1")[![Screenshot2](Screenshots/fgsbuddysbuddy_screen2.png "Liten skärmdump 2, klicka för större")](Screenshots/fgsbuddysbuddy_screen2_big.png "Stor skärmdump 2")
 
@@ -55,15 +47,9 @@
 
 ## Ideas :star:
 
-- [x] Funktion för uuid-tilldelning (v.0.2.0)
-- [ ] Jämföra inputdata med outputdata i syfte att säkerställa processuell kvalitet
-- [ ] Editering av xslt och ev schematron
-- [ ] Xml till csv-konvertering
-- [ ] Ta fram .exe-fil för Windows
-- [ ] Ta fram .dmg-fil för Mac
-- [ ] Language-files
-- [ ] Anpassa testdatat till FGS 2.0
-- [ ] Extrahera metadata från filer
+- [ ] New tab Output Analyser
+- [ ] XSD Analyser
+- [ ] Extract metadata from files
 
 
 ---
@@ -81,17 +67,10 @@
 * :exclamation: Rekommendation: Installera FGS-buddysbuddy på en lokal disk (exempelvis c:). Applikationen kan ta lång tid att starta om den körs från en nätverksdisk. 
 * :exclamation: Rekommendation: Kör skriptet och de framtida programfilerna från katalog du som användare har skrivbehörighet till. Fil skrivs till current working directory i de flesta funktionerna.
 * :question: Möjligen: Tooltips på flera rader laddas inte alltid. - workaround flytta muspekaren från fältet och försök igen.
-- [ ] Det går säkert att lägga in mer exception-hantering.
-- [x] Uuid-tilldelningen finns endast för specifik mappning (v.0.2.0).
-- [x] Group-funktion i statistikfunktionen kräver en rubrik 'Lank' (v.0.2.0).
-- [ ] Huvudmenyn fungerar inte på Mac, åtminstone inte M1.
-- [ ] Allmän koduppstädning och bättre lösningar.
-- [ ] Missvisande felmeddelande när man försöker skapa statistik från en xml-fil.
-- [ ] På Mac får kolumnerna i statistikoutputen i det stora fönstret inte rak vänsterjustering.
-- [ ] Om man först angett schemafil och sedan vill köra utan kan det vara nödvändigt att starta om programmet.
-- [ ] Vid sällsynta tillfällen ges felet "Start tag expected, '<' not found, line 1, column 1" fast det är en csv-fil som inputfil. Workaround: Starta om och försök igen.
-- [x] Fixa i testmappens testxslt.xsl så att tomma taggar utesluts och lägg in kommentarer (v.0.2.0).
-- [x] Det ska vara FGS Buddysbuddy och inte FGS-Buddysbuddy (v.0.2.0).
+- [ ] Not possible to name the xml file when using "Generate, Transform and Validate in one go".
+- [ ] If you use more than one screen, the pop-up windows might turn up on another screen than expected.
+- [ ] There are cases where you need to restart Buddysbuddy to generate xslt, since there are no delete buttons. It's not always possible to delete values manually.
+- [ ] When configuring XSLT hierarchy with objects without a mapping, all input data is dumped into the xsl since there is no template. This should be fixed by creating empty templates.
 
 ---
 
