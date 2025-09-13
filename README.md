@@ -63,7 +63,7 @@
 
 ## Known issues :warning:
 
-- [ ] XSLT Generation: Not possible to have parallell children to root element, like DILCIS.eu/XML/ERMS mandates:
+- [ ] XSLT Generation: Not possible to have parallel children to root element, like DILCIS.eu/XML/ERMS mandates:
   	```
    <erms>
 		<control>...</control>
