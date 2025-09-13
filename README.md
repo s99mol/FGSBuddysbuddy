@@ -67,7 +67,7 @@
   	```
    <erms>
 		<control>...</control>
-   		<aggregations>...</control>
+       <aggregations>...</aggregations>
    </erms>
 	``` 
 	  
