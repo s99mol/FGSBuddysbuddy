@@ -11,7 +11,7 @@
 
 ---
 
-## Features :star:
+## Features (more info to come):star:
 * Tab 1: Input Analyser: Preview data as table and by selected hierarchy keys. Pass selected keys to XSLT Mapper.
 * Tab 2: XSLT Mapper: Map input file headers to schema (xsd) and genereate xslt mapping file. Option to generate, transform and validate in one go.
 * Tab 3: Transformer: Transform with optional xsd validation
