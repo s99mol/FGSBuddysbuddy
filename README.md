@@ -1,4 +1,4 @@
-# FGS Buddysbuddy (readme is being updated) :sunglasses:
+# FGS Buddysbuddy v 0.3.0 :sunglasses:
 
  <img align="left" src="Buddysbuddy.ico" alt="Buddysbuddy-logotyp"> En GUI-försedd metadataomat inom Buddy-projektet. Buddy-projektet vänder sig till arkivarier och sådana som håller på med strukturerad metadata inom arkivdomänen, och alla andra.
 <br/>
@@ -63,6 +63,7 @@
 
 ## Known issues :warning:
 
+- [ ] XSLT Generation: Root cause to rarely occuring crashing scenario on click 'Generate XSLT' still not found.
 - [ ] XSLT Generation: Not possible to have parallel children to root element, like DILCIS.eu/XML/ERMS mandates:
   	```
    <erms>
