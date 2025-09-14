@@ -1,8 +1,8 @@
 # FGS Buddysbuddy v 0.3.0 :sunglasses:
 
- <img align="left" src="Buddysbuddy.ico" alt="Buddysbuddy-logotyp"> En GUI-försedd metadataomat inom Buddy-projektet. Buddy-projektet vänder sig till arkivarier och sådana som håller på med strukturerad metadata inom arkivdomänen, och alla andra.
+ <img align="left" src="Buddysbuddy.ico" alt="Buddysbuddy-logotyp"> En GUI-försedd metadataomat inom Buddy-projektet. Buddy-projektet vänder sig till arkivarier och sådana som håller på med metadata inom arkivdomänen, och alla andra.
 <br/>
-<br/>
+<br/>A GUI-equipped metadataomat within the Buddy Project. The Buddy Project is for those working with metadata within the archival domain, and everyone else.
 <br/>
 <br/>
 <br/>
