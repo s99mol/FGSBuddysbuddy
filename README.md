@@ -14,6 +14,7 @@
 ## Features (more info to come) :star:
 * Tab 1: Input Analyser: Preview data as table and by selected hierarchy keys. Pass selected keys to XSLT Mapper.
 * Tab 2: XSLT Mapper: Map input file headers to schema (xsd) and genereate xslt mapping file. Option to generate, transform and validate in one go.
+	* Please note that mapping of keys are done in 3. Configure XSLT Hierarchy.
 * Tab 3: Transformer: Transform with optional xsd validation
 * Tab 4: Validator: Validate against xsd or Schematron (sch).
 * Tab 5: Package Creater: A reference to FGS Buddy
@@ -73,10 +74,10 @@
 	``` 
 	  
 - [ ] When loading input file after xsd file, it overrides "-> XSD Element" under "Add New Simple Mapping". Workaround: Load xsd after input file.
-- [ ] Sometimes dropdowns can be too large in vertical size so that the arrow to the right is hidden.
+- [ ] When re-loading xsd file, dropdowns can be too large in vertical size so that the arrow to the right is hidden. Workaround: Load once only.
 - [ ] Not possible to name the xml file when using "Generate, Transform and Validate in one go".
 - [ ] If you use more than one screen, the pop-up windows might turn up on another screen than expected.
-- [ ] There are cases where you need to restart Buddysbuddy to generate xslt, since there are no delete buttons. It's not always possible to delete values manually.
+- [ ] There are cases where you need to restart Buddysbuddy to generate xslt, since there are no delete buttons. It's not always possible to delete values manually. On rare occasions, this can cause a crash (key error).
 - [ ] When configuring XSLT hierarchy with objects without a mapping, all input data is dumped into the xsl since there is no template. This should be fixed by creating empty templates.
 - [ ] Messy code: Implement a better template for xslt generation to separate templating logic from Python code.
 
