@@ -12,12 +12,12 @@
 ---
 
 ## Features (more info to come) :star:
-* Tab 1: Input Analyser: Preview data as table and by selected hierarchy keys. Pass selected keys to XSLT Mapper.
-* Tab 2: XSLT Mapper: Map input file headers to schema (xsd) and genereate xslt mapping file. Option to generate, transform and validate in one go.
+* Tab 1 Input Analyser: Preview data as table and by selected hierarchy keys. Pass selected keys to XSLT Mapper.
+* Tab 2 XSLT Mapper: Map input file headers to schema (xsd) and genereate xslt mapping file. Option to generate, transform and validate in one go.
 	* Please note that mapping of keys are done in 3. Configure XSLT Hierarchy.
-* Tab 3: Transformer: Transform with optional xsd validation
-* Tab 4: Validator: Validate against xsd or Schematron (sch).
-* Tab 5: Package Creater: A reference to FGS Buddy
+* Tab 3 Transformer: Transform with optional xsd validation
+* Tab 4 Validator: Validate against xsd or Schematron (sch).
+* Tab 5 Package Creator: A reference to FGS Buddy
 	
 	[![Screenshot1](Screenshots/fgsbuddysbuddy_screen1.png "Liten skärmdump 1, klicka för större")](Screenshots/fgsbuddysbuddy_screen1_big.png "Stor skärmdump 1")[![Screenshot2](Screenshots/fgsbuddysbuddy_screen2.png "Liten skärmdump 2, klicka för större")](Screenshots/fgsbuddysbuddy_screen2_big.png "Stor skärmdump 2")
 
