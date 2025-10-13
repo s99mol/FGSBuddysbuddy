@@ -1,5 +1,8 @@
-Version 0.3.0 2025-09-07
+Version 0.3.1 2025-10-13
+Fixed when loading input file after xsd file, it overwrites "-> XSD Element" under "Add New Simple Mapping".
+Fixed when re-loading xsd file, dropdowns can be too large in vertical size so that the arrow to the right is hidden.
 
+Version 0.3.0 2025-09-07
 Substantially reworked with new tab based GUI:
 * Input Analyser: Load xml, json or csv as input file, preview as table & hierarchy and pass keys to XSLT Mapper tab.
 * XSLT Mapper: Map objects, configure xslt and generate files (xslt, xml).
