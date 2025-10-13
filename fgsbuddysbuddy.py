@@ -38,7 +38,7 @@ import pandas as pd
 
 # --- Global Variables & Constants ---
 
-VERSION = '0.3.0'
+VERSION = '0.3.1'
 CWD = os.getcwd()
 HOME = Path.home()
 TEMP_XML_FILE = None
@@ -47,6 +47,7 @@ current_object_mappings = []
 csv_headers_list = []
 xsd_elements_list = []
 object_count = 0
+current_data_type = 'none'
 
 
 # --- Helper Functions ---
@@ -974,10 +975,13 @@ def add_new_config_frame(window, preselected_key=None, onetomany_trigger=None):
     trigger_default = onetomany_trigger or ''
     related_fields_disabled = not repeat_enabled_default
     
+    # separate lines for text and dropdown
     repeating_element_frame = [
-        [sg.Checkbox('Enable One-to-Many', key=f'-REPEAT_ENABLE_{object_count}-', default=repeat_enabled_default, enable_events=True)],
-        [sg.Text('└ Repeating Object Type:', size=(22,1)), sg.Combo(values=list(created_objects.keys()), size=(30, 1), key=f'-REPEAT_OBJECT_TYPE_{object_count}-', readonly=False, disabled=related_fields_disabled)],
-        [sg.Text('└ Source Column for Repetition:', size=(22,1)), sg.Combo(values=csv_headers_list, size=(30, 1), key=f'-REPEAT_CSV_TRIGGER_{object_count}-', default_value=trigger_default, readonly=False, disabled=related_fields_disabled)],
+        [sg.Checkbox('Enable One-to-Many', pad=(5, 0), key=f'-REPEAT_ENABLE_{object_count}-', default=repeat_enabled_default, enable_events=True)],
+        [sg.Text('└ Repeating Object Type:', pad=(5, 0), size=(22,1))],
+        [sg.Combo(values=list(created_objects.keys()), size=(30, 1), pad=(5, 0), key=f'-REPEAT_OBJECT_TYPE_{object_count}-', readonly=False, disabled=related_fields_disabled)],
+        [sg.Text('└ Source Column for Repetition:', size=(22,1), pad=(5, 0))],
+        [sg.Combo(values=csv_headers_list, size=(30, 1), pad=(5, 0), key=f'-REPEAT_CSV_TRIGGER_{object_count}-', default_value=trigger_default, readonly=False, disabled=related_fields_disabled)],
     ]
     key_combination_option = [[
         sg.Checkbox('Combine Key with Parent Key', key=f'-COMBINE_KEY_{object_count}-', default=False, enable_events=True),
@@ -986,12 +990,17 @@ def add_new_config_frame(window, preselected_key=None, onetomany_trigger=None):
     ]]
     
     new_rows = [[sg.Frame(f"Config {object_count}", [
-            [sg.Text(f"Object Type:*", size=(22,1)), sg.Combo(values=list(created_objects.keys()), size=(30, 1), key=f'-OBJECT_TYPE_{object_count}-', readonly=True)],
-            [sg.Text(f"Grouping Key (Input):*", size=(22,1)), sg.Combo(values=csv_headers_list, size=(30, 1), key=f'-ID_CSV_{object_count}-', default_value=preselected_key or '')],
-            [sg.Text(f"Grouping Key (XSD):*", size=(22,1)), sg.Combo(values=xsd_elements_list, size=(30, 1), key=f'-ID_XSD_{object_count}-')],
+            [sg.Text(f"Object Type:*", size=(22,1), pad=(5, 0))],
+            [sg.Combo(values=list(created_objects.keys()), size=(30, 1), pad=(5, 0), key=f'-OBJECT_TYPE_{object_count}-', readonly=True)],
+            [sg.Text(f"Grouping Key (Input):*", size=(22,1), pad=(5, 0))],
+            [sg.Combo(values=csv_headers_list, size=(30, 1), pad=(5, 0), key=f'-ID_CSV_{object_count}-', default_value=preselected_key or '')],
+            [sg.Text(f"Grouping Key (XSD):*", size=(22,1), pad=(5, 0))],
+            [sg.Combo(values=xsd_elements_list, size=(30, 1), font=('Consolas', 10), pad=(5, 0), key=f'-ID_XSD_{object_count}-')],
             [sg.Frame('Key Options (for Level 2+)', key_combination_option, font='Arial 9 bold')],
-            [sg.Text(f"Wrapper Element Name:", size=(22,1)), sg.Combo(values=xsd_elements_list, size=(30, 1), key=f'-SUB_ELEMENT_{object_count}-')],
-            [sg.Text(f"System ID Attr Name:", size=(22,1)), sg.Combo(values=xsd_elements_list, size=(30, 1), key=f'-SYSID_XSD_{object_count}-', readonly=False, tooltip="The name of the attribute to receive the UUID.")],
+            [sg.Text(f"Wrapper Element Name:", size=(22,1), pad=(5, 0))],
+            [sg.Combo(values=xsd_elements_list, size=(30, 1), font=('Consolas', 10), pad=(5, 0), key=f'-SUB_ELEMENT_{object_count}-')],
+            [sg.Text(f"System ID Attr Name:", size=(22,1), pad=(5, 0))],
+            [sg.Combo(values=xsd_elements_list, size=(30, 1), font=('Consolas', 10), pad=(5, 0), key=f'-SYSID_XSD_{object_count}-', readonly=False, tooltip="The name of the attribute to receive the UUID.")],
             [sg.Frame('One-to-Many Settings', repeating_element_frame, font='Arial 9 bold')]
         ], font="Arial 10 bold")], [sg.HSeparator()]]
 
@@ -1192,7 +1201,7 @@ layout = [[sg.Menu(menu_def)],
           [sg.Frame('Input File All Tabs (CSV, XML, JSON):', [
                [sg.Input(key='-INPUT_FILE-', enable_events=True), 
                sg.FileBrowse(file_types=(("Input Files", "*.csv *.json *.xml"), ("All Files", "*.*"))),
-               sg.Text("CSV Separator:"), #, size=(12,1)
+               sg.Text("CSV Separator:"),
                sg.Combo([';', ',', ':', '|', '\t'], default_value=';', size=10, key='-SEPARATOR-')],
           ], expand_x=True)],
           
@@ -1236,6 +1245,7 @@ while True:
         webbrowser.open('https://github.com/Viktor-Lundberg/FGSBuddy')
         
     if event == '-INPUT_FILE-':
+        current_data_type = 'dt_csv'
         input_file = values['-INPUT_FILE-']
         if input_file and os.path.exists(input_file):
             window['-A_DATA_PREVIEW-'].update("Loading... Please wait...")
@@ -1266,32 +1276,27 @@ while True:
         key3_sugg = suggested_keys[2] if len(suggested_keys) > 2 else ""
         
         headers_with_blank = [''] + headers
-        window['-A_KEY1_SELECT-'].update(values=headers_with_blank, value=key1_sugg)
-        window['-A_KEY2_SELECT-'].update(values=headers_with_blank, value=key2_sugg)
-        window['-A_KEY3_SELECT-'].update(values=headers_with_blank, value=key3_sugg)
+
+        if current_data_type == 'dt_csv':
+            window['-A_KEY1_SELECT-'].update(values=headers_with_blank, value=key1_sugg)
+            window['-A_KEY2_SELECT-'].update(values=headers_with_blank, value=key2_sugg)
+            window['-A_KEY3_SELECT-'].update(values=headers_with_blank, value=key3_sugg)
         
-        window['-A_OTM_TRIGGER1-'].update(values=headers_with_blank, value='')
-        window['-A_OTM_TRIGGER2-'].update(values=headers_with_blank, value='')
-        window['-A_OTM_TRIGGER3-'].update(values=headers_with_blank, value='')
+            window['-A_OTM_TRIGGER1-'].update(values=headers_with_blank, value='')
+            window['-A_OTM_TRIGGER2-'].update(values=headers_with_blank, value='')
+            window['-A_OTM_TRIGGER3-'].update(values=headers_with_blank, value='')
+            
+            window["-SIMPLE_HEADER_VALUE-"].update(values=csv_headers_list)
+            window["-SIMPLE_ATTR_HEADER_VALUE-"].update(values=csv_headers_list)
+            for i in range(1, object_count + 1):
+                window[f'-ID_CSV_{i}-'].update(values=csv_headers_list)
+                window[f'-REPEAT_CSV_TRIGGER_{i}-'].update(values=csv_headers_list)
 
         window['-A_PREVIEW_TABLE-'].update(disabled=False)
         window['-A_PREVIEW_HIERARCHY-'].update(disabled=(len(suggested_keys) == 0))
         window['-A_USE_KEYS-'].update(disabled=(len(suggested_keys) == 0))
-        
-        print(f"✅ Loaded {len(df)} rows and {len(headers)} columns for analysis.")
-        
-        print("Updating XSLT Mapper dropdowns...")
-        if TEMP_XML_FILE and os.path.exists(TEMP_XML_FILE):
-             xsd_elements_list_from_xml = get_elements_from_xml(TEMP_XML_FILE)
-             window["-SIMPLE_XSD_ELEMENT-"].update(values=xsd_elements_list_from_xml)
-        
-        window["-SIMPLE_HEADER_VALUE-"].update(values=csv_headers_list)
-        window["-SIMPLE_ATTR_HEADER_VALUE-"].update(values=csv_headers_list)
-        for i in range(1, object_count + 1):
-            window[f'-ID_CSV_{i}-'].update(values=csv_headers_list)
-            window[f'-SYSID_XSD_{i}-'].update(values=csv_headers_list)
-            window[f'-REPEAT_CSV_TRIGGER_{i}-'].update(values=csv_headers_list)
 
+        print(f"✅ Loaded {len(df)} rows and {len(headers)} columns for analysis.")
         print(f"✅ Analysis complete. {len(df)} rows loaded.")
 
     elif event == '-DATA_LOAD_FAILED-':
@@ -1388,6 +1393,7 @@ while True:
            window['-SIMPLE_ATTR_FIXED_VALUE-'].update(disabled=False)
        
        elif event == "-XSD_FILE-":
+           current_data_type = 'dt_xsd'
            xsd_path = values["-XSD_FILE-"]
            if xsd_path and os.path.exists(xsd_path):
                xsd_elements_list, namespace, root = load_xsd_isolated(xsd_path)
