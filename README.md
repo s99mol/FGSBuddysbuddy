@@ -47,9 +47,11 @@
 ## Ideas :star:
 
 - [ ] Implement better support for DILCIS.eu/XML/ERMS (see Known issues)
+- [ ] More DILCIS.eu/XML/ERMS: Better support for Schematron validation
 - [ ] New tab Output Analyser
 - [ ] XSD Analyser
 - [ ] Extract metadata from files
+- [ ] Split the output xml into smaller files
 
 
 ---
