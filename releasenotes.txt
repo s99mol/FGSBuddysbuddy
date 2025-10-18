@@ -1,3 +1,6 @@
+Version 0.3.2 2025-10-18
+Improved detection of suggested root when loading xsd file.
+
 Version 0.3.1 2025-10-13
 Fixed when loading input file after xsd file, it overwrites "-> XSD Element" under "Add New Simple Mapping".
 Fixed when re-loading xsd file, dropdowns can be too large in vertical size so that the arrow to the right is hidden.
