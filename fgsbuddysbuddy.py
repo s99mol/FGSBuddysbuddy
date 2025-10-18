@@ -262,25 +262,51 @@ def flatten_xml_to_dataframe(xml_path):
 
            
 def load_xsd_isolated(file_path):
-    """Loads XSD elements, attributes, and targetNamespace."""
+    """Loads XSD elements, attributes, and targetNamespace with suggested root detection."""
+    
+    all_names = []
+    namespace = ''
+    suggested_root = ''
+    
     try:
         tree = etree.parse(file_path)
         root = tree.getroot()
         ns = {'xsd': 'http://www.w3.org/2001/XMLSchema'}
         namespace = root.attrib.get('targetNamespace', '')
-        
         elements = [elem.get('name') for elem in root.findall('.//xsd:element', ns) if elem.get('name')]
         attributes = [attr.get('name') for attr in root.findall('.//xsd:attribute', ns) if attr.get('name')]
         all_names = sorted(list(set(elements + attributes)))
         
-        top_level_elements = [elem.get('name') for elem in root.findall('./xsd:element', ns) if elem.get('name')]
-        suggested_root = top_level_elements[0] if top_level_elements else ''
+        all_top_level_names = [
+            elem.get('name') for elem in root.findall('./xsd:element', ns) if elem.get('name')
+        ]
+        
+        if not all_top_level_names:
+            suggested_root = ''
+            return all_names, namespace, suggested_root
+
+        first_element = root.findall('./xsd:element[1]', ns)
+        is_first_element_simple_type = False
+        
+        if first_element and 'type' in first_element[0].attrib:
+            type_value = first_element[0].attrib['type'].lower()
+            
+            simple_keywords = ['string', 'int', 'date', 'time', 'decimal', 'float', 'boolean', 'integer']
+            
+            if any(keyword in type_value for keyword in simple_keywords):
+                is_first_element_simple_type = True
+                
+        if is_first_element_simple_type and len(all_top_level_names) > 1:
+            suggested_root = all_top_level_names[-1]
+        else:
+            suggested_root = all_top_level_names[0]
         
         print(f"XSD loaded with {len(all_names)} elements/attributes. Namespace: {namespace or 'Not found'}.")
         return all_names, namespace, suggested_root
+        
     except Exception as e:
         sg.popup_error(f"Error loading XSD: {e}", icon=window_icon_b64, keep_on_top=True)
-        return [], '', ''
+        return all_names, namespace, suggested_root
 
 
 def get_elements_from_xml(xml_path):
