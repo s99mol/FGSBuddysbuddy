@@ -1,0 +1,126 @@
+{# Import the macros from our helper file #}
+{% import '_helpers.j2' as helpers %}
+<?xml version="1.0" encoding="UTF-8"?>
+<xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" version="1.0" xmlns="{{ xmlns }}">
+{{ indent_space }}<xsl:strip-space elements="*"/>
+{{ indent_space }}<xsl:output method="xml" version="1.0" encoding="UTF-8" indent="yes"/>
+{# === Generate xsl:key tags === #}
+{% for i in range(1, object_count + 1) %}
+    {% set id_csv = ui_values.get("-ID_CSV_" ~ i ~ "-") %}
+    {% if id_csv %}
+        {% set key_use_expr = id_csv if i == 1 else "concat(" ~ root_key_csv ~ ", '|', " ~ id_csv ~ ")" %}
+        {% if i == 2 and ui_values.get("-REPEAT_ENABLE_2-") %}
+            {{ indent_space }}<xsl:key name="mode_2" match="row" use="{{ key_use_expr }}"/>
+            {{ indent_space }}<xsl:key name="mode_3" match="row" use="{{ key_use_expr }}"/>
+        {% else %}
+            {{ indent_space }}<xsl:key name="mode_{{ i }}" match="row" use="{{ key_use_expr }}"/>
+        {% endif %}
+    {% endif %}
+{% endfor %}
+{# === Generate main /data template === #}
+{{ indent_space }}<xsl:template match="/data">
+{{ indent_space * 2 }}<{{ root_element }}>
+{% if sub_element_1 %}
+{{ indent_space * 3 }}<{{ sub_element_1 }}>
+{% endif %}
+{% if root_key_csv %}
+    {% set indent = indent_space * 4 if sub_element_1 else indent_space * 3 %}
+{{ indent }}<xsl:apply-templates select="row[generate-id() = generate-id(key('mode_1', {{ root_key_csv }})[1])]" mode="mode_1"/>
+{% endif %}
+{% if sub_element_1 %}
+{{ indent_space * 3 }}</{{ sub_element_1 }}>
+{% endif %}
+{{ indent_space * 2 }}</{{ root_element }}>
+{{ indent_space }}</xsl:template>
+{# === Generate templates for each mode (mode_1, mode_2, ...) === #}
+{% for i in range(1, object_count + 1) %}
+    {% set obj_type = ui_values.get("-OBJECT_TYPE_" ~ i ~ "-") %}
+    {% set id_csv = ui_values.get("-ID_CSV_" ~ i ~ "-") %}
+    {% set id_xsd = ui_values.get("-ID_XSD_" ~ i ~ "-") %}
+    {% set sysid_name = ui_values.get("-SYSID_XSD_" ~ i ~ "-") %}
+    {% if obj_type and id_csv and id_xsd and obj_type in created_objects_data %}
+        {% set obj_details = created_objects_data[obj_type] %}
+        {% set obj_xsd_element = obj_details.get('xsd_element', obj_type) %}
+{{ indent_space }}<xsl:template match="row" mode="mode_{{ i }}">
+{{ indent_space * 2 }}<{{ obj_xsd_element }}>
+        {% if sysid_name %}
+{{ indent_space * 3 }}<xsl:attribute name="{{ sysid_name }}"/>
+        {% endif %}
+        {% if i > 1 and ui_values.get("-COMBINE_KEY_" ~ i ~ "-") %}
+            {% set separator = ui_values.get("-KEY_SEPARATOR_" ~ i ~ "-", "/") %}
+{{ indent_space * 3 }}<{{ id_xsd }}>
+{{ indent_space * 4 }}<xsl:value-of select="{{ root_key_csv }}"/>
+{{ indent_space * 4 }}<xsl:text>{{ separator }}</xsl:text>
+{{ indent_space * 4 }}<xsl:value-of select="{{ id_csv }}"/>
+{{ indent_space * 3 }}</{{ id_xsd }}>
+        {% else %}
+{{ indent_space * 3 }}<{{ id_xsd }}>
+{{ indent_space * 4 }}<xsl:value-of select="{{ id_csv }}"/>
+{{ indent_space * 3 }}</{{ id_xsd }}>
+        {% endif %}
+        {# === Call the get_mapping macro === #}
+        {% for mapping in obj_details.mappings %}
+            {{- helpers.get_mapping(mapping, 3, csv_headers) -}}
+        {% endfor %}
+        {% if ui_values.get("-REPEAT_ENABLE_" ~ i ~ "-") %}
+            {% set key_for_group = id_csv if i == 1 else "concat(" ~ root_key_csv ~ ", '|', " ~ id_csv ~ ")" %}
+{{ indent_space * 3 }}<xsl:apply-templates select="key('mode_{{ i }}', {{ key_for_group }})" mode="repeat_mode_{{ i }}"/>
+        {% endif %}
+        {% if i < object_count %}
+            {% set child_id_csv = ui_values.get("-ID_CSV_" ~ (i+1) ~ "-") %}
+            {% if child_id_csv %}
+                {% set child_sub_element = ui_values.get("-SUB_ELEMENT_" ~ (i+1) ~ "-") %}
+                {% set next_level_key_name = "mode_" ~ (i+1) %}
+                {% set key_val_for_child = "concat(" ~ root_key_csv ~ ", '|', " ~ child_id_csv ~ ")" %}
+                {% set select_expr = "key('mode_" ~ i ~ "', " ~ id_csv ~ ")[generate-id() = generate-id(key('" ~ next_level_key_name ~ "', " ~ key_val_for_child ~ ")[1])]" %}
+                {% set apply_templates_line = "<xsl:apply-templates mode=\"" ~ next_level_key_name ~ "\" select=\"" ~ select_expr ~ "\"/>" %}
+{{ indent_space * 3 }}<xsl:if test="string({{ child_id_csv }})">
+                {% if child_sub_element %}
+{{ indent_space * 4 }}<{{ child_sub_element }}>
+{{ indent_space * 5 }}{{ apply_templates_line }}
+{{ indent_space * 4 }}</{{ child_sub_element }}>
+                {% else %}
+{{ indent_space * 4 }}{{ apply_templates_line }}
+                {% endif %}
+{{ indent_space * 3 }}</xsl:if>
+            {% endif %}
+        {% endif %}
+{{ indent_space * 2 }}</{{ obj_xsd_element }}>
+{{ indent_space }}</xsl:template>
+    {% endif %}
+{% endfor %}
+{# === Generate templates for repeated sections (repeat_mode_...) === #}
+{% for i in range(1, object_count + 1) %}
+    {% if ui_values.get("-REPEAT_ENABLE_" ~ i ~ "-") %}
+        {% set repeat_obj_type = ui_values.get("-REPEAT_OBJECT_TYPE_" ~ i ~ "-") %}
+        {% set repeat_trigger_csv = ui_values.get("-REPEAT_CSV_TRIGGER_" ~ i ~ "-") %}
+        {% if repeat_obj_type and repeat_trigger_csv and repeat_obj_type in created_objects_data %}
+            {% set rep_obj_details = created_objects_data[repeat_obj_type] %}
+            {% set mappings = rep_obj_details.get('mappings', []) %}
+{{ indent_space }}<xsl:template match="row" mode="repeat_mode_{{ i }}">
+{{ indent_space * 2 }}<xsl:if test="string({{ repeat_trigger_csv }})">
+            {% if mappings | length == 1 and mappings[0].get('is_complex') %}
+                {# === Call the generate_node macro === #}
+                {{- helpers.generate_node(mappings[0], 3, csv_headers) -}}
+            {% else %}
+                {% set rep_root_tag = rep_obj_details.get('xsd_element', repeat_obj_type) %}
+{{ indent_space * 3 }}<{{ rep_root_tag }}>
+                {% for mapping in mappings %}
+                    {% if not mapping.get('is_complex') %}
+                        {% if mapping.value_is_header %}
+{{ indent_space * 4 }}<xsl:if test="string({{ mapping.value }})">
+{{ indent_space * 5 }}<{{ mapping.xsd }}><xsl:value-of select="{{ mapping.value }}"/></{{ mapping.xsd }}>
+{{ indent_space * 4 }}</xsl:if>
+                        {% else %}
+{{ indent_space * 4 }}<{{ mapping.xsd }}><xsl:text>{{ mapping.value }}</xsl:text></{{ mapping.xsd }}>
+                        {% endif %}
+                    {% endif %}
+                {% endfor %}
+{{ indent_space * 3 }}</{{ rep_root_tag }}>
+            {% endif %}
+{{ indent_space * 2 }}</xsl:if>
+{{ indent_space }}</xsl:template>
+        {% endif %}
+    {% endif %}
+{% endfor %}
+</xsl:stylesheet>
