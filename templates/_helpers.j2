@@ -1,0 +1,109 @@
+{% macro generate_node(node, indent_level) -%}
+{% set indent_space = '    ' -%}
+{% set indent = indent_space * indent_level -%}
+{% set tag_name = node.name -%}
+{% set wrapper_name = node.get('wrapper_name') -%}
+{# This part is corrected from the previous step #}
+{% set attributes = node.get('children', []) | selectattr('type', 'equalto', 'attribute') -%}
+{% set elements = node.get('children', []) | selectattr('type', 'equalto', 'element') -%}
+
+{{ indent }}<{{ tag_name }}>
+{% if wrapper_name -%}
+{{ indent }}{{ indent_space }}<{{ wrapper_name }}>
+{% endif -%}
+{% set child_indent = indent + indent_space * (2 if wrapper_name else 1) -%}
+
+{% for attr in attributes -%}
+{{ child_indent }}<xsl:attribute name="{{ attr.name }}">
+    {% if attr.value_is_header -%}
+{{ child_indent }}{{ indent_space }}<xsl:value-of select="{{ attr.value }}"/>
+    {% else -%}
+{{ child_indent }}{{ indent_space }}<xsl:text>{{ attr.value }}</xsl:text>
+    {% endif -%}
+{{ child_indent }}</xsl:attribute>
+{% endfor -%}
+        
+{% for elem in elements -%}
+{{ child_indent }}<{{ elem.name }}>
+    {% if elem.get('attribute') -%}
+        {% set attr = elem.attribute -%}
+{{ child_indent }}{{ indent_space }}<xsl:attribute name="{{ attr.name }}">
+        {% if attr.value_is_header -%}
+{{ child_indent }}{{ indent_space * 2 }}<xsl:value-of select="{{ attr.value }}"/>
+        {% else -%}
+{{ child_indent }}{{ indent_space * 2 }}<xsl:text>{{ attr.value }}</xsl:text>
+        {% endif -%}
+{{ child_indent }}{{ indent_space }}</xsl:attribute>
+    {% endif -%}
+
+    {% if elem.value_is_header -%}
+{{ child_indent }}{{ indent_space }}<xsl:value-of select="{{ elem.value }}"/>
+    {% else -%}
+{{ child_indent }}{{ indent_space }}<xsl:text>{{ elem.value }}</xsl:text>
+    {% endif -%}
+    
+{{ child_indent }}</{{ elem.name }}>
+{% endfor -%}
+
+{% if wrapper_name -%}
+{{ indent }}{{ indent_space }}</{{ wrapper_name }}>
+{% endif -%}
+{{ indent }}</{{ tag_name }}>
+{% endmacro -%}
+
+
+{% macro get_mapping(mapping, indent_level, csv_headers_list) -%}
+{% set indent_space = '    ' -%}
+{% set indent = indent_space * indent_level -%}
+
+{% if mapping.get('is_complex') -%}
+    {# Find trigger_column. Use 'namespace' to set a variable inside a loop #}
+    {% set trigger = namespace(value=None) -%}
+    {% for child in mapping.get('children', []) -%}
+        {% if not trigger.value -%}
+            {% if child.get('value_is_header') -%}
+                {% set trigger.value = child.value -%}
+            {% elif child.get('attribute') and child.attribute.value_is_header -%}
+                {% set trigger.value = child.attribute.value -%}
+            {% endif -%}
+        {% endif -%}
+    {% endfor -%}
+    
+    {% if trigger.value -%}
+{{ indent }}<xsl:if test="string({{ trigger.value }})">
+        {{- self.generate_node(mapping, indent_level + 1) -}} {# Call the other macro #}
+{{ indent }}</xsl:if>
+    {% else -%}
+        {{- self.generate_node(mapping, indent_level) -}}
+    {% endif -%}
+
+{% else -%}
+    {# This is the 'simple' mapping logic #}
+    {% if mapping.value_is_header -%}
+{{ indent }}<xsl:if test="string({{ mapping.value }})">
+    {% endif -%}
+    
+{{ indent }}{{ indent_space }}<{{ mapping.xsd }}>
+    {% if mapping.get('type') == 'simple_with_attr' -%}
+        {% set attr = mapping.attribute -%}
+{{ indent }}{{ indent_space * 2 }}<xsl:attribute name="{{ attr.name }}">
+        {% if attr.value_is_header -%}
+{{ indent }}{{ indent_space * 3 }}<xsl:value-of select="{{ attr.value }}"/>
+        {% else -%}
+{{ indent }}{{ indent_space * 3 }}<xsl:text>{{ attr.value }}</xsl:text>
+        {% endif -%}
+{{ indent }}{{ indent_space * 2 }}</xsl:attribute>
+    {% endif -%}
+
+    {% if mapping.value_is_header -%}
+{{ indent }}{{ indent_space * 2 }}<xsl:value-of select="{{ mapping.value }}"/>
+    {% else -%}
+{{ indent }}{{ indent_space * 2 }}<xsl:text>{{ mapping.value }}</xsl:text>
+    {% endif -%}
+
+{{ indent }}{{ indent_space }}</{{ mapping.xsd }}>
+    {% if mapping.value_is_header -%}
+{{ indent }}</xsl:if>
+    {% endif -%}
+{% endif -%}
+{% endmacro -%}
